@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 
-$defaultSiteURL = 'https://connexionelectrical.co.uk/';
+$defaultSiteURL = 'https://ddvlaw.com/';
 $siteURL = isset($_GET['site']) ? rtrim($_GET['site'], '/') . '/' : $defaultSiteURL;
 
 $patterns = [
