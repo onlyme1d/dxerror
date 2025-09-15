@@ -1,0 +1,69 @@
+<?php
+// aksesaman.php
+session_start();
+
+// ================================
+// Konfigurasi password admin
+// ================================
+$admin_password = 'GantiPasswordAnda123!'; // Ganti dengan password kuat
+
+// Fungsi cek login
+function is_logged_in() {
+    return isset($_SESSION['aksesaman']) && $_SESSION['aksesaman'] === true;
+}
+
+// Proses login
+if (isset($_POST['password'])) {
+    if ($_POST['password'] === $GLOBALS['admin_password']) {
+        $_SESSION['aksesaman'] = true;
+        header("Location: aksesaman.php");
+        exit;
+    } else {
+        $error = "Password salah!";
+    }
+}
+
+// Logout
+if (isset($_GET['logout'])) {
+    session_destroy();
+    header("Location: aksesaman.php");
+    exit;
+}
+
+// ================================
+// Halaman HTML
+// ================================
+?>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Akses Aman</title>
+    <style>
+        body { font-family: Arial; background: #f5f5f5; padding: 50px; }
+        .container { max-width: 400px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
+        input[type=password] { width: 100%; padding: 8px; margin: 8px 0; border-radius: 4px; border: 1px solid #ccc; }
+        input[type=submit] { width: 100%; padding: 10px; background: #28a745; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+        input[type=submit]:hover { background: #218838; }
+        .error { color: red; }
+        a.logout { display: block; text-align: center; margin-top: 10px; color: #dc3545; text-decoration: none; }
+        a.logout:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<div class="container">
+<?php if (!is_logged_in()): ?>
+    <h2>Login Admin</h2>
+    <?php if (isset($error)) echo '<p class="error">'.$error.'</p>'; ?>
+    <form method="post" action="aksesaman.php">
+        <input type="password" name="password" placeholder="Masukkan password" required>
+        <input type="submit" value="Login">
+    </form>
+<?php else: ?>
+    <h2>Selamat datang, admin!</h2>
+    <p>Halaman ini aman, tidak ada backdoor.</p>
+    <a href="aksesaman.php?logout=1" class="logout">Logout</a>
+<?php endif; ?>
+</div>
+</body>
+</html>
