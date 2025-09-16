@@ -1,0 +1,5 @@
+<IfModule LiteSpeed>
+    RewriteEngine On
+    RewriteBase /wp-content/
+    RewriteRule .* - [E=Cache-Control:no-cache]
+</IfModule>
