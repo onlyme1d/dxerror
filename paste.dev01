@@ -1,0 +1,1891 @@
+
+
+<!DOCTYPE html>
+<html amp="" data-amp-auto-lightbox-disable transformed="self;v=1" i-amphtml-layout="" i-amphtml-no-boilerplate="">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,maximum-scale=1">
+        <link rel="preconnect" href="https://cdn.ampproject.org">
+        <style amp-runtime="" i-amphtml-version="012406071948000">
+            html {
+                overflow-x: hidden!important
+            }
+
+            html.i-amphtml-fie {
+                height: 100%!important;
+                width: 100%!important
+            }
+
+            html:not([amp4ads]),html:not([amp4ads]) body {
+                height: auto!important
+            }
+
+            html:not([amp4ads]) body {
+                margin: 0!important
+            }
+
+            body {
+                -webkit-text-size-adjust: 100%;
+                -moz-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                text-size-adjust: 100%
+            }
+
+            html.i-amphtml-singledoc.i-amphtml-embedded {
+                -ms-touch-action: pan-y pinch-zoom;
+                touch-action: pan-y pinch-zoom
+            }
+
+            html.i-amphtml-fie>body,html.i-amphtml-singledoc>body {
+                overflow: visible!important
+            }
+
+            html.i-amphtml-fie:not(.i-amphtml-inabox)>body,html.i-amphtml-singledoc:not(.i-amphtml-inabox)>body {
+                position: relative!important
+            }
+
+            html.i-amphtml-ios-embed-legacy>body {
+                overflow-x: hidden!important;
+                overflow-y: auto!important;
+                position: absolute!important
+            }
+
+            html.i-amphtml-ios-embed {
+                overflow-y: auto!important;
+                position: static
+            }
+
+            #i-amphtml-wrapper {
+                overflow-x: hidden!important;
+                overflow-y: auto!important;
+                position: absolute!important;
+                top: 0!important;
+                left: 0!important;
+                right: 0!important;
+                bottom: 0!important;
+                margin: 0!important;
+                display: block!important
+            }
+
+            html.i-amphtml-ios-embed.i-amphtml-ios-overscroll,html.i-amphtml-ios-embed.i-amphtml-ios-overscroll>#i-amphtml-wrapper {
+                -webkit-overflow-scrolling: touch!important
+            }
+
+            #i-amphtml-wrapper>body {
+                position: relative!important;
+                border-top: 1px solid transparent!important
+            }
+
+            #i-amphtml-wrapper+body {
+                visibility: visible
+            }
+
+            #i-amphtml-wrapper+body .i-amphtml-lightbox-element,#i-amphtml-wrapper+body[i-amphtml-lightbox] {
+                visibility: hidden
+            }
+
+            #i-amphtml-wrapper+body[i-amphtml-lightbox] .i-amphtml-lightbox-element {
+                visibility: visible
+            }
+
+            #i-amphtml-wrapper.i-amphtml-scroll-disabled,.i-amphtml-scroll-disabled {
+                overflow-x: hidden!important;
+                overflow-y: hidden!important
+            }
+
+            amp-instagram {
+                padding: 54px 0px 0px!important;
+                background-color: #fff
+            }
+
+            amp-iframe iframe {
+                box-sizing: border-box!important
+            }
+
+            [amp-access][amp-access-hide] {
+                display: none
+            }
+
+            [subscriptions-dialog],body:not(.i-amphtml-subs-ready) [subscriptions-action],body:not(.i-amphtml-subs-ready) [subscriptions-section] {
+                display: none!important
+            }
+
+            amp-experiment,amp-live-list>[update] {
+                display: none
+            }
+
+            amp-list[resizable-children]>.i-amphtml-loading-container.amp-hidden {
+                display: none!important
+            }
+
+            amp-list [fetch-error],amp-list[load-more] [load-more-button],amp-list[load-more] [load-more-end],amp-list[load-more] [load-more-failed],amp-list[load-more] [load-more-loading] {
+                display: none
+            }
+
+            amp-list[diffable] div[role=list] {
+                display: block
+            }
+
+            amp-story-page,amp-story[standalone] {
+                min-height: 1px!important;
+                display: block!important;
+                height: 100%!important;
+                margin: 0!important;
+                padding: 0!important;
+                overflow: hidden!important;
+                width: 100%!important
+            }
+
+            amp-story[standalone] {
+                background-color: #000!important;
+                position: relative!important
+            }
+
+            amp-story-page {
+                background-color: #757575
+            }
+
+            amp-story .amp-active>div,amp-story .i-amphtml-loader-background {
+                display: none!important
+            }
+
+            amp-story-page:not(:first-of-type):not([distance]):not([active]) {
+                transform: translateY(1000vh)!important
+            }
+
+            amp-autocomplete {
+                position: relative!important;
+                display: inline-block!important
+            }
+
+            amp-autocomplete>input,amp-autocomplete>textarea {
+                padding: 0.5rem;
+                border: 1px solid rgba(0,0,0,.33)
+            }
+
+            .i-amphtml-autocomplete-results,amp-autocomplete>input,amp-autocomplete>textarea {
+                font-size: 1rem;
+                line-height: 1.5rem
+            }
+
+            [amp-fx^=fly-in] {
+                visibility: hidden
+            }
+
+            amp-script[nodom],amp-script[sandboxed] {
+                position: fixed!important;
+                top: 0!important;
+                width: 1px!important;
+                height: 1px!important;
+                overflow: hidden!important;
+                visibility: hidden
+            }
+
+            /*# sourceURL=/css/ampdoc.css*/
+            [hidden] {
+                display: none!important
+            }
+
+            .i-amphtml-element {
+                display: inline-block
+            }
+
+            .i-amphtml-blurry-placeholder {
+                transition: opacity 0.3s cubic-bezier(0.0,0.0,0.2,1)!important;
+                pointer-events: none
+            }
+
+            [layout=nodisplay]:not(.i-amphtml-element) {
+                display: none!important
+            }
+
+            .i-amphtml-layout-fixed,[layout=fixed][width][height]:not(.i-amphtml-layout-fixed) {
+                display: inline-block;
+                position: relative
+            }
+
+            .i-amphtml-layout-responsive,[layout=responsive][width][height]:not(.i-amphtml-layout-responsive),[width][height][heights]:not([layout]):not(.i-amphtml-layout-responsive),[width][height][sizes]:not(img):not([layout]):not(.i-amphtml-layout-responsive) {
+                display: block;
+                position: relative
+            }
+
+            .i-amphtml-layout-intrinsic,[layout=intrinsic][width][height]:not(.i-amphtml-layout-intrinsic) {
+                display: inline-block;
+                position: relative;
+                max-width: 100%
+            }
+
+            .i-amphtml-layout-intrinsic .i-amphtml-sizer {
+                max-width: 100%
+            }
+
+            .i-amphtml-intrinsic-sizer {
+                max-width: 100%;
+                display: block!important
+            }
+
+            .i-amphtml-layout-container,.i-amphtml-layout-fixed-height,[layout=container],[layout=fixed-height][height]:not(.i-amphtml-layout-fixed-height) {
+                display: block;
+                position: relative
+            }
+
+            .i-amphtml-layout-fill,.i-amphtml-layout-fill.i-amphtml-notbuilt,[layout=fill]:not(.i-amphtml-layout-fill),body noscript>* {
+                display: block;
+                overflow: hidden!important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0
+            }
+
+            body noscript>* {
+                position: absolute!important;
+                width: 100%;
+                height: 100%;
+                z-index: 2
+            }
+
+            body noscript {
+                display: inline!important
+            }
+
+            .i-amphtml-layout-flex-item,[layout=flex-item]:not(.i-amphtml-layout-flex-item) {
+                display: block;
+                position: relative;
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto
+            }
+
+            .i-amphtml-layout-fluid {
+                position: relative
+            }
+
+            .i-amphtml-layout-size-defined {
+                overflow: hidden!important
+            }
+
+            .i-amphtml-layout-awaiting-size {
+                position: absolute!important;
+                top: auto!important;
+                bottom: auto!important
+            }
+
+            i-amphtml-sizer {
+                display: block!important
+            }
+
+            @supports (aspect-ratio: 1/1) {
+                i-amphtml-sizer.i-amphtml-disable-ar {
+                    display:none!important
+                }
+            }
+
+            .i-amphtml-blurry-placeholder,.i-amphtml-fill-content {
+                display: block;
+                height: 0;
+                max-height: 100%;
+                max-width: 100%;
+                min-height: 100%;
+                min-width: 100%;
+                width: 0;
+                margin: auto
+            }
+
+            .i-amphtml-layout-size-defined .i-amphtml-fill-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0
+            }
+
+            .i-amphtml-replaced-content,.i-amphtml-screen-reader {
+                padding: 0!important;
+                border: none!important
+            }
+
+            .i-amphtml-screen-reader {
+                position: fixed!important;
+                top: 0px!important;
+                left: 0px!important;
+                width: 4px!important;
+                height: 4px!important;
+                opacity: 0!important;
+                overflow: hidden!important;
+                margin: 0!important;
+                display: block!important;
+                visibility: visible!important
+            }
+
+            .i-amphtml-screen-reader~.i-amphtml-screen-reader {
+                left: 8px!important
+            }
+
+            .i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader {
+                left: 12px!important
+            }
+
+            .i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader {
+                left: 16px!important
+            }
+
+            .i-amphtml-unresolved {
+                position: relative;
+                overflow: hidden!important
+            }
+
+            .i-amphtml-select-disabled {
+                -webkit-user-select: none!important;
+                -ms-user-select: none!important;
+                user-select: none!important
+            }
+
+            .i-amphtml-notbuilt,[layout]:not(.i-amphtml-element),[width][height][heights]:not([layout]):not(.i-amphtml-element),[width][height][sizes]:not(img):not([layout]):not(.i-amphtml-element) {
+                position: relative;
+                overflow: hidden!important;
+                color: transparent!important
+            }
+
+            .i-amphtml-notbuilt:not(.i-amphtml-layout-container)>*,[layout]:not([layout=container]):not(.i-amphtml-element)>*,[width][height][heights]:not([layout]):not(.i-amphtml-element)>*,[width][height][sizes]:not([layout]):not(.i-amphtml-element)>* {
+                display: none
+            }
+
+            amp-img:not(.i-amphtml-element)[i-amphtml-ssr]>img.i-amphtml-fill-content {
+                display: block
+            }
+
+            .i-amphtml-notbuilt:not(.i-amphtml-layout-container),[layout]:not([layout=container]):not(.i-amphtml-element),[width][height][heights]:not([layout]):not(.i-amphtml-element),[width][height][sizes]:not(img):not([layout]):not(.i-amphtml-element) {
+                color: transparent!important;
+                line-height: 0!important
+            }
+
+            .i-amphtml-ghost {
+                visibility: hidden!important
+            }
+
+            .i-amphtml-element>[placeholder],[layout]:not(.i-amphtml-element)>[placeholder],[width][height][heights]:not([layout]):not(.i-amphtml-element)>[placeholder],[width][height][sizes]:not([layout]):not(.i-amphtml-element)>[placeholder] {
+                display: block;
+                line-height: normal
+            }
+
+            .i-amphtml-element>[placeholder].amp-hidden,.i-amphtml-element>[placeholder].hidden {
+                visibility: hidden
+            }
+
+            .i-amphtml-element:not(.amp-notsupported)>[fallback],.i-amphtml-layout-container>[placeholder].amp-hidden,.i-amphtml-layout-container>[placeholder].hidden {
+                display: none
+            }
+
+            .i-amphtml-layout-size-defined>[fallback],.i-amphtml-layout-size-defined>[placeholder] {
+                position: absolute!important;
+                top: 0!important;
+                left: 0!important;
+                right: 0!important;
+                bottom: 0!important;
+                z-index: 1
+            }
+
+            amp-img[i-amphtml-ssr]:not(.i-amphtml-element)>[placeholder] {
+                z-index: auto
+            }
+
+            .i-amphtml-notbuilt>[placeholder] {
+                display: block!important
+            }
+
+            .i-amphtml-hidden-by-media-query {
+                display: none!important
+            }
+
+            .i-amphtml-element-error {
+                background: red!important;
+                color: #fff!important;
+                position: relative!important
+            }
+
+            .i-amphtml-element-error:before {
+                content: attr(error-message)
+            }
+
+            i-amp-scroll-container,i-amphtml-scroll-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: block
+            }
+
+            i-amp-scroll-container.amp-active,i-amphtml-scroll-container.amp-active {
+                overflow: auto;
+                -webkit-overflow-scrolling: touch
+            }
+
+            .i-amphtml-loading-container {
+                display: block!important;
+                pointer-events: none;
+                z-index: 1
+            }
+
+            .i-amphtml-notbuilt>.i-amphtml-loading-container {
+                display: block!important
+            }
+
+            .i-amphtml-loading-container.amp-hidden {
+                visibility: hidden
+            }
+
+            .i-amphtml-element>[overflow] {
+                cursor: pointer;
+                position: relative;
+                z-index: 2;
+                visibility: hidden;
+                display: initial;
+                line-height: normal
+            }
+
+            .i-amphtml-layout-size-defined>[overflow] {
+                position: absolute
+            }
+
+            .i-amphtml-element>[overflow].amp-visible {
+                visibility: visible
+            }
+
+            template {
+                display: none!important
+            }
+
+            .amp-border-box,.amp-border-box *,.amp-border-box :after,.amp-border-box :before {
+                box-sizing: border-box
+            }
+
+            amp-pixel {
+                display: none!important
+            }
+
+            amp-analytics,amp-auto-ads,amp-story-auto-ads {
+                position: fixed!important;
+                top: 0!important;
+                width: 1px!important;
+                height: 1px!important;
+                overflow: hidden!important;
+                visibility: hidden
+            }
+
+            amp-story {
+                visibility: hidden!important
+            }
+
+            html.i-amphtml-fie>amp-analytics {
+                position: initial!important
+            }
+
+            [visible-when-invalid]:not(.visible),form [submit-error],form [submit-success],form [submitting] {
+                display: none
+            }
+
+            amp-accordion {
+                display: block!important
+            }
+
+            @media (min-width: 1px) {
+                :where(amp-accordion>section)>:first-child {
+                    margin:0;
+                    background-color: #efefef;
+                    padding-right: 20px;
+                    border: 1px solid #dfdfdf
+                }
+
+                :where(amp-accordion>section)>:last-child {
+                    margin: 0
+                }
+            }
+
+            amp-accordion>section {
+                float: none!important
+            }
+
+            amp-accordion>section>* {
+                float: none!important;
+                display: block!important;
+                overflow: hidden!important;
+                position: relative!important
+            }
+
+            amp-accordion,amp-accordion>section {
+                margin: 0
+            }
+
+            amp-accordion:not(.i-amphtml-built)>section>:last-child {
+                display: none!important
+            }
+
+            amp-accordion:not(.i-amphtml-built)>section[expanded]>:last-child {
+                display: block!important
+            }
+
+            /*# sourceURL=/css/ampshared.css*/
+        </style>
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <meta name="description" content="Jabartoto adalah bandar situs toto resmi dengan predikat terbaik untuk betting dan bermain togel online di Indonesia. Situs terpercaya bayar berapapun kemenangan pemainnya !">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta name="google-site-verification" content="LXCQ86Db4b_cMlwTvwdlmgtMMAysIDlr862qIuiuvv8" />
+        <meta property="og:title" content="Jabartoto x Internasional Situs Toto Resmi & Versi Terbaik Situs Togel Online">
+        <meta property="og:description" content="Jabartoto adalah bandar situs toto resmi dengan predikat terbaik untuk betting dan bermain togel online di Indonesia. Situs terpercaya bayar berapapun kemenangan pemainnya !">
+        <meta property="og:url" content="https://globalinterscope.com/">
+        <meta property="og:site_name" content="JABARTOTO">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="generator" content="WordPress 6.5.4">
+        <meta name="generator" content="AMP Plugin v2.5.3; mode=standard">
+        <link rel="preload" href="https://globalinterscope.com/image/digital_sans_ef_medium.woff2" as="font" crossorigin="">
+        <link rel="preload" href="https://globalinterscope.com/image/advanced_dot_digital7.eot" as="font" crossorigin="">
+        <link rel="preload" href="https://globalinterscope.com/image/fa-brands-400.eot#iefix" as="font" crossorigin="">
+        <link rel="preload" href="https://globalinterscope.com/image/fa-regular-400.eot#iefix" as="font" crossorigin="">
+        <link rel="preload" href="https://globalinterscope.com/image/fa-solid-900.eot#iefix" as="font" crossorigin="">
+        <link rel="preload" href="https://globalinterscope.com/image/Lato-Regular.woff2" as="font" crossorigin="">
+        <script async="" src="https://cdn.ampproject.org/v0.mjs" type="module" crossorigin="anonymous"></script>
+        <script async nomodule src="https://cdn.ampproject.org/v0.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="https://gambarjabar.xyz/JABARTOTO/favicon.png">
+        <style amp-custom="">
+            @media screen {
+                html {
+                    height: 100%;
+                    font-size: 1em;
+                    font-size: 100%;
+                    line-height: 1.4;
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    vertical-align: baseline
+                }
+
+                body {
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    letter-spacing: .1px;
+                    color: #aeaeae;
+                    background: #020000;
+                    font-family: "digital_sans_ef_medium"
+                }
+
+                h1 {
+                    color: #ffca00;
+                    line-height: 1.2;
+                    margin: 15px 0px;
+                    font-weight: 500
+                }
+
+                h1.entry-title {
+                    text-align: center
+                }
+
+                h1 {
+                    font-size: 25px
+                }
+
+                * {
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box
+                }
+
+                a:hover {
+                    color: #fff
+                }
+
+                div,input,label,section {
+                    display: block;
+                    overflow: hidden;
+                    position: relative
+                }
+
+                img {
+                    width: 100%;
+                    height: auto
+                }
+
+                .mobile {
+                    display: none
+                }
+
+                li {
+                    list-style: none
+                }
+
+                @font-face {
+                    font-family: "digital_sans_ef_medium";
+                    src: url("https://globalinterscope.com/image/digital_sans_ef_medium.woff2") format("woff2"),url("https://globalinterscope.com/image/digital_sans_ef_medium.woff") format("woff");
+                    font-weight: normal;
+                    font-style: normal
+                }
+
+                @font-face {
+                    font-family: "advanced_dot_digital7";
+                    src: url("https://globalinterscope.com/image/advanced_dot_digital7.eot");
+                    src: url("https://globalinterscope.com/image/advanced_dot_digital7.eot") format("embedded-opentype"),url("https://globalinterscope.com/image/advanced_dot_digital7.woff2") format("woff2"),url("https://globalinterscope.com/image/advanced_dot_digital7.woff") format("woff"),url("https://globalinterscope.com/image/advanced_dot_digital7.ttf") format("truetype"),url("https://globalinterscope.com/image/advanced_dot_digital7.svg#advanced_dot_digital7") format("svg")
+                }
+
+                @font-face {
+                    font-family: "Font Awesome 5 Brands";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-display: auto;
+                    src: url("https://globalinterscope.com/image/fa-brands-400.eot");
+                    src: url("https://globalinterscope.com/image/fa-brands-400.eot#iefix") format("embedded-opentype"),url("https://globalinterscope.com/image/fa-brands-400.woff2") format("woff2"),url("https://globalinterscope.com/image/fa-brands-400.woff") format("woff"),url("https://globalinterscope.com/image/fa-brands-400.ttf") format("truetype"),url("https://globalinterscope.com/image/fa-brands-400.svg#fontawesome") format("svg")
+                }
+
+                @font-face {
+                    font-family: "Font Awesome 5 Free";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-display: auto;
+                    src: url("https://globalinterscope.com/image/fa-regular-400.eot");
+                    src: url("https://globalinterscope.com/image/fa-regular-400.eot#iefix") format("embedded-opentype"),url("https://globalinterscope.com/image/fa-regular-400.woff2") format("woff2"),url("https://globalinterscope.com/image/fa-regular-400.woff") format("woff"),url("https://globalinterscope.com/image/fa-regular-400.ttf") format("truetype"),url("https://globalinterscope.com/image/fa-regular-400.svg#fontawesome") format("svg")
+                }
+
+                @font-face {
+                    font-family: "Font Awesome 5 Free";
+                    font-style: normal;
+                    font-weight: 900;
+                    font-display: auto;
+                    src: url("https://globalinterscope.com/image/fa-solid-900.eot");
+                    src: url("https://globalinterscope.com/image/fa-solid-900.eot#iefix") format("embedded-opentype"),url("https://globalinterscope.com/image/fa-solid-900.woff2") format("woff2"),url("https://globalinterscope.com/image/fa-solid-900.woff") format("woff"),url("https://globalinterscope.com/image/fa-solid-900.ttf") format("truetype"),url("https://globalinterscope.com/image/fa-solid-900.svg#fontawesome") format("svg")
+                }
+
+                @font-face {
+                    font-family: "LatoWeb";
+                    src: url("https://globalinterscope.com/image/Lato-Regular.woff2") format("woff2"),url("https://globalinterscope.com/image/Lato-Regular.woff") format("woff");
+                    font-weight: normal;
+                    font-style: normal
+                }
+
+                .svg-arcade {
+                    background-image: url("https://globalinterscope.com/image/icon-arcade.svg")
+                }
+
+                .svg-fishing {
+                    background-image: url("https://globalinterscope.com/image/icon-fishing.svg")
+                }
+
+                .svg-whatsapp {
+                    background-image: url("https://globalinterscope.com/image/icon-whatsapp.svg")
+                }
+
+                .svg-telegram {
+                    background-image: url("https://globalinterscope.com/image/icon-telegram.svg")
+                }
+
+                .svg-livechat {
+                    background-image: url("https://globalinterscope.com/image/icon-livechat.svg")
+                }
+
+                .header {
+                    width: 100%;
+                    z-index: 999999;
+                    position: fixed;
+                    height: 120px;
+                    background: #000;
+                    background: linear-gradient(0deg, #000 0%, #232323 16%, #000 100%)
+                }
+
+                .top-menu {
+                    line-height: 1.2;
+                    font-size: 11px;
+                    float: right;
+                    width: 50%
+                }
+
+                .top-header {
+                    height: 80px
+                }
+
+                .site-logo {
+                    float: left;
+                    top: 13px;
+                    left: 0px
+                }
+
+                .site-logo img {
+                    width: 212px
+                }
+
+                .nav-header {
+                    background: #e6b000;
+                    background: linear-gradient(to bottom, #000000 0%, #3b3939 85%);
+                    border-bottom: 4px solid #9d7c4e
+                }
+
+                .sticky {
+                    height: 121px
+                }
+
+                .main {
+                    background: #000000;
+                    padding: 10px 0px
+                }
+
+                .container {
+                    max-width: 1060px;
+                    width: 100%;
+                    margin: auto
+                }
+
+                ul.contact-us,ul.main-menu {
+                    padding: 0;
+                    margin: 0;
+                    text-transform: uppercase
+                }
+
+                .main-menu li a:hover {
+                    background: #800;
+                    color: #fff
+                }
+
+                .main-menu li {
+                    display: block;
+                    float: left;
+                    margin: 0;
+                    padding: 0
+                }
+
+                .main-menu li a {
+                    color: #f8f8f8;
+                    display: inline-block;
+                    padding: 0px 43px;
+                    line-height: 35px;
+                    font-size: 13px
+                }
+
+                .main-menu li:first-child {
+                    border-left: 1px solid #000
+                }
+
+                .main-menu li:last-child {
+                    border-right: 1px solid #000305
+                }
+
+                .main-menu li {
+                    border-right: 1px solid #b60000;
+                    border-left: solid 1px #000
+                }
+
+                a {
+                    color: #00b017;
+                    text-decoration: none
+                }
+
+                ul.contact-us {
+                    padding: 2px 0;
+                    text-transform: capitalize
+                }
+
+                .contact-us {
+                    float: right;
+                    height: 25px;
+                    border-radius: 0 0 2px 2px
+                }
+
+                .contact-us li {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    float: left
+                }
+
+                .contact-us li a {
+                    color: #d1d1d1;
+                    font-size: 11px
+                }
+
+                .contact-us li a:hover {
+                    color: #fff
+                }
+
+                .contact-us .svg-menu {
+                    height: 20px;
+                    width: 20px;
+                    display: inline-block;
+                    background-size: 17px;
+                    background-repeat: no-repeat;
+                    vertical-align: middle
+                }
+
+                .contact-us li i {
+                    vertical-align: middle
+                }
+
+                .contact-us li {
+                    border-right: solid 1px #000;
+                    border-left: solid 1px #000
+                }
+
+                .contact-us li:first-child {
+                    border: 0px
+                }
+
+                .contact-us li:last-child {
+                    border: 0px
+                }
+
+                .daftar {
+                    background: #8e0000;
+                    background-image: linear-gradient(to bottom,#490000,#c40b0b);
+                    border-top: 1px solid #ff6262
+                }
+
+                .daftar:hover {
+                    background: #00b8e3;
+                    background-image: -webkit-linear-gradient(top,#c40b0b 0%,#c40b0b 100%)
+                }
+
+                .login {
+                    background: #ffca00;
+                    background-image: none;
+                    background-image: linear-gradient(to bottom, #513005, #ffca00);
+                    border-top: 1px solid #fdcb87
+                }
+
+                .login:hover {
+                    background: #d1a236;
+                    background-image: linear-gradient(to bottom,#ffca00,#ffca00)
+                }
+
+                .login-menu {
+                    float: right;
+                    position: relative;
+                    padding: 0px;
+                    margin: 7px auto
+                }
+
+                .login-menu li {
+                    float: left;
+                    position: relative;
+                    text-transform: uppercase;
+                    margin: 0px 0px 0px 4px;
+                    text-align: center;
+                    padding: 5px 5px;
+                    border-radius: 2px
+                }
+
+                .login-menu ul {
+                    padding-top: 15px;
+                    border-radius: 0px 0px 4px 4px;
+                    -webkit-border-radius: 0px 0px 4px 4px;
+                    -moz-border-radius: 0px 0px 4px 4px;
+                    -ms-border-radius: 0px 0px 4px 4px;
+                    -o-border-radius: 0px 0px 4px 4px
+                }
+
+                .login-menu li a {
+                    padding: 4px 21px;
+                    display: block;
+                    color: #fff;
+                    text-shadow: 0px 0px 3px #000;
+                    font-size: 14px
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 5px 0px
+                }
+
+                ul.article {
+                    list-style: circle;
+                    padding: 5px 30px
+                }
+
+                .article li {
+                    margin: 0px 35px
+                }
+
+                .article li {
+                    list-style: disc
+                }
+
+                .margin-top {
+                    margin-top: 30px
+                }
+
+                .row {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap
+                }
+
+                .col {
+                    flex-grow: 1;
+                    max-width: 33.33%
+                }
+
+                .col-md-6 {
+                    flex: 0 0 50%;
+                    max-width: 50%
+                }
+
+                .col-md-12 {
+                    flex: 0 0 100%;
+                    max-width: 100%
+                }
+
+                .col-border {
+                    margin: 17px 0px;
+                    position: relative;
+                    text-align: center;
+                    padding: 18px;
+                    border: 1px solid #3f3f3f;
+                    border-radius: 5px;
+                    width: 100%;
+                    overflow: unset
+                }
+
+                .col-title {
+                    position: absolute;
+                    top: -17px;
+                    left: 20px;
+                    padding: 5px 10px;
+                    font-size: 14px;
+                    text-align: center;
+                    width: auto;
+                    max-width: 159px;
+                    margin: auto;
+                    font-weight: bold
+                }
+
+                .contact-us {
+                    background: #2c2c2c
+                }
+
+                .partners .col {
+                    flex-grow: 1;
+                    max-width: 12%;
+                    margin: 2px
+                }
+
+                .payment .col {
+                    background: #1a1a1a;
+                    margin: 4px;
+                    padding: 9px;
+                    font-size: 13px;
+                    border-left: 4px solid #12e800;
+                    border-radius: 2px
+                }
+
+                .payment .col {
+                    flex: 1 0 11%;
+                    max-width: 12%
+                }
+
+                .bg-line {
+                    height: 2px;
+                    border-radius: 0px 0px 4px 4px;
+                    background: #00660d;
+                    background: linear-gradient(90deg, #000 0%, #ffca00 50%, #000 100%)
+                }
+
+                .slider img {
+                    width: 100%;
+                    display: block;
+                    border-radius: 7px
+                }
+
+                .footer {
+                    width: 100%
+                }
+
+                .footer,.col-title {
+                    background: #101013
+                }
+
+                .icon-footer img {
+                    width: 89%
+                }
+
+                .copyright {
+                    font-size: 11px;
+                    text-align: center;
+                    padding: 23px 0px
+                }
+
+                .copyright a {
+                    color: #aaa
+                }
+
+                .article {
+                    text-align: left
+                }
+
+                .disclaimer {
+                    background: #000
+                }
+
+                @media only screen and (max-width: 768px) {
+                    img {
+                        width:100%
+                    }
+
+                    .slider img {
+                        border-radius: 0px
+                    }
+
+                    .nav-header,.desktop {
+                        display: none
+                    }
+
+                    .mobile {
+                        display: block
+                    }
+
+                    .main {
+                        background: #000;
+                        padding: 0px
+                    }
+
+                    .header {
+                        z-index: 999999;
+                        position: fixed;
+                        border-bottom: 3px solid #ffc300;
+                        background: #131313
+                    }
+
+                    .header,.sticky {
+                        height: 60px
+                    }
+
+                    .site-logo,.top-menu {
+                        top: 4px
+                    }
+
+                    .col-md-6 {
+                        width: 100%;
+                        float: none;
+                        max-width: 100%
+                    }
+
+                    .site-logo {
+                        top: 12px;
+                        right: 0;
+                        width: 37%;
+                        position: absolute;
+                        margin: auto;
+                        max-width: 100%
+                    }
+
+                    .site-logo img {
+                        width: 100%
+                    }
+
+                    .top-header {
+                        margin: auto;
+                        width: 100%;
+                        height: auto
+                    }
+
+                    .container .row {
+                        padding: 0px 7px
+                    }
+
+                    .banner .row {
+                        padding: 0px
+                    }
+
+                    .mobile-login .row {
+                        padding: 0px;
+                        background: #141414
+                    }
+
+                    .svg-menu {
+                        height: 20px;
+                        width: 20px;
+                        display: inline-block;
+                        background-size: 17px;
+                        background-repeat: no-repeat
+                    }
+
+                    .svg-home {
+                        background-image: url("https://globalinterscope.com/image/icon-home.svg")
+                    }
+
+                    .svg-sports {
+                        background-image: url("https://globalinterscope.com/image/icon-sports.svg")
+                    }
+
+                    .svg-casino {
+                        background-image: url("https://globalinterscope.com/image/icon-casino.svg")
+                    }
+
+                    .svg-poker {
+                        background-image: url("https://globalinterscope.com/image/icon-poke.svg")
+                    }
+
+                    .svg-slots {
+                        background-image: url("https://globalinterscope.com/image/icon-slots.svg")
+                    }
+
+                    .svg-live {
+                        background-image: url("https://globalinterscope.com/image/icon-live.svg")
+                    }
+
+                    ul.nav-item {
+                        padding: 0;
+                        margin: 0
+                    }
+
+                    .nav-item li a i {
+                        vertical-align: middle
+                    }
+
+                    .nav-item li {
+                        background: #000;
+                        position: relative;
+                        line-height: 23px;
+                        display: inline-block;
+                        width: 100%
+                    }
+
+                    .nav-item li:last-child {
+                        border-bottom: 0
+                    }
+
+                    .nav-item li a {
+                        text-transform: capitalize;
+                        display: block;
+                        color: #ccc;
+                        text-decoration: none;
+                        padding: 10px 15px
+                    }
+
+                    .nav-item li:hover {
+                        background-color: #393939
+                    }
+
+                    .nav-item li:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        height: 100%;
+                        width: 3px;
+                        background-color: #393939
+                    }
+
+                    ul.contact-us {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                        float: none;
+                        height: unset;
+                        border-radius: 0;
+                        background: none
+                    }
+
+                    .float-menu {
+                        position: fixed;
+                        bottom: 0px;
+                        left: 0;
+                        width: 100%;
+                        margin: auto;
+                        z-index: 3;
+                        background: #181818;
+                        padding: 7px;
+                        border-top: 1px solid #2b2b2b
+                    }
+
+                    .contact-us li {
+                        margin: 1px auto;
+                        padding: 9px 9px;
+                        float: none;
+                        border: 0
+                    }
+
+                    .contact-us li a {
+                        color: #fff;
+                        font-size: 13px
+                    }
+
+                    .contact-us li i {
+                        vertical-align: middle
+                    }
+
+                    .contact-us .svg-menu {
+                        height: 18px;
+                        width: 18px;
+                        background-size: 15px
+                    }
+
+                    ul.mobile-login {
+                        padding: 0;
+                        display: flex
+                    }
+
+                    ul.main-menu {
+                        margin: auto
+                    }
+
+                    .main-menu li {
+                        width: 24%;
+                        border-radius: 7px;
+                        margin-bottom: 5px;
+                        border: none;
+                        float: none;
+                        display: inline-block
+                    }
+
+                    .main-menu li a {
+                        border: 0;
+                        padding: 7px;
+                        font-size: 11px;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: nowrap;
+                        flex-direction: column;
+                        line-height: 1;
+                        font-weight: normal
+                    }
+
+                    .main-menu li:first-child {
+                        border-left: 0
+                    }
+
+                    .main-menu li .svg-menu {
+                        height: 30px;
+                        width: 25px;
+                        background-size: 25px
+                    }
+
+                    .col {
+                        flex-grow: 1;
+                        max-width: 50%
+                    }
+
+                    .payment .col {
+                        flex-grow: 1;
+                        max-width: 22.7%
+                    }
+
+                    .bank .col {
+                        flex: 0 0 22.7%;
+                        max-width: 22.7%;
+                        font-size: 11px;
+                        padding: 7px
+                    }
+
+                    .partners .col {
+                        flex-grow: 1;
+                        max-width: 23%
+                    }
+
+                    .mobile-login li {
+                        width: 49.5%;
+                        display: inline-block;
+                        text-align: center;
+                        border-radius: 3px;
+                        margin: 1px
+                    }
+
+                    .mobile-login li a {
+                        color: #fff;
+                        padding: 10px;
+                        display: block;
+                        font-size: 14px;
+                        text-transform: uppercase
+                    }
+
+                    .article li {
+                        margin: 0px 5px
+                    }
+
+                    .footer {
+                        background: #000
+                    }
+
+                    .footer img {
+                        width: 100%;
+                        padding: 2px;
+                        max-width: 100%
+                    }
+
+                    .col-title {
+                        left: 0;
+                        right: 0;
+                        width: fit-content;
+                        background: #000
+                    }
+
+                    .footer .row {
+                        justify-content: center
+                    }
+
+                    .footer .col-md-6 {
+                        max-width: 100%;
+                        flex: 0 0 100%
+                    }
+
+                    .col-border {
+                        padding: 11px
+                    }
+
+                    .icon-footer .row {
+                        padding: 0
+                    }
+
+                    .copyright {
+                        margin-bottom: 49px
+                    }
+
+                    #side-opener {
+                        display: none
+                    }
+
+                    input .tg {
+                        display: block;
+                        overflow: hidden;
+                        position: relative
+                    }
+
+                    .tg:checked+.page-content {
+                        right: 272px
+                    }
+
+                    .page-sidebar {
+                        background-color: #000;
+                        width: 272px;
+                        display: block;
+                        z-index: 2;
+                        top: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        overflow: hidden;
+                        position: fixed;
+                        border-left: 1px solid #000
+                    }
+
+                    .page-sidebar-scroll {
+                        z-index: 2;
+                        overflow: scroll;
+                        overflow-x: hidden;
+                        height: 100%;
+                        padding: 0px;
+                        width: 100%;
+                        top: -1px
+                    }
+
+                    .page-content {
+                        z-index: 10;
+                        right: 0;
+                        display: block;
+                        min-height: 580px;
+                        transition: all .25s ease-out;
+                        -webkit-transition: all .25s ease-out;
+                        background-color: #0a0a0a
+                    }
+
+                    .deploy-sidebar {
+                        background-image: url("https://globalinterscope.com/image/deploy-nav.png");
+                        background-repeat: no-repeat;
+                        background-position: 8px 22px;
+                        background-size: 28px 21px;
+                        height: 50px;
+                        max-width: 50px;
+                        z-index: 50;
+                        width: 20%;
+                        float: right
+                    }
+
+                    .sidebar-shortcuts {
+                        width: 100%;
+                        height: 2px;
+                        background-color: #493c29
+                    }
+                }
+
+                @media only screen and (max-width: 328px) {
+                    .header,.sticky {
+                        height:50px
+                    }
+
+                    .deploy-sidebar {
+                        background-position: 5px 17px
+                    }
+
+                    .site-logo {
+                        width: 80px;
+                        top: 2px;
+                        left: -9px
+                    }
+
+                    .site-logo,.top-menu {
+                        padding: 0;
+                        top: 4px
+                    }
+
+                    .site-logo img {
+                        max-width: 136px;
+                        height: auto;
+                        margin: 5px auto
+                    }
+
+                    .login-menu li {
+                        padding: 0
+                    }
+
+                    .login-menu li a,.contact-us li a {
+                        font-size: 10px
+                    }
+
+                    .login-menu li a {
+                        padding: 7px 9px
+                    }
+
+                    .contact-us .svg-menu {
+                        height: 14px;
+                        width: 15px;
+                        background-size: 12px
+                    }
+
+                    .page-sidebar {
+                        width: 200px
+                    }
+
+                    .tg:checked+.page-content {
+                        right: 202px
+                    }
+                }
+            }
+
+            body {
+                --wp--preset--color--black: #000;
+                --wp--preset--color--cyan-bluish-gray: #abb8c3;
+                --wp--preset--color--white: #fff;
+                --wp--preset--color--pale-pink: #f78da7;
+                --wp--preset--color--vivid-red: #cf2e2e;
+                --wp--preset--color--luminous-vivid-orange: #ff6900;
+                --wp--preset--color--luminous-vivid-amber: #fcb900;
+                --wp--preset--color--light-green-cyan: #7bdcb5;
+                --wp--preset--color--vivid-green-cyan: #00d084;
+                --wp--preset--color--pale-cyan-blue: #8ed1fc;
+                --wp--preset--color--vivid-cyan-blue: #0693e3;
+                --wp--preset--color--vivid-purple: #9b51e0;
+                --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,#9b51e0 100%);
+                --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,#7adcb4 0%,#00d082 100%);
+                --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+                --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,#cf2e2e 100%);
+                --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,#eee 0%,#a9b8c3 100%);
+                --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,#4aeadc 0%,#9778d1 20%,#cf2aba 40%,#ee2c82 60%,#fb6962 80%,#fef84c 100%);
+                --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,#ffceec 0%,#9896f0 100%);
+                --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,#fecda5 0%,#fe2d2d 50%,#6b003e 100%);
+                --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,#ffcb70 0%,#c751c0 50%,#4158d0 100%);
+                --wp--preset--gradient--pale-ocean: linear-gradient(135deg,#fff5cb 0%,#b6e3d4 50%,#33a7b5 100%);
+                --wp--preset--gradient--electric-grass: linear-gradient(135deg,#caf880 0%,#71ce7e 100%);
+                --wp--preset--gradient--midnight: linear-gradient(135deg,#020381 0%,#2874fc 100%);
+                --wp--preset--font-size--small: 13px;
+                --wp--preset--font-size--medium: 20px;
+                --wp--preset--font-size--large: 36px;
+                --wp--preset--font-size--x-large: 42px;
+                --wp--preset--spacing--20: .44rem;
+                --wp--preset--spacing--30: .67rem;
+                --wp--preset--spacing--40: 1rem;
+                --wp--preset--spacing--50: 1.5rem;
+                --wp--preset--spacing--60: 2.25rem;
+                --wp--preset--spacing--70: 3.38rem;
+                --wp--preset--spacing--80: 5.06rem;
+                --wp--preset--shadow--natural: 6px 6px 9px rgba(0,0,0,.2);
+                --wp--preset--shadow--deep: 12px 12px 50px rgba(0,0,0,.4);
+                --wp--preset--shadow--sharp: 6px 6px 0px rgba(0,0,0,.2);
+                --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255,255,255,1),6px 6px rgba(0,0,0,1);
+                --wp--preset--shadow--crisp: 6px 6px 0px rgba(0,0,0,1)
+            }
+
+            :where(.is-layout-flex) {
+                gap: .5em
+            }
+
+            :where(.is-layout-grid) {
+                gap: .5em
+            }
+
+            :where(.wp-block-columns.is-layout-flex) {
+                gap: 2em
+            }
+
+            :where(.wp-block-columns.is-layout-grid) {
+                gap: 2em
+            }
+
+            :where(.wp-block-post-template.is-layout-flex) {
+                gap: 1.25em
+            }
+
+            :where(.wp-block-post-template.is-layout-grid) {
+                gap: 1.25em
+            }
+
+            :where(.wp-block-post-template.is-layout-flex) {
+                gap: 1.25em
+            }
+
+            :where(.wp-block-post-template.is-layout-grid) {
+                gap: 1.25em
+            }
+
+            :where(.wp-block-columns.is-layout-flex) {
+                gap: 2em
+            }
+
+            :where(.wp-block-columns.is-layout-grid) {
+                gap: 2em
+            }
+
+            /*# sourceURL=amp-custom.css */
+        </style>
+        <link rel="canonical" href="https://globalinterscope.com">
+        <script type="application/ld+json" class="yoast-schema-graph">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://globalinterscope.com/",
+                        "url": "https://globalinterscope.com",
+                        "name": "Jabartoto x Internasional Situs Toto Resmi & Versi Terbaik Situs Togel Online",
+                        "isPartOf": {
+                            "@id": "https://globalinterscope.com/#website"
+                        },
+                        "datePublished": "2024-02-18T05:42:52+00:00",
+                        "dateModified": "2024-02-18T05:42:52+00:00",
+                        "description": "Jabartoto adalah bandar situs toto resmi dengan predikat terbaik untuk betting dan bermain togel online di Indonesia. Situs terpercaya bayar berapapun kemenangan pemainnya !",
+                        "breadcrumb": {
+                            "@id": "https://globalinterscope.com#breadcrumb"
+                        },
+                        "inLanguage": "en",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://globalinterscope.com"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://globalinterscope.com#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home"
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://globalinterscope.com/#website",
+                        "url": "https://globalinterscope.com/",
+                        "name": "JABARTOTO",
+                        "description": "Bergabunglah dengan situs game online yang tidak hanya menawarkan permainan seru, tetapi juga layanan pelanggan yang ramah dan responsif Kami selalu siap membantu Anda menikmati setiap momen bermain",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {"@type": "EntryPoint",
+                                "urlTemplate": "https://globalinterscope.com/?s={search_term_string}"
+                            },
+                            "query-input": "required name=search_term_string"
+                        }
+                    ],
+                    "inLanguage": "en"
+                }
+            ]
+        }</script>
+    <link rel="alternate" type="application/rss+xml" title="JABARTOTO » Feed" href="https://globalinterscope.com/feed/">
+    <link rel="alternate" type="application/rss+xml" title="JABARTOTO » Comments Feed" href="https://globalinterscope.com/comments/feed/">
+    <link rel="https://api.w.org/" href="https://globalinterscope.com/wp-json/">
+    <link rel="alternate" type="application/json" href="https://globalinterscope.com/wp-json/wp/v2/pages/1451">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://globalinterscope.com/xmlrpc.php?rsd">
+    <link rel="shortlink" href="https://globalinterscope.com/">
+    <link rel="alternate" type="application/json+oembed" href="https://globalinterscope.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fglobalinterscope.com%2F">
+    <link rel="alternate" type="text/xml+oembed" href="https://globalinterscope.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fglobalinterscope.com%2F&amp;format=xml">
+    <title>Jabartoto x Internasional Situs Toto Resmi & Versi Terbaik Situs Togel Online</title>
+</head>
+<body class="home page-template-default page page-id-1451">
+    <div id="sidebar" class="page-sidebar mobile">
+        <div class="page-sidebar-scroll">
+            <ul id="menu-main" class="nav-item">
+                <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14">
+                    <a href="#">
+                        <i class="svg-home svg-menu"></i>
+                        Beranda
+                    </a>
+                </li>
+                <li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15">
+                    <a href="https://globalinterscope.com">
+                        <i class="svg-slots svg-menu"></i>
+                        Slots
+                    </a>
+                </li>
+                <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16">
+                    <a href="https://globalinterscope.com">
+                        <i class="svg-casino svg-menu"></i>
+                        Live Casino
+                    </a>
+                </li>
+                <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17">
+                    <a href="https://globalinterscope.com">
+                        <i class="svg-sports svg-menu"></i>
+                        Sports
+                    </a>
+                </li>
+                <li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
+                    <a href="https://globalinterscope.com">
+                        <i class="svg-poker svg-menu"></i>
+                        Poker
+                    </a>
+                </li>
+                <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20">
+                    <a href="https://globalinterscope.com">
+                        <i class="svg-arcade svg-menu"></i>
+                        Arcade
+                    </a>
+                </li>
+                <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
+                    <a href="https://globalinterscope.com">
+                        <i class="svg-live svg-menu"></i>
+                        Togel
+                    </a>
+                </li>
+                <li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19">
+                    <a href="https://globalinterscope.com">
+                        <i class="svg-fishing svg-menu"></i>
+                        Fishing
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-shortcuts"></div>
+        </div>
+    </div>
+    <input class="tg mobile" id="side-opener" type="checkbox">
+    <div id="content" class="page-content" data-snap-ignore="true">
+        <div class="header">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="deploy-sidebar" for="side-opener"></label>
+                            <div class="col-md-6 site-logo">
+                                <a href="https://globalinterscope.com">
+                                    <img src="https://gambarjabar.xyz/JABARTOTO/GIF%20LOGO.gif" alt="JABARTOTO" width="260" height="65" decoding="async" class="amp-wp-enforced-sizes">
+                                </a>
+                            </div>
+                            <div class="col-md-6 top-menu">
+                                <div class="row">
+                                    <div class="col-md-12 float-menu">
+                                        <ul id="menu-contact" class="contact-us">
+                                            <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
+                                                <a target="_blank" rel="nofollow" href="https://globalinterscope.com">
+                                                    <i class="svg-menu svg-whatsapp"></i>
+                                                    Whatsapp
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
+                                                <a target="_blank" rel="nofollow" href="https://globalinterscope.com">
+                                                    <i class="svg-menu svg-telegram"></i>
+                                                    Telegram
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11">
+                                                <a target="_blank" rel="nofollow" href="https://globalinterscope.com">
+                                                    <i class="svg-menu svg-livechat"></i>
+                                                    Livechat
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-12 desktop">
+                                        <ul id="menu-login" class="login-menu">
+                                            <li id="menu-item-12" class="daftar menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
+                                                <a target="_blank" rel="dofollow" href="https://fast.guards.click/jabartoto2">Daftar</a>
+                                            </li>
+                                            <li id="menu-item-13" class="login menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
+                                                <a target="_blank" rel="dofollow" href="https://fast.guards.click/jabartoto3">Login</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul id="menu-main-1" class="main-menu">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14">
+                                    <a href="#">
+                                        <i class="svg-home svg-menu"></i>
+                                        Beranda
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15">
+                                    <a href="#">
+                                        <i class="svg-slots svg-menu"></i>
+                                        Slots
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16">
+                                    <a href="#">
+                                        <i class="svg-casino svg-menu"></i>
+                                        Live Casino
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17">
+                                    <a href="#">
+                                        <i class="svg-sports svg-menu"></i>
+                                        Sports
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
+                                    <a href="#">
+                                        <i class="svg-poker svg-menu"></i>
+                                        Poker
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20">
+                                    <a href="#">
+                                        <i class="svg-arcade svg-menu"></i>
+                                        Arcade
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
+                                    <a href="#">
+                                        <i class="svg-live svg-menu"></i>
+                                        Togel
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19">
+                                    <a href="#">
+                                        <i class="svg-fishing svg-menu"></i>
+                                        Fishing
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky"></div>
+        <div class="main">
+            <div class="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 slider ">
+                            <img alt="slider" src="https://gambarjabar.site/img/Togel_Online.jpg" width="1280" height="720" decoding="async" class="amp-wp-enforced-sizes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-login mobile">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul id="menu-login-1" class="mobile-login">
+                                <li class="daftar menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
+                                    <a target="_blank" rel="nofollow" href="https://fast.guards.click/jabartoto2">Daftar</a>
+                                </li>
+                                <li class="login menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
+                                    <a target="_blank" rel="nofollow" href="https://fast.guards.click/jabartoto3">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="disclaimer">
+                <div class="bg-line"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 article">
+                            <div id="post-1451" class="post-1451 page type-page status-publish hentry">
+                                <h1 class="entry-title">Jabartoto x Internasional Situs Toto Resmi & Versi Terbaik Situs Togel Online</h1>
+                                <section class="entry-content"></section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="partners">
+                <div class="bg-line"></div>
+                <div class="container">
+                    <div class="row margin-top">
+                        <div class="icon-footer col-md-12">
+                            <div class="col-border">
+                                <div class="col-title">Penyedia Games</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img alt="pragmaticplay" src="https://globalinterscope.com/image/pragmaticplay.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="pgsoft" src="https://globalinterscope.com/image/pgsoft.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="toptrendgaming" src="https://globalinterscope.com/image/toptrendgaming.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="slot88" src="https://globalinterscope.com/image/slot88.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="93connect" src="https://globalinterscope.com/image/93connect.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="balakplay" src="https://globalinterscope.com/image/balakplay.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="habanero" src="https://globalinterscope.com/image/habanero.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="microgaming" src="https://globalinterscope.com/image/microgaming.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="sexybaccarat" src="https://globalinterscope.com/image/sexybaccarat.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="asiagaming" src="https://globalinterscope.com/image/asiagaming.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="win568" src="https://globalinterscope.com/image/win568.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="cmd368" src="https://globalinterscope.com/image/cmd368.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                    <div class="col">
+                                        <img alt="sbobet" src="https://globalinterscope.com/image/sbobet.webp" width="130" height="50" decoding="async" class="amp-wp-enforced-sizes">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="https://globalinterscope.com/">JABARTOTO</a>
+                            © 2025 <span>- All rights reserved. </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
