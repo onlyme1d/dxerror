@@ -262,7 +262,7 @@ function wp_check_php_mysql_versions() {
  * or a constant of the same name.
  *
  * Possible values are 'local', 'development', 'staging', and 'production'.
- * Ifnot set, the type defaults to 'production'.
+ * If not set, the type defaults to 'production'.
  *
  * @since 5.5.0
  * @since 5.5.1 Added the 'local' type.
@@ -834,7 +834,7 @@ function wp_using_ext_object_cache( $using = null ) {
 
 	$current_using = $_wp_using_ext_object_cache;
 
-	if (null !== $using ) {
+	if ( null !== $using ) {
 		$_wp_using_ext_object_cache = $using;
 	}
 
@@ -1135,7 +1135,7 @@ function wp_get_active_and_valid_themes() {
 	 * that should be protected against WSODs and the theme is paused.
 	 */
 	if ( wp_is_recovery_mode() ) {
-		$themes =wp_skip_paused_themes( $themes );
+		$themes = wp_skip_paused_themes( $themes );
 
 		// If no active and valid themes exist, skip loading themes.
 		if ( empty( $themes ) ) {
@@ -1442,7 +1442,7 @@ function is_network_admin() {
  * e.g. `/wp-admin/user/`
  *
  * Does not check if the user is an administrator; use current_user_can()
- * for checking rolesand capabilities.
+ * for checking roles and capabilities.
  *
  * @since 3.1.0
  *
@@ -1765,7 +1765,7 @@ function wp_is_ini_value_changeable( $setting ) {
  */
 function wp_doing_ajax() {
 	/**
-	 * Filterswhether the current request is a WordPress Ajax request.
+	 * Filters whether the current request is a WordPress Ajax request.
 	 *
 	 * @since 4.7.0
 	 *
