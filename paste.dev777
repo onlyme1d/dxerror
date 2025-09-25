@@ -1,0 +1,115 @@
+<?php
+/**
+* Plugin Name: Local Default File Integrity Monitor
+* Description: Simple File Integrity Monitor (FIM) focused on wp-content/plugins/local-default/index.php. Creates baseline hashes, scans for modifications, detects suspicious patterns, logs and notifies admin. Use responsibly and test on staging first.
+* Version: 1.0
+* Author: lynixworld
+*/
+
+
+if (!defined('ABSPATH')) {
+exit; // Exit if accessed directly
+}
+
+
+define('LDFIM_PLUGIN_DIR', plugin_dir_path(__FILE__));
+define('LDFIM_BASELINE_FILE', LDFIM_PLUGIN_DIR . 'baseline.json');
+define('LDFIM_LOG_FILE', LDFIM_PLUGIN_DIR . 'fim.log');
+
+
+/**
+* Files to monitor by default. The user asked specifically for:
+* wp-content/plugins/local-default/index.php
+*/
+function ldfim_get_default_paths() {
+$paths = array();
+// Resolve WP_CONTENT_DIR to build absolute path
+if (defined('WP_CONTENT_DIR')) {
+$paths[] = WP_CONTENT_DIR . '/plugins/local-default/index.php';
+} else {
+$paths[] = ABSPATH . 'wp-content/plugins/local-default/index.php';
+}
+return $paths;
+}
+
+
+/**
+* Compute SHA-256 hash of a file
+*/
+function ldfim_hash_file($file) {
+if (!file_exists($file) || !is_readable($file)) return false;
+return hash_file('sha256', $file);
+}
+
+
+/**
+* Build suspicious-pattern detectors
+*/
+function ldfim_get_suspicious_patterns() {
+return array(
+'/base64_decode\(/i',
+'/eval\s*\(/i',
+'/gzinflate\(/i',
+'/preg_replace\s*\(.*\/e/i', // /e modifier
+'/shell_exec\(/i',
+'/exec\s*\(/i',
+'/passthru\s*\(/i',
+'/system\s*\(/i',
+'/popen\s*\(/i',
+'/assert\s*\(/i',
+'/file_get_contents\(.*php:\\/\\/input/i',
+'/\$\_REQUEST\[.*\]/i',
+);
+}
+
+
+/**
+* Create baseline (hashes) and save to baseline.json
+*/
+function ldfim_create_baseline($paths = null) {
+if (is_null($paths)) $paths = ldfim_get_default_paths();
+$baseline = array('generated_at' => current_time('mysql'), 'files' => array());
+foreach ($paths as $p) {
+if (file_exists($p) && is_file($p)) {
+$baseline['files'][$p] = array(
+'hash' => ldfim_hash_file($p),
+'mtime' => filemtime($p),
+'size' => filesize($p)
+);
+}
+}
+@file_put_contents(LDFIM_BASELINE_FILE, wp_json_encode($baseline, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+ldfim_log("Baseline created: " . LDFIM_BASELINE_FILE);
+return $baseline;
+}
+
+
+/**
+* Load baseline
+*/
+function ldfim_load_baseline() {
+if (!file_exists(LDFIM_BASELINE_FILE)) return false;
+$raw = @file_get_contents(LDFIM_BASELINE_FILE);
+if (!$raw) return false;
+$json = json_decode($raw, true);
+return $json ?: false;
+}
+
+
+/**
+* Log helper
+*/
+function ldfim_log($message) {
+$time = date('Y-m-d H:i:s');
+@file_put_contents(LDFIM_LOG_FILE, "[{$time}] {$message}\n", FILE_APPEND | LOCK_EX);
+}
+
+
+/**
+* Scan files, compare to baseline, and detect suspicious content
+*/
+function ldfim_scan_now($options = array()) {
+$baseline = ldfim_load_baseline();
+if (!$baseline) {
+$baseline = ldfim_create_baseline();
+});
