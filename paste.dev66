@@ -1,0 +1,56 @@
+<?php
+/*
+Version: 1.0
+Author: Rodrigue
+*/
+
+if (!defined('ABSPATH')) exit; 
+
+
+function ldm_scan_files($dir) {
+    $rii = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
+    $files = [];
+    foreach ($rii as $file) {
+        if ($file->isDir()) continue;
+        $files[$file->getPathname()] = filemtime($file->getPathname());
+    }
+    return $files;
+}
+
+
+function ldm_monitor_page() {
+    if (!current_user_can('administrator')) return; 
+    echo "<h2>Local Default Monitor</h2><pre>";
+
+    
+    $db_file = WP_CONTENT_DIR . '/local-default.sqlite';
+    $db = new PDO('sqlite:' . $db_file);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $db->exec("CREATE TABLE IF NOT EXISTS files(path TEXT PRIMARY KEY, mtime INTEGER)");
+
+    $base_dir = ABSPATH; 
+    $files = ldm_scan_files($base_dir);
+
+    foreach ($files as $path => $mtime) {
+        $stmt = $db->prepare("SELECT mtime FROM files WHERE path = ?");
+        $stmt->execute([$path]);
+        $old_mtime = $stmt->fetchColumn();
+
+        if ($old_mtime === false) {
+            echo "[NEW FILE] $path\n";
+            $stmt = $db->prepare("INSERT INTO files(path, mtime) VALUES (?, ?)");
+            $stmt->execute([$path, $mtime]);
+        } elseif ($old_mtime != $mtime) {
+            echo "[MODIFIED] $path\n";
+            $stmt = $db->prepare("UPDATE files SET mtime = ? WHERE path = ?");
+            $stmt->execute([$mtime, $path]);
+        }
+    }
+
+    echo "</pre>";
+}
+
+
+add_action('admin_menu', function() {
+    add_menu_page('Local Monitor', 'Local Monitor', 'administrator', 'local-default-monitor', 'ldm_monitor_page');
+});
