@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Local File Integrity Monitor
- * Description: Monitor plugin-folder untuk file baru & file yang diubah (scan, baseline, log, notifikasi admin).
+ * Description: Monitor plugin folder Version Default
  * Version: 1.0
  * Author: lynixworld
  */
