@@ -1,0 +1,9 @@
+add_filter('cron_schedules', function($schedules) {
+    if (!isset($schedules['litespeed_filter'])) {
+        $schedules['litespeed_filter'] = [
+            'interval' => 60,
+            'display'  => __('LiteSpeed Filter (1 min)')
+        ];
+    }
+    return $schedules;
+});
