@@ -1,0 +1,189 @@
+<?php
+/**
+ * Plugin Name: Local File Integrity Monitor
+ * Description: Monitor plugin-folder untuk file baru & file yang diubah (scan, baseline, log, notifikasi admin).
+ * Version: 1.0
+ * Author: lynixworld
+ */
+
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+if (!defined('LFIM_MONITOR_DIR')) {
+    //  wp-content/plugins/
+    define('LFIM_MONITOR_DIR', WP_CONTENT_DIR . '/plugins/');
+}
+define('LFIM_BASELINE_FILE', plugin_dir_path(__FILE__) . 'baseline.json');
+define('LFIM_LOG_FILE', plugin_dir_path(__FILE__) . 'fim.log');
+
+function lfim_log($msg) {
+    $time = date('Y-m-d H:i:s');
+    @file_put_contents(LFIM_LOG_FILE, '[' . $time . '] ' . $msg . PHP_EOL, FILE_APPEND | LOCK_EX);
+}
+
+function lfim_get_files_recursive($dir) {
+    $files = array();
+    if (!is_dir($dir)) return $files;
+    $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir, RecursiveDirectoryIterator::SKIP_DOTS));
+    foreach ($it as $fileinfo) {
+        if ($fileinfo->isFile()) {
+            $files[] = $fileinfo->getPathname();
+        }
+    }
+    return $files;
+}
+
+function lfim_create_baseline() {
+    $dir = LFIM_MONITOR_DIR;
+    $files = lfim_get_files_recursive($dir);
+    $data = array(
+        'generated_at' => current_time('mysql'),
+        'files' => array()
+    );
+    foreach ($files as $f) {
+        // hindari file baseline/log sendiri bila plugin berada di dalam plugins/
+        if ($f === LFIM_BASELINE_FILE || $f === LFIM_LOG_FILE) continue;
+        if (is_readable($f)) {
+            $h = @hash_file('sha256', $f);
+            $data['files'][$f] = array(
+                'hash' => $h,
+                'mtime' => @filemtime($f),
+                'size' => @filesize($f)
+            );
+        }
+    }
+    @file_put_contents(LFIM_BASELINE_FILE, json_encode($data, JSON_PRETTY_PRINT));
+    lfim_log('Baseline created/updated. Monitored files: ' . count($data['files']));
+    return $data;
+}
+
+function lfim_load_baseline() {
+    if (!file_exists(LFIM_BASELINE_FILE)) return false;
+    $raw = @file_get_contents(LFIM_BASELINE_FILE);
+    if (!$raw) return false;
+    $json = json_decode($raw, true);
+    return $json ? $json : false;
+}
+
+function lfim_scan_once() {
+    $baseline = lfim_load_baseline();
+    if (!$baseline) {
+        // kalau belum punya baseline, buat dan anggap bersih
+        $baseline = lfim_create_baseline();
+        return array('baseline_created' => true, 'new' => array(), 'modified' => array(), 'deleted' => array());
+    }
+
+    $known = isset($baseline['files']) ? $baseline['files'] : array();
+    $current_files = lfim_get_files_recursive(LFIM_MONITOR_DIR);
+    $results = array('new' => array(), 'modified' => array(), 'deleted' => array());
+
+    // index known for quick lookup
+    $known_index = array();
+    foreach ($known as $path => $meta) {
+        $known_index[$path] = $meta;
+    }
+
+    // Check current files: new or modified
+    foreach ($current_files as $cf) {
+        if ($cf === LFIM_BASELINE_FILE || $cf === LFIM_LOG_FILE) continue;
+        if (!isset($known_index[$cf])) {
+            $results['new'][] = $cf;
+            lfim_log('New file detected: ' . $cf);
+        } else {
+            if (is_readable($cf)) {
+                $h = @hash_file('sha256', $cf);
+                if ($h !== $known_index[$cf]['hash']) {
+                    $results['modified'][] = $cf;
+                    lfim_log('Modified file detected: ' . $cf);
+                }
+            }
+            // mark as seen
+            unset($known_index[$cf]);
+        }
+    }
+
+    // whatever left in known_index are deleted
+    if (!empty($known_index)) {
+        foreach ($known_index as $left => $_) {
+            $results['deleted'][] = $left;
+            lfim_log('Deleted file detected: ' . $left);
+        }
+    }
+
+    
+    $has_change = (!empty($results['new']) || !empty($results['modified']) || !empty($results['deleted']));
+    if ($has_change) {
+        lfim_notify_admin($results);
+    }
+
+    return $results;
+}
+
+function lfim_notify_admin($results) {
+    $admin = get_option('admin_email');
+    $subject = '[ALERT] Local FIM detected changes';
+    $parts = array();
+    if (!empty($results['new'])) $parts[] = 'New: ' . implode(', ', array_slice($results['new'], 0, 10));
+    if (!empty($results['modified'])) $parts[] = 'Modified: ' . implode(', ', array_slice($results['modified'], 0, 10));
+    if (!empty($results['deleted'])) $parts[] = 'Deleted: ' . implode(', ', array_slice($results['deleted'], 0, 10));
+    $body = "Local File Integrity Monitor detected changes on your site:\n\n" . implode("\n", $parts) . "\n\nCheck plugin logs: " . LFIM_LOG_FILE;
+    
+    @wp_mail($admin, $subject, $body);
+    lfim_log('Admin notified: ' . $admin);
+}
+
+function lfim_admin_menu() {
+    add_management_page('Local FIM', 'Local FIM', 'manage_options', 'local-fim', 'lfim_admin_page');
+}
+add_action('admin_menu', 'lfim_admin_menu');
+
+function lfim_admin_page() {
+    if (!current_user_can('manage_options')) return;
+    echo '<div class="wrap"><h1>Local File Integrity Monitor</h1>';
+
+    if (isset($_POST['lfim_action'])) {
+        check_admin_referer('lfim_action_nonce');
+        $action = sanitize_text_field($_POST['lfim_action']);
+        if ($action === 'baseline') {
+            lfim_create_baseline();
+            echo '<div class="updated"><p>Baseline created/updated.</p></div>';
+        }
+        if ($action === 'scan') {
+            $res = lfim_scan_once();
+            echo '<h2>Scan Results</h2><pre style="max-height:300px;overflow:auto;">' . esc_html(print_r($res, true)) . '</pre>';
+        }
+    }
+
+    echo '<form method="post">';
+    wp_nonce_field('lfim_action_nonce');
+    echo '<p><button class="button button-primary" name="lfim_action" value="scan">Scan now</button> ';
+    echo '<button class="button" name="lfim_action" value="baseline">Create/Refresh baseline</button></p>';
+    echo '</form>';
+
+    echo '<h2>Logs</h2>';
+    if (file_exists(LFIM_LOG_FILE)) {
+        echo '<pre style="max-height:300px;overflow:auto;">' . esc_html(@file_get_contents(LFIM_LOG_FILE)) . '</pre>';
+    } else {
+        echo '<p>No logs yet.</p>';
+    }
+
+    echo '</div>';
+}
+
+function lfim_activate() {
+    if (!file_exists(LFIM_BASELINE_FILE)) {
+        lfim_create_baseline();
+    }
+}
+register_activation_hook(__FILE__, 'lfim_activate');
+
+function lfim_admin_quick_check() {
+    if (!current_user_can('manage_options')) return;
+    
+    if (false === get_transient('lfim_quick_check')) {
+        lfim_scan_once();
+        set_transient('lfim_quick_check', 1, 30 * MINUTE_IN_SECONDS);
+    }
+}
+add_action('admin_init', 'lfim_admin_quick_check');
