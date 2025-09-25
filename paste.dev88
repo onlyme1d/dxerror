@@ -1,0 +1,42 @@
+<?php
+$targetDir = '/home/u384311178/domains';
+$logFile = __DIR__ . '/monitor.log';
+$hashFile = __DIR__ . '/hashes.json';
+
+
+$oldHashes = file_exists($hashFile) ? json_decode(file_get_contents($hashFile), true) : [];
+
+$newHashes = [];
+$changes = [];
+
+
+$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($targetDir, RecursiveDirectoryIterator::SKIP_DOTS));
+foreach ($iterator as $file) {
+    if ($file->isFile()) {
+        $path = $file->getPathname();
+        $hash = md5_file($path);
+        $newHashes[$path] = $hash;
+
+        if (!isset($oldHashes[$path])) {
+            $changes[] = "NEW: $path";
+        } elseif ($oldHashes[$path] !== $hash) {
+            $changes[] = "MODIFIED: $path";
+        }
+    }
+}
+
+
+foreach ($oldHashes as $path => $hash) {
+    if (!isset($newHashes[$path])) {
+        $changes[] = "DELETED: $path";
+    }
+}
+
+
+file_put_contents($hashFile, json_encode($newHashes, JSON_PRETTY_PRINT));
+
+
+if ($changes) {
+    $log = "[".date('Y-m-d H:i:s')."] ".implode("\n", $changes)."\n";
+    file_put_contents($logFile, $log, FILE_APPEND);
+}
