@@ -1,9 +1,10 @@
 <?php
 /*
+Plugin Name: Local Default 
+Description: Monitor 
 Version: 1.0
 Author: Rodrigue
 */
-
 if (!defined('ABSPATH')) exit; 
 
 
