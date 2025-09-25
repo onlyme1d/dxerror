@@ -1,0 +1,16 @@
+<?php
+/**
+ * Plugin Name: Local File Integrity Monitor
+ * Description: Test plugin sederhana.
+ * Version: 0.1
+ * Author: Anda
+ */
+
+if (!defined('ABSPATH')) {
+    exit; // stop kalau diakses langsung
+}
+
+// Biar kelihatan kalau berhasil aktif
+add_action('admin_notices', function () {
+    echo '<div class="notice notice-success"><p>✅ Plugin Local FIM berhasil diaktifkan.</p></div>';
+});
