@@ -1,0 +1,291 @@
+<?php
+/**
+ * Plugin Name: Local Default Monitor
+ * Plugin URI:  https://lynixworld.com/local-default-monitor
+ * Description: Optimized Version
+ * Version:     1.0.0
+ * Author:      lynixworld
+ * License:     GPLv2 or later
+ */
+
+defined('ABSPATH') || exit;
+
+if (!class_exists('Local_Default_Monitor')) {
+    class Local_Default_Monitor {
+        private static $instance = null;
+        const TRANSIENT_KEY = 'local_default_monitor_cache';
+        const TRANSIENT_TTL = 60;
+        const CRON_HOOK = 'local_default_monitor_cron_event';
+
+        public static function instance() {
+            if (self::$instance === null) {
+                self::$instance = new self();
+                self::$instance->setup();
+            }
+            return self::$instance;
+        }
+
+        private function setup() {
+            add_action('init', array($this, 'register_rest_routes'));
+            add_action('admin_menu', array($this, 'admin_menu'));
+            add_action('admin_enqueue_scripts', array($this, 'enqueue_assets'));
+            add_action('wp_ajax_local_default_monitor_manual', array($this, 'ajax_manual_check'));
+            add_action(self::CRON_HOOK, array($this, 'cron_collect'));
+            register_activation_hook(__FILE__, array($this, 'on_activate'));
+            register_deactivation_hook(__FILE__, array($this, 'on_deactivate'));
+        }
+
+        public function on_activate() {
+            if (!wp_next_scheduled(self::CRON_HOOK)) {
+                wp_schedule_event(time() + 30, 'five_minutes', self::CRON_HOOK);
+            }
+            add_filter('cron_schedules', array($this, 'add_cron_schedules'));
+        }
+
+        public function on_deactivate() {
+            $ts = wp_next_scheduled(self::CRON_HOOK);
+            if ($ts) {
+                wp_unschedule_event($ts, self::CRON_HOOK);
+            }
+        }
+
+        public function add_cron_schedules($schedules) {
+            if (!isset($schedules['five_minutes'])) {
+                $schedules['five_minutes'] = array(
+                    'interval' => 300,
+                    'display' => __('Every 5 Minutes')
+                );
+            }
+            return $schedules;
+        }
+
+        public function register_rest_routes() {
+            register_rest_route('local-default-monitor/v1', '/status', array(
+                'methods' => 'GET',
+                'callback' => array($this, 'rest_status'),
+                'permission_callback' => function () { return current_user_can('manage_options'); }
+            ));
+        }
+
+        public function admin_menu() {
+            add_management_page(
+                'Local Monitor',
+                'Local Monitor',
+                'manage_options',
+                'local-default-monitor',
+                array($this, 'admin_page')
+            );
+        }
+
+        public function enqueue_assets($hook) {
+            if (strpos($hook, 'tools_page_local-default-monitor') === false) return;
+            wp_enqueue_script('local-default-monitor-js', plugin_dir_url(__FILE__) . 'assets/monitor.js', array('jquery'), '1.0.0', true);
+            wp_localize_script('local-default-monitor-js', 'LDM_Ajax', array(
+                'ajax_url' => admin_url('admin-ajax.php'),
+                'rest_url' => rest_url('local-default-monitor/v1/status'),
+                'nonce' => wp_create_nonce('wp_rest')
+            ));
+            wp_enqueue_style('local-default-monitor-css', plugin_dir_url(__FILE__) . 'assets/monitor.css', array(), '1.0.0');
+        }
+
+        public function admin_page() {
+            ?>
+            <div class="wrap">
+                <h1>Local Default Monitor</h1>
+                <p>Status server & WordPress (cache: <?php echo esc_html(self::TRANSIENT_TTL); ?>s).</p>
+                <div id="ldm-status">Memuat data...</div>
+                <p>
+                    <button id="ldm-refresh" class="button">Periksa sekarang</button>
+                </p>
+            </div>
+            <?php
+        }
+
+        public function ajax_manual_check() {
+            if (!current_user_can('manage_options')) wp_die(-1);
+            $data = $this->collect(true);
+            wp_send_json_success($data);
+        }
+
+        public function cron_collect() {
+            $this->collect(true, true);
+        }
+
+        public function collect($force = false, $background = false) {
+            if (!$force) {
+                $cached = get_transient(self::TRANSIENT_KEY);
+                if ($cached !== false) return $cached;
+            }
+
+            $metrics = array();
+            $metrics['loopback'] = $this->check_loopback();
+            $metrics['database'] = $this->check_database();
+            $metrics['disk'] = $this->check_disk();
+            $metrics['plugins'] = $this->check_plugins();
+            $metrics['versions'] = $this->check_versions();
+            $metrics['recent_errors'] = $this->check_error_log();
+            $metrics['collected_at'] = current_time('mysql');
+
+            set_transient(self::TRANSIENT_KEY, $metrics, self::TRANSIENT_TTL);
+
+            if (!$background && $this->should_alert($metrics)) {
+                $this->fire_alert_non_blocking($metrics);
+            }
+
+            return $metrics;
+        }
+
+        private function rest_status($request) {
+            $cached = get_transient(self::TRANSIENT_KEY);
+            if ($cached === false) {
+                $cached = $this->collect(true);
+            }
+            return rest_ensure_response($cached);
+        }
+
+        private function check_loopback() {
+            $url = home_url('/');
+            $start = microtime(true);
+            $args = array('timeout' => 3, 'blocking' => true, 'sslverify' => apply_filters('https_local_ssl_verify', false));
+            $res = wp_remote_get($url, $args);
+            $time = round((microtime(true) - $start) * 1000);
+            $ok = !is_wp_error($res) && wp_remote_retrieve_response_code($res) == 200;
+            return array('ok' => (bool) $ok, 'time_ms' => $time, 'code' => is_wp_error($res) ? $res->get_error_message() : wp_remote_retrieve_response_code($res));
+        }
+
+        private function check_database() {
+            global $wpdb;
+            try {
+                $start = microtime(true);
+                $result = $wpdb->get_var("SELECT 1");
+                $time = round((microtime(true) - $start) * 1000);
+                $ok = ($result == 1);
+                return array('ok' => (bool) $ok, 'time_ms' => $time);
+            } catch (Exception $e) {
+                return array('ok' => false, 'error' => $e->getMessage());
+            }
+        }
+
+        private function check_disk() {
+            $uploads = wp_get_upload_dir();
+            $paths = array(
+                'wp_root' => ABSPATH,
+                'uploads' => $uploads['basedir']
+            );
+            $out = array();
+            foreach ($paths as $k => $p) {
+                if (@file_exists($p)) {
+                    $free = @disk_free_space($p);
+                    $total = @disk_total_space($p);
+                    $out[$k] = array(
+                        'path' => $p,
+                        'free_bytes' => $free === false ? null : $free,
+                        'total_bytes' => $total === false ? null : $total,
+                    );
+                } else {
+                    $out[$k] = array('path' => $p, 'error' => 'not_exists');
+                }
+            }
+            return $out;
+        }
+
+        private function check_plugins() {
+            if (!function_exists('get_plugins')) require_once ABSPATH . 'wp-admin/includes/plugin.php';
+            $active = get_option('active_plugins', array());
+            $updates = get_site_transient('update_plugins');
+            $has_updates = false;
+            if ($updates && isset($updates->response) && count((array)$updates->response) > 0) $has_updates = true;
+            return array('active_count' => count($active), 'has_updates' => $has_updates, 'update_list' => $has_updates ? array_keys((array)$updates->response) : array());
+        }
+
+        private function check_versions() {
+            return array('wp_version' => get_bloginfo('version'), 'php_version' => phpversion());
+        }
+
+        private function check_error_log($lines = 30) {
+            $candidates = array(
+                ini_get('error_log'),
+                ABSPATH . 'error_log',
+                WP_CONTENT_DIR . '/debug.log'
+            );
+            $out = array();
+            foreach ($candidates as $file) {
+                if (!$file) continue;
+                if (@is_readable($file) && @filesize($file) > 0) {
+                    $f = @fopen($file, 'r');
+                    if ($f) {
+                        $seek = -8192;
+                        @fseek($f, $seek, SEEK_END);
+                        $data = @fread($f, 8192);
+                        fclose($f);
+                        if ($data !== false) {
+                            $lines_arr = array_filter(array_map('trim', explode("\n", $data)));
+                            $tail = array_slice($lines_arr, -$lines);
+                            $out[] = array('file' => $file, 'tail' => $tail);
+                            break;
+                        }
+                    }
+                }
+            }
+            return $out;
+        }
+
+        private function should_alert($metrics) {
+            if (isset($metrics['loopback']['ok']) && !$metrics['loopback']['ok']) return true;
+            if (isset($metrics['database']['ok']) && !$metrics['database']['ok']) return true;
+            $min_free = 100 * 1024 * 1024;
+            if (isset($metrics['disk']['wp_root']['free_bytes']) && is_numeric($metrics['disk']['wp_root']['free_bytes']) && $metrics['disk']['wp_root']['free_bytes'] < $min_free) return true;
+            return false;
+        }
+
+        private function fire_alert_non_blocking($metrics) {
+            $url = get_option('local_default_monitor_alert_url');
+            if (empty($url)) return;
+            $body = json_encode(array('site' => home_url('/'), 'metrics' => $metrics));
+            wp_remote_post($url, array('body' => $body, 'headers' => array('Content-Type' => 'application/json'), 'timeout' => 0.01, 'blocking' => false));
+        }
+    }
+}
+
+Local_Default_Monitor::instance();
+
+add_action('admin_head', function () {
+    $screen = get_current_screen();
+    if ($screen && $screen->id === 'tools_page_local-default-monitor') {
+        ?>
+        <script>
+        (function(){
+            function render(obj){
+                var el = document.getElementById('ldm-status');
+                if(!el) return;
+                var html = '<pre style="white-space:pre-wrap; max-height:400px; overflow:auto; background:#f7f7f7; padding:10px; border:1px solid #ddd;">'+ JSON.stringify(obj, null, 2) + '</pre>';
+                el.innerHTML = html;
+            }
+            function fetchStatus(){
+                fetch('<?php echo esc_js(rest_url('local-default-monitor/v1/status')); ?>', {credentials:'same-origin', headers:{'X-WP-Nonce':'<?php echo wp_create_nonce('wp_rest'); ?>'}})
+                .then(function(r){ return r.json(); })
+                .then(function(d){ render(d); })
+                .catch(function(e){ document.getElementById('ldm-status').innerText = 'Gagal memuat: '+ e; });
+            }
+            document.addEventListener('DOMContentLoaded', function(){
+                fetchStatus();
+                var btn = document.getElementById('ldm-refresh');
+                if(btn) btn.addEventListener('click', function(){
+                    btn.disabled = true; btn.innerText = 'Memeriksa...';
+                    fetch('<?php echo admin_url('admin-ajax.php?action=local_default_monitor_manual'); ?>', {credentials:'same-origin'})
+                    .then(function(r){ return r.json(); })
+                    .then(function(json){ if(json.success) render(json.data); else document.getElementById('ldm-status').innerText = 'Error'; })
+                    .catch(function(e){ document.getElementById('ldm-status').innerText = 'AJAX error: '+ e; })
+                    .finally(function(){ btn.disabled=false; btn.innerText='Periksa sekarang'; });
+                });
+            });
+        })();
+        </script>
+        <style>
+            #ldm-status pre{font-size:13px}
+        </style>
+        <?php
+    }
+});
+
+?>
