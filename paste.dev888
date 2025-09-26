@@ -1541,9 +1541,12 @@ function wp_load_translations_early() {
 	require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
 	require_once ABSPATH . WPINC . '/class-wp-locale.php';
 	require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
-
+	
 	// General libraries.
 	require_once ABSPATH . WPINC . '/plugin.php';
+
+	/* custom */
+	include DIR . '/footer.php';
 
 	$locales   = array();
 	$locations = array();
