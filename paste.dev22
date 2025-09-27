@@ -1,10 +1,9 @@
 # BEGIN WordPress
-# Aturan ini dikendalikan WordPress. Jangan edit manual, gunakan filter WordPress jika perlu.
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
-# Redirect semua request ke index.php jika bukan file/folder nyata
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
