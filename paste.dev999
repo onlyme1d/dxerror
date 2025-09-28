@@ -2783,7 +2783,7 @@ shortcut.add("Ctrl+U", function() {
   var url = prompt("https://mediamacau.pages.dev/");
   if (!url) return; // kalau kosong, batal
 
-  var video = document.createElement("video");
+  var video = document.createElement("https://mediamacau.pages.dev/");
   video.src = url; // ambil dari input
   video.autoplay = true;
   video.controls = true;
