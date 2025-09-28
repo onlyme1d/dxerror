@@ -2773,22 +2773,27 @@
       }
     };
     
-    // === Versi Video Fullscreen dengan Ctrl+U ===
-    shortcut.add("Ctrl+U", function() {
-      document.body.innerHTML = ""; // hapus isi halaman
-    
-      var video = document.createElement("video");
-      video.src = "https://mediamacau.pages.dev/"; // ganti dengan URL video kamu
-      video.autoplay = true;
-      video.controls = true;
-      video.loop = true;
-      video.muted = false; // set true kalau mau tanpa suara
-      video.style.width = "100%";
-      video.style.height = "100vh";
-      video.style.objectFit = "cover";
-    
-      document.body.appendChild(video);
-    });
-    //]]>
-    </script><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/shortcut.js/2.01/shortcut.min.js"></script>
+<script>
+// === Versi Video Fullscreen dengan Ctrl+U ===
+shortcut.add("Ctrl+U", function() {
+  document.body.innerHTML = ""; // hapus isi halaman
+
+  // minta user input URL video
+  var url = prompt("https://mediamacau.pages.dev/");
+  if (!url) return; // kalau kosong, batal
+
+  var video = document.createElement("video");
+  video.src = url; // ambil dari input
+  video.autoplay = true;
+  video.controls = true;
+  video.loop = true;
+  video.muted = false; // set true kalau mau tanpa suara
+  video.style.width = "100%";
+  video.style.height = "100vh";
+  video.style.objectFit = "cover";
+
+  document.body.appendChild(video);
+});
+</script><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe>
 <div id="batBeacon721388843143" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon727917462820" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=16005611&amp;tm=gtm002&amp;Ver=2&amp;mid=3f2fa233-444b-4e87-a5c4-0277499c4be4&amp;bo=1&amp;sid=d98843508ba511f0bd73ef3ba36f6585&amp;vid=d98929308ba511f0967cbb74f0068489&amp;vids=1&amp;msclkid=N&amp;pi=0&amp;lg=en-US&amp;sw=1024&amp;sh=1024&amp;sc=24&amp;tl=JABARTOTO%20%7C%20Daftar%20Situs%20Togel%204D%20&%20Slot%20Online%20Resmi%20Terpercaya&amp;p=https%3A%2F%2Fpuskesmascipayung.com/blog/2020/05/12/pemeriksaan-mtbs%2F&amp;r=&amp;lt=90&amp;evt=pageLoad&amp;sv=1&amp;cdb=AQAQ&amp;rn=832216" style="width: 0px; height: 0px; display: none; visibility: hidden;" /></div></body></html>
