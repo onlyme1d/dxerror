@@ -616,7 +616,7 @@ function et_single_settings_meta_box( $post ) {
 
 	// Fullwidthoption available for default post types only. Not available for custom post types.
 	if ( ! et_builder_is_post_type_custom( $post->post_type ) || 'product' === $post->post_type && $is_builder_active ) {
-		$page_layouts['et_full_width_page'] = esc_html__( 'Fullwidth', 'Divi' );
+		$page_layouts['et_full_width_page'] = esc_html__( 'Fullwidth','Divi' );
 	}
 
 	if ( 'et_full_width_page' === $page_layout && ( ! isset( $page_layouts['et_full_width_page'] ) || ! $is_builder_active ) ) {
@@ -1032,7 +1032,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 		$et_domain_fonts = array(
 			'ru_RU' => 'cyrillic',
 			'uk'    => 'cyrillic',
-			'bg_BG' => 'cyrillic',
+			'bg_BG' =>'cyrillic',
 			'vi'    => 'vietnamese',
 			'el'    => 'greek',
 			'ar'    => 'arabic',
@@ -2641,7 +2641,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 				'default'           => '14',
 				'type'              => 'option',
 				'capability'        => 'edit_theme_options',
-				'transport'         => 'postMessage',
+				'transport'=> 'postMessage',
 				'sanitize_callback' => 'absint',
 			)
 		);
@@ -2956,7 +2956,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 			array(
 				'type'              => 'option',
 				'capability'        => 'edit_theme_options',
-				'transport'         => 'postMessage',
+				'transport'=> 'postMessage',
 				'sanitize_callback' => 'wp_validate_boolean',
 			)
 		);
@@ -3286,8 +3286,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 			array(
 				'default'           => 'rgba(0,0,0,0.6)',
 				'type'              => 'option',
-				'capability'        => 'edit_theme_options',
-				'transport'         => 'postMessage',
+				'capability'        => 'edit_theme_options','transport'         => 'postMessage',
 				'sanitize_callback' => 'et_sanitize_alpha_color',
 			)
 		);
@@ -3858,8 +3857,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 				'capability'        => 'edit_theme_options',
 				'transport'         => 'postMessage',
 				'sanitize_callback' => 'sanitize_email',
-			)
-		);
+			));
 
 		$wp_customize->add_control(
 			'et_divi[header_email]',
@@ -4470,8 +4468,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 
 		$wp_customize->add_control(
 			'et_divi[disable_custom_footer_credits]',
-			array(
-				'label'   => esc_html__( 'Disable Footer Credits', 'Divi' ),
+			array('label'   => esc_html__( 'Disable Footer Credits', 'Divi' ),
 				'section' => 'et_divi_bottom_bar',
 				'type'    => 'checkbox',
 			)
@@ -4782,8 +4779,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 			)
 		);
 
-		$wp_customize->add_control(
-			new ET_Divi_Customize_Color_Alpha_Control(
+		$wp_customize->add_control(new ET_Divi_Customize_Color_Alpha_Control(
 				$wp_customize,
 				'et_divi[all_buttons_icon_color]',
 				array(
@@ -5285,7 +5281,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 
 		/**
 		 * Ensure saved value to be printed in lowercase.
-		 * Mismatched case causes broken 4.7 in Customizer. Color Alpha control only saves string.
+		 * Mismatched case causes broken 4.7 in Customizer.Color Alpha control only saves string.
 		 * @param string  saved value
 		 * @return string formatted value
 		 */
@@ -5921,7 +5917,7 @@ function et_divi_add_customizer_css() {
 					'key' 		=> 'bottom_bar_font_style',
 					'type' 		=> 'font-style',
 					'default' 	=> '',
-					'selector' 	=> '#footer-info, #footer-info a'
+					'selector' 	=>'#footer-info, #footer-info a'
 				),
 				array(
 					'key' 		=> 'bottom_bar_font_size',
@@ -7200,7 +7196,7 @@ function et_divi_add_customizer_css() {
 			/* Social */
 			et_pb_print_module_styles_css( 'et_pb_social_media_follow', array(
 				array(
-					'type' 		=> 'social-icon-size',
+					'type'=> 'social-icon-size',
 					'key' 		=> 'icon_size',
 					'selector' 	=> '',
 				),
@@ -7998,9 +7994,7 @@ function et_layout_body_class( $classes ) {
 
 		if ( true === et_get_option( 'hide_fixed_logo', false ) ) {
 			$classes[] = 'et_hide_fixed_logo';
-		}
-
-		if ( true === et_get_option( 'hide_mobile_logo', false ) ) {
+		}if ( true === et_get_option( 'hide_mobile_logo', false ) ) {
 			$classes[] = 'et_hide_mobile_logo';
 		}
 
@@ -8224,7 +8218,7 @@ function et_divi_sidebar_class( $classes ) {
 	if ( class_exists( 'woocommerce' ) && ( is_woocommerce() && ( is_shop() || is_tax() || $is_product ) ) ) {
 		if ( $is_product ) {
 			$saved_page_layout = get_post_meta( $post_id, '_et_pb_page_layout', true );
-			$page_layout = ! $saved_page_layout || ( 'et_full_width_page' === $saved_page_layout && ! $is_builder_active ) ? $default_sidebar_class : $saved_page_layout;
+			$page_layout = ! $saved_page_layout || ( 'et_full_width_page'=== $saved_page_layout && ! $is_builder_active ) ? $default_sidebar_class : $saved_page_layout;
 		} else {
 			$page_layout = et_get_option( 'divi_shop_page_sidebar', $default_sidebar_class );
 		}
