@@ -539,17 +539,6 @@ function et_remove_additional_stylesheet( $stylesheet ){
 }
 add_filter( 'et_get_additional_color_scheme', 'et_remove_additional_stylesheet' );
 
-if ( ! function_exists( 'et_list_pings' ) ) :
-function et_list_pings( $comment, $args, $depth ) {
-    $GLOBALS['comment'] = $comment;
-    ?>
-    <li id="comment-<?php echo esc_attr( get_comment_ID() ); ?>">
-        <?php comment_author_link(); ?> - <?php comment_excerpt(); ?>
-    </li>
-    <?php
-}
-endif;
-
 if ( ! function_exists( 'et_get_theme_version' ) ) :
 function et_get_theme_version() {
 	$theme_info = wp_get_theme();
