@@ -543,9 +543,7 @@ if ( ! function_exists( 'et_list_pings' ) ) :
 function et_list_pings( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;?>
 	<li id="comment-<?php echo esc_attr( get_comment_ID() ); ?>">
-	    <?php comment_author_link(); ?> - <?php comment_excerpt(); ?>
-	    </li>
- <?php
+	    <?php comment_author_link(); ?> - <?php comment_excerpt(); 
  }
 endif;
 
@@ -620,8 +618,7 @@ function et_single_settings_meta_box( $post ) {
 		$page_layouts = array(
 			'et_right_sidebar'   => esc_html__( 'Right Sidebar', 'Divi' ),
 			'et_left_sidebar'    => esc_html__( 'Left Sidebar', 'Divi' ),
-			'et_no_sidebar'      => esc_html__('No Sidebar', 'Divi' ),
-		);
+			'et_no_sidebar'      => esc_html__('No Sidebar', 'Divi' ),);
 	}
 
 	// Fullwidth option available for default post types only. Not available for custom post types.
@@ -807,7 +804,7 @@ function et_divi_post_settings_save_details( $post_id, $post ) {
 	if ( isset( $_POST['et_post_bg_color'] ) )
 		update_post_meta( $post_id, '_et_post_bg_color', sanitize_text_field( $_POST['et_post_bg_color'] ) );
 	else
-		delete_post_meta( $post_id, '_et_post_bg_color' );
+		delete_post_meta( $post_id, '_et_post_bg_color');
 
 	if ( isset( $_POST['et_post_bg_layout'] ) )
 		update_post_meta( $post_id, '_et_post_bg_layout', sanitize_text_field( $_POST['et_post_bg_layout'] ) );
@@ -1356,7 +1353,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 				'default'           => '1',
 				'type'              => 'option',
 				'capability'        => 'edit_theme_options',
-				'transport'         => 'postMessage','sanitize_callback' => 'et_sanitize_float_number',
+				'transport'=> 'postMessage','sanitize_callback' => 'et_sanitize_float_number',
 			)
 		);
 
@@ -2005,9 +2002,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 				'transport'         => 'postMessage',
 				'sanitize_callback' => 'absint',
 			)
-		);
-
-		$wp_customize->add_control(
+		);$wp_customize->add_control(
 			new ET_Divi_Range_Option(
 				$wp_customize,
 				'et_divi[phone_body_font_size]',
@@ -2958,8 +2953,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 
 		$wp_customize->add_control(
 			'et_divi[nav_fullwidth]',
-			array(
-				'label'=> esc_html__( 'Make Full Width', 'Divi' ),
+			array('label'=> esc_html__( 'Make Full Width', 'Divi' ),
 				'section' => 'et_divi_header_primary',
 				'type'    => 'checkbox',
 			)
@@ -3289,7 +3283,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 				$wp_customize,
 				'et_divi[secondary_nav_font_style]',
 				array('label'=> esc_html__( 'Font Style', 'Divi' ),
-					'section' => 'et_divi_header_secondary','type'    => 'font_style',
+					'section' =>'et_divi_header_secondary','type'    => 'font_style',
 					'choices' => et_divi_font_style_choices(),
 				)
 			)
@@ -6703,7 +6697,7 @@ function et_divi_add_customizer_css() {
 				<?php if ( et_is_woocommerce_plugin_active() ) { ?>
 					<?php echo $css( '.woocommerce', 'ul.products li.product h3' ); ?>,<?php echo $css( '.woocommerce-page', 'ul.products li.product h3' ); ?>,
 				<?php } ?>
-				<?php echo $css( '.et_pb_gallery_grid .et_pb_gallery_item h3', false ); ?>,
+				<?php echo $css( '.et_pb_gallery_grid.et_pb_gallery_item h3', false ); ?>,
 				<?php echo $css( '.et_pb_portfolio_grid .et_pb_portfolio_item h2', false ); ?>,
 				<?php echo $css( '.et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2', false ); ?>,
 				<?php echo $css( '.et_pb_column_1_4 .et_pb_audio_module_content h2', false ); ?> {
@@ -7764,9 +7758,7 @@ function et_customizer_button_class( $body_class ) {
 
 	if ( 'left' === $button_icon_placement ) {
 		$body_class[] = 'et_button_left';
-	}
-
-	if ( 'no' === $button_icon_on_hover ) {
+	}if ( 'no' === $button_icon_on_hover ) {
 		$body_class[] = 'et_button_icon_visible';
 	}
 
