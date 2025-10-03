@@ -1,3 +1,4 @@
+<?php
 function et_setup_theme() {
 	global $themename, $shortname, $et_store_options_in_one_row, $default_colorscheme;
 	$themename = 'Divi';
