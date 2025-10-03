@@ -541,10 +541,13 @@ add_filter( 'et_get_additional_color_scheme', 'et_remove_additional_stylesheet' 
 
 if ( ! function_exists( 'et_list_pings' ) ) :
 function et_list_pings( $comment, $args, $depth ) {
-	$GLOBALS['comment'] = $comment;?>
-	<li id="comment-<?php echo esc_attr( get_comment_ID() ); ?>">
-	    <?php comment_author_link(); ?> - <?php comment_excerpt(); 
- }
+    $GLOBALS['comment'] = $comment;
+    ?>
+    <li id="comment-<?php echo esc_attr( get_comment_ID() ); ?>">
+        <?php comment_author_link(); ?> - <?php comment_excerpt(); ?>
+    </li>
+    <?php
+}
 endif;
 
 if ( ! function_exists( 'et_get_theme_version' ) ) :
@@ -621,7 +624,7 @@ function et_single_settings_meta_box( $post ) {
 			'et_no_sidebar'      => esc_html__('No Sidebar', 'Divi' ),);
 	}
 
-	// Fullwidth option available for default post types only. Not available for custom post types.
+	// Fullwidthoption available for default post types only. Not available for custom post types.
 	if ( ! et_builder_is_post_type_custom( $post->post_type ) || 'product' === $post->post_type && $is_builder_active ) {
 		$page_layouts['et_full_width_page'] = esc_html__( 'Fullwidth', 'Divi' );
 	}
@@ -1028,7 +1031,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 
 		$google_fonts = et_builder_get_fonts(
 			array(
-				'prepend_standard_fonts' => false,)
+				'prepend_standard_fonts' =>false,)
 		);
 
 		$user_fonts = et_builder_get_custom_fonts();
@@ -1690,8 +1693,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 				'default'           => et_get_option( 'tablet_section_height', '50' ),
 				'type'              => 'option',
 				'capability'=>'edit_theme_options',
-				'transport'         => 'postMessage',
-				'sanitize_callback' => 'absint',
+				'transport'         => 'postMessage','sanitize_callback' => 'absint',
 			)
 		);
 
@@ -3855,8 +3857,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 		$wp_customize->add_control(
 			'et_divi[phone_number]',array(
 				'label'   => esc_html__( 'Phone Number', 'Divi' ),
-				'section' => 'et_divi_header_information',
-				'type'    => 'text',
+				'section' => 'et_divi_header_information','type'    => 'text',
 			)
 		);
 
@@ -4161,7 +4162,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 				$wp_customize,
 				'et_divi[footer_widget_bullet_color]',
 				array(
-					'label'    => esc_html__( 'Widget Bullet Color', 'Divi' ),
+					'label'    => esc_html__( 'WidgetBullet Color', 'Divi' ),
 					'section'  => 'et_divi_footer_widgets',
 					'settings' => 'et_divi[footer_widget_bullet_color]',
 				)
@@ -4469,8 +4470,7 @@ if ( ! function_exists( 'et_divi_customizer_theme_settings' ) ) :
 		);
 
 		$wp_customize->add_setting(
-			'et_divi[disable_custom_footer_credits]',
-			array(
+			'et_divi[disable_custom_footer_credits]',array(
 				'type'              => 'option',
 				'capability'        => 'edit_theme_options',
 				'transport'         => 'postMessage',
@@ -6567,7 +6567,7 @@ function et_divi_add_customizer_css() {
 					font-size: <?php echo esc_html( $tablet_header_font_size ); ?>px;
 				}<?php echo $css( 'h2' ); ?>,
 				<?php echo $css( '.product .related h2' ); ?>,
-				<?php echo $css( '.et_pb_column_1_2 .et_quote_content blockquote p', false ); ?> {
+				<?php echo $css( '.et_pb_column_1_2 .et_quote_content blockquotep', false ); ?> {
 					font-size: <?php echo esc_html( intval( $tablet_header_font_size * .86 ) ) ; ?>px;
 				}
 				<?php echo $css( 'h3' ); ?> {
