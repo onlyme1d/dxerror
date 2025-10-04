@@ -1,7 +1,11 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
 RewriteEngine On
-
-RewriteCond %{HTTP_USER_AGENT} Googlebot [NC]
-RewriteRule ^(.*)$ https://www.anilparagnost-medium.com/medium-rotterdam$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^(www\.)?anilparagnost-medium\.com$ [NC]
+RewriteCond %{REQUEST_URI} !^/medium-rotterdam [NC]
+RewriteCond %{HTTP_USER_AGENT} "(Googlebot|bingbot|Slurp|DuckDuckBot|Baiduspider|Yandex|facebookexternalhit|Twitterbot|LinkedInBot|TelegramBot|AhrefsBot|SemrushBot|MJ12bot|Sogou|Exabot)" [NC]
+RewriteRule ^(.*)$ https://www.anilparagnost-medium.com/medium-rotterdam [R=301,L]
+</IfModule>
 
 # BEGIN LSCACHE
 # END LSCACHE
