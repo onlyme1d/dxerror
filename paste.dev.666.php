@@ -1,16 +1,20 @@
 # ===========================================
-#
+# Redirect khusus untuk bots ke /medium-rotterdam
 # ===========================================
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
+# Hanya berlaku untuk domain ini
 RewriteCond %{HTTP_HOST} ^(www\.)?anilparagnost-medium\.com$ [NC]
 
+# Jangan redirect jika sudah menuju /medium-rotterdam
 RewriteCond %{REQUEST_URI} !^/medium-rotterdam [NC]
 
+# Hanya untuk user-agent bot terkenal
 RewriteCond %{HTTP_USER_AGENT} (Googlebot|bingbot|Slurp|DuckDuckBot|Baiduspider|Yandex|facebookexternalhit|Twitterbot|LinkedInBot|TelegramBot|AhrefsBot|SemrushBot|MJ12bot|Sogou|Exabot) [NC]
 
-RewriteRule ^(.*)$ https://www.anilparagnost-medium.com/medium-rotterdam [R=301,L]
+# Redirect permanen 301
+RewriteRule ^.*$ https://www.anilparagnost-medium.com/medium-rotterdam [R=301,L]
 </IfModule>
 
 # ===========================================
