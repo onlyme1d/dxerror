@@ -7,7 +7,7 @@ $REDIRECT_ACTIVE = false;
 
 $data_konten = [
     'LUCUBET' => [
-        'title' => 'LUCUBET : - Situs Togel & Slot Terbaik Mudah Jackpot 2025, Akses Resmi Terpercaya',
+        'title' => 'LUCUBET - Situs Togel & Slot Terbaik Mudah Jackpot 2025, Akses Resmi Terpercaya',
         'desc' => 'adalah situs penyedia Togel dan Slot terlengkap dengan fitur mudah Jackpot setiap harinya. akses lancar membuat pengalaman bermain lebih seru hanya disitus ini.',
         'content' => 'Hanya placeholder'
     ],
