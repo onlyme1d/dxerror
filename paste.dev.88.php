@@ -1,13 +1,12 @@
 <?php
 
 // ----------------------------------------------------
-// A. DEFINISI DATA KONTEN
-//    Ini adalah database sederhana Anda.
+// A. DEFINISI DATA KONTEN (TIDAK BERUBAH)
 // ----------------------------------------------------
 
 $data_konten = [
     // Tambahkan keyword Anda di sini. Keyword harus dalam HURUF KAPITAL.
-    // Contoh penggunaan: https://backlinkhut.com/?news_COM=BAIM4D
+    // Contoh penggunaan: https://backlinkhut.com/seo-company-in-ludhiana/?news_COM=BAIM4D
     'BAIM4D' => [
         'title' => 'BAIM4D - Ulasan Resmi dan Panduan Lengkap (AMP)',
         'desc' => 'Dapatkan ulasan terkini mengenai platform BAIM4D dalam format yang cepat dan ringan.',
@@ -33,13 +32,15 @@ $data_konten = [
 // Domain utama Anda
 $domain_cuan = "https://backlinkhut.com";
 
-// 1. Ganti parameter yang diambil dari 'id' menjadi 'news_COM'
+// Tentukan Path Folder Anda
+$folder_path = "/seo-company-in-ludhiana"; // <-- VARIABEL BARU INI PENTING!
+
+// 1. Ambil nilai dari parameter URL 'news_COM'
 $keyword_url = isset($_GET['news_COM']) ? $_GET['news_COM'] : null;
 
 // Tentukan keyword yang akan diproses
 $keyword_bersih = '';
 if ($keyword_url) {
-    // Bersihkan dan ubah ke huruf kapital untuk mencocokkan array
     $keyword_bersih = strtoupper(filter_var($keyword_url, FILTER_SANITIZE_STRING));
 }
 
@@ -52,12 +53,17 @@ $judul_halaman = $konten_spesifik['title'];
 $meta_deskripsi = $konten_spesifik['desc'];
 $isi_utama_html = $konten_spesifik['content'];
 
-// URL Canonical: Jika HOME, hanya https://backlinkhut.com/. Jika ada ID, tambahkan ?news_COM=KEYWORD
-$canonical_suffix = ($target_key !== 'HOME' && !empty($target_key)) ? "/?news_COM=" . $target_key : '/';
+// URL Canonical: HARUS MENAMBAHKAN FOLDER PATH
+// Jika HOME: /seo-company-in-ludhiana/
+// Jika ada ID: /seo-company-in-ludhiana/?news_COM=KEYWORD
+$canonical_suffix = $folder_path . '/';
+if ($target_key !== 'HOME' && !empty($target_key)) {
+    $canonical_suffix .= '?news_COM=' . $target_key;
+}
 $current_canonical_url = $domain_cuan . $canonical_suffix;
 
 
-// 4. Penanganan 404
+// 4. Penanganan 404 (TIDAK BERUBAH)
 if ($target_key === 'HOME' && $keyword_url && !isset($data_konten[$keyword_bersih])) {
     header("HTTP/1.0 404 Not Found");
     $judul_halaman = "404 - Konten Tidak Ditemukan";
@@ -106,8 +112,8 @@ header("Content-Type: text/html; charset=utf-8");
         <header>
             <nav>
                 <a href="<?php echo $domain_cuan; ?>">Home</a>
-                <a href="?news_COM=BAIM4D">BAIM4D (AMP)</a>
-                <a href="?news_COM=YOWESTOGEL">YOWESTOGEL (AMP)</a>
+                <a href="<?php echo $folder_path; ?>/?news_COM=BAIM4D">BAIM4D (AMP)</a>
+                <a href="<?php echo $folder_path; ?>/?news_COM=YOWESTOGEL">YOWESTOGEL (AMP)</a>
             </nav>
         </header>
 
