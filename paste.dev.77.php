@@ -38,7 +38,7 @@ if (in_array($brand_name, $target_keywords)) {
 
     </head>
 <body>
-    <h1><?php echo $brand_name; ?> Backlink Hut For Slot Gacor Masa Kini</h1>
+    <h1>Backlink Hut For Slot Gacor Masa Kini<?php echo $brand_name; ?></h1>
     <p>Claim 40 High-quality backlinks today. Get started with easy and effective SEO of your website. Book us now</p>
 </body>
 </html>
