@@ -11,7 +11,6 @@ var rollbarEnvironment="production"
 var codeVersion="f7d8b3d494288b34cb00105ee5d230d68b0ccca7"
 //]]></script>
     <meta content="origin-when-cross-origin" name="referrer">
-	<meta name="google-site-verification" content="iCKOAlvXJoxv46uQJTtTsUNQfH7rhq5nybcBsImByOE" />
     <link rel="dns-prefetch" href="//s3.envato.com">
     <link rel="preload" href="https://market-resized.envatousercontent.com/themeforest.net/files/344043819/MARKETICA_PREVIEW/00-marketica-preview-sale37.__large_preview.jpg?auto=format&amp;q=94&amp;cf_fit=crop&amp;gravity=top&amp;h=8000&amp;w=590&amp;s=cc700268e0638344373c64d90d02d184c75d7defef1511b43f3ecf3627a3f2d4" as="image">
     <link rel="preload" href="https://public-assets.envato-static.com/assets/generated_sprites/logos-20f56d7ae7a08da2c6698db678490c591ce302aedb1fcd05d3ad1e1484d3caf9.png" as="image">
