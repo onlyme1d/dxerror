@@ -8,6 +8,9 @@
  * - Mem-ping ke Google setelah selesai.
  */
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 $site_url = "https://doanhnhantrieuson.com";
 $sitemap_file = __DIR__ . "/sitemap.xml";
 
