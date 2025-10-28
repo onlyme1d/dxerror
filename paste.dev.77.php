@@ -1,2 +1,2 @@
 BOT_TOKEN=8464383202:AAEpr9txGllvfqPE-tMiJf3zIoW0RS_Y7ls
-CHAT_ID=taalum_monitor_bot
+CHAT_ID=8371653487
