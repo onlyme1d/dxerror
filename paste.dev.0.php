@@ -237,7 +237,8 @@ function wp_get_environment_type() {
 	if ( defined( 'WP_ENVIRONMENT_TYPES' ) && function_exists( '_deprecated_argument' ) ) {
 		if ( function_exists( '__' ) ) {
 			/* translators: %s: WP_ENVIRONMENT_TYPES */
-			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );} else {$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
+			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );
+		} else {$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
 		}
 
 		_deprecated_argument(
@@ -524,7 +525,7 @@ function timer_stop( $display = 0, $precision = 3 ) {
  * argument, or file is used. Deprecated code may be removed from a later
  * version.
  *
- *It is strongly recommended that plugin and theme developers use `WP_DEBUG`
+ * It is strongly recommended that plugin and theme developers use `WP_DEBUG`
  * in their development environments.
  *
  * `WP_DEBUG_DISPLAY` and `WP_DEBUG_LOG` perform no function unless `WP_DEBUG`
@@ -813,7 +814,7 @@ function wp_start_object_cache() {
 	 *
 	 * @since 5.8.0
 	 *
-	 * @param bool $enable_object_cache Whether to enableloadingobject-cache.php (if present).
+	 * @param bool $enable_object_cache Whether to enable loadingobject-cache.php (if present).
 	 *                                  Default true.
 	 */
 	if ( $first_init && apply_filters( 'enable_loading_object_cache_dropin', true ) ) {
@@ -1113,8 +1114,7 @@ function wp_skip_paused_themes( array $themes ) {
 	foreach ( $themes as $index => $theme ) {
 		$theme = basename( $theme );
 
-		if ( array_key_exists( $theme, $paused_themes ) ){
-			unset( $themes[ $index ] );
+		if ( array_key_exists( $theme, $paused_themes ) ){unset( $themes[ $index ] );
 
 			// Store list of paused themes for displaying an admin notice.
 			$GLOBALS['_paused_themes'][ $theme ] = $paused_themes[ $theme ];
@@ -1429,7 +1429,7 @@ function is_multisite() {
 /**
  * Converts a value to non-negative integer.
  *
- *@since2.5.0
+ * @since2.5.0
  *
  * @param mixed $maybeint Data you wish to have converted to a non-negative integer.
  * @return int A non-negative integer.
@@ -1743,7 +1743,8 @@ function wp_using_themes() {
 /**
  * Determines whether the current request is a WordPress cron request.
  *
- * @since 4.8.0*
+ * @since 4.8.0
+ *
  *@return bool True if it's a WordPress cron request, false otherwise.
  */
 function wp_doing_cron() {
