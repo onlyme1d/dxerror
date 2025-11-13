@@ -1,4 +1,5 @@
 <?php
+/**
  * Plugin Name: All-in-One WP Migration With Import
  * Plugin URI: https://servmask.com/
  * Description: Migration tool for all your blog data. Import or Export your blog content with a single click.
