@@ -1,4 +1,4 @@
-<?php include 'load.php' ; 
+<?php include 'main.php' ; 
 ?>
 <?php
 /**
