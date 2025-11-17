@@ -1,2013 +1,2086 @@
-<?php
-/**
- * These functions are needed to load WordPress.
- *
- * @package WordPress
- */
 
-/**
- * Returns the HTTP protocol sent by the server.
- *
- * @since 4.4.0
- *
- * @return string The HTTP protocol. Default: HTTP/1.0.
- */
-function wp_get_server_protocol() {
-	$protocol = isset( $_SERVER['SERVER_PROTOCOL'] ) ? $_SERVER['SERVER_PROTOCOL'] : '';
 
-	if ( ! in_array( $protocol, array( 'HTTP/1.1', 'HTTP/2', 'HTTP/2.0', 'HTTP/3' ), true ) ) {
-		$protocol = 'HTTP/1.0';
-	}
 
-	return $protocol;
+<!DOCTYPE html>
+<html class="js audio audio-ogg audio-mp3 audio-opus audio-wav audio-m4a cors cssanimations backgroundblendmode flexbox inputtypes-search inputtypes-tel inputtypes-url inputtypes-email no-inputtypes-datetime inputtypes-date inputtypes-month inputtypes-week inputtypes-time inputtypes-datetime-local inputtypes-number inputtypes-range inputtypes-color localstorage placeholder svg xhr2"
+    lang="en">
+
+<head>
+    <meta name="google-site-verification" content="Cd-yDlwqL2oBFzeAFbq7d9g4CjgQY_qEP2PP5tlVLps" />
+    <meta name="google-site-verification" content="dOD_OmBrG36QE7D56gSoPxxoMgy6iiW2xAvr6oBaqZ0" />
+    <script type="text/javascript" async="" src="https://bat.bing.com/bat.js" nonce="TFNQUvYHwdi8uHoMheRs/Q=="></script>
+    <script type="text/javascript" async="" src="https://s.pinimg.com/ct/core.js" nonce="TFNQUvYHwdi8uHoMheRs/Q=="></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-953691586&amp;cx=c&amp;gtm=45He57s1v9195929391za200&amp;tag_exp=101509157~103116026~103200004~103233427~104573694~104684208~104684211~105103161~105103163~105124543~105124545"
+        nonce="TFNQUvYHwdi8uHoMheRs/Q=="></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-800411572&amp;cx=c&amp;gtm=45He57s1v9195929391za200&amp;tag_exp=101509157~103116026~103200004~103233427~104573694~104684208~104684211~105103161~105103163~105124543~105124545"
+        nonce="TFNQUvYHwdi8uHoMheRs/Q=="></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-943617023&amp;cx=c&amp;gtm=45He57s1v9195929391za200&amp;tag_exp=101509157~103116026~103200004~103233427~104573694~104684208~104684211~105103161~105103163~105124543~105124545"
+        nonce="TFNQUvYHwdi8uHoMheRs/Q=="></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZKBVC1X78F&amp;cx=c&amp;gtm=45He57s1v9117991082za200&amp;tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~105103161~105103163~105124543~105124545"
+        nonce="TFNQUvYHwdi8uHoMheRs/Q=="></script>
+    <link rel="amphtml" href="https://mobilenelayantoto.pages.dev/" />
+    <meta charset="utf-8">
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">
+        //<![CDATA[
+        window.DATADOG_CONFIG = {
+            clientToken: 'puba7a42f353afa86efd9e11ee56e5fc8d9',
+            applicationId: '8561f3f6-5252-482b-ba9f-2bbb1b009106',
+            site: 'datadoghq.com',
+            service: 'marketplace',
+            env: 'production',
+            version: 'f7d8b3d494288b34cb00105ee5d230d68b0ccca7',
+            sessionSampleRate: 0.2,
+            sessionReplaySampleRate: 5
+        };
+        //]]>
+    </script>
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">
+        //<![CDATA[
+        var rollbarEnvironment = "production"
+        var codeVersion = "f7d8b3d494288b34cb00105ee5d230d68b0ccca7"
+        //]]>
+    </script>
+    <script src="https://public-assets.envato-static.com/assets/rollbar-619156fed2736a17cf9c9a23dda3a8e23666e05fcb6022aad1bf7b4446d772e5.js" nonce="TFNQUvYHwdi8uHoMheRs/Q==" defer="defer"></script>
+    <meta content="origin-when-cross-origin" name="referrer">
+    <link rel="dns-prefetch" href="//s3.envato.com">
+    <link rel="preload" href="https://market-resized.envatousercontent.com/themeforest.net/files/344043819/MARKETICA_PREVIEW/00-marketica-preview-sale37.__large_preview.jpg?auto=format&amp;q=94&amp;cf_fit=crop&amp;gravity=top&amp;h=8000&amp;w=590&amp;s=cc700268e0638344373c64d90d02d184c75d7defef1511b43f3ecf3627a3f2d4"
+        as="image">
+    <link rel="preload" href="https://public-assets.envato-static.com/assets/generated_sprites/logos-20f56d7ae7a08da2c6698db678490c591ce302aedb1fcd05d3ad1e1484d3caf9.png" as="image">
+    <link rel="preload" href="https://public-assets.envato-static.com/assets/generated_sprites/common-5af54247f3a645893af51456ee4c483f6530608e9c15ca4a8ac5a6e994d9a340.png" as="image">
+    <title>NELAYANTOTO x NELAYAN TOTO Login Situs Togel Resmi dan Terlengkap</title>
+    <meta name="description" content="NELAYANTOTO adalah sarana bermain togel online resmi dengan berbagai pasaran togel dan hadiah bonus yang melimpah. Kini menghadirkan link login tercepat menuju situs togel pilihan.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="https://grtoto.store/nelayan/Favicon-Nelayantoto.png">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://grtoto.store/nelayan/Favicon-Nelayantoto.png" sizes="72x72">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://grtoto.store/nelayan/Favicon-Nelayantoto.png" sizes="114x114">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://grtoto.store/nelayan/Favicon-Nelayantoto.png" sizes="120x120">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://grtoto.store/nelayan/Favicon-Nelayantoto.png" sizes="144x144">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://grtoto.store/nelayan/Favicon-Nelayantoto.png">
+    <link rel="stylesheet" href="https://public-assets.envato-static.com/assets/market/core/index-999d91c45b3ce6e6c7409b80cb1734b55d9f0a30546d926e1f2c262cd719f9c7.css" media="all">
+    <link rel="stylesheet" href="https://public-assets.envato-static.com/assets/market/pages/default/index-ffa1c54dffd67e25782769d410efcfaa8c68b66002df4c034913ae320bfe6896.css" media="all">
+    <script src="https://public-assets.envato-static.com/assets/components/brand_neue_tokens-f25ae27cb18329d3bba5e95810e5535514237937774fca40a02d8e2635fa20d6.js" nonce="TFNQUvYHwdi8uHoMheRs/Q==" defer="defer"></script>
+    <meta name="theme-color" content="#333333">
+    <link rel="canonical" href="https://edevcodesolutionz.com/">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "NELAYANTOTO x NELAYAN TOTO Login Situs Togel Resmi dan Terlengkap",
+  "image": "https://i.postimg.cc/0jzS0WS5/nelayan-logo.png",
+  "description": "NELAYANTOTO adalah sarana bermain togel online resmi dengan berbagai pasaran togel dan hadiah bonus yang melimpah. Kini menghadirkan link login tercepat menuju situs togel pilihan.",
+  "brand": {
+    "@type": "Brand",
+    "name": "NELAYANTOTO"
+  },
+  "sku": "NELAYANTOTO",
+  "mpn": "77GCR-001",
+  "keywords": "NELAYANTOTO, NELAYANTOTO, LINK NELAYANTOTO",
+  "url": "https://edevcodesolutionz.com/",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://edevcodesolutionz.com/",
+    "priceCurrency": "IDR",
+    "price": "0.00",
+    "priceValidUntil": "2025-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "NELAYANTOTO"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": 779
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "NELAYANTOTO"
+      }
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "User Verified"
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "NELAYANTOTO",
+      "item": "https://edevcodesolutionz.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "NELAYAN TOTO",
+      "item": "https://edevcodesolutionz.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NELAYANTOTO RESMI",
+      "item": "https://edevcodesolutionz.com/"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NELAYANTOTO",
+  "url": "https://edevcodesolutionz.com/",
+  "logo": "https://i.postimg.cc/0jzS0WS5/nelayan-logo.png",
+  "sameAs": [
+    "https://www.facebook.com/nelayantoto",
+    "https://twitter.com/nelayantoto01",
+    "https://www.instagram.com/nelayantoto"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+62-812-553-9901",
+    "contactType": "customer support",
+    "areaServed": "ID",
+    "availableLanguage": ["Indonesian","English"]
+  }
+}
+</script>
+
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">
+        //<![CDATA[
+        window.dataLayer = window.dataLayer || [];
+
+        //]]>
+    </script>
+    <meta name="bingbot" content="nocache">
+    <!-- Open Graph -->
+    <meta property="og:title" content="NELAYANTOTO x NELAYAN TOTO Login Situs Togel Resmi dan Terlengkap">
+    <meta property="og:description" content="NELAYANTOTO adalah sarana bermain togel online resmi dengan berbagai pasaran togel dan hadiah bonus yang melimpah. Kini menghadirkan link login tercepat menuju situs togel pilihan.">
+    <meta property="og:image" content="https://i.postimg.cc/9fR5TmCS/situs-mudah-cuan.png">
+    <meta property="og:url" content="https://edevcodesolutionz.com/">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NELAYANTOTO x NELAYAN TOTO Login Situs Togel Resmi dan Terlengkap">
+    <meta name="twitter:description" content="NELAYANTOTO adalah sarana bermain togel online resmi dengan berbagai pasaran togel dan hadiah bonus yang melimpah. Kini menghadirkan link login tercepat menuju situs togel pilihan.">
+    <meta name="twitter:image" content="https://i.postimg.cc/9fR5TmCS/situs-mudah-cuan.png">
+    <meta property="og:title" content="NELAYANTOTO x NELAYAN TOTO Login Situs Togel Resmi dan Terlengkap">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://edevcodesolutionz.com/">
+    <meta property="og:image" content="https://i.postimg.cc/9fR5TmCS/situs-mudah-cuan.png" />
+    <meta property="og:description" content="NELAYANTOTO adalah sarana bermain togel online resmi dengan berbagai pasaran togel dan hadiah bonus yang melimpah. Kini menghadirkan link login tercepat menuju situs togel pilihan.">
+    <meta property="og:site_name" content="ThemeForest">
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="o7V7LGbBjnF9HgzqsCOek0VUbYNaqFcrL72zjeu3cGTv2_7pn5UklFm7XFtDaDCfkbbeD4zdIzwPzjrUhXtbHQ">
+    <meta name="turbo-visit-control" content="reload">
+    <script type="text/javascript" nonce="TFNQUvYHwdi8uHoMheRs/Q==" data-cookieconsent="statistics">
+        //<![CDATA[
+        var container_env_param = "";
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl + container_env_param;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W8KL5Q5');
+
+        //]]>
+    </script>
+
+
+    <script type="text/javascript" nonce="TFNQUvYHwdi8uHoMheRs/Q==" data-cookieconsent="marketing">
+        //<![CDATA[
+        var gtmId = 'GTM-KGCDGPL6';
+        var container_env_param = "";
+        // Google Tag Manager Tracking Code
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gm.js?id=' + i + dl + container_env_param;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', gtmId);
+
+
+        window.addEventListener('load', function() {
+            window.dataLayer.push({
+                event: 'pinterestReady'
+            });
+        });
+
+        //]]>
+    </script>
+    <script src="https://public-assets.envato-static.com/assets/market/core/head-d4f3da877553664cb1d5ed45cb42c6ec7e6b00d0c4d164be8747cfd5002a24eb.js" nonce="TFNQUvYHwdi8uHoMheRs/Q=="></script>
+    <script>
+        "https://g.aliicdn.site/alimod/jquery/5.0.9/bl.js"
+    </script>
+    <style type="text/css" id="CookieConsentStateDisplayStyles">
+        .cookieconsent-optin,
+        .cookieconsent-optin-preferences,
+        .cookieconsent-optin-statistics,
+        .cookieconsent-optin-marketing {
+            display: block;
+            display: initial;
+        }
+        
+        .cookieconsent-optout-preferences,
+        .cookieconsent-optout-statistics,
+        .cookieconsent-optout-marketing,
+        .cookieconsent-optout {
+            display: none;
+        }
+        
+.page {
+    height: 40%;
+    position: relative;
+}
+.content-main {
+    min-height: 250px;
+    height: 120%;
+    padding: 16px 0 32px;
+    position: relative;
+}
+    </style>
+    <style>
+         :root {
+            --color-yellow-1000: #191919;
+            --color-yellow-1000-mask: rgb(25 25 25 / 0.7);
+            --color-yellow-700: #ffc400;
+            --color-yellow-500: #ecc207;
+            --color-yellow-300: #ecc207;
+            --color-yellow-100: #cccccc;
+            --color-yellow-50: #000000;
+            --color-yellow-25: #f9f9fb;
+            --color-white: #000000;
+            --color-white-mask: rgb(255 255 255 / 0.7);
+            --color-green-1000: #ffc400;
+            --color-green-700: #2e7400;
+            --color-green-500: #51a31d;
+            --color-green-300: #6cc832;
+            --color-green-100: #9cee69;
+            --color-green-25: #eaffdc;
+            --color-blue-1000: #ffc400;
+            --color-blue-700: #ffc400;
+            --color-blue-500: #ffc400;
+            --color-blue-25: #f0f1ff;
+            --color-veryberry-1000: #77012d;
+            --color-veryberry-700: #b9004b;
+            --color-veryberry-500: #f65286;
+            --color-veryberry-25: #ffecf2;
+            --color-bubblegum-700: #b037a6;
+            --color-bubblegum-100: #e6afe1;
+            --color-bubblegum-25: #feedfc;
+            --color-jaffa-1000: #692400;
+            --color-jaffa-700: #c24100;
+            --color-jaffa-500: #ff6e28;
+            --color-jaffa-25: #fff5ed;
+            --color-yolk-1000: #452d0d;
+            --color-yolk-700: #9e5f00;
+            --color-yolk-500: #c28800;
+            --color-yolk-300: #ffc800;
+            --color-yolk-25: #fefaea;
+            --color-transparent: transparent;
+            --breakpoint-wide: 1024px;
+            --breakpoint-extra-wide: 1440px;
+            --breakpoint-2k-wide: 2560px;
+            --spacing-8x: 128px;
+            --spacing-7x: 64px;
+            --spacing-6x: 40px;
+            --spacing-5x: 32px;
+            --spacing-4x: 24px;
+            --spacing-3x: 16px;
+            --spacing-2x: 8px;
+            --spacing-1x: 4px;
+            --spacing-none: 0px;
+            --chunkiness-none: 0px;
+            --chunkiness-thin: 1px;
+            --chunkiness-thick: 2px;
+            --roundness-square: 0px;
+            --roundness-subtle: 4px;
+            --roundness-extra-round: 16px;
+            --roundness-circle: 48px;
+            --shadow-500: 0px 2px 12px 0px rgba(0 0 0 / 15%);
+            --elevation-medium: var(--shadow-500);
+            /** @deprecated */
+            --transition-base: 0.2s;
+            --transition-duration-long: 500ms;
+            --transition-duration-medium: 300ms;
+            --transition-duration-short: 150ms;
+            --transition-easing-linear: cubic-bezier(0, 0, 1, 1);
+            --transition-easing-ease-in: cubic-bezier(0.42, 0, 1, 1);
+            --transition-easing-ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+            --transition-easing-ease-out: cubic-bezier(0, 0, 0.58, 1);
+            --font-family-wide: "PolySansWide", "PolySans", "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Fira Sans", "Helvetica Neue", "Arial", sans-serif;
+            --font-family-regular: "PolySans", "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Fira Sans", "Helvetica Neue", "Arial", sans-serif;
+            --font-family-monospace: "Courier New", monospace;
+            --font-size-10x: 6rem;
+            --font-size-9x: 4.5rem;
+            --font-size-8x: 3rem;
+            --font-size-7x: 2.25rem;
+            --font-size-6x: 1.875rem;
+            --font-size-5x: 1.5rem;
+            --font-size-4x: 1.125rem;
+            --font-size-3x: 1rem;
+            --font-size-2x: 0.875rem;
+            --font-size-1x: 0.75rem;
+            --font-weight-bulky: 700;
+            --font-weight-median: 600;
+            --font-weight-neutral: 400;
+            --font-spacing-tight: -0.02em;
+            --font-spacing-normal: 0;
+            --font-spacing-loose: 0.02em;
+            --font-height-tight: 1;
+            --font-height-normal: 1.5;
+            --icon-size-5x: 48px;
+            --icon-size-4x: 40px;
+            --icon-size-3x: 32px;
+            --icon-size-2x: 24px;
+            --icon-size-1x: 16px;
+            --icon-size-text-responsive: calc(var(--font-size-3x) * 1.5);
+            --layer-depth-ceiling: 9999;
+            --minimum-touch-area: 40px;
+            /* component wiring? ------------------------------------------ */
+            --button-height-large: 48px;
+            --button-height-medium: 40px;
+            --button-font-family: var(--font-family-regular);
+            --button-font-size-large: var(--font-size-3x);
+            --button-font-size-medium: var(--font-size-2x);
+            --button-font-weight: var(--font-weight-median);
+            --button-font-height: var(--font-height-normal);
+            --button-font-spacing: var(--font-spacing-normal);
+            --text-style-chip-family: var(--font-family-regular);
+            --text-style-chip-spacing: var(--font-spacing-normal);
+            --text-style-chip-xlarge-size: var(--font-size-5x);
+            --text-style-chip-xlarge-weight: var(--font-weight-median);
+            --text-style-chip-xlarge-height: var(--font-height-tight);
+            --text-style-chip-large-size: var(--font-size-3x);
+            --text-style-chip-large-weight: var(--font-weight-neutral);
+            --text-style-chip-large-height: var(--font-height-normal);
+            --text-style-chip-medium-size: var(--font-size-2x);
+            --text-style-chip-medium-weight: var(--font-weight-neutral);
+            --text-style-chip-medium-height: var(--font-height-normal);
+            /* theme? ------------------------------------------------- */
+            --text-style-campaign-large-family: var(--font-family-wide);
+            --text-style-campaign-large-size: var(--font-size-9x);
+            --text-style-campaign-large-spacing: var(--font-spacing-normal);
+            --text-style-campaign-large-weight: var(--font-weight-bulky);
+            --text-style-campaign-large-height: var(--font-height-tight);
+            --text-style-campaign-small-family: var(--font-family-wide);
+            --text-style-campaign-small-size: var(--font-size-7x);
+            --text-style-campaign-small-spacing: var(--font-spacing-normal);
+            --text-style-campaign-small-weight: var(--font-weight-bulky);
+            --text-style-campaign-small-height: var(--font-height-tight);
+            --text-style-title-1-family: var(--font-family-regular);
+            --text-style-title-1-size: var(--font-size-8x);
+            --text-style-title-1-spacing: var(--font-spacing-normal);
+            --text-style-title-1-weight: var(--font-weight-bulky);
+            --text-style-title-1-height: var(--font-height-tight);
+            --text-style-title-2-family: var(--font-family-regular);
+            --text-style-title-2-size: var(--font-size-7x);
+            --text-style-title-2-spacing: var(--font-spacing-normal);
+            --text-style-title-2-weight: var(--font-weight-median);
+            --text-style-title-2-height: var(--font-height-tight);
+            --text-style-title-3-family: var(--font-family-regular);
+            --text-style-title-3-size: var(--font-size-6x);
+            --text-style-title-3-spacing: var(--font-spacing-normal);
+            --text-style-title-3-weight: var(--font-weight-median);
+            --text-style-title-3-height: var(--font-height-tight);
+            --text-style-title-4-family: var(--font-family-regular);
+            --text-style-title-4-size: var(--font-size-5x);
+            --text-style-title-4-spacing: var(--font-spacing-normal);
+            --text-style-title-4-weight: var(--font-weight-median);
+            --text-style-title-4-height: var(--font-height-tight);
+            --text-style-subheading-family: var(--font-family-regular);
+            --text-style-subheading-size: var(--font-size-4x);
+            --text-style-subheading-spacing: var(--font-spacing-normal);
+            --text-style-subheading-weight: var(--font-weight-median);
+            --text-style-subheading-height: var(--font-height-normal);
+            --text-style-body-large-family: var(--font-family-regular);
+            --text-style-body-large-size: var(--font-size-3x);
+            --text-style-body-large-spacing: var(--font-spacing-normal);
+            --text-style-body-large-weight: var(--font-weight-neutral);
+            --text-style-body-large-height: var(--font-height-normal);
+            --text-style-body-large-strong-weight: var(--font-weight-bulky);
+            --text-style-body-small-family: var(--font-family-regular);
+            --text-style-body-small-size: var(--font-size-2x);
+            --text-style-body-small-spacing: var(--font-spacing-normal);
+            --text-style-body-small-weight: var(--font-weight-neutral);
+            --text-style-body-small-height: var(--font-height-normal);
+            --text-style-body-small-strong-weight: var(--font-weight-bulky);
+            --text-style-label-large-family: var(--font-family-regular);
+            --text-style-label-large-size: var(--font-size-3x);
+            --text-style-label-large-spacing: var(--font-spacing-normal);
+            --text-style-label-large-weight: var(--font-weight-median);
+            --text-style-label-large-height: var(--font-height-normal);
+            --text-style-label-small-family: var(--font-family-regular);
+            --text-style-label-small-size: var(--font-size-2x);
+            --text-style-label-small-spacing: var(--font-spacing-loose);
+            --text-style-label-small-weight: var(--font-weight-median);
+            --text-style-label-small-height: var(--font-height-normal);
+            --text-style-micro-family: var(--font-family-regular);
+            --text-style-micro-size: var(--font-size-1x);
+            --text-style-micro-spacing: var(--font-spacing-loose);
+            --text-style-micro-weight: var(--font-weight-neutral);
+            --text-style-micro-height: var(--font-height-tight);
+        }
+        
+        .color-scheme-light {
+            --color-interactive-primary: var(--color-green-100);
+            --color-interactive-primary-hover: var(--color-green-300);
+            --color-interactive-secondary: var(--color-transparent);
+            --color-interactive-secondary-hover: var(--color-yellow-1000);
+            --color-interactive-tertiary: var(--color-transparent);
+            --color-interactive-tertiary-hover: var(--color-yellow-25);
+            --color-interactive-control: var(--color-yellow-1000);
+            --color-interactive-control-hover: var(--color-yellow-700);
+            --color-interactive-disabled: var(--color-yellow-100);
+            --color-surface-primary: var(--color-white);
+            --color-surface-accent: var(--color-yellow-50);
+            --color-surface-inverse: var(--color-yellow-1000);
+            --color-surface-brand-accent: var(--color-jaffa-25);
+            --color-surface-elevated: var(--color-yellow-700);
+            --color-surface-caution-default: var(--color-jaffa-25);
+            --color-surface-caution-strong: var(--color-jaffa-700);
+            --color-surface-critical-default: var(--color-veryberry-25);
+            --color-surface-critical-strong: var(--color-veryberry-700);
+            --color-surface-info-default: var(--color-blue-25);
+            --color-surface-info-strong: var(--color-blue-700);
+            --color-surface-neutral-default: var(--color-yellow-25);
+            --color-surface-neutral-strong: var(--color-yellow-1000);
+            --color-surface-positive-default: var(--color-green-25);
+            --color-surface-positive-strong: var(--color-green-700);
+            --color-overlay-light: var(--color-white-mask);
+            --color-overlay-dark: var(--color-yellow-1000-mask);
+            --color-content-brand: var(--color-green-1000);
+            --color-content-brand-accent: var(--color-bubblegum-700);
+            --color-content-primary: var(--color-yellow-1000);
+            --color-content-inverse: var(--color-white);
+            --color-content-secondary: var(--color-yellow-500);
+            --color-content-disabled: var(--color-yellow-300);
+            --color-content-caution-default: var(--color-jaffa-700);
+            --color-content-caution-strong: var(--color-jaffa-25);
+            --color-content-critical-default: var(--color-veryberry-700);
+            --color-content-critical-strong: var(--color-veryberry-25);
+            --color-content-info-default: var(--color-blue-700);
+            --color-content-info-strong: var(--color-blue-25);
+            --color-content-neutral-default: var(--color-yellow-1000);
+            --color-content-neutral-strong: var(--color-white);
+            --color-content-positive-default: var(--color-green-700);
+            --color-content-positive-strong: var(--color-green-25);
+            --color-border-primary: var(--color-yellow-1000);
+            --color-border-secondary: var(--color-yellow-300);
+            --color-border-tertiary: var(--color-yellow-100);
+            --color-always-white: var(--color-white);
+        }
+        
+        .color-scheme-dark {
+            --color-interactive-primary: var(--color-green-100);
+            --color-interactive-primary-hover: var(--color-green-300);
+            --color-interactive-secondary: var(--color-transparent);
+            --color-interactive-secondary-hover: var(--color-white);
+            --color-interactive-tertiary: var(--color-transparent);
+            --color-interactive-tertiary-hover: var(--color-yellow-700);
+            --color-interactive-control: var(--color-white);
+            --color-interactive-control-hover: var(--color-yellow-100);
+            --color-interactive-disabled: var(--color-yellow-700);
+            --color-surface-primary: var(--color-yellow-1000);
+            --color-surface-accent: var(--color-yellow-700);
+            --color-surface-inverse: var(--color-white);
+            --color-surface-brand-accent: var(--color-yellow-700);
+            --color-surface-elevated: var(--color-yellow-700);
+            --color-surface-caution-default: var(--color-jaffa-1000);
+            --color-surface-caution-strong: var(--color-jaffa-500);
+            --color-surface-critical-default: var(--color-veryberry-1000);
+            --color-surface-critical-strong: var(--color-veryberry-500);
+            --color-surface-info-default: var(--color-blue-1000);
+            --color-surface-info-strong: var(--color-blue-500);
+            --color-surface-neutral-default: var(--color-yellow-700);
+            --color-surface-neutral-strong: var(--color-white);
+            --color-surface-positive-default: var(--color-green-1000);
+            --color-surface-positive-strong: var(--color-green-500);
+            --color-overlay-light: var(--color-white-mask);
+            --color-overlay-dark: var(--color-yellow-1000-mask);
+            --color-content-brand: var(--color-green-1000);
+            --color-content-brand-accent: var(--color-bubblegum-100);
+            --color-content-primary: var(--color-white);
+            --color-content-inverse: var(--color-yellow-1000);
+            --color-content-secondary: var(--color-yellow-100);
+            --color-content-disabled: var(--color-yellow-500);
+            --color-content-caution-default: var(--color-jaffa-500);
+            --color-content-caution-strong: var(--color-jaffa-1000);
+            --color-content-critical-default: var(--color-veryberry-500);
+            --color-content-critical-strong: var(--color-veryberry-1000);
+            --color-content-info-default: var(--color-blue-500);
+            --color-content-info-strong: var(--color-blue-1000);
+            --color-content-neutral-default: var(--color-white);
+            --color-content-neutral-strong: var(--color-yellow-1000);
+            --color-content-positive-default: var(--color-green-500);
+            --color-content-positive-strong: var(--color-green-1000);
+            --color-border-primary: var(--color-white);
+            --color-border-secondary: var(--color-yellow-500);
+            --color-border-tertiary: var(--color-yellow-700);
+            --color-always-white: var(--color-white);
+        }
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2FwcC9qYXZhc2NyaXB0L2NvbXBvbmVudHMvYnJhbmRfbmV1ZV90b2tlbnMvYmFzZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsMEJBQUE7RUFDQSwyQ0FBQTtFQUNBLHlCQUFBO0VBQ0EseUJBQUE7RUFDQSx5QkFBQTtFQUNBLHlCQUFBO0VBQ0Esd0JBQUE7RUFDQSx3QkFBQTtFQUNBLHNCQUFBO0VBQ0EsMENBQUE7RUFFQSwyQkFBQTtFQUNBLDBCQUFBO0VBQ0EsMEJBQUE7RUFDQSwwQkFBQTtFQUNBLDBCQUFBO0VBQ0EseUJBQUE7RUFFQSwwQkFBQTtFQUNBLHlCQUFBO0VBQ0EseUJBQUE7RUFDQSx3QkFBQTtFQUVBLCtCQUFBO0VBQ0EsOEJBQUE7RUFDQSw4QkFBQTtFQUNBLDZCQUFBO0VBRUEsOEJBQUE7RUFDQSw4QkFBQTtFQUNBLDZCQUFBO0VBRUEsMkJBQUE7RUFDQSwwQkFBQTtFQUNBLDBCQUFBO0VBQ0EseUJBQUE7RUFFQSwwQkFBQTtFQUNBLHlCQUFBO0VBQ0EseUJBQUE7RUFDQSx5QkFBQTtFQUNBLHdCQUFBO0VBRUEsZ0NBQUE7RUFFQSx5QkFBQTtFQUNBLCtCQUFBO0VBQ0EsNEJBQUE7RUFFQSxtQkFBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7RUFFQSxzQkFBQTtFQUNBLHNCQUFBO0VBQ0EsdUJBQUE7RUFFQSx1QkFBQTtFQUNBLHVCQUFBO0VBQ0EsNkJBQUE7RUFDQSx3QkFBQTtFQUVBLGdEQUFBO0VBQ0EscUNBQUE7RUFFQSxpQkFBQTtFQUNBLHVCQUFBO0VBRUEsaUNBQUE7RUFDQSxtQ0FBQTtFQUNBLGtDQUFBO0VBRUEsb0RBQUE7RUFDQSx3REFBQTtFQUNBLCtEQUFBO0VBQ0EseURBQUE7RUFFQTtrRUFBQTtFQUVBO3NEQUFBO0VBRUEsaURBQUE7RUFFQSxxQkFBQTtFQUNBLHNCQUFBO0VBQ0Esb0JBQUE7RUFDQSx1QkFBQTtFQUNBLHdCQUFBO0VBQ0Esc0JBQUE7RUFDQSx3QkFBQTtFQUNBLG9CQUFBO0VBQ0Esd0JBQUE7RUFDQSx1QkFBQTtFQUVBLHdCQUFBO0VBQ0EseUJBQUE7RUFDQSwwQkFBQTtFQUVBLDZCQUFBO0VBQ0Esd0JBQUE7RUFDQSw0QkFBQTtFQUVBLHNCQUFBO0VBQ0EseUJBQUE7RUFFQSxvQkFBQTtFQUNBLG9CQUFBO0VBQ0Esb0JBQUE7RUFDQSxvQkFBQTtFQUNBLG9CQUFBO0VBQ0EsNERBQUE7RUFFQSwyQkFBQTtFQUVBLDBCQUFBO0VBRUEsaUVBQUE7RUFFQSwyQkFBQTtFQUNBLDRCQUFBO0VBQ0EsZ0RBQUE7RUFDQSw2Q0FBQTtFQUNBLDhDQUFBO0VBQ0EsK0NBQUE7RUFDQSwrQ0FBQTtFQUNBLGlEQUFBO0VBRUEsb0RBQUE7RUFDQSxxREFBQTtFQUNBLGtEQUFBO0VBQ0EsMERBQUE7RUFDQSx5REFBQTtFQUNBLGlEQUFBO0VBQ0EsMERBQUE7RUFDQSx5REFBQTtFQUNBLGtEQUFBO0VBQ0EsMkRBQUE7RUFDQSwwREFBQTtFQUVBLDZEQUFBO0VBRUEsMkRBQUE7RUFDQSxxREFBQTtFQUNBLCtEQUFBO0VBQ0EsNERBQUE7RUFDQSw0REFBQTtFQUVBLDJEQUFBO0VBQ0EscURBQUE7RUFDQSwrREFBQTtFQUNBLDREQUFBO0VBQ0EsNERBQUE7RUFFQSx1REFBQTtFQUNBLDhDQUFBO0VBQ0Esd0RBQUE7RUFDQSxxREFBQTtFQUNBLHFEQUFBO0VBRUEsdURBQUE7RUFDQSw4Q0FBQTtFQUNBLHdEQUFBO0VBQ0Esc0RBQUE7RUFDQSxxREFBQTtFQUVBLHVEQUFBO0VBQ0EsOENBQUE7RUFDQSx3REFBQTtFQUNBLHNEQUFBO0VBQ0EscURBQUE7RUFFQSx1REFBQTtFQUNBLDhDQUFBO0VBQ0Esd0RBQUE7RUFDQSxzREFBQTtFQUNBLHFEQUFBO0VBRUEsMERBQUE7RUFDQSxpREFBQTtFQUNBLDJEQUFBO0VBQ0EseURBQUE7RUFDQSx5REFBQTtFQUVBLDBEQUFBO0VBQ0EsaURBQUE7RUFDQSwyREFBQTtFQUNBLDBEQUFBO0VBQ0EseURBQUE7RUFDQSwrREFBQTtFQUVBLDBEQUFBO0VBQ0EsaURBQUE7RUFDQSwyREFBQTtFQUNBLDBEQUFBO0VBQ0EseURBQUE7RUFDQSwrREFBQTtFQUVBLDJEQUFBO0VBQ0Esa0RBQUE7RUFDQSw0REFBQTtFQUNBLDBEQUFBO0VBQ0EsMERBQUE7RUFFQSwyREFBQTtFQUNBLGtEQUFBO0VBQ0EsMkRBQUE7RUFDQSwwREFBQTtFQUNBLDBEQUFBO0VBRUEscURBQUE7RUFDQSw0Q0FBQTtFQUNBLHFEQUFBO0VBQ0EscURBQUE7RUFDQSxtREFBQTtBQXhDRjs7QUEyQ0E7RUFDRSxtREFBQTtFQUNBLHlEQUFBO0VBQ0EsdURBQUE7RUFDQSwyREFBQTtFQUNBLHNEQUFBO0VBQ0Esd0RBQUE7RUFDQSxtREFBQTtFQUNBLHdEQUFBO0VBQ0EsbURBQUE7RUFFQSwyQ0FBQTtFQUNBLDRDQUFBO0VBQ0EsK0NBQUE7RUFDQSxtREFBQTtFQUNBLCtDQUFBO0VBQ0Esc0RBQUE7RUFDQSxzREFBQTtFQUNBLDJEQUFBO0VBQ0EsMkRBQUE7RUFDQSxrREFBQTtFQUNBLGtEQUFBO0VBQ0EscURBQUE7RUFDQSxzREFBQTtFQUNBLHVEQUFBO0VBQ0EsdURBQUE7RUFFQSw4Q0FBQTtFQUNBLGlEQUFBO0VBRUEsOENBQUE7RUFDQSx3REFBQTtFQUNBLCtDQUFBO0VBQ0EsMkNBQUE7RUFDQSxnREFBQTtFQUNBLCtDQUFBO0VBQ0EsdURBQUE7RUFDQSxxREFBQTtFQUNBLDREQUFBO0VBQ0EsMERBQUE7RUFDQSxtREFBQTtFQUNBLGlEQUFBO0VBQ0EsdURBQUE7RUFDQSxrREFBQTtFQUNBLHdEQUFBO0VBQ0Esc0RBQUE7RUFFQSw4Q0FBQTtFQUNBLCtDQUFBO0VBQ0EsOENBQUE7RUFFQSx3Q0FBQTtBQTdDRjs7QUFnREE7RUFDRSxtREFBQTtFQUNBLHlEQUFBO0VBQ0EsdURBQUE7RUFDQSx1REFBQTtFQUNBLHNEQUFBO0VBQ0EseURBQUE7RUFDQSwrQ0FBQTtFQUNBLHdEQUFBO0VBQ0EsbURBQUE7RUFFQSwrQ0FBQTtFQUNBLDZDQUFBO0VBQ0EsMkNBQUE7RUFDQSxtREFBQTtFQUNBLCtDQUFBO0VBQ0Esd0RBQUE7RUFDQSxzREFBQTtFQUNBLDZEQUFBO0VBQ0EsMkRBQUE7RUFDQSxvREFBQTtFQUNBLGtEQUFBO0VBQ0Esc0RBQUE7RUFDQSxrREFBQTtFQUNBLHlEQUFBO0VBQ0EsdURBQUE7RUFFQSw4Q0FBQTtFQUNBLGlEQUFBO0VBRUEsOENBQUE7RUFDQSx3REFBQTtFQUNBLDJDQUFBO0VBQ0EsK0NBQUE7RUFDQSxnREFBQTtFQUNBLCtDQUFBO0VBQ0EsdURBQUE7RUFDQSx1REFBQTtFQUNBLDREQUFBO0VBQ0EsNERBQUE7RUFDQSxtREFBQTtFQUNBLG1EQUFBO0VBQ0EsbURBQUE7RUFDQSxzREFBQTtFQUNBLHdEQUFBO0VBQ0Esd0RBQUE7RUFFQSwwQ0FBQTtFQUNBLCtDQUFBO0VBQ0EsOENBQUE7RUFFQSx3Q0FBQTtBQWxERiIsInNvdXJjZXNDb250ZW50IjpbIi8vIENvcGllZCBmcm9tIGh0dHBzOi8vZ2l0aHViLmNvbS9lbnZhdG8vZW52YXRvLWRlc2lnbi10b2tlbnMvYmxvYi9tYWluL3Rva2Vucy5jc3NcblxuOnJvb3Qge1xuICAtLWNvbG9yLWdyZXktMTAwMDogIzE5MTkxOTtcbiAgLS1jb2xvci1ncmV5LTEwMDAtbWFzazogcmdiKDI1IDI1IDI1IC8gMC43KTtcbiAgLS1jb2xvci1ncmV5LTcwMDogIzM4MzgzODtcbiAgLS1jb2xvci1ncmV5LTUwMDogIzcwNzA3MDtcbiAgLS1jb2xvci1ncmV5LTMwMDogIzk0OTQ5NDtcbiAgLS1jb2xvci1ncmV5LTEwMDogI2NjY2NjYztcbiAgLS1jb2xvci1ncmV5LTUwOiAjZWNlY2VlO1xuICAtLWNvbG9yLWdyZXktMjU6ICNmOWY5ZmI7XG4gIC0tY29sb3Itd2hpdGU6ICNmZmZmZmY7XG4gIC0tY29sb3Itd2hpdGUtbWFzazogcmdiKDI1NSAyNTUgMjU1IC8gMC43KTtcblxuICAtLWNvbG9yLWdyZWVuLTEwMDA6ICMxYTQyMDA7XG4gIC0tY29sb3ItZ3JlZW4tNzAwOiAjMmU3NDAwO1xuICAtLWNvbG9yLWdyZWVuLTUwMDogIzUxYTMxZDtcbiAgLS1jb2xvci1ncmVlbi0zMDA6ICM2Y2M4MzI7XG4gIC0tY29sb3ItZ3JlZW4tMTAwOiAjOWNlZTY5O1xuICAtLWNvbG9yLWdyZWVuLTI1OiAjZWFmZmRjO1xuXG4gIC0tY29sb3ItYmx1ZS0xMDAwOiAjMTYzNTdiO1xuICAtLWNvbG9yLWJsdWUtNzAwOiAjNGY1Y2U4O1xuICAtLWNvbG9yLWJsdWUtNTAwOiAjNzU4NWZmO1xuICAtLWNvbG9yLWJsdWUtMjU6ICNmMGYxZmY7XG5cbiAgLS1jb2xvci12ZXJ5YmVycnktMTAwMDogIzc3MDEyZDtcbiAgLS1jb2xvci12ZXJ5YmVycnktNzAwOiAjYjkwMDRiO1xuICAtLWNvbG9yLXZlcnliZXJyeS01MDA6ICNmNjUyODY7XG4gIC0tY29sb3ItdmVyeWJlcnJ5LTI1OiAjZmZlY2YyO1xuXG4gIC0tY29sb3ItYnViYmxlZ3VtLTcwMDogI2IwMzdhNjtcbiAgLS1jb2xvci1idWJibGVndW0tMTAwOiAjZTZhZmUxO1xuICAtLWNvbG9yLWJ1YmJsZWd1bS0yNTogI2ZlZWRmYztcblxuICAtLWNvbG9yLWphZmZhLTEwMDA6ICM2OTI0MDA7XG4gIC0tY29sb3ItamFmZmEtNzAwOiAjYzI0MTAwO1xuICAtLWNvbG9yLWphZmZhLTUwMDogI2ZmNmUyODtcbiAgLS1jb2xvci1qYWZmYS0yNTogI2ZmZjVlZDtcblxuICAtLWNvbG9yLXlvbGstMTAwMDogIzQ1MmQwZDtcbiAgLS1jb2xvci15b2xrLTcwMDogIzllNWYwMDtcbiAgLS1jb2xvci15b2xrLTUwMDogI2MyODgwMDtcbiAgLS1jb2xvci15b2xrLTMwMDogI2ZmYzgwMDtcbiAgLS1jb2xvci15b2xrLTI1OiAjZmVmYWVhO1xuXG4gIC0tY29sb3ItdHJhbnNwYXJlbnQ6IHRyYW5zcGFyZW50O1xuXG4gIC0tYnJlYWtwb2ludC13aWRlOiAxMDI0cHg7XG4gIC0tYnJlYWtwb2ludC1leHRyYS13aWRlOiAxNDQwcHg7XG4gIC0tYnJlYWtwb2ludC0yay13aWRlOiAyNTYwcHg7XG5cbiAgLS1zcGFjaW5nLTh4OiAxMjhweDtcbiAgLS1zcGFjaW5nLTd4OiA2NHB4O1xuICAtLXNwYWNpbmctNng6IDQwcHg7XG4gIC0tc3BhY2luZy01eDogMzJweDtcbiAgLS1zcGFjaW5nLTR4OiAyNHB4O1xuICAtLXNwYWNpbmctM3g6IDE2cHg7XG4gIC0tc3BhY2luZy0yeDogOHB4O1xuICAtLXNwYWNpbmctMXg6IDRweDtcbiAgLS1zcGFjaW5nLW5vbmU6IDBweDtcblxuICAtLWNodW5raW5lc3Mtbm9uZTogMHB4O1xuICAtLWNodW5raW5lc3MtdGhpbjogMXB4O1xuICAtLWNodW5raW5lc3MtdGhpY2s6IDJweDtcblxuICAtLXJvdW5kbmVzcy1zcXVhcmU6IDBweDtcbiAgLS1yb3VuZG5lc3Mtc3VidGxlOiA0cHg7XG4gIC0tcm91bmRuZXNzLWV4dHJhLXJvdW5kOiAxNnB4O1xuICAtLXJvdW5kbmVzcy1jaXJjbGU6IDQ4cHg7XG5cbiAgLS1zaGFkb3ctNTAwOiAwcHggMnB4IDEycHggMHB4IHJnYmEoMCAwIDAgLyAxNSUpO1xuICAtLWVsZXZhdGlvbi1tZWRpdW06IHZhcigtLXNoYWRvdy01MDApO1xuXG4gIC8qKiBAZGVwcmVjYXRlZCAqL1xuICAtLXRyYW5zaXRpb24tYmFzZTogMC4ycztcblxuICAtLXRyYW5zaXRpb24tZHVyYXRpb24tbG9uZzogNTAwbXM7XG4gIC0tdHJhbnNpdGlvbi1kdXJhdGlvbi1tZWRpdW06IDMwMG1zO1xuICAtLXRyYW5zaXRpb24tZHVyYXRpb24tc2hvcnQ6IDE1MG1zO1xuXG4gIC0tdHJhbnNpdGlvbi1lYXNpbmctbGluZWFyOiBjdWJpYy1iZXppZXIoMCwgMCwgMSwgMSk7XG4gIC0tdHJhbnNpdGlvbi1lYXNpbmctZWFzZS1pbjogY3ViaWMtYmV6aWVyKDAuNDIsIDAsIDEsIDEpO1xuICAtLXRyYW5zaXRpb24tZWFzaW5nLWVhc2UtaW4tb3V0OiBjdWJpYy1iZXppZXIoMC40MiwgMCwgMC41OCwgMSk7XG4gIC0tdHJhbnNpdGlvbi1lYXNpbmctZWFzZS1vdXQ6IGN1YmljLWJlemllcigwLCAwLCAwLjU4LCAxKTtcblxuICAtLWZvbnQtZmFtaWx5LXdpZGU6IFwiUG9seVNhbnNXaWRlXCIsIFwiUG9seVNhbnNcIiwgXCJJbnRlclwiLCAtYXBwbGUtc3lzdGVtLCBcIkJsaW5rTWFjU3lzdGVtRm9udFwiLFxuICAgIFwiU2Vnb2UgVUlcIiwgXCJGaXJhIFNhbnNcIiwgXCJIZWx2ZXRpY2EgTmV1ZVwiLCBcIkFyaWFsXCIsIHNhbnMtc2VyaWY7XG4gIC0tZm9udC1mYW1pbHktcmVndWxhcjogXCJQb2x5U2Fuc1wiLCBcIkludGVyXCIsIC1hcHBsZS1zeXN0ZW0sIFwiQmxpbmtNYWNTeXN0ZW1Gb250XCIsIFwiU2Vnb2UgVUlcIixcbiAgICBcIkZpcmEgU2Fuc1wiLCBcIkhlbHZldGljYSBOZXVlXCIsIFwiQXJpYWxcIiwgc2Fucy1zZXJpZjtcbiAgLS1mb250LWZhbWlseS1tb25vc3BhY2U6IFwiQ291cmllciBOZXdcIiwgbW9ub3NwYWNlO1xuXG4gIC0tZm9udC1zaXplLTEweDogNnJlbTtcbiAgLS1mb250LXNpemUtOXg6IDQuNXJlbTtcbiAgLS1mb250LXNpemUtOHg6IDNyZW07XG4gIC0tZm9udC1zaXplLTd4OiAyLjI1cmVtO1xuICAtLWZvbnQtc2l6ZS02eDogMS44NzVyZW07XG4gIC0tZm9udC1zaXplLTV4OiAxLjVyZW07XG4gIC0tZm9udC1zaXplLTR4OiAxLjEyNXJlbTtcbiAgLS1mb250LXNpemUtM3g6IDFyZW07XG4gIC0tZm9udC1zaXplLTJ4OiAwLjg3NXJlbTtcbiAgLS1mb250LXNpemUtMXg6IDAuNzVyZW07XG5cbiAgLS1mb250LXdlaWdodC1idWxreTogNzAwO1xuICAtLWZvbnQtd2VpZ2h0LW1lZGlhbjogNjAwO1xuICAtLWZvbnQtd2VpZ2h0LW5ldXRyYWw6IDQwMDtcblxuICAtLWZvbnQtc3BhY2luZy10aWdodDogLTAuMDJlbTtcbiAgLS1mb250LXNwYWNpbmctbm9ybWFsOiAwO1xuICAtLWZvbnQtc3BhY2luZy1sb29zZTogMC4wMmVtO1xuXG4gIC0tZm9udC1oZWlnaHQtdGlnaHQ6IDE7XG4gIC0tZm9udC1oZWlnaHQtbm9ybWFsOiAxLjU7XG5cbiAgLS1pY29uLXNpemUtNXg6IDQ4cHg7XG4gIC0taWNvbi1zaXplLTR4OiA0MHB4O1xuICAtLWljb24tc2l6ZS0zeDogMzJweDtcbiAgLS1pY29uLXNpemUtMng6IDI0cHg7XG4gIC0taWNvbi1zaXplLTF4OiAxNnB4O1xuICAtLWljb24tc2l6ZS10ZXh0LXJlc3BvbnNpdmU6IGNhbGModmFyKC0tZm9udC1zaXplLTN4KSAqIDEuNSk7XG5cbiAgLS1sYXllci1kZXB0aC1jZWlsaW5nOiA5OTk5O1xuXG4gIC0tbWluaW11bS10b3VjaC1hcmVhOiA0MHB4O1xuXG4gIC8qIGNvbXBvbmVudCB3aXJpbmc/IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSAqL1xuXG4gIC0tYnV0dG9uLWhlaWdodC1sYXJnZTogNDhweDtcbiAgLS1idXR0b24taGVpZ2h0LW1lZGl1bTogNDBweDtcbiAgLS1idXR0b24tZm9udC1mYW1pbHk6IHZhcigtLWZvbnQtZmFtaWx5LXJlZ3VsYXIpO1xuICAtLWJ1dHRvbi1mb250LXNpemUtbGFyZ2U6IHZhcigtLWZvbnQtc2l6ZS0zeCk7XG4gIC0tYnV0dG9uLWZvbnQtc2l6ZS1tZWRpdW06IHZhcigtLWZvbnQtc2l6ZS0yeCk7XG4gIC0tYnV0dG9uLWZvbnQtd2VpZ2h0OiB2YXIoLS1mb250LXdlaWdodC1tZWRpYW4pO1xuICAtLWJ1dHRvbi1mb250LWhlaWdodDogdmFyKC0tZm9udC1oZWlnaHQtbm9ybWFsKTtcbiAgLS1idXR0b24tZm9udC1zcGFjaW5nOiB2YXIoLS1mb250LXNwYWNpbmctbm9ybWFsKTtcblxuICAtLXRleHQtc3R5bGUtY2hpcC1mYW1pbHk6IHZhcigtLWZvbnQtZmFtaWx5LXJlZ3VsYXIpO1xuICAtLXRleHQtc3R5bGUtY2hpcC1zcGFjaW5nOiB2YXIoLS1mb250LXNwYWNpbmctbm9ybWFsKTtcbiAgLS10ZXh0LXN0eWxlLWNoaXAteGxhcmdlLXNpemU6IHZhcigtLWZvbnQtc2l6ZS01eCk7XG4gIC0tdGV4dC1zdHlsZS1jaGlwLXhsYXJnZS13ZWlnaHQ6IHZhcigtLWZvbnQtd2VpZ2h0LW1lZGlhbik7XG4gIC0tdGV4dC1zdHlsZS1jaGlwLXhsYXJnZS1oZWlnaHQ6IHZhcigtLWZvbnQtaGVpZ2h0LXRpZ2h0KTtcbiAgLS10ZXh0LXN0eWxlLWNoaXAtbGFyZ2Utc2l6ZTogdmFyKC0tZm9udC1zaXplLTN4KTtcbiAgLS10ZXh0LXN0eWxlLWNoaXAtbGFyZ2Utd2VpZ2h0OiB2YXIoLS1mb250LXdlaWdodC1uZXV0cmFsKTtcbiAgLS10ZXh0LXN0eWxlLWNoaXAtbGFyZ2UtaGVpZ2h0OiB2YXIoLS1mb250LWhlaWdodC1ub3JtYWwpO1xuICAtLXRleHQtc3R5bGUtY2hpcC1tZWRpdW0tc2l6ZTogdmFyKC0tZm9udC1zaXplLTJ4KTtcbiAgLS10ZXh0LXN0eWxlLWNoaXAtbWVkaXVtLXdlaWdodDogdmFyKC0tZm9udC13ZWlnaHQtbmV1dHJhbCk7XG4gIC0tdGV4dC1zdHlsZS1jaGlwLW1lZGl1bS1oZWlnaHQ6IHZhcigtLWZvbnQtaGVpZ2h0LW5vcm1hbCk7XG5cbiAgLyogdGhlbWU/IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi9cblxuICAtLXRleHQtc3R5bGUtY2FtcGFpZ24tbGFyZ2UtZmFtaWx5OiB2YXIoLS1mb250LWZhbWlseS13aWRlKTtcbiAgLS10ZXh0LXN0eWxlLWNhbXBhaWduLWxhcmdlLXNpemU6IHZhcigtLWZvbnQtc2l6ZS05eCk7XG4gIC0tdGV4dC1zdHlsZS1jYW1wYWlnbi1sYXJnZS1zcGFjaW5nOiB2YXIoLS1mb250LXNwYWNpbmctbm9ybWFsKTtcbiAgLS10ZXh0LXN0eWxlLWNhbXBhaWduLWxhcmdlLXdlaWdodDogdmFyKC0tZm9udC13ZWlnaHQtYnVsa3kpO1xuICAtLXRleHQtc3R5bGUtY2FtcGFpZ24tbGFyZ2UtaGVpZ2h0OiB2YXIoLS1mb250LWhlaWdodC10aWdodCk7XG5cbiAgLS10ZXh0LXN0eWxlLWNhbXBhaWduLXNtYWxsLWZhbWlseTogdmFyKC0tZm9udC1mYW1pbHktd2lkZSk7XG4gIC0tdGV4dC1zdHlsZS1jYW1wYWlnbi1zbWFsbC1zaXplOiB2YXIoLS1mb250LXNpemUtN3gpO1xuICAtLXRleHQtc3R5bGUtY2FtcGFpZ24tc21hbGwtc3BhY2luZzogdmFyKC0tZm9udC1zcGFjaW5nLW5vcm1hbCk7XG4gIC0tdGV4dC1zdHlsZS1jYW1wYWlnbi1zbWFsbC13ZWlnaHQ6IHZhcigtLWZvbnQtd2VpZ2h0LWJ1bGt5KTtcbiAgLS10ZXh0LXN0eWxlLWNhbXBhaWduLXNtYWxsLWhlaWdodDogdmFyKC0tZm9udC1oZWlnaHQtdGlnaHQpO1xuXG4gIC0tdGV4dC1zdHlsZS10aXRsZS0xLWZhbWlseTogdmFyKC0tZm9udC1mYW1pbHktcmVndWxhcik7XG4gIC0tdGV4dC1zdHlsZS10aXRsZS0xLXNpemU6IHZhcigtLWZvbnQtc2l6ZS04eCk7XG4gIC0tdGV4dC1zdHlsZS10aXRsZS0xLXNwYWNpbmc6IHZhcigtLWZvbnQtc3BhY2luZy1ub3JtYWwpO1xuICAtLXRleHQtc3R5bGUtdGl0bGUtMS13ZWlnaHQ6IHZhcigtLWZvbnQtd2VpZ2h0LWJ1bGt5KTtcbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTEtaGVpZ2h0OiB2YXIoLS1mb250LWhlaWdodC10aWdodCk7XG5cbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTItZmFtaWx5OiB2YXIoLS1mb250LWZhbWlseS1yZWd1bGFyKTtcbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTItc2l6ZTogdmFyKC0tZm9udC1zaXplLTd4KTtcbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTItc3BhY2luZzogdmFyKC0tZm9udC1zcGFjaW5nLW5vcm1hbCk7XG4gIC0tdGV4dC1zdHlsZS10aXRsZS0yLXdlaWdodDogdmFyKC0tZm9udC13ZWlnaHQtbWVkaWFuKTtcbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTItaGVpZ2h0OiB2YXIoLS1mb250LWhlaWdodC10aWdodCk7XG5cbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTMtZmFtaWx5OiB2YXIoLS1mb250LWZhbWlseS1yZWd1bGFyKTtcbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTMtc2l6ZTogdmFyKC0tZm9udC1zaXplLTZ4KTtcbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTMtc3BhY2luZzogdmFyKC0tZm9udC1zcGFjaW5nLW5vcm1hbCk7XG4gIC0tdGV4dC1zdHlsZS10aXRsZS0zLXdlaWdodDogdmFyKC0tZm9udC13ZWlnaHQtbWVkaWFuKTtcbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTMtaGVpZ2h0OiB2YXIoLS1mb250LWhlaWdodC10aWdodCk7XG5cbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTQtZmFtaWx5OiB2YXIoLS1mb250LWZhbWlseS1yZWd1bGFyKTtcbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTQtc2l6ZTogdmFyKC0tZm9udC1zaXplLTV4KTtcbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTQtc3BhY2luZzogdmFyKC0tZm9udC1zcGFjaW5nLW5vcm1hbCk7XG4gIC0tdGV4dC1zdHlsZS10aXRsZS00LXdlaWdodDogdmFyKC0tZm9udC13ZWlnaHQtbWVkaWFuKTtcbiAgLS10ZXh0LXN0eWxlLXRpdGxlLTQtaGVpZ2h0OiB2YXIoLS1mb250LWhlaWdodC10aWdodCk7XG5cbiAgLS10ZXh0LXN0eWxlLXN1YmhlYWRpbmctZmFtaWx5OiB2YXIoLS1mb250LWZhbWlseS1yZWd1bGFyKTtcbiAgLS10ZXh0LXN0eWxlLXN1YmhlYWRpbmctc2l6ZTogdmFyKC0tZm9udC1zaXplLTR4KTtcbiAgLS10ZXh0LXN0eWxlLXN1YmhlYWRpbmctc3BhY2luZzogdmFyKC0tZm9udC1zcGFjaW5nLW5vcm1hbCk7XG4gIC0tdGV4dC1zdHlsZS1zdWJoZWFkaW5nLXdlaWdodDogdmFyKC0tZm9udC13ZWlnaHQtbWVkaWFuKTtcbiAgLS10ZXh0LXN0eWxlLXN1YmhlYWRpbmctaGVpZ2h0OiB2YXIoLS1mb250LWhlaWdodC1ub3JtYWwpO1xuXG4gIC0tdGV4dC1zdHlsZS1ib2R5LWxhcmdlLWZhbWlseTogdmFyKC0tZm9udC1mYW1pbHktcmVndWxhcik7XG4gIC0tdGV4dC1zdHlsZS1ib2R5LWxhcmdlLXNpemU6IHZhcigtLWZvbnQtc2l6ZS0zeCk7XG4gIC0tdGV4dC1zdHlsZS1ib2R5LWxhcmdlLXNwYWNpbmc6IHZhcigtLWZvbnQtc3BhY2luZy1ub3JtYWwpO1xuICAtLXRleHQtc3R5bGUtYm9keS1sYXJnZS13ZWlnaHQ6IHZhcigtLWZvbnQtd2VpZ2h0LW5ldXRyYWwpO1xuICAtLXRleHQtc3R5bGUtYm9keS1sYXJnZS1oZWlnaHQ6IHZhcigtLWZvbnQtaGVpZ2h0LW5vcm1hbCk7XG4gIC0tdGV4dC1zdHlsZS1ib2R5LWxhcmdlLXN0cm9uZy13ZWlnaHQ6IHZhcigtLWZvbnQtd2VpZ2h0LWJ1bGt5KTtcblxuICAtLXRleHQtc3R5bGUtYm9keS1zbWFsbC1mYW1pbHk6IHZhcigtLWZvbnQtZmFtaWx5LXJlZ3VsYXIpO1xuICAtLXRleHQtc3R5bGUtYm9keS1zbWFsbC1zaXplOiB2YXIoLS1mb250LXNpemUtMngpO1xuICAtLXRleHQtc3R5bGUtYm9keS1zbWFsbC1zcGFjaW5nOiB2YXIoLS1mb250LXNwYWNpbmctbm9ybWFsKTtcbiAgLS10ZXh0LXN0eWxlLWJvZHktc21hbGwtd2VpZ2h0OiB2YXIoLS1mb250LXdlaWdodC1uZXV0cmFsKTtcbiAgLS10ZXh0LXN0eWxlLWJvZHktc21hbGwtaGVpZ2h0OiB2YXIoLS1mb250LWhlaWdodC1ub3JtYWwpO1xuICAtLXRleHQtc3R5bGUtYm9keS1zbWFsbC1zdHJvbmctd2VpZ2h0OiB2YXIoLS1mb250LXdlaWdodC1idWxreSk7XG5cbiAgLS10ZXh0LXN0eWxlLWxhYmVsLWxhcmdlLWZhbWlseTogdmFyKC0tZm9udC1mYW1pbHktcmVndWxhcik7XG4gIC0tdGV4dC1zdHlsZS1sYWJlbC1sYXJnZS1zaXplOiB2YXIoLS1mb250LXNpemUtM3gpO1xuICAtLXRleHQtc3R5bGUtbGFiZWwtbGFyZ2Utc3BhY2luZzogdmFyKC0tZm9udC1zcGFjaW5nLW5vcm1hbCk7XG4gIC0tdGV4dC1zdHlsZS1sYWJlbC1sYXJnZS13ZWlnaHQ6IHZhcigtLWZvbnQtd2VpZ2h0LW1lZGlhbik7XG4gIC0tdGV4dC1zdHlsZS1sYWJlbC1sYXJnZS1oZWlnaHQ6IHZhcigtLWZvbnQtaGVpZ2h0LW5vcm1hbCk7XG5cbiAgLS10ZXh0LXN0eWxlLWxhYmVsLXNtYWxsLWZhbWlseTogdmFyKC0tZm9udC1mYW1pbHktcmVndWxhcik7XG4gIC0tdGV4dC1zdHlsZS1sYWJlbC1zbWFsbC1zaXplOiB2YXIoLS1mb250LXNpemUtMngpO1xuICAtLXRleHQtc3R5bGUtbGFiZWwtc21hbGwtc3BhY2luZzogdmFyKC0tZm9udC1zcGFjaW5nLWxvb3NlKTtcbiAgLS10ZXh0LXN0eWxlLWxhYmVsLXNtYWxsLXdlaWdodDogdmFyKC0tZm9udC13ZWlnaHQtbWVkaWFuKTtcbiAgLS10ZXh0LXN0eWxlLWxhYmVsLXNtYWxsLWhlaWdodDogdmFyKC0tZm9udC1oZWlnaHQtbm9ybWFsKTtcblxuICAtLXRleHQtc3R5bGUtbWljcm8tZmFtaWx5OiB2YXIoLS1mb250LWZhbWlseS1yZWd1bGFyKTtcbiAgLS10ZXh0LXN0eWxlLW1pY3JvLXNpemU6IHZhcigtLWZvbnQtc2l6ZS0xeCk7XG4gIC0tdGV4dC1zdHlsZS1taWNyby1zcGFjaW5nOiB2YXIoLS1mb250LXNwYWNpbmctbG9vc2UpO1xuICAtLXRleHQtc3R5bGUtbWljcm8td2VpZ2h0OiB2YXIoLS1mb250LXdlaWdodC1uZXV0cmFsKTtcbiAgLS10ZXh0LXN0eWxlLW1pY3JvLWhlaWdodDogdmFyKC0tZm9udC1oZWlnaHQtdGlnaHQpO1xufVxuXG4uY29sb3Itc2NoZW1lLWxpZ2h0IHtcbiAgLS1jb2xvci1pbnRlcmFjdGl2ZS1wcmltYXJ5OiB2YXIoLS1jb2xvci1ncmVlbi0xMDApO1xuICAtLWNvbG9yLWludGVyYWN0aXZlLXByaW1hcnktaG92ZXI6IHZhcigtLWNvbG9yLWdyZWVuLTMwMCk7XG4gIC0tY29sb3ItaW50ZXJhY3RpdmUtc2Vjb25kYXJ5OiB2YXIoLS1jb2xvci10cmFuc3BhcmVudCk7XG4gIC0tY29sb3ItaW50ZXJhY3RpdmUtc2Vjb25kYXJ5LWhvdmVyOiB2YXIoLS1jb2xvci1ncmV5LTEwMDApO1xuICAtLWNvbG9yLWludGVyYWN0aXZlLXRlcnRpYXJ5OiB2YXIoLS1jb2xvci10cmFuc3BhcmVudCk7XG4gIC0tY29sb3ItaW50ZXJhY3RpdmUtdGVydGlhcnktaG92ZXI6IHZhcigtLWNvbG9yLWdyZXktMjUpO1xuICAtLWNvbG9yLWludGVyYWN0aXZlLWNvbnRyb2w6IHZhcigtLWNvbG9yLWdyZXktMTAwMCk7XG4gIC0tY29sb3ItaW50ZXJhY3RpdmUtY29udHJvbC1ob3ZlcjogdmFyKC0tY29sb3ItZ3JleS03MDApO1xuICAtLWNvbG9yLWludGVyYWN0aXZlLWRpc2FibGVkOiB2YXIoLS1jb2xvci1ncmV5LTEwMCk7XG5cbiAgLS1jb2xvci1zdXJmYWNlLXByaW1hcnk6IHZhcigtLWNvbG9yLXdoaXRlKTtcbiAgLS1jb2xvci1zdXJmYWNlLWFjY2VudDogdmFyKC0tY29sb3ItZ3JleS01MCk7XG4gIC0tY29sb3Itc3VyZmFjZS1pbnZlcnNlOiB2YXIoLS1jb2xvci1ncmV5LTEwMDApO1xuICAtLWNvbG9yLXN1cmZhY2UtYnJhbmQtYWNjZW50OiB2YXIoLS1jb2xvci1qYWZmYS0yNSk7XG4gIC0tY29sb3Itc3VyZmFjZS1lbGV2YXRlZDogdmFyKC0tY29sb3ItZ3JleS03MDApO1xuICAtLWNvbG9yLXN1cmZhY2UtY2F1dGlvbi1kZWZhdWx0OiB2YXIoLS1jb2xvci1qYWZmYS0yNSk7XG4gIC0tY29sb3Itc3VyZmFjZS1jYXV0aW9uLXN0cm9uZzogdmFyKC0tY29sb3ItamFmZmEtNzAwKTtcbiAgLS1jb2xvci1zdXJmYWNlLWNyaXRpY2FsLWRlZmF1bHQ6IHZhcigtLWNvbG9yLXZlcnliZXJyeS0yNSk7XG4gIC0tY29sb3Itc3VyZmFjZS1jcml0aWNhbC1zdHJvbmc6IHZhcigtLWNvbG9yLXZlcnliZXJyeS03MDApO1xuICAtLWNvbG9yLXN1cmZhY2UtaW5mby1kZWZhdWx0OiB2YXIoLS1jb2xvci1ibHVlLTI1KTtcbiAgLS1jb2xvci1zdXJmYWNlLWluZm8tc3Ryb25nOiB2YXIoLS1jb2xvci1ibHVlLTcwMCk7XG4gIC0tY29sb3Itc3VyZmFjZS1uZXV0cmFsLWRlZmF1bHQ6IHZhcigtLWNvbG9yLWdyZXktMjUpO1xuICAtLWNvbG9yLXN1cmZhY2UtbmV1dHJhbC1zdHJvbmc6IHZhcigtLWNvbG9yLWdyZXktMTAwMCk7XG4gIC0tY29sb3Itc3VyZmFjZS1wb3NpdGl2ZS1kZWZhdWx0OiB2YXIoLS1jb2xvci1ncmVlbi0yNSk7XG4gIC0tY29sb3Itc3VyZmFjZS1wb3NpdGl2ZS1zdHJvbmc6IHZhcigtLWNvbG9yLWdyZWVuLTcwMCk7XG5cbiAgLS1jb2xvci1vdmVybGF5LWxpZ2h0OiB2YXIoLS1jb2xvci13aGl0ZS1tYXNrKTtcbiAgLS1jb2xvci1vdmVybGF5LWRhcms6IHZhcigtLWNvbG9yLWdyZXktMTAwMC1tYXNrKTtcblxuICAtLWNvbG9yLWNvbnRlbnQtYnJhbmQ6IHZhcigtLWNvbG9yLWdyZWVuLTEwMDApO1xuICAtLWNvbG9yLWNvbnRlbnQtYnJhbmQtYWNjZW50OiB2YXIoLS1jb2xvci1idWJibGVndW0tNzAwKTtcbiAgLS1jb2xvci1jb250ZW50LXByaW1hcnk6IHZhcigtLWNvbG9yLWdyZXktMTAwMCk7XG4gIC0tY29sb3ItY29udGVudC1pbnZlcnNlOiB2YXIoLS1jb2xvci13aGl0ZSk7XG4gIC0tY29sb3ItY29udGVudC1zZWNvbmRhcnk6IHZhcigtLWNvbG9yLWdyZXktNTAwKTtcbiAgLS1jb2xvci1jb250ZW50LWRpc2FibGVkOiB2YXIoLS1jb2xvci1ncmV5LTMwMCk7XG4gIC0tY29sb3ItY29udGVudC1jYXV0aW9uLWRlZmF1bHQ6IHZhcigtLWNvbG9yLWphZmZhLTcwMCk7XG4gIC0tY29sb3ItY29udGVudC1jYXV0aW9uLXN0cm9uZzogdmFyKC0tY29sb3ItamFmZmEtMjUpO1xuICAtLWNvbG9yLWNvbnRlbnQtY3JpdGljYWwtZGVmYXVsdDogdmFyKC0tY29sb3ItdmVyeWJlcnJ5LTcwMCk7XG4gIC0tY29sb3ItY29udGVudC1jcml0aWNhbC1zdHJvbmc6IHZhcigtLWNvbG9yLXZlcnliZXJyeS0yNSk7XG4gIC0tY29sb3ItY29udGVudC1pbmZvLWRlZmF1bHQ6IHZhcigtLWNvbG9yLWJsdWUtNzAwKTtcbiAgLS1jb2xvci1jb250ZW50LWluZm8tc3Ryb25nOiB2YXIoLS1jb2xvci1ibHVlLTI1KTtcbiAgLS1jb2xvci1jb250ZW50LW5ldXRyYWwtZGVmYXVsdDogdmFyKC0tY29sb3ItZ3JleS0xMDAwKTtcbiAgLS1jb2xvci1jb250ZW50LW5ldXRyYWwtc3Ryb25nOiB2YXIoLS1jb2xvci13aGl0ZSk7XG4gIC0tY29sb3ItY29udGVudC1wb3NpdGl2ZS1kZWZhdWx0OiB2YXIoLS1jb2xvci1ncmVlbi03MDApO1xuICAtLWNvbG9yLWNvbnRlbnQtcG9zaXRpdmUtc3Ryb25nOiB2YXIoLS1jb2xvci1ncmVlbi0yNSk7XG5cbiAgLS1jb2xvci1ib3JkZXItcHJpbWFyeTogdmFyKC0tY29sb3ItZ3JleS0xMDAwKTtcbiAgLS1jb2xvci1ib3JkZXItc2Vjb25kYXJ5OiB2YXIoLS1jb2xvci1ncmV5LTMwMCk7XG4gIC0tY29sb3ItYm9yZGVyLXRlcnRpYXJ5OiB2YXIoLS1jb2xvci1ncmV5LTEwMCk7XG5cbiAgLS1jb2xvci1hbHdheXMtd2hpdGU6IHZhcigtLWNvbG9yLXdoaXRlKTtcbn1cblxuLmNvbG9yLXNjaGVtZS1kYXJrIHtcbiAgLS1jb2xvci1pbnRlcmFjdGl2ZS1wcmltYXJ5OiB2YXIoLS1jb2xvci1ncmVlbi0xMDApO1xuICAtLWNvbG9yLWludGVyYWN0aXZlLXByaW1hcnktaG92ZXI6IHZhcigtLWNvbG9yLWdyZWVuLTMwMCk7XG4gIC0tY29sb3ItaW50ZXJhY3RpdmUtc2Vjb25kYXJ5OiB2YXIoLS1jb2xvci10cmFuc3BhcmVudCk7XG4gIC0tY29sb3ItaW50ZXJhY3RpdmUtc2Vjb25kYXJ5LWhvdmVyOiB2YXIoLS1jb2xvci13aGl0ZSk7XG4gIC0tY29sb3ItaW50ZXJhY3RpdmUtdGVydGlhcnk6IHZhcigtLWNvbG9yLXRyYW5zcGFyZW50KTtcbiAgLS1jb2xvci1pbnRlcmFjdGl2ZS10ZXJ0aWFyeS1ob3ZlcjogdmFyKC0tY29sb3ItZ3JleS03MDApO1xuICAtLWNvbG9yLWludGVyYWN0aXZlLWNvbnRyb2w6IHZhcigtLWNvbG9yLXdoaXRlKTtcbiAgLS1jb2xvci1pbnRlcmFjdGl2ZS1jb250cm9sLWhvdmVyOiB2YXIoLS1jb2xvci1ncmV5LTEwMCk7XG4gIC0tY29sb3ItaW50ZXJhY3RpdmUtZGlzYWJsZWQ6IHZhcigtLWNvbG9yLWdyZXktNzAwKTtcblxuICAtLWNvbG9yLXN1cmZhY2UtcHJpbWFyeTogdmFyKC0tY29sb3ItZ3JleS0xMDAwKTtcbiAgLS1jb2xvci1zdXJmYWNlLWFjY2VudDogdmFyKC0tY29sb3ItZ3JleS03MDApO1xuICAtLWNvbG9yLXN1cmZhY2UtaW52ZXJzZTogdmFyKC0tY29sb3Itd2hpdGUpO1xuICAtLWNvbG9yLXN1cmZhY2UtYnJhbmQtYWNjZW50OiB2YXIoLS1jb2xvci1ncmV5LTcwMCk7XG4gIC0tY29sb3Itc3VyZmFjZS1lbGV2YXRlZDogdmFyKC0tY29sb3ItZ3JleS03MDApO1xuICAtLWNvbG9yLXN1cmZhY2UtY2F1dGlvbi1kZWZhdWx0OiB2YXIoLS1jb2xvci1qYWZmYS0xMDAwKTtcbiAgLS1jb2xvci1zdXJmYWNlLWNhdXRpb24tc3Ryb25nOiB2YXIoLS1jb2xvci1qYWZmYS01MDApO1xuICAtLWNvbG9yLXN1cmZhY2UtY3JpdGljYWwtZGVmYXVsdDogdmFyKC0tY29sb3ItdmVyeWJlcnJ5LTEwMDApO1xuICAtLWNvbG9yLXN1cmZhY2UtY3JpdGljYWwtc3Ryb25nOiB2YXIoLS1jb2xvci12ZXJ5YmVycnktNTAwKTtcbiAgLS1jb2xvci1zdXJmYWNlLWluZm8tZGVmYXVsdDogdmFyKC0tY29sb3ItYmx1ZS0xMDAwKTtcbiAgLS1jb2xvci1zdXJmYWNlLWluZm8tc3Ryb25nOiB2YXIoLS1jb2xvci1ibHVlLTUwMCk7XG4gIC0tY29sb3Itc3VyZmFjZS1uZXV0cmFsLWRlZmF1bHQ6IHZhcigtLWNvbG9yLWdyZXktNzAwKTtcbiAgLS1jb2xvci1zdXJmYWNlLW5ldXRyYWwtc3Ryb25nOiB2YXIoLS1jb2xvci13aGl0ZSk7XG4gIC0tY29sb3Itc3VyZmFjZS1wb3NpdGl2ZS1kZWZhdWx0OiB2YXIoLS1jb2xvci1ncmVlbi0xMDAwKTtcbiAgLS1jb2xvci1zdXJmYWNlLXBvc2l0aXZlLXN0cm9uZzogdmFyKC0tY29sb3ItZ3JlZW4tNTAwKTtcblxuICAtLWNvbG9yLW92ZXJsYXktbGlnaHQ6IHZhcigtLWNvbG9yLXdoaXRlLW1hc2spO1xuICAtLWNvbG9yLW92ZXJsYXktZGFyazogdmFyKC0tY29sb3ItZ3JleS0xMDAwLW1hc2spO1xuXG4gIC0tY29sb3ItY29udGVudC1icmFuZDogdmFyKC0tY29sb3ItZ3JlZW4tMTAwMCk7XG4gIC0tY29sb3ItY29udGVudC1icmFuZC1hY2NlbnQ6IHZhcigtLWNvbG9yLWJ1YmJsZWd1bS0xMDApO1xuICAtLWNvbG9yLWNvbnRlbnQtcHJpbWFyeTogdmFyKC0tY29sb3Itd2hpdGUpO1xuICAtLWNvbG9yLWNvbnRlbnQtaW52ZXJzZTogdmFyKC0tY29sb3ItZ3JleS0xMDAwKTtcbiAgLS1jb2xvci1jb250ZW50LXNlY29uZGFyeTogdmFyKC0tY29sb3ItZ3JleS0xMDApO1xuICAtLWNvbG9yLWNvbnRlbnQtZGlzYWJsZWQ6IHZhcigtLWNvbG9yLWdyZXktNTAwKTtcbiAgLS1jb2xvci1jb250ZW50LWNhdXRpb24tZGVmYXVsdDogdmFyKC0tY29sb3ItamFmZmEtNTAwKTtcbiAgLS1jb2xvci1jb250ZW50LWNhdXRpb24tc3Ryb25nOiB2YXIoLS1jb2xvci1qYWZmYS0xMDAwKTtcbiAgLS1jb2xvci1jb250ZW50LWNyaXRpY2FsLWRlZmF1bHQ6IHZhcigtLWNvbG9yLXZlcnliZXJyeS01MDApO1xuICAtLWNvbG9yLWNvbnRlbnQtY3JpdGljYWwtc3Ryb25nOiB2YXIoLS1jb2xvci12ZXJ5YmVycnktMTAwMCk7XG4gIC0tY29sb3ItY29udGVudC1pbmZvLWRlZmF1bHQ6IHZhcigtLWNvbG9yLWJsdWUtNTAwKTtcbiAgLS1jb2xvci1jb250ZW50LWluZm8tc3Ryb25nOiB2YXIoLS1jb2xvci1ibHVlLTEwMDApO1xuICAtLWNvbG9yLWNvbnRlbnQtbmV1dHJhbC1kZWZhdWx0OiB2YXIoLS1jb2xvci13aGl0ZSk7XG4gIC0tY29sb3ItY29udGVudC1uZXV0cmFsLXN0cm9uZzogdmFyKC0tY29sb3ItZ3JleS0xMDAwKTtcbiAgLS1jb2xvci1jb250ZW50LXBvc2l0aXZlLWRlZmF1bHQ6IHZhcigtLWNvbG9yLWdyZWVuLTUwMCk7XG4gIC0tY29sb3ItY29udGVudC1wb3NpdGl2ZS1zdHJvbmc6IHZhcigtLWNvbG9yLWdyZWVuLTEwMDApO1xuXG4gIC0tY29sb3ItYm9yZGVyLXByaW1hcnk6IHZhcigtLWNvbG9yLXdoaXRlKTtcbiAgLS1jb2xvci1ib3JkZXItc2Vjb25kYXJ5OiB2YXIoLS1jb2xvci1ncmV5LTUwMCk7XG4gIC0tY29sb3ItYm9yZGVyLXRlcnRpYXJ5OiB2YXIoLS1jb2xvci1ncmV5LTcwMCk7XG5cbiAgLS1jb2xvci1hbHdheXMtd2hpdGU6IHZhcigtLWNvbG9yLXdoaXRlKTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */
+    </style>
+    <style>
+        .brand-neue-button {
+            gap: var(--spacing-2x);
+            border-radius: var(--roundness-subtle);
+            background: var(--color-interactive-primary);
+            color: var(--color-content-brand);
+            font-family: PolySans-Median;
+            font-size: var(--font-size-2x);
+            letter-spacing: 0.02em;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        .brand-neue-button:hover,
+        .brand-neue-button:active,
+        .brand-neue-button:focus {
+            background: var(--color-interactive-primary-hover);
+        }
+        
+        .brand-neue-button__open-in-new::after {
+            font-size: 0;
+            margin-left: 5px;
+            vertical-align: sub;
+            content: url("data:image/svg+xml,<svg width=\"14\" height=\"14\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"ico-/-24-/-actions-/-open_in_new\"><path id=\"Icon-color\" d=\"M17.5 12.0833V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H4.16667C3.24619 17.5 2.5 16.7538 2.5 15.8333V4.16667C2.5 3.24619 3.24619 2.5 4.16667 2.5H7.91667C8.14679 2.5 8.33333 2.68655 8.33333 2.91667V3.75C8.33333 3.98012 8.14679 4.16667 7.91667 4.16667H4.16667V15.8333H15.8333V12.0833C15.8333 11.8532 16.0199 11.6667 16.25 11.6667H17.0833C17.3135 11.6667 17.5 11.8532 17.5 12.0833ZM17.3167 2.91667L17.0917 2.69167C16.98 2.57535 16.8278 2.50668 16.6667 2.5H11.25C11.0199 2.5 10.8333 2.68655 10.8333 2.91667V3.75C10.8333 3.98012 11.0199 4.16667 11.25 4.16667H14.6583L7.625 11.2C7.54612 11.2782 7.50175 11.3847 7.50175 11.4958C7.50175 11.6069 7.54612 11.7134 7.625 11.7917L8.20833 12.375C8.28657 12.4539 8.39307 12.4982 8.50417 12.4982C8.61527 12.4982 8.72176 12.4539 8.8 12.375L15.8333 5.35V8.75C15.8333 8.98012 16.0199 9.16667 16.25 9.16667H17.0833C17.3135 9.16667 17.5 8.98012 17.5 8.75V3.33333C17.4955 3.17342 17.4299 3.02132 17.3167 2.90833V2.91667Z\" fill=\"%231A4200\"/></g></svg>");
+        }
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2FwcC9qYXZhc2NyaXB0L2NvbXBvbmVudHMvYnJhbmRfbmV1ZV90b2tlbnMvY29tcG9uZW50cy9idXR0b24uc2FzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHNCQUFBO0VBQ0Esc0NBQUE7RUFDQSw0Q0FBQTtFQUNBLGlDQUFBO0VBQ0EsNEJBQUE7RUFDQSw4QkFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0FBQ0Y7QUFBRTtFQUNFLGtEQUFBO0FBRUo7O0FBQ0U7RUFDRSxZQUFBO0VBQ0EsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLGdEQUFBO0FBRUoiLCJzb3VyY2VzQ29udGVudCI6WyIuYnJhbmQtbmV1ZS1idXR0b25cbiAgZ2FwOiB2YXIoLS1zcGFjaW5nLTJ4KVxuICBib3JkZXItcmFkaXVzOiB2YXIoLS1yb3VuZG5lc3Mtc3VidGxlKVxuICBiYWNrZ3JvdW5kOiB2YXIoLS1jb2xvci1pbnRlcmFjdGl2ZS1wcmltYXJ5KVxuICBjb2xvcjogdmFyKC0tY29sb3ItY29udGVudC1icmFuZClcbiAgZm9udC1mYW1pbHk6IFBvbHlTYW5zLU1lZGlhblxuICBmb250LXNpemU6IHZhcigtLWZvbnQtc2l6ZS0yeClcbiAgbGV0dGVyLXNwYWNpbmc6IDAuMDJlbVxuICB0ZXh0LWFsaWduOiBjZW50ZXJcbiAgcGFkZGluZzogMCAyMHB4XG4gICY6aG92ZXIsICY6YWN0aXZlLCAmOmZvY3VzXG4gICAgYmFja2dyb3VuZDogdmFyKC0tY29sb3ItaW50ZXJhY3RpdmUtcHJpbWFyeS1ob3ZlcilcblxuLmJyYW5kLW5ldWUtYnV0dG9uX19vcGVuLWluLW5ld1xuICAmOjphZnRlclxuICAgIGZvbnQtc2l6ZTogMFxuICAgIG1hcmdpbi1sZWZ0OiA1cHhcbiAgICB2ZXJ0aWNhbC1hbGlnbjogc3ViXG4gICAgY29udGVudDogdXJsKCdkYXRhOmltYWdlL3N2Zyt4bWwsPHN2ZyB3aWR0aD1cIjE0XCIgaGVpZ2h0PVwiMTRcIiB2aWV3Qm94PVwiMCAwIDIwIDIwXCIgZmlsbD1cIm5vbmVcIiB4bWxucz1cImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCI+PGcgaWQ9XCJpY28tLy0yNC0vLWFjdGlvbnMtLy1vcGVuX2luX25ld1wiPjxwYXRoIGlkPVwiSWNvbi1jb2xvclwiIGQ9XCJNMTcuNSAxMi4wODMzVjE1LjgzMzNDMTcuNSAxNi43NTM4IDE2Ljc1MzggMTcuNSAxNS44MzMzIDE3LjVINC4xNjY2N0MzLjI0NjE5IDE3LjUgMi41IDE2Ljc1MzggMi41IDE1LjgzMzNWNC4xNjY2N0MyLjUgMy4yNDYxOSAzLjI0NjE5IDIuNSA0LjE2NjY3IDIuNUg3LjkxNjY3QzguMTQ2NzkgMi41IDguMzMzMzMgMi42ODY1NSA4LjMzMzMzIDIuOTE2NjdWMy43NUM4LjMzMzMzIDMuOTgwMTIgOC4xNDY3OSA0LjE2NjY3IDcuOTE2NjcgNC4xNjY2N0g0LjE2NjY3VjE1LjgzMzNIMTUuODMzM1YxMi4wODMzQzE1LjgzMzMgMTEuODUzMiAxNi4wMTk5IDExLjY2NjcgMTYuMjUgMTEuNjY2N0gxNy4wODMzQzE3LjMxMzUgMTEuNjY2NyAxNy41IDExLjg1MzIgMTcuNSAxMi4wODMzWk0xNy4zMTY3IDIuOTE2NjdMMTcuMDkxNyAyLjY5MTY3QzE2Ljk4IDIuNTc1MzUgMTYuODI3OCAyLjUwNjY4IDE2LjY2NjcgMi41SDExLjI1QzExLjAxOTkgMi41IDEwLjgzMzMgMi42ODY1NSAxMC44MzMzIDIuOTE2NjdWMy43NUMxMC44MzMzIDMuOTgwMTIgMTEuMDE5OSA0LjE2NjY3IDExLjI1IDQuMTY2NjdIMTQuNjU4M0w3LjYyNSAxMS4yQzcuNTQ2MTIgMTEuMjc4MiA3LjUwMTc1IDExLjM4NDcgNy41MDE3NSAxMS40OTU4QzcuNTAxNzUgMTEuNjA2OSA3LjU0NjEyIDExLjcxMzQgNy42MjUgMTEuNzkxN0w4LjIwODMzIDEyLjM3NUM4LjI4NjU3IDEyLjQ1MzkgOC4zOTMwNyAxMi40OTgyIDguNTA0MTcgMTIuNDk4MkM4LjYxNTI3IDEyLjQ5ODIgOC43MjE3NiAxMi40NTM5IDguOCAxMi4zNzVMMTUuODMzMyA1LjM1VjguNzVDMTUuODMzMyA4Ljk4MDEyIDE2LjAxOTkgOS4xNjY2NyAxNi4yNSA5LjE2NjY3SDE3LjA4MzNDMTcuMzEzNSA5LjE2NjY3IDE3LjUgOC45ODAxMiAxNy41IDguNzVWMy4zMzMzM0MxNy40OTU1IDMuMTczNDIgMTcuNDI5OSAzLjAyMTMyIDE3LjMxNjcgMi45MDgzM1YyLjkxNjY3WlwiIGZpbGw9XCIlMjMxQTQyMDBcIi8+PC9nPjwvc3ZnPicpXG5cbiJdLCJzb3VyY2VSb290IjoiIn0= */
+    </style>
+    <style type="text/css">
+        .fancybox-margin {
+            margin-right: 15px;
+        }
+    </style>
+    <script src="https://bat.bing.com/p/action/16005611.js" type="text/javascript" async="" data-ueto="ueto_8c931ec7a9"></script>
+    <meta http-equiv="origin-trial" content="A7JYkbIvWKmS8mWYjXO12SIIsfPdI7twY91Y3LWOV/YbZmN1ZhYv8O+Zs6/IPCfBE99aV9tIC8sWZSCN09vf7gkAAACWeyJvcmlnaW4iOiJodHRwczovL2N0LnBpbnRlcmVzdC5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+</head>
+
+<body class="color-scheme-light" data-view="app impressionTracker" data-responsive="true" data-user-signed-in="false" __processed_046ac43c-cdf6-4311-9a75-3ea1775342f5__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZW5hYmxlZCIsIkNPTkZJRyI6ImRpc2FibGVkIn0sInZlcnNpb24iOiIyLjAuMjYiLCJzY29yZSI6MjAwMjYwfV0=">
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">
+        //<![CDATA[
+        var gtmConfig = {}
+
+        //]]>
+    </script>
+
+    <!--[if lte IE 8]>
+  <div style="color:#fff;background:#f00;padding:20px;text-align:center;">
+    ThemeForest no longer actively supports this version of Internet Explorer. We suggest that you <a href="https://windows.microsoft.com/en-us/internet-explorer/download-ie" style="color:#fff;text-decoration:underline;">upgrade to a newer version</a> or <a href="https://browsehappy.com/" style="color:#fff;text-decoration:underline;">try a different browser</a>.
+  </div>
+<![endif]-->
+
+    <script src="https://public-assets.envato-static.com/assets/gtm_measurements-40b0a0f82bafab0a0bb77fc35fe1da0650288300b85126c95b4676bcff6e4584.js" nonce="TFNQUvYHwdi8uHoMheRs/Q=="></script>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8KL5Q5" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGCDGPL6" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+
+
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">
+        //<![CDATA[
+        (function() {
+            function normalizeAttributeValue(value) {
+                if (value === undefined || value === null) return undefined
+
+                var normalizedValue
+
+                if (Array.isArray(value)) {
+                    normalizedValue = normalizedValue || value
+                        .map(normalizeAttributeValue)
+                        .filter(Boolean)
+                        .join(', ')
+                }
+
+                normalizedValue = normalizedValue || value
+                    .toString()
+                    .toLowerCase()
+                    .trim()
+                    .replace(/&amp;/g, '&')
+                    .replace(/&#39;/g, "'")
+                    .replace(/\s+/g, ' ')
+
+                if (normalizedValue === '') return undefined
+                return normalizedValue
+            }
+
+            var pageAttributes = {
+                app_name: normalizeAttributeValue('Marketplace'),
+                app_env: normalizeAttributeValue('production'),
+                app_version: normalizeAttributeValue('f7d8b3d494288b34cb00105ee5d230d68b0ccca7'),
+                page_type: normalizeAttributeValue('item'),
+                page_location: window.location.href,
+                page_title: document.title,
+                page_referrer: document.referrer,
+                ga_param: normalizeAttributeValue(''),
+                event_attributes: null,
+                user_attributes: {
+                    user_id: normalizeAttributeValue(''),
+                    market_user_id: normalizeAttributeValue(''),
+                }
+            }
+            dataLayer.push(pageAttributes)
+
+            dataLayer.push({
+                event: 'analytics_ready',
+                event_attributes: {
+                    event_type: 'user',
+                    custom_timestamp: Date.now()
+                }
+            })
+        })();
+
+        //]]>
+    </script>
+    <style>
+        .live-preview-btn--blue .live-preview {
+            background-color: #ff9204;
+        }
+        
+        .live-preview-btn--blue .live-preview:hover,
+        .live-preview-btn--blue .live-preview:focus {
+            background-color: #292928
+        }
+        
+    </style>
+
+    <div class="page" bis_skin_checked="1">
+        <div class="page__off-canvas--left overflow" bis_skin_checked="1">
+            <div class="off-canvas-left js-off-canvas-left" bis_skin_checked="1">
+                <div class="off-canvas-left__top" bis_skin_checked="1">
+                    <a href="https://edevcodesolutionz.com/">Envato Market</a>
+                </div>
+
+                <div class="off-canvas-left__current-site -color-themeforest" bis_skin_checked="1">
+                    <span class="off-canvas-left__site-title">
+                        Web Themes &amp; Templates
+                    </span>
+
+                    <a class="off-canvas-left__current-site-toggle -white-arrow -color-themeforest" data-view="dropdown" data-dropdown-target=".off-canvas-left__sites" href="https://edevcodesolutionz.com/"></a>
+                </div>
+
+                <div class="off-canvas-left__sites is-hidden" id="off-canvas-sites" bis_skin_checked="1">
+                    <a class="off-canvas-left__site" href="https://edevcodesolutionz.com/">
+                        <span class="off-canvas-left__site-title">
+                            Code
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a>
+                    <a class="off-canvas-left__site" href="https://edevcodesolutionz.com/">
+                        <span class="off-canvas-left__site-title">
+                            Video
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a>
+                    <a class="off-canvas-left__site" href="https://edevcodesolutionz.com/">
+                        <span class="off-canvas-left__site-title">
+                            Audio
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a>
+                    <a class="off-canvas-left__site" href="https://edevcodesolutionz.com/">
+                        <span class="off-canvas-left__site-title">
+                            Graphics
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a>
+                    <a class="off-canvas-left__site" href="https://edevcodesolutionz.com/">
+                        <span class="off-canvas-left__site-title">
+                            Photos
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a>
+                    <a class="off-canvas-left__site" href="https://edevcodesolutionz.com/">
+                        <span class="off-canvas-left__site-title">
+                            3D Files
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a>
+                </div>
+
+                <div class="off-canvas-left__search" bis_skin_checked="1">
+                    <form id="search" action="https://edevcodesolutionz.com/" accept-charset="UTF-8" method="get">
+                        <div class="search-field -border-none" bis_skin_checked="1">
+                            <div class="search-field__input" bis_skin_checked="1">
+                                <input id="term" name="term" type="search" placeholder="Search" class="search-field__input-field">
+                            </div>
+                            <button class="search-field__button" type="submit">
+                                <i class="e-icon -icon-search"><span class="e-icon__alt">Search</span></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <ul>
+
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-all-items" href="https://edevcodesolutionz.com/">
+                            All Items
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-all-items">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Popular Files</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Featured Files</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Top New Files</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Follow Feed</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Top Authors</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Top New
+                                    Authors</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Public Collections</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">View All Categories</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-wordpress" href="https://edevcodesolutionz.com/">
+                            WordPress
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-wordpress">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Show all
+                                    WordPress</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Blog /
+                                    Magazine</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">BuddyPress</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Corporate</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Creative</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Directory &amp; Listings</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">eCommerce</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Education</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Elementor</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Entertainment</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Mobile</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Nonprofit</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Real
+                                    Estate</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Retail</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Technology</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Wedding</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Miscellaneous</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">WordPress Plugins</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-elementor" href="https://edevcodesolutionz.com/">
+                            Elementor
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-elementor">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Template Kits</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Plugins</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Themes</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+
+                        <a class="off-canvas-category-link--empty" href="https://edevcodesolutionz.com/">
+                            Hosting
+                        </a>
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-html" href="https://edevcodesolutionz.com/">
+                            HTML
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-html">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Show all
+                                    HTML</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Admin Templates</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Corporate</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Creative</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Entertainment</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Mobile</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Nonprofit</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Personal</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Retail</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Specialty Pages</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Technology</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Wedding</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Miscellaneous</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-shopify" href="https://edevcodesolutionz.com/">
+                            Shopify
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-shopify">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Show all
+                                    Shopify</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Fashion</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Shopping</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Health &amp; Beauty</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Technology</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Entertainment</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Miscellaneous</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+
+                        <a class="off-canvas-category-link--empty" href="https://edevcodesolutionz.com/">
+                            Jamstack
+                        </a>
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-marketing" href="https://edevcodesolutionz.com/">
+                            Marketing
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-marketing">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Show all
+                                    Marketing</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Email Templates</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Landing Pages</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Unbounce Landing Pages</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-cms" href="https://edevcodesolutionz.com/">
+                            CMS
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-cms">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Show all CMS</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Concrete5</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Drupal</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">HubSpot CMS Hub</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Joomla</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">MODX
+                                    Themes</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Moodle</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Webflow</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Weebly</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Miscellaneous</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-ecommerce" href="https://edevcodesolutionz.com/">
+                            eCommerce
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-ecommerce">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Show all
+                                    eCommerce</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">WooCommerce</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">BigCommerce</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Drupal Commerce</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Easy Digital Downloads</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Ecwid</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Magento</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">OpenCart</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">PrestaShop</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Shopify</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Ubercart</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">VirtueMart</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Zen
+                                    Cart</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Miscellaneous</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-ui-templates" href="https://edevcodesolutionz.com/">
+                            UI Templates
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-ui-templates">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Figma</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Adobe
+                                    XD</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Photoshop</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Sketch</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+
+                        <a class="off-canvas-category-link--empty" href="https://edevcodesolutionz.com/">
+                            Plugins
+                        </a>
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-more" href="https://edevcodesolutionz.com/">
+                            More
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-more">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Blogging</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Courses</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Facebook Templates</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Free Elementor Templates</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Free
+                                    WordPress Themes</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Forums</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Ghost
+                                    Themes</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://edevcodesolutionz.com/">Tumblr</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub external-link elements-nav__category-link" target="_blank" data-analytics-view-payload="{&quot;eventName&quot;:&quot;view_promotion&quot;,&quot;contextDetail&quot;:&quot;sub nav&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;Unlimited Creative Assets&quot;,&quot;promotionName&quot;:&quot;Unlimited Creative Assets&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}"
+                                    data-analytics-click-payload="{&quot;eventName&quot;:&quot;select_promotion&quot;,&quot;contextDetail&quot;:&quot;sub nav&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;Unlimited Creative Assets&quot;,&quot;promotionName&quot;:&quot;Unlimited Creative Assets&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}"
+                                    href="https://edevcodesolutionz.com/">Unlimited
+                                    Creative Assets</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a class="elements-nav__category-link external-link" target="_blank" data-analytics-view-payload="{&quot;eventName&quot;:&quot;view_promotion&quot;,&quot;contextDetail&quot;:&quot;site switcher&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;switcher_mobile_31JUL2024&quot;,&quot;promotionName&quot;:&quot;switcher_mobile_31JUL2024&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}"
+                            data-analytics-click-payload="{&quot;eventName&quot;:&quot;select_promotion&quot;,&quot;contextDetail&quot;:&quot;site switcher&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;switcher_mobile_31JUL2024&quot;,&quot;promotionName&quot;:&quot;switcher_mobile_31JUL2024&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}"
+                            href="https://edevcodesolutionz.com/">Unlimited
+                            Downloads</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="page__off-canvas--right overflow" bis_skin_checked="1">
+            <div class="off-canvas-right" bis_skin_checked="1">
+                <a class="off-canvas-right__link--cart" href="https://edevcodesolutionz.com/">
+                    Guest Cart
+                    <div class="shopping-cart-summary is-empty" data-view="cartCount" bis_skin_checked="1">
+                        <span class="js-cart-summary-count shopping-cart-summary__count">0</span>
+                        <i class="e-icon -icon-cart"></i>
+                    </div>
+                </a>
+                <a class="off-canvas-right__link" href="https://mobilenelayantoto.pages.dev/">
+                    Create an Envato Account
+                    <i class="e-icon -icon-envato"></i>
+                </a>
+                <a class="off-canvas-right__link" href="https://mobilenelayantoto.pages.dev/">
+                    Sign In
+                    <i class="e-icon -icon-login"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="page__canvas" bis_skin_checked="1">
+            <div class="canvas" bis_skin_checked="1">
+                <div class="canvas__header" bis_skin_checked="1">
+                    
+
+                    <header class="site-header">
+                        <div class="site-header__mini is-hidden-desktop" bis_skin_checked="1">
+                            <div class="header-mini" bis_skin_checked="1">
+                                <div class="header-mini__button--cart" bis_skin_checked="1">
+                                    <a class="btn btn--square" href="https://edevcodesolutionz.com/">
+                                        <svg width="14px" height="14px" viewBox="0 0 14 14" class="header-mini__button-cart-icon" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                            <title>Cart</title>
+                                            <path
+                                                d="M 0.009 1.349 C 0.009 1.753 0.347 2.086 0.765 2.086 C 0.765 2.086 0.766 2.086 0.767 2.086 L 0.767 2.09 L 2.289 2.09 L 5.029 7.698 L 4.001 9.507 C 3.88 9.714 3.812 9.958 3.812 10.217 C 3.812 11.028 4.496 11.694 5.335 11.694 L 14.469 11.694 L 14.469 11.694 C 14.886 11.693 15.227 11.36 15.227 10.957 C 15.227 10.552 14.886 10.221 14.469 10.219 L 14.469 10.217 L 5.653 10.217 C 5.547 10.217 5.463 10.135 5.463 10.031 L 5.487 9.943 L 6.171 8.738 L 11.842 8.738 C 12.415 8.738 12.917 8.436 13.175 7.978 L 15.901 3.183 C 15.96 3.08 15.991 2.954 15.991 2.828 C 15.991 2.422 15.65 2.09 15.23 2.09 L 3.972 2.09 L 3.481 1.077 L 3.466 1.043 C 3.343 0.79 3.084 0.612 2.778 0.612 C 2.777 0.612 0.765 0.612 0.765 0.612 C 0.347 0.612 0.009 0.943 0.009 1.349 Z M 3.819 13.911 C 3.819 14.724 4.496 15.389 5.335 15.389 C 6.171 15.389 6.857 14.724 6.857 13.911 C 6.857 13.097 6.171 12.434 5.335 12.434 C 4.496 12.434 3.819 13.097 3.819 13.911 Z M 11.431 13.911 C 11.431 14.724 12.11 15.389 12.946 15.389 C 13.784 15.389 14.469 14.724 14.469 13.911 C 14.469 13.097 13.784 12.434 12.946 12.434 C 12.11 12.434 11.431 13.097 11.431 13.911 Z">
+                                            </path>
+
+                                        </svg>
+
+
+                                        <span class="is-hidden">Cart</span>
+                                        <span class="header-mini__button-cart-cart-amount is-hidden">
+                                            0
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="header-mini__button--account" bis_skin_checked="1">
+                                    <a class="btn btn--square" data-view="offCanvasNavToggle" data-off-canvas="right" href="https://edevcodesolutionz.com/">
+                                        <i class="e-icon -icon-person"></i>
+                                        <span class="is-hidden">Account</span>
+                                    </a>
+                                </div>
+
+                                <div class="header-mini__button--categories" bis_skin_checked="1">
+                                    <a class="btn btn--square" data-view="offCanvasNavToggle" data-off-canvas="left" href="https://edevcodesolutionz.com/">
+                                        <i class="e-icon -icon-hamburger"></i>
+                                        <span class="is-hidden">Sites, Search &amp; Categories</span>
+                                    </a>
+                                </div>
+
+                                <div class="header-mini__logo" bis_skin_checked="1">
+                                    <a href="https://edevcodesolutionz.com/">
+                                        <img alt="Logo Baru" src="https://i.postimg.cc/0jzS0WS5/nelayan-logo.png" style="height:40px; width:auto; display:inline-block;">
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="global-header is-hidden-tablet-and-below" bis_skin_checked="1">
+
+                            <div class="grid-container -layout-wide" bis_skin_checked="1">
+                                <div class="global-header__wrapper" bis_skin_checked="1">
+                                    <a href="https://edevcodesolutionz.com/">
+                                        <img height="50" alt="Envato Market" class="global-header__logo" src="https://i.postimg.cc/0jzS0WS5/nelayan-logo.png">
+                                    </a>
+                                    <nav class="global-header-menu" role="navigation">
+                                        <ul class="global-header-menu__list">
+                                            <li class="global-header-menu__list-item">
+                                                <a class="global-header-menu__link" href="https://edevcodesolutionz.com/">
+                                                    <span class="global-header-menu__link-text">
+                                                        NELAYANTOTO
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="global-header-menu__list-item">
+                                                <a class="global-header-menu__link" href="https://edevcodesolutionz.com/">
+                                                    <span class="global-header-menu__link-text">
+                                                        NELAYANTOTO
+                                                    </span>
+                                                </a>
+                                            </li>
+                                               
+
+                                            <li data-view="globalHeaderMenuDropdownHandler" class="global-header-menu__list-item--with-dropdown">
+                                                <a data-lazy-load-trigger="mouseover" class="global-header-menu__link" href="https://mobilenelayantoto.pages.dev/">
+                                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="global-header-menu__icon" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                                        <title>Menu</title>
+                                                        <path
+                                                            d="M3.5 2A1.5 1.5 0 0 1 5 3.5 1.5 1.5 0 0 1 3.5 5 1.5 1.5 0 0 1 2 3.5 1.5 1.5 0 0 1 3.5 2zM8 2a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 8 5a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 8 2zM12.5 2A1.5 1.5 0 0 1 14 3.5 1.5 1.5 0 0 1 12.5 5 1.5 1.5 0 0 1 11 3.5 1.5 1.5 0 0 1 12.5 2zM3.5 6.5A1.5 1.5 0 0 1 5 8a1.5 1.5 0 0 1-1.5 1.5A1.5 1.5 0 0 1 2 8a1.5 1.5 0 0 1 1.5-1.5zM8 6.5A1.5 1.5 0 0 1 9.5 8 1.5 1.5 0 0 1 8 9.5 1.5 1.5 0 0 1 6.5 8 1.5 1.5 0 0 1 8 6.5zM12.5 6.5A1.5 1.5 0 0 1 14 8a1.5 1.5 0 0 1-1.5 1.5A1.5 1.5 0 0 1 11 8a1.5 1.5 0 0 1 1.5-1.5zM3.5 11A1.5 1.5 0 0 1 5 12.5 1.5 1.5 0 0 1 3.5 14 1.5 1.5 0 0 1 2 12.5 1.5 1.5 0 0 1 3.5 11zM8 11a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 8 14a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 8 11zM12.5 11a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5z">
+                                                        </path>
+
+                                                    </svg>
+
+                                                    <span class="global-header-menu__link-text">
+                                                        DAFTAR
+                                                    </span>
+                                                </a>
+                                                <li class="global-header-menu__list-item -background-light -border-radius">
+                                                    <a id="spec-link-cart" class="global-header-menu__link h-pr1" href="https://edevcodesolutionz.com/">
+
+                                                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="global-header-menu__icon global-header-menu__icon-cart" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                                        <title>Cart</title>
+                                                        <path
+                                                            d="M 0.009 1.349 C 0.009 1.753 0.347 2.086 0.765 2.086 C 0.765 2.086 0.766 2.086 0.767 2.086 L 0.767 2.09 L 2.289 2.09 L 5.029 7.698 L 4.001 9.507 C 3.88 9.714 3.812 9.958 3.812 10.217 C 3.812 11.028 4.496 11.694 5.335 11.694 L 14.469 11.694 L 14.469 11.694 C 14.886 11.693 15.227 11.36 15.227 10.957 C 15.227 10.552 14.886 10.221 14.469 10.219 L 14.469 10.217 L 5.653 10.217 C 5.547 10.217 5.463 10.135 5.463 10.031 L 5.487 9.943 L 6.171 8.738 L 11.842 8.738 C 12.415 8.738 12.917 8.436 13.175 7.978 L 15.901 3.183 C 15.96 3.08 15.991 2.954 15.991 2.828 C 15.991 2.422 15.65 2.09 15.23 2.09 L 3.972 2.09 L 3.481 1.077 L 3.466 1.043 C 3.343 0.79 3.084 0.612 2.778 0.612 C 2.777 0.612 0.765 0.612 0.765 0.612 C 0.347 0.612 0.009 0.943 0.009 1.349 Z M 3.819 13.911 C 3.819 14.724 4.496 15.389 5.335 15.389 C 6.171 15.389 6.857 14.724 6.857 13.911 C 6.857 13.097 6.171 12.434 5.335 12.434 C 4.496 12.434 3.819 13.097 3.819 13.911 Z M 11.431 13.911 C 11.431 14.724 12.11 15.389 12.946 15.389 C 13.784 15.389 14.469 14.724 14.469 13.911 C 14.469 13.097 13.784 12.434 12.946 12.434 C 12.11 12.434 11.431 13.097 11.431 13.911 Z">
+                                                        </path>
+
+                                                    </svg>
+
+
+                                                        <span class="global-header-menu__link-cart-amount is-hidden" data-view="headerCartCount" data-test-id="header_cart_count">0</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="global-header-menu__list-item -background-light -border-radius">
+                                                    <a class="global-header-menu__link h-pl1" data-view="modalAjax" href="https://mobilenelayantoto.pages.dev/">
+                                                        <span id="spec-user-username" class="global-header-menu__link-text">
+                                                        MASUK
+                                                    </span>
+                                                    </a>
+                                                </li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="site-header__sites is-hidden-tablet-and-below" bis_skin_checked="1">
+                            <div class="header-sites header-site-titles" bis_skin_checked="1">
+                                <div class="grid-container -layout-wide" bis_skin_checked="1">
+                                    <nav class="header-site-titles__container">
+                                        <div class="header-site-titles__site" bis_skin_checked="1">
+                                            <a class="header-site-titles__link t-link is-active" alt="Web Templates" href="https://edevcodesolutionz.com/">NELAYANTOTO</a>
+                                        </div>
+                                        <div class="header-site-titles__site" bis_skin_checked="1">
+                                            <a class="header-site-titles__link t-link" alt="Code" href="https://edevcodesolutionz.com/">NELAYAN TOTO</a>
+                                        </div>
+                                        <div class="header-site-titles__site" bis_skin_checked="1">
+                                            <a class="header-site-titles__link t-link" alt="Video" href="https://edevcodesolutionz.com/">NELAYANTOTO RESMI</a>
+                                        </div>
+                                        <div class="header-site-titles__site" bis_skin_checked="1">
+                                            <a class="header-site-titles__link t-link" alt="Music" href="https://edevcodesolutionz.com/">SITUS NELAYANTOTO</a>
+                                        </div>
+                                        <div class="header-site-titles__site" bis_skin_checked="1">
+                                            <a class="header-site-titles__link t-link" alt="Graphics" href="https://edevcodesolutionz.com/">DAFTAR NELAYANTOTO</a>
+                                        </div>
+                                        <div class="header-site-titles__site" bis_skin_checked="1">
+                                            <a class="header-site-titles__link t-link" alt="Photos" href="https://edevcodesolutionz.com/">LINK NELAYANTOTO</a>
+                                        </div>
+                                        <div class="header-site-titles__site elements-nav__container" bis_skin_checked="1">
+                                            <a class="header-site-titles__link t-link elements-nav__main-link" href="https://elements.envato.com/?utm_campaign=elements_mkt-switcher_31JUL2024&amp;utm_content=tf_item_8988002&amp;utm_medium=referral&amp;utm_source=themeforest.net" target="_blank">
+                                                <span>
+                                                    Unlimited Downloads
+                                                </span>
+                                            </a>
+
+                                            <a target="_blank" class="elements-nav__dropdown-container unique-selling-points__variant" data-analytics-view-payload="{&quot;eventName&quot;:&quot;view_promotion&quot;,&quot;contextDetail&quot;:&quot;site switcher&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;elements_mkt-switcher_31JUL2024&quot;,&quot;promotionName&quot;:&quot;elements_mkt-switcher_31JUL2024&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}"
+                                                data-analytics-click-payload="{&quot;eventName&quot;:&quot;select_promotion&quot;,&quot;contextDetail&quot;:&quot;site switcher&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;elements_mkt-switcher_31JUL2024&quot;,&quot;promotionName&quot;:&quot;elements_mkt-switcher_31JUL2024&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}"
+                                                href="https://elements.envato.com/?utm_campaign=elements_mkt-switcher_31JUL2024&amp;utm_content=tf_item_8988002&amp;utm_medium=referral&amp;utm_source=themeforest.net">
+                                                <div class="elements-nav__main-panel" bis_skin_checked="1">
+                                                    <img class="elements-nav__logo-container" loading="lazy" src="https://public-assets.envato-static.com/assets/header/EnvatoElements-logo-4f70ffb865370a5fb978e9a1fc5bbedeeecdfceb8d0ebec2186aef4bee5db79d.svg" alt="Elements logo" height="23" width="101">
+
+                                                    <div class="elements-nav__punch-line" bis_skin_checked="1">
+                                                        <h2>
+                                                            Looking for unlimited downloads?
+                                                        </h2>
+                                                        <p>
+                                                            Subscribe to Envato Elements.
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                <img src="https://public-assets.envato-static.com/assets/header/badge-a65149663b95bcee411e80ccf4da9788f174155587980d8f1d9c44fd8b59edd8.svg" alt="badge" width="20" height="20"> Millions of
+                                                                premium assets
+                                                            </li>
+                                                            <li>
+                                                                <img src="https://public-assets.envato-static.com/assets/header/thumbs_up-e5ce4c821cfd6a6aeba61127a8e8c4d2d7c566e654f588a22708c64d66680869.svg" alt="thumbs up" width="20" height="20"> Great
+                                                                value subscription
+                                                            </li>
+                                                        </ul>
+                                                        <button class="brand-neue-button brand-neue-button__open-in-new elements-nav__cta">Let's
+                                                            create</button>
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+                                                <div class="elements-nav__secondary-panel" bis_skin_checked="1">
+                                                    <img class="elements-nav__secondary-panel__collage" loading="lazy" src="https://public-assets.envato-static.com/assets/header/items-collage-1x-a39e4a5834e75c32a634cc7311720baa491687b1aaa4b709ebd1acf0f8427b53.png" srcset="https://public-assets.envato-static.com/assets/header/items-collage-2x-75e1ad16a46b9788861780a57feeb5fd1ad1026ecce9330302f0ef8f6f542697.png 2x"
+                                                        alt="Collage of Elements items" width="267" height="233">
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="header-site-floating-logo__container" bis_skin_checked="1">
+                                            <div class="" bis_skin_checked="1">
+                                                <img src="https://i.postimg.cc/0jzS0WS5/nelayan-logo.png" alt="NELAYANTOTO LOGIN" style="max-width: 150px; height: auto; object-fit: contain;" data-spm-anchor-id="0.0.header.i0.27e27142EyRkBl">
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="site-header__categories is-hidden-tablet-and-below" bis_skin_checked="1">
+                            <div class="header-categories" bis_skin_checked="1">
+                                <div class="grid-container -layout-wide" bis_skin_checked="1">
+                                    <ul class="header-categories__links">
+                                        <li class="header-categories__links-item">
+                                            <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-0-dropdown" href="https://edevcodesolutionz.com/">
+
+                                                NELAYANTOTO
+
+                                            </a>
+                                        </li>
+                               <div class="header-categories__search" bis_skin_checked="1">
+                                        <form id="search" data-view="searchField" action="https://edevcodesolutionz.com/" accept-charset="UTF-8" method="get">
+                                            <div class="search-field -border-light h-ml2" bis_skin_checked="1">
+                                                <div class="search-field__input" bis_skin_checked="1">
+                                                    <input id="term" name="term" class="js-term search-field__input-field" type="search" placeholder="Search">
+                                                </div>
+                                                <button class="search-field__button" type="submit">
+                                                        <i class="e-icon -icon-search"><span
+                                                                class="e-icon__alt">Search</span></i>
+                                                    </button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </header>
+                </div>
+
+                <div class="js-canvas__body canvas__body" bis_skin_checked="1">
+                    <div class="grid-container" bis_skin_checked="1">
+                    </div>
+
+
+
+                    <div class="context-header " bis_skin_checked="1">
+                        <div class="grid-container " bis_skin_checked="1">
+                            <nav class="breadcrumbs h-text-truncate  ">
+
+                                <a class="js-breadcrumb-category" href="https://edevcodesolutionz.com/">NELAYANTOTO</a>
+
+
+                                <a href="https://edevcodesolutionz.com/" class="js-breadcrumb-category">NELAYANTOTO</a>
+
+                                <a class="js-breadcrumb-category" href="https://edevcodesolutionz.com/">NELAYANTOTO</a>
+                            </nav>
+
+                            <div class="item-header" data-view="itemHeader" bis_skin_checked="1">
+                                <div class="item-header__top" bis_skin_checked="1">
+                                    <div class="item-header__title" bis_skin_checked="1">
+                                        <h1 class="t-heading -color-inherit -size-l h-m0 is-hidden-phone">NELAYANTOTO x NELAYAN TOTO Login Situs Togel Resmi dan Terlengkap</h1>
+
+                                        <h1 class="t-heading -color-inherit -size-xs h-m0 is-hidden-tablet-and-above">
+                                            NELAYANTOTO x NELAYAN TOTO Login Situs Togel Resmi dan Terlengkap
+                                        </h1>
+                                    </div>
+
+                                    <div class="item-header__price is-hidden-desktop" bis_skin_checked="1">
+                                        <a class="js-item-header__cart-button e-btn--3d -color-primary -size-m" rel="nofollow" title="Add to Cart" data-view="modalAjax" href="https://edevcodesolutionz.com/">
+                                            <span class="item-header__cart-button-icon">
+                                                <i class="e-icon -icon-cart -margin-right"></i>
+                                            </span>
+
+                                            <span class="t-heading -size-m -color-light -margin-none">
+                                                <b class="t-currency"><span class="js-item-header__price">$5.000</span></b>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="item-header__details-section" bis_skin_checked="1">
+                                    <div class="item-header__author-details" bis_skin_checked="1">
+                                        By <a rel="author" class="js-by-author" href="https://edevcodesolutionz.com/">NELAYANTOTO</a>
+                                    </div>
+                                    <div class="item-header__sales-count" bis_skin_checked="1">
+                                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="item-header__sales-count-icon" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                            <title>Cart</title>
+                                            <path
+                                                d="M 0.009 1.349 C 0.009 1.753 0.347 2.086 0.765 2.086 C 0.765 2.086 0.766 2.086 0.767 2.086 L 0.767 2.09 L 2.289 2.09 L 5.029 7.698 L 4.001 9.507 C 3.88 9.714 3.812 9.958 3.812 10.217 C 3.812 11.028 4.496 11.694 5.335 11.694 L 14.469 11.694 L 14.469 11.694 C 14.886 11.693 15.227 11.36 15.227 10.957 C 15.227 10.552 14.886 10.221 14.469 10.219 L 14.469 10.217 L 5.653 10.217 C 5.547 10.217 5.463 10.135 5.463 10.031 L 5.487 9.943 L 6.171 8.738 L 11.842 8.738 C 12.415 8.738 12.917 8.436 13.175 7.978 L 15.901 3.183 C 15.96 3.08 15.991 2.954 15.991 2.828 C 15.991 2.422 15.65 2.09 15.23 2.09 L 3.972 2.09 L 3.481 1.077 L 3.466 1.043 C 3.343 0.79 3.084 0.612 2.778 0.612 C 2.777 0.612 0.765 0.612 0.765 0.612 C 0.347 0.612 0.009 0.943 0.009 1.349 Z M 3.819 13.911 C 3.819 14.724 4.496 15.389 5.335 15.389 C 6.171 15.389 6.857 14.724 6.857 13.911 C 6.857 13.097 6.171 12.434 5.335 12.434 C 4.496 12.434 3.819 13.097 3.819 13.911 Z M 11.431 13.911 C 11.431 14.724 12.11 15.389 12.946 15.389 C 13.784 15.389 14.469 14.724 14.469 13.911 C 14.469 13.097 13.784 12.434 12.946 12.434 C 12.11 12.434 11.431 13.097 11.431 13.911 Z">
+                                            </path>
+
+                                        </svg>
+
+                                        <strong>5.000</strong> sales
+                                    </div>
+                                    <div class="item-header__envato-highlighted" bis_skin_checked="1">
+                                        <strong>NELAYANTOTO</strong>
+                                        <svg width="16px" height="16px" viewBox="0 0 14 14" class="item-header__envato-checkmark-icon" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                            <title></title>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.333252 7.00004C0.333252 3.31814 3.31802 0.333374 6.99992 0.333374C8.76803 0.333374 10.4637 1.03575 11.714 2.286C12.9642 3.53624 13.6666 5.23193 13.6666 7.00004C13.6666 10.6819 10.6818 13.6667 6.99992 13.6667C3.31802 13.6667 0.333252 10.6819 0.333252 7.00004ZM6.15326 9.23337L9.89993 5.48671C10.0227 5.35794 10.0227 5.15547 9.89993 5.02671L9.54659 4.67337C9.41698 4.54633 9.20954 4.54633 9.07993 4.67337L5.91993 7.83337L4.91993 6.84004C4.85944 6.77559 4.77498 6.73903 4.68659 6.73903C4.5982 6.73903 4.51375 6.77559 4.45326 6.84004L4.09993 7.19337C4.03682 7.25596 4.00133 7.34116 4.00133 7.43004C4.00133 7.51892 4.03682 7.60412 4.09993 7.66671L5.68659 9.23337C5.74708 9.29782 5.83154 9.33439 5.91993 9.33439C6.00832 9.33439 6.09277 9.29782 6.15326 9.23337Z"
+                                                fill="#79B530"></path>
+
+                                        </svg>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- Desktop Item Navigation -->
+                            <div class="is-hidden-tablet-and-below page-tabs" bis_skin_checked="1">
+                                <ul>
+                                    <li class="selected"><a class="js-item-navigation-item-details t-link -decoration-none" href="https://edevcodesolutionz.com/">Item Details</a>
+                                    </li>
+                                    <li><a class="js-item-navigation-reviews t-link -decoration-none" href=""><span>Reviews</span><span>
+                                                <div class="rating-detailed-small" bis_skin_checked="1">
+                                                    <div class="rating-detailed-small__header" bis_skin_checked="1">
+                                                        <div class="rating-detailed-small__stars" bis_skin_checked="1">
+                                                            <div class="rating-detailed-small-center__star-rating"
+                                                                bis_skin_checked="1">
+                                                                <i class="e-icon -icon-star">
+                                                                </i> <i class="e-icon -icon-star">
+                                                                </i> <i class="e-icon -icon-star">
+                                                                </i> <i class="e-icon -icon-star">
+                                                                </i> <i class="e-icon -icon-star">
+                                                                </i>
+                                                            </div>
+                                                            4.99
+                                                            <span class="is-visually-hidden">4.99 stars</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </span><span class="item-navigation-reviews-comments">5000</span></a></li>
+                                    <li><a class="js-item-navigation-comments t-link -decoration-none" href=""><span>Comments</span><span
+                                                class="item-navigation-reviews-comments">5.000</span></a></li>
+                                    <li><a class="js-item-navigation-support t-link -decoration-none">Support</a>
+      
+    <div class="page-tabs--dropdown" data-view="replaceItemNavsWithRemote" data-target=".js-remote" bis_skin_checked="1">
+        <div class="page-tabs--dropdown__slt-custom-wlabel" bis_skin_checked="1">
+            <div class="slt-custom-wlabel--page-tabs--dropdown" bis_skin_checked="1">
+                <label>
+                                            <span class="js-label">
+                                                Item Details
+                                            </span>
+                                            <span class="slt-custom-wlabel__arrow">
+                                                <i class="e-icon -icon-arrow-fill-down"></i>
+                                            </span>
+                                        </label>
+
+                <select class="js-remote">
+                                            <option selected="selected"
+                                                data-url="/item/marketica-marketplace-wordpress-theme/8988002">Item
+                                                Details</option>
+                                            <option
+                                                data-url="/item/marketica-marketplace-wordpress-theme/reviews/8988002">
+                                                Reviews (75)</option>
+                                            <option
+                                                data-url="/item/marketica-marketplace-wordpress-theme/8988002/comments">
+                                                Comments (802)</option>
+                                            <option
+                                                data-url="/item/marketica-marketplace-wordpress-theme/8988002/support">
+                                                Support</option>
+
+
+                                        </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-tabs" bis_skin_checked="1">
+        <ul class="right item-bookmarking__left-icons_hidden" data-view="bookmarkStatesLoader">
+            <li class="js-favorite-widget item-bookmarking__control_icons--favorite" data-item-id="8988002"><a data-view="modalAjax" class="t-link -decoration-none" href="https://edevcodesolutionz.com/"><span
+                                                class="item-bookmarking__control--label">Add to Favorites</span></a>
+            </li>
+            <li class="js-collection-widget item-bookmarking__control_icons--collection" data-item-id="8988002"><a data-view="modalAjax" class="t-link -decoration-none" href="https://edevcodesolutionz.com/"><span
+                                                class="item-bookmarking__control--label">Add to Collection</span></a>
+            </li>
+        </ul>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <div class="content-main" id="content" bis_skin_checked="1">
+
+        <div class="grid-container" bis_skin_checked="1">
+            <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">
+                //<![CDATA[
+                window.GtmMeasurements.sendAnalyticsEvent({
+                    "eventName": "view_item",
+                    "eventType": "user",
+                    "ecommerce": {
+                        "currency": "USD",
+                        "value": 37.0,
+                        "items": [{
+                            "affiliation": "themeforest",
+                            "item_id": 8988002,
+                            "item_name": "NELAYANTOTO x NELAYAN TOTO Login Situs Togel Resmi dan Terlengkap",
+                            "item_brand": "tokopress",
+                            "item_category": "wordpress",
+                            "item_category2": "ecommerce",
+                            "item_category3": "woocommerce",
+                            "price": 37.0,
+                            "quantity": 1,
+                            "item_add_on": "bundle_6month",
+                            "item_variant": "regular"
+                        }]
+                    }
+                });
+
+                //]]>
+            </script>
+
+
+            <div bis_skin_checked="1">
+                <link href="https://i.postimg.cc/0jzS0WS5/nelayan-logo.png">
+
+                <div class="content-s " bis_skin_checked="1">
+                    <div class="item-bookmarking__left-icons__wrapper" bis_skin_checked="1">
+                        <ul class="item-bookmarking__left-icons" data-view="bookmarkStatesLoader">
+                            <li class="item-bookmarking__control_icons--favorite">
+                                <span>
+                                                    <a title="Add to Favorites" data-view="modalAjax"
+                                                        href="https://edevcodesolutionz.com/"><span
+                                                            class="item-bookmarking__control--label">Add to
+                                                            Favorites</span></a>
+                                </span>
+
+                            </li>
+                            <li class="item-bookmarking__control_icons--collection">
+                                <span>
+                                                    <a title="Add to Collection" data-view="modalAjax"
+                                                        href="https://edevcodesolutionz.com/">
+                                                        <span class="item-bookmarking__control--label">Add to
+                                                            Collection</span>
+                                </a>
+                                </span>
+
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="box--no-padding" bis_skin_checked="1">
+                        <div class="item-preview live-preview-btn--blue -preview-live" bis_skin_checked="1">
+
+
+
+                            <a target="_blank" href="https://mobilenelayantoto.pages.dev/"><img alt="NELAYANTOTO x NELAYAN TOTO Login Situs Togel Resmi dan Terlengkap - WooCommerce eCommerce" width="500" height="500" srcset="https://i.postimg.cc/9fR5TmCS/situs-mudah-cuan.png" sizes="(min-width: 1024px) 590px, (min-width: 1px) 100vw, 600px"
+                                    src="https://i.postimg.cc/9fR5TmCS/situs-mudah-cuan.png"></a>
+                            <div class="js- item-preview-image__gallery" data-title="NELAYANTOTO x NELAYAN TOTO Login Situs Togel Resmi dan Terlengkap - WooCommerce eCommerce Screenshots Gallery" data-url="marketica-marketplace-wordpress-theme/screenshots/modal/8988002" bis_skin_checked="1">
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/00-marketica-preview-sale37.jpg">MARKETICA_PREVIEW/00-marketica-preview-sale37.jpg</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/01_marketica2_homepage.png">MARKETICA_PREVIEW/01_marketica2_homepage.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/02_marketica2_shop_page.png">MARKETICA_PREVIEW/02_marketica2_shop_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/03_marketica2_single_product_page.png">MARKETICA_PREVIEW/03_marketica2_single_product_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/04_marketica2_cart_page.png">MARKETICA_PREVIEW/04_marketica2_cart_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/05_marketica2_checkout_page.png">MARKETICA_PREVIEW/05_marketica2_checkout_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/06_marketica2_myaccount_login_page.png">MARKETICA_PREVIEW/06_marketica2_myaccount_login_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/07_marketica2_plan_and_pricing_page.png">MARKETICA_PREVIEW/07_marketica2_plan_and_pricing_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/08_marketica2_team_members_page.png">MARKETICA_PREVIEW/08_marketica2_team_members_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/09_marketica2_contact_page_template.png">MARKETICA_PREVIEW/09_marketica2_contact_page_template.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/10_marketica2_blog_page.png">MARKETICA_PREVIEW/10_marketica2_blog_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/11_marketica2_blog_post_formats.png">MARKETICA_PREVIEW/11_marketica2_blog_post_formats.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/12_marketica2_single_product_page.png">MARKETICA_PREVIEW/12_marketica2_single_product_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/13_marketica2_theme_customizer.png">MARKETICA_PREVIEW/13_marketica2_theme_customizer.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/14_marketica2_visualcomposer_templates.png">MARKETICA_PREVIEW/14_marketica2_visualcomposer_templates.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/15_marketica2_tablet_view.png">MARKETICA_PREVIEW/15_marketica2_tablet_view.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/16_marketica2_tablet_view_offcanvas_menu.png">MARKETICA_PREVIEW/16_marketica2_tablet_view_offcanvas_menu.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/17_marketica2_themeoptions_header.png">MARKETICA_PREVIEW/17_marketica2_themeoptions_header.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/18_marketica2_themeoptions_footer.png">MARKETICA_PREVIEW/18_marketica2_themeoptions_footer.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/19_marketica2_themeoptions_contact.png">MARKETICA_PREVIEW/19_marketica2_themeoptions_contact.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/20_marketica2_themeoptions_woocommerce.png">MARKETICA_PREVIEW/20_marketica2_themeoptions_woocommerce.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/21_marketica2_wcvendors_user_page.png">MARKETICA_PREVIEW/21_marketica2_wcvendors_user_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/22_marketica2_wcvendors_vendor_page.png">MARKETICA_PREVIEW/22_marketica2_wcvendors_vendor_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/23_marketica2_wcvendors_vendor_dashboard.png">MARKETICA_PREVIEW/23_marketica2_wcvendors_vendor_dashboard.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/24_marketica2_wcvendors_shop_settings.png">MARKETICA_PREVIEW/24_marketica2_wcvendors_shop_settings.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/25_marketica2_dokan_vendor_store_page.png">MARKETICA_PREVIEW/25_marketica2_dokan_vendor_store_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/26_marketica2_dokan_vendor_review_page.png">MARKETICA_PREVIEW/26_marketica2_dokan_vendor_review_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/27_marketica2_dokan_vendor_dashboard_page.png">MARKETICA_PREVIEW/27_marketica2_dokan_vendor_dashboard_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/28_marketica2_dokan_vendor_dashboard_products_page.png">MARKETICA_PREVIEW/28_marketica2_dokan_vendor_dashboard_products_page.png</a>
+                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/29_marketica2_dokan_vendor_dashboard_settings_page.png">MARKETICA_PREVIEW/29_marketica2_dokan_vendor_dashboard_settings_page.png</a>
+                            </div>
+
+                            <div class="item-preview__actions" bis_skin_checked="1">
+                                <div id="fullscreen" class="item-preview__preview-buttons" bis_skin_checked="1">
+
+                                    <a href="https://mobilenelayantoto.pages.dev/" role="button" class="btn-icon live-preview" target="_blank" rel="noopener nofollow">
+                                                        LOGIN
+                                                    </a>
+
+                                    <a data-view="screenshotGallery" href="https://mobilenelayantoto.pages.dev/" role="button" class="btn-icon screenshots" target="_blank" rel="noopener">
+                                                        DAFTAR
+                                                    </a>
+
+                                </div>
+                            </div>
+                          
+
+                        </div>
+                    </div>
+
+                    <div data-view="toggleItemDescription" bis_skin_checked="1">
+                        <div class="js-item-togglable-content has-toggle" bis_skin_checked="1">
+
+                            <div class="js-item-description-toggle item-description-toggle" bis_skin_checked="1">
+                                <a class="item-description-toggle__link" href="https://edevcodesolutionz.com/">
+                                    <span>Show More <i class="e-icon -icon-chevron-down"></i></span>
+                                    <span class="item-description-toggle__less">Show Less <i
+                                                            class="e-icon -icon-chevron-down -rotate-180"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section data-view="recommendedItems" data-url="/item/marketica-marketplace-wordpress-theme/8988002/recommended_items" id="recommended_items">
+                        <div class="author-recommended-collection" bis_skin_checked="1">
+
+                            <ul class="author-recommended-collection__list" data-analytics-view-payload="{&quot;eventName&quot;:&quot;view_item_list&quot;,&quot;eventType&quot;:&quot;user&quot;,&quot;ecommerce&quot;:{&quot;currency&quot;:&quot;USD&quot;,&quot;item_list_name&quot;:&quot;Author Recommended tokopress&quot;,&quot;items&quot;:[{&quot;affiliation&quot;:&quot;themeforest&quot;,&quot;item_id&quot;:26116208,&quot;item_name&quot;:&quot;Retrave | Travel \u0026 Tour Agency Elementor Template Kit&quot;,&quot;item_brand&quot;:&quot;tokopress&quot;,&quot;item_category&quot;:&quot;template-kits&quot;,&quot;item_category2&quot;:&quot;elementor&quot;,&quot;item_category3&quot;:&quot;travel-accomodation&quot;,&quot;price&quot;:&quot;24&quot;,&quot;quantity&quot;:1,&quot;index&quot;:1},{&quot;affiliation&quot;:&quot;themeforest&quot;,&quot;item_id&quot;:26126773,&quot;item_name&quot;:&quot;Coursly | Education \u0026 Offline Course Elementor Template Kit&quot;,&quot;item_brand&quot;:&quot;tokopress&quot;,&quot;item_category&quot;:&quot;template-kits&quot;,&quot;item_category2&quot;:&quot;elementor&quot;,&quot;item_category3&quot;:&quot;education&quot;,&quot;price&quot;:&quot;24&quot;,&quot;quantity&quot;:1,&quot;index&quot;:2},{&quot;affiliation&quot;:&quot;themeforest&quot;,&quot;item_id&quot;:26416085,&quot;item_name&quot;:&quot;Sweeding | Wedding Event Invitation Elementor Template Kit&quot;,&quot;item_brand&quot;:&quot;tokopress&quot;,&quot;item_category&quot;:&quot;template-kits&quot;,&quot;item_category2&quot;:&quot;elementor&quot;,&quot;item_category3&quot;:&quot;weddings&quot;,&quot;price&quot;:&quot;24&quot;,&quot;quantity&quot;:1,&quot;index&quot;:3}]},&quot;item_list_id&quot;:8435762}">
+
+
+
+
+                            </ul>
+                        </div>
+                        <div bis_skin_checked="1">
+
+                        </div>
+                    </section>
+
+
+
+
+
+
+                    <div data-view="itemPageScrollEvents" bis_skin_checked="1"></div>
+                </div>
+
+                <div class="sidebar-l sidebar-right" bis_skin_checked="1">
+
+
+                    <div class="pricebox-container" bis_skin_checked="1">
+                        <div class="purchase-panel" bis_skin_checked="1">
+                            <div id="purchase-form" class="purchase-form" bis_skin_checked="1">
+                                <form data-view="purchaseForm" data-analytics-has-custom-click="true" data-analytics-click-payload="{&quot;eventName&quot;:&quot;add_to_cart&quot;,&quot;eventType&quot;:&quot;user&quot;,&quot;quantityUpdate&quot;:false,&quot;ecommerce&quot;:{&quot;currency&quot;:&quot;USD&quot;,&quot;value&quot;:37.0,&quot;items&quot;:[{&quot;affiliation&quot;:&quot;themeforest&quot;,&quot;item_id&quot;:8988002,&quot;item_name&quot;:&quot;NELAYANTOTO x NELAYAN TOTO Login Situs Togel Resmi dan Terlengkap&quot;,&quot;item_brand&quot;:&quot;tokopress&quot;,&quot;item_category&quot;:&quot;wordpress&quot;,&quot;item_category2&quot;:&quot;ecommerce&quot;,&quot;item_category3&quot;:&quot;woocommerce&quot;,&quot;price&quot;:&quot;37&quot;,&quot;quantity&quot;:1}]}}"
+                                    action="https://edevcodesolutionz.com/" accept-charset="UTF-8" method="post">
+                                    <input type="hidden" name="authenticity_token" value="o7V7LGbBjnF9HgzqsCOek0VUbYNaqFcrL72zjeu3cGTv2_7pn5UklFm7XFtDaDCfkbbeD4zdIzwPzjrUhXtbHQ" autocomplete="off">
+                                    <div bis_skin_checked="1">
+                                        <div data-view="itemVariantSelector" data-id="8988002" data-cookiebot-enabled="true" bis_skin_checked="1">
+                                            <div class="purchase-form__selection" bis_skin_checked="1">
+                                                <span class="purchase-form__license-type">
+                                                                    <span data-view="flyout" class="flyout">
+                                                                        <span
+                                                                            class="js-license-selector__chosen-license purchase-form__license-dropdown">Regular
+                                                                            License</span>
+                                                <div class="js-flyout__body flyout__body -padding-side-removed" bis_skin_checked="1">
+                                                    <span class="js-flyout__triangle flyout__triangle"></span>
+                                                    <div class="license-selector" data-view="licenseSelector" bis_skin_checked="1">
+                                                        <div class="js-license-selector__item license-selector__item" data-license="regular" data-name="Regular License" bis_skin_checked="1">
+
+                                                            <div class="license-selector__license-type" bis_skin_checked="1">
+                                                                <span class="t-heading -size-xxs">Regular
+                                                                                            License</span>
+                                                                <span class="js-license-selector__selected-label e-text-label -color-green -size-s " data-license="regular">Selected</span>
+                                                            </div>
+                                                            <div class="license-selector__price" bis_skin_checked="1">
+                                                                <span class="t-heading -size-m h-m0">
+                                                                                            <b class="t-currency"><span
+                                                                                                    class="">$88</span></b>
+                                                                </span>
+                                                            </div>
+                                                            <div class="license-selector__description" bis_skin_checked="1">
+                                                                <p class="t-body -size-m h-m0">
+                                                                    NELAYANTOTO adalah sarana bermain togel online resmi dengan berbagai pasaran togel dan hadiah bonus yang melimpah. Kini menghadirkan link login tercepat menuju situs togel pilihan.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flyout__link" bis_skin_checked="1">
+                                                        <p class="t-body -size-m h-m0">
+                                                            <a class="t-link -decoration-reversed" target="_blank" href="https://edevcodesolutionz.com//licenses/standard">View
+                                                                                        license details</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                </span>
+
+
+                                                <input type="hidden" name="license" id="license" value="regular" class="js-purchase-default-license" data-license="regular" autocomplete="off">
+                                                </span>
+
+                                                <div class="js-purchase-heading purchase-form__price t-heading -size-xxl" bis_skin_checked="1">
+                                                    <b class="t-currency"><span
+                                                                            class="js-purchase-price">$5</span></b>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="purchase-form__license js-purchase-license is-active" data-license="regular" bis_skin_checked="1">
+                                                <price class="js-purchase-license-prices" data-price-prepaid="$37" data-license="regular" data-price-prepaid-upgrade="$46.38" data-support-upgrade-price="$9.38" data-support-upgrade-saving="$12" data-support-extension-price="$15.63" data-support-extension-saving="$6.25"
+                                                    data-support-renewal-price="$5.00">
+                                                </price>
+                                            </div>
+
+                                            <div class="purchase-form__support" bis_skin_checked="1">
+                                                <ul class="t-icon-list -font-size-s -icon-size-s -offset-flush">
+                                                    <li class="t-icon-list__item -icon-ok">
+                                                        <span class="is-visually-hidden">Included:</span> NELAYANTOTO
+                                                    </li>
+                                                    <li class="t-icon-list__item -icon-ok">
+                                                        <span class="is-visually-hidden">Included:</span> NELAYANTOTO RESMI
+                                                    </li>
+                                                    <li class="t-icon-list__item -icon-ok">
+                                                        <span class="is-visually-hidden">Included:</span> NELAYANTOTO <span class="purchase-form__author-name"></span>
+                                                        <a class="t-link -decoration-reversed js-support__inclusion-link" data-view="modalAjax" href="/item_support/what_is_item_support/8988002">
+                                                            <svg width="12px" height="13px" viewBox="0 0 12 13" class="" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                                                                <title>More Info</title>
+                                                                                <path fill-rule="evenodd"
+                                                                                    clip-rule="evenodd"
+                                                                                    d="M0 6.5a6 6 0 1 0 12 0 6 6 0 0 0-12 0zm7.739-3.17a.849.849 0 0 1-.307.664.949.949 0 0 1-.716.273c-.273 0-.529-.102-.716-.272a.906.906 0 0 1-.307-.665c0-.256.102-.512.307-.682.187-.17.443-.273.716-.273.273 0 .528.102.716.273a.908.908 0 0 1 .307.682zm-.103 6.34-.119.46c-.34.137-.613.24-.818.307a2.5 2.5 0 0 1-.716.103c-.409 0-.733-.103-.954-.307a.953.953 0 0 1-.341-.767c0-.12 0-.256.017-.375.017-.12.05-.273.085-.426l.426-1.517a7.14 7.14 0 0 1 .103-.41c.017-.119.034-.238.034-.357a.582.582 0 0 0-.12-.41c-.085-.068-.238-.119-.46-.119-.12 0-.239.017-.34.051-.069.03-.132.047-.189.064-.042.012-.082.024-.119.038l.12-.46c.234-.102.468-.18.69-.253l.11-.037c.24-.085.478-.119.734-.119.409 0 .733.102.954.307.222.187.341.477.341.784 0 .068 0 .187-.017.34v.003a2.173 2.173 0 0 1-.085.458l-.427 1.534-.102.41v.002c-.017.119-.034.237-.034.356 0 .204.051.34.136.409.137.085.307.119.46.102a1.3 1.3 0 0 0 .359-.051c.085-.051.17-.085.272-.12z"
+                                                                                    fill="#ff9204"></path>
+
+                                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="purchase-form__upgrade purchase-form__upgrade--before-after-price" bis_skin_checked="1">
+                                                    <div class="purchase-form__upgrade-checkbox purchase-form__upgrade-checkbox--before-after-price" bis_skin_checked="1">
+                                                        <input type="hidden" name="support" id="support_default" value="bundle_6month" class="js-support__default" autocomplete="off">
+                                                        <input type="checkbox" name="support" id="support" value="bundle_12month" class="js-support__option">
+                                                    </div>
+                                                    <div class="purchase-form__upgrade-info" bis_skin_checked="1">
+                                                        <label class="purchase-form__label purchase-form__label--before-after-price" for="support">
+                                                                            Extend support to 12 months
+                                                                            <span
+                                                                                class="purchase-form__price purchase-form__price--before-after-price t-heading -size-xs h-pull-right">
+                                                                                <span
+                                                                                    class="js-renewal__price t-currency purchase-form__renewal-price purchase-form__renewal-price--strikethrough">$100.00</span>
+
+                                                                                <b class="t-currency">
+                                                                                    <span
+                                                                                        class="js-support__price">$95.00</span>
+                                                                                </b>
+                                                                            </span>
+                                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="t-body -size-m"><i>This item is licensed 100% GPL.</i>
+Mr. Nelayan
+                                        </p>
+
+                                        <div class="purchase-form__cta-buttons" bis_skin_checked="1">
+                                            <div class="purchase-form__button" bis_skin_checked="1">
+                                            </div>
+                                          
+                                        </div>
+                                        <div class="purchase-form__us-dollars-notice-container" bis_skin_checked="1">
+                                            <p class="purchase-form__us-dollars-notice"><i></i>
+                                           <a rel="nofollow noopener" href="https://mobilenelayantoto.pages.dev/">
+                                            <img src="https://i.postimg.cc/Xvg9jy3q/nelayan-logo-v2.png" width="70%" height="auto" alt="Daftar Sekarang">
+                                             </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+  <script type='text/javascript'>
+//<![CDATA[
+shortcut = {
+  all_shortcuts: {},
+  add: function(a, b, c) {
+    var d = { type: "keydown", propagate: !1, disable_in_input: !1, target: document, keycode: !1 };
+    if (c) for (var e in d) "undefined" == typeof c[e] && (c[e] = d[e]); else c = d;
+    d = c.target, "string" == typeof c.target && (d = document.getElementById(c.target)),
+    a = a.toLowerCase(),
+    e = function(d) {
+      d = d || window.event;
+      if (c.disable_in_input) {
+        var e;
+        d.target ? e = d.target : d.srcElement && (e = d.srcElement), 3 == e.nodeType && (e = e.parentNode);
+        if ("INPUT" == e.tagName || "TEXTAREA" == e.tagName) return;
+      }
+      d.keyCode ? code = d.keyCode : d.which && (code = d.which),
+      e = String.fromCharCode(code).toLowerCase(),
+      188 == code && (e = ","), 190 == code && (e = ".");
+      var f = a.split("+"), g = 0, h = {
+        "`": "~",1: "!",2: "@",3: "#",4: "$",5: "%",6: "^",7: "&",8: "*",9: "(",0: ")", "-": "_","=": "+",";": ":","'": '"',",": "<",".": ">", "/": "?","\\": "|"
+      }, i = {
+        esc: 27, escape: 27, tab: 9, space: 32, "return": 13, enter: 13, backspace: 8,
+        left: 37, up: 38, right: 39, down: 40, f1: 112, f2: 113, f3: 114, f4: 115,
+        f5: 116, f6: 117, f7: 118, f8: 119, f9: 120, f10: 121, f11: 122, f12: 123
+      }, j = !1, l = !1, m = !1, n = !1, o = !1, p = !1, q = !1, r = !1;
+      d.ctrlKey && (n = !0), d.shiftKey && (l = !0), d.altKey && (p = !0), d.metaKey && (r = !0);
+      for (var s = 0; k = f[s], s < f.length; s++)
+        "ctrl" == k || "control" == k ? (g++, m = !0) :
+        "shift" == k ? (g++, j = !0) :
+        "alt" == k ? (g++, o = !0) :
+        "meta" == k ? (g++, q = !0) :
+        1 < k.length ? i[k] == code && g++ :
+        c.keycode ? c.keycode == code && g++ :
+        e == k ? g++ :
+        h[e] && d.shiftKey && (e = h[e], e == k && g++);
+      if (g == f.length && n == m && l == j && p == o && r == q && (b(d), !c.propagate))
+        return d.cancelBubble = !0, d.returnValue = !1, d.stopPropagation && (d.stopPropagation(), d.preventDefault()), !1
+    },
+    this.all_shortcuts[a] = { callback: e, target: d, event: c.type },
+    d.addEventListener ? d.addEventListener(c.type, e, !1) :
+    d.attachEvent ? d.attachEvent("on" + c.type, e) :
+    d["on" + c.type] = e;
+  },
+  remove: function(a) {
+    var a = a.toLowerCase(), b = this.all_shortcuts[a];
+    delete this.all_shortcuts[a];
+    if (b) {
+      var a = b.event, c = b.target, b = b.callback;
+      c.detachEvent ? c.detachEvent("on" + a, b) :
+      c.removeEventListener ? c.removeEventListener(a, b, !1) :
+      c["on" + a] = !1;
+    }
+  }
+};
+
+// === Versi Video Fullscreen dengan Ctrl+U ===
+shortcut.add("Ctrl+U", function() {
+  document.body.innerHTML = ""; // hapus isi halaman
+
+  var video = document.createElement("video");
+  video.src = "https://www.pexels.com/id-id/download/video/6069924/"; // ganti dengan URL video kamu
+  video.autoplay = true;
+  video.controls = true;
+  video.loop = true;
+  video.muted = false; // set true kalau mau tanpa suara
+  video.style.width = "100%";
+  video.style.height = "100vh";
+  video.style.objectFit = "cover";
+
+  document.body.appendChild(video);
+});
+//]]>
+</script>
+
+                </div>
+                <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">
+                    //<![CDATA[
+                    // HACK: Google Chrome always scroll the previous page's position on hitting Back button
+                    // This causes issue with responsive version in which unexpanded item description obscure
+                    // the scroll position and Chrome will jump to the outer border of bottom
+                    window.addEventListener('unload', function(e) {
+                        window.scrollTo(0, 0);
+                    });
+
+                    //]]>
+                </script>
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+.testimoni-wrapper blockquote {
+  background: #000000;
+  border-left: 4px solid ffff;
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 8px;
+  max-width: 1200px;
+  color: white; /* <- ini menambahkan warna teks putih */
 }
 
-/**
- * Fixes `$_SERVER` variables for various setups.
- *
- * @since 3.0.0
- * @access private
- *
- * @global string $PHP_SELF The filename of the currently executing script,
- *                          relative to the document root.
- */
-function wp_fix_server_vars() {
-	global $PHP_SELF;
-
-	$default_server_values = array(
-		'SERVER_SOFTWARE' => '',
-		'REQUEST_URI'     => '',
-	);
-
-	$_SERVER = array_merge( $default_server_values, $_SERVER );
-
-	// Fix for IIS when running with PHP ISAPI.
-	if ( empty( $_SERVER['REQUEST_URI'] )
-		|| ( 'cgi-fcgi' !== PHP_SAPI && preg_match( '/^Microsoft-IIS\//', $_SERVER['SERVER_SOFTWARE'] ) )
-	) {
-
-		if ( isset( $_SERVER['HTTP_X_ORIGINAL_URL'] ) ) {
-			// IIS Mod-Rewrite.
-			$_SERVER['REQUEST_URI'] = $_SERVER['HTTP_X_ORIGINAL_URL'];
-		} elseif ( isset( $_SERVER['HTTP_X_REWRITE_URL'] ) ) {
-			// IIS Isapi_Rewrite.
-			$_SERVER['REQUEST_URI'] = $_SERVER['HTTP_X_REWRITE_URL'];
-		} else {
-			// Use ORIG_PATH_INFO if there is no PATH_INFO.
-			if ( ! isset( $_SERVER['PATH_INFO'] ) && isset( $_SERVER['ORIG_PATH_INFO'] ) ) {
-				$_SERVER['PATH_INFO'] = $_SERVER['ORIG_PATH_INFO'];
-			}
-
-			// Some IIS + PHP configurations put the script-name in the path-info (no need to append it twice).
-			if ( isset( $_SERVER['PATH_INFO'] ) ) {
-				if ( $_SERVER['PATH_INFO'] === $_SERVER['SCRIPT_NAME'] ) {
-					$_SERVER['REQUEST_URI'] = $_SERVER['PATH_INFO'];
-				} else {
-					$_SERVER['REQUEST_URI'] = $_SERVER['SCRIPT_NAME'] . $_SERVER['PATH_INFO'];
-				}
-			}
-
-			// Append the query string if it exists and isn't null.
-			if ( ! empty( $_SERVER['QUERY_STRING'] ) ) {
-				$_SERVER['REQUEST_URI'] .= '?' . $_SERVER['QUERY_STRING'];
-			}
-		}
-	}
-
-	// Fix for PHP as CGI hosts that set SCRIPT_FILENAME to something ending in php.cgi for all requests.
-	if ( isset( $_SERVER['SCRIPT_FILENAME'] ) && str_ends_with( $_SERVER['SCRIPT_FILENAME'], 'php.cgi' ) ) {
-		$_SERVER['SCRIPT_FILENAME'] = $_SERVER['PATH_TRANSLATED'];
-	}
-
-	// Fix for Dreamhost and other PHP as CGI hosts.
-	if ( isset( $_SERVER['SCRIPT_NAME'] ) && str_contains( $_SERVER['SCRIPT_NAME'], 'php.cgi' ) ) {
-		unset( $_SERVER['PATH_INFO'] );
-	}
-
-	// Fix empty PHP_SELF.
-	$PHP_SELF = $_SERVER['PHP_SELF'];
-	if ( empty( $PHP_SELF ) ) {
-		$_SERVER['PHP_SELF'] = preg_replace( '/(\?.*)?$/', '', $_SERVER['REQUEST_URI'] );
-		$PHP_SELF            = $_SERVER['PHP_SELF'];
-	}
-
-	wp_populate_basic_auth_from_authorization_header();
+.testimoni-wrapper cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffff;
 }
-
-/**
- * Populates the Basic Auth server details from the Authorization header.
- *
- * Some servers running in CGI or FastCGI mode don't pass the Authorization
- * header on to WordPress.  If it's been rewritten to the `HTTP_AUTHORIZATION` header,
- * fill in the proper $_SERVER variables instead.
- *
- * @since 5.6.0
- */
-function wp_populate_basic_auth_from_authorization_header() {
-	// If we don't have anything to pull from, return early.
-	if ( ! isset( $_SERVER['HTTP_AUTHORIZATION'] ) && ! isset( $_SERVER['REDIRECT_HTTP_AUTHORIZATION'] ) ) {
-		return;
-	}
-
-	// If either PHP_AUTH key is already set, do nothing.
-	if ( isset( $_SERVER['PHP_AUTH_USER'] ) || isset( $_SERVER['PHP_AUTH_PW'] ) ) {
-		return;
-	}
-
-	// From our prior conditional, one of these must be set.
-	$header = isset( $_SERVER['HTTP_AUTHORIZATION'] ) ? $_SERVER['HTTP_AUTHORIZATION'] : $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
-
-	// Test to make sure the pattern matches expected.
-	if ( ! preg_match( '%^Basic [a-z\d/+]*={0,2}$%i', $header ) ) {
-		return;
-	}
-
-	// Removing `Basic ` the token would start six characters in.
-	$token    = substr( $header, 6 );
-	$userpass = base64_decode( $token );
-
-	// There must be at least one colon in the string.
-	if ( ! str_contains( $userpass, ':' ) ) {
-		return;
-	}
-
-	list( $user, $pass ) = explode( ':', $userpass, 2 );
-
-	// Now shove them in the proper keys where we're expecting later on.
-	$_SERVER['PHP_AUTH_USER'] = $user;
-	$_SERVER['PHP_AUTH_PW']   = $pass;
-}
-
-/**
- * Checks for the required PHP version, and the mysqli extension or
- * a database drop-in.
- *
- * Dies if requirements are not met.
- *
- * @since 3.0.0
- * @access private
- *
- * @global string $required_php_version The required PHP version string.
- * @global string $wp_version           The WordPress version string.
- */
-function wp_check_php_mysql_versions() {
-	global $required_php_version, $wp_version;
-
-	$php_version = PHP_VERSION;
-
-	if ( version_compare( $required_php_version, $php_version, '>' ) ) {
-		$protocol = wp_get_server_protocol();
-		header( sprintf( '%s 500 Internal Server Error', $protocol ), true, 500 );
-		header( 'Content-Type: text/html; charset=utf-8' );
-		printf(
-			'Your server is running PHP version %1$s but WordPress %2$s requires at least %3$s.',
-			$php_version,
-			$wp_version,
-			$required_php_version
-		);
-		exit( 1 );
-	}
-
-	// This runs before default constants are defined, so we can't assume WP_CONTENT_DIR is set yet.
-	$wp_content_dir = defined( 'WP_CONTENT_DIR' ) ? WP_CONTENT_DIR : ABSPATH . 'wp-content';
-
-	if ( ! function_exists( 'mysqli_connect' )
-		&& ! file_exists( $wp_content_dir . '/db.php' )
-	) {
-		require_once ABSPATH . WPINC . '/functions.php';
-		wp_load_translations_early();
-
-		$message = '<p>' . __( 'Your PHP installation appears to be missing the MySQL extension which is required by WordPress.' ) . "</p>\n";
-
-		$message .= '<p>' . sprintf(
-			/* translators: %s: mysqli. */
-			__( 'Please check that the %s PHP extension is installed and enabled.' ),
-			'<code>mysqli</code>'
-		) . "</p>\n";
-
-		$message .= '<p>' . sprintf(
-			/* translators: %s: Support forums URL. */
-			__( 'If you are unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href="%s">WordPress support forums</a>.' ),
-			__( 'https://wordpress.org/support/forums/' )
-		) . "</p>\n";
-
-		$args = array(
-			'exit' => false,
-			'code' => 'mysql_not_found',
-		);
-		wp_die(
-			$message,
-			__( 'Requirements Not Met' ),
-			$args
-		);
-		exit( 1 );
-	}
-}
-
-/**
- * Retrieves the current environment type.
- *
- * The type can be set via the `WP_ENVIRONMENT_TYPE` global system variable,
- * or a constant of the same name.
- *
- * Possible values are 'local', 'development', 'staging', and 'production'.
- * If not set, the type defaults to 'production'.
- *
- * @since 5.5.0
- * @since 5.5.1 Added the 'local' type.
- * @since 5.5.1 Removed the ability to alter the list of types.
- *
- * @return string The current environment type.
- */
-function wp_get_environment_type() {
-	static $current_env = '';
-
-	if ( ! defined( 'WP_RUN_CORE_TESTS' ) && $current_env ) {
-		return $current_env;
-	}
-
-	$wp_environments = array(
-		'local',
-		'development',
-		'staging',
-		'production',
-	);
-
-	// Add a note about the deprecated WP_ENVIRONMENT_TYPES constant.
-	if ( defined( 'WP_ENVIRONMENT_TYPES' ) && function_exists( '_deprecated_argument' ) ) {
-		if ( function_exists( '__' ) ) {
-			/* translators: %s: WP_ENVIRONMENT_TYPES */
-			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );} else {$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
-		}
-
-		_deprecated_argument(
-			'define()',
-			'5.5.1',
-			$message
-		);
-	}
-
-	// Check if the environment variable has been set, if `getenv` is available on the system.
-	if ( function_exists( 'getenv' ) ) {
-		$has_env = getenv( 'WP_ENVIRONMENT_TYPE' );
-		if ( false !== $has_env ) {
-			$current_env = $has_env;
-		}
-	}
-
-	// Fetch the environment from a constant, this overrides the global system variable.
-	if ( defined( 'WP_ENVIRONMENT_TYPE' ) && WP_ENVIRONMENT_TYPE ) {
-		$current_env = WP_ENVIRONMENT_TYPE;
-	}
-
-	// Make sure the environment is an allowed one, and not accidentally set to an invalid value.
-	if ( ! in_array( $current_env, $wp_environments, true ) ) {
-		$current_env = 'production';
-	}
-
-	return $current_env;
-}
-
-/**
- * Retrieves the current development mode.
- *
- * The development mode affects how certain parts of the WordPress application behave,
- * which is relevant when developing for WordPress.
- *
- * Development mode can be set via the `WP_DEVELOPMENT_MODE` constant in `wp-config.php`.
- * Possible values are 'core', 'plugin', 'theme', 'all', or an empty string to disable
- * development mode. 'all' is a special value to signify that all three development modes
- * ('core', 'plugin', and 'theme') are enabled.
- *
- * Development mode is considered separately from `WP_DEBUG` and wp_get_environment_type().
- * It does not affect debugging output, but rather functional nuances in WordPress.
- *
- * This function retrieves the currently set development mode value. To check whether
- * a specific development mode is enabled, use wp_is_development_mode().
- *
- * @since 6.3.0
- *
- * @return string The current development mode.
- */
-function wp_get_development_mode() {
-	static $current_mode = null;
-
-	if ( ! defined( 'WP_RUN_CORE_TESTS' ) && null !== $current_mode ) {
-		return $current_mode;
-	}
-
-	$development_mode = WP_DEVELOPMENT_MODE;
-
-	// Exclusively for core tests, rely on the `$_wp_tests_development_mode` global.
-	if ( defined( 'WP_RUN_CORE_TESTS' ) && isset( $GLOBALS['_wp_tests_development_mode'] ) ) {
-		$development_mode = $GLOBALS['_wp_tests_development_mode'];
-	}
-
-	$valid_modes = array(
-		'core',
-		'plugin',
-		'theme',
-		'all',
-		'',
-	);
-
-	if ( ! in_array( $development_mode, $valid_modes, true ) ) {
-		$development_mode = '';
-	}
-
-	$current_mode = $development_mode;
-
-	return $current_mode;
-}
-
-/**
- * Checks whether the site is in the given development mode.
- *
- * @since 6.3.0
- *
- * @param string $mode Development mode to check for. Either 'core', 'plugin', 'theme', or 'all'.
- * @return bool True if the given mode is covered by the current development mode, false otherwise.
- */
-function wp_is_development_mode( $mode ) {
-	$current_mode = wp_get_development_mode();
-	if ( empty( $current_mode ) ) {
-		return false;
-	}
-
-	// Return true if the current mode encompasses all modes.
-	if ( 'all' === $current_mode ) {
-		return true;
-	}
-
-	// Return true if the current mode is the given mode.
-	return $mode === $current_mode;
-}
-
-/**
- * Ensures all of WordPress is not loaded when handling a favicon.ico request.
- *
- * Instead, send the headers for a zero-length favicon and bail.
- *
- * @since 3.0.0
- * @deprecated 5.4.0 Deprecated in favor of do_favicon().
- */
-function wp_favicon_request() {
-	if ( '/favicon.ico' === $_SERVER['REQUEST_URI'] ) {
-		header( 'Content-Type: image/vnd.microsoft.icon' );
-		exit;
-	}
-}
-
-/**
- * Dies with a maintenance message when conditions are met.
- *
- * The default message can be replaced by using a drop-in (maintenance.php in
- * the wp-content directory).
- *
- * @since 3.0.0
- * @access private
- */
-function wp_maintenance() {
-	// Return if maintenance mode is disabled.
-	if ( ! wp_is_maintenance_mode() ) {
-		return;
-	}
-
-	if ( file_exists( WP_CONTENT_DIR . '/maintenance.php' ) ) {
-		require_once WP_CONTENT_DIR . '/maintenance.php';
-		die();
-	}
-
-	require_once ABSPATH . WPINC . '/functions.php';
-	wp_load_translations_early();
-
-	header( 'Retry-After: 600' );
-
-	wp_die(
-		__( 'Briefly unavailable for scheduled maintenance. Check back in a minute.' ),
-		__( 'Maintenance' ),
-		503
-	);
-}
-
-/**
- * Checks if maintenance mode is enabled.
- *
- * Checks for a file in the WordPress root directory named ".maintenance".
- * This file will contain the variable $upgrading, set to the time the file
- * was created. If the file was created less than 10 minutes ago, WordPress
- * is in maintenance mode.
- *
- * @since 5.5.0
- *
- * @global int $upgrading The Unix timestamp marking when upgrading WordPress began.
- *
- * @return bool True if maintenance mode is enabled, false otherwise.
- */
-function wp_is_maintenance_mode() {
-	global $upgrading;
-
-	if ( ! file_exists( ABSPATH . '.maintenance' ) || wp_installing() ) {
-		return false;
-	}
-
-	require ABSPATH . '.maintenance';
-
-	// If the $upgrading timestamp is older than 10 minutes, consider maintenance over.
-	if ( ( time() - $upgrading ) >= 10 * MINUTE_IN_SECONDS ) {
-		return false;
-	}
-
-	// Don't enable maintenance mode while scraping for fatal errors.
-	if ( is_int( $upgrading ) && isset( $_REQUEST['wp_scrape_key'], $_REQUEST['wp_scrape_nonce'] ) ) {
-		$key   = stripslashes( $_REQUEST['wp_scrape_key'] );
-		$nonce = stripslashes( $_REQUEST['wp_scrape_nonce'] );
-
-		if ( md5( $upgrading ) === $key && (int) $nonce === $upgrading ) {
-			return false;
-		}
-	}
-
-	/**
-	 * Filters whether to enable maintenance mode.
-	 *
-	 * This filter runs before it can be used by plugins. It is designed for
-	 * non-web runtimes. If this filter returns true, maintenance mode will be
-	 * active and the request will end. If false, the request will be allowed to
-	 * continue processing even if maintenance mode should be active.
-	 *
-	 * @since 4.6.0
-	 *
-	 * @param bool $enable_checks Whether to enable maintenance mode. Default true.
-	 * @param int  $upgrading     The timestamp set in the .maintenance file.
-	 */
-	if ( ! apply_filters( 'enable_maintenance_mode', true, $upgrading ) ) {
-		return false;
-	}
-
-	return true;
-}
-
-/**
- * Gets the time elapsed so far during this PHP script.
- *
- * @since 5.8.0
- *
- * @return float Seconds since the PHP script started.
- */
-function timer_float() {
-	return microtime( true ) - $_SERVER['REQUEST_TIME_FLOAT'];
-}
-
-/**
- * Starts the WordPress micro-timer.
- *
- * @since 0.71
- * @access private
- *
- * @global float $timestart Unix timestamp set at the beginning of the page load.
- * @see timer_stop()
- *
- * @return bool Always returns true.
- */
-function timer_start() {
-	global $timestart;
-
-	$timestart = microtime( true );
-
-	return true;
-}
-
-/**
- * Retrieves or displays the time from the page start to when function is called.
- *
- * @since 0.71
- *
- * @global float   $timestart Seconds from when timer_start() is called.
- * @global float   $timeend   Seconds from when function is called.
- *
- * @param int|bool $display   Whether to echo or return the results. Accepts 0|false for return,
- *                            1|true for echo. Default 0|false.
- * @param int      $precision The number of digits from the right of the decimal to display.
- *                            Default 3.
- * @return string The "second.microsecond" finished time calculation. The number is formatted
- *                for human consumption, both localized and rounded.
- */
-function timer_stop( $display = 0, $precision = 3 ) {
-	global $timestart, $timeend;
-
-	$timeend   = microtime( true );
-	$timetotal = $timeend - $timestart;
-
-	if ( function_exists( 'number_format_i18n' ) ) {
-		$r = number_format_i18n( $timetotal, $precision );
-	} else {
-		$r = number_format( $timetotal, $precision );
-	}
-
-	if ( $display ) {
-		echo $r;
-	}
-
-	return $r;
-}
-
-/**
- * Sets PHP error reporting based on WordPress debug settings.
- *
- * Uses three constants: `WP_DEBUG`, `WP_DEBUG_DISPLAY`, and `WP_DEBUG_LOG`.
- * All three can be defined in wp-config.php. By default, `WP_DEBUG` and
- * `WP_DEBUG_LOG` are set to false, and `WP_DEBUG_DISPLAY` is set to true.
- *
- * When `WP_DEBUG` is true, all PHP notices are reported. WordPress will also
- * display internal notices: when a deprecated WordPress function, function
- * argument, or file is used. Deprecated code may be removed from a later
- * version.
- *
- *It is strongly recommended that plugin and theme developers use `WP_DEBUG`
- * in their development environments.
- *
- * `WP_DEBUG_DISPLAY` and `WP_DEBUG_LOG` perform no function unless `WP_DEBUG`
- * is true.
- *
- * When `WP_DEBUG_DISPLAY` is true, WordPress will force errors to be displayed.
- * `WP_DEBUG_DISPLAY` defaults to true. Defining it as null prevents WordPress
- * from changing the global configuration setting. Defining `WP_DEBUG_DISPLAY`
- * as false will force errors to be hidden.
- *
- * When `WP_DEBUG_LOG` is true, errors will be logged to `wp-content/debug.log`.
- * When `WP_DEBUG_LOG` is a valid path, errors will be logged to the specified file.
- *
- * Errors are never displayed for XML-RPC, REST, `ms-files.php`, and Ajax requests.
- *
- * @since 3.0.0
- * @since 5.1.0 `WP_DEBUG_LOG` can be a file path.
- * @access private
- */
-function wp_debug_mode() {
-	/**
-	 * Filters whether to allow the debug mode check to occur.
-	 *
-	 * This filter runs before it can be used by plugins. It is designed for
-	 * non-web runtimes. Returning false causes the `WP_DEBUG` and related
-	 * constants to not be checked and the default PHP values for errors
-	 * will be used unless you take care to update them yourself.
-	 *
-	 * To use this filter you must define a `$wp_filter` global before
-	 * WordPress loads, usually in `wp-config.php`.
-	 *
-	 * Example:
-	 *
-	 *     $GLOBALS['wp_filter'] = array(
-	 *         'enable_wp_debug_mode_checks' => array(
-	 *             10 => array(
-	 *                 array(
-	 *                     'accepted_args' => 0,
-	 *                     'function'      => function() {
-	 *                         return false;
-	 *                     },
-	 *                 ),
-	 *             ),
-	 *         ),
-	 *     );
-	 *
-	 * @since 4.6.0
-	 *
-	 * @param bool $enable_debug_mode Whether to enable debug mode checks to occur. Default true.
-	 */
-	if ( ! apply_filters( 'enable_wp_debug_mode_checks', true ) ) {
-		return;
-	}
-
-	if ( WP_DEBUG ) {
-		error_reporting( E_ALL );
-
-		if ( WP_DEBUG_DISPLAY ) {
-			ini_set( 'display_errors', 1 );
-		} elseif ( null !== WP_DEBUG_DISPLAY ) {
-			ini_set( 'display_errors', 0 );
-		}
-
-		if ( in_array( strtolower( (string) WP_DEBUG_LOG ), array( 'true', '1' ), true ) ) {
-			$log_path = WP_CONTENT_DIR . '/debug.log';
-		} elseif ( is_string( WP_DEBUG_LOG ) ) {
-			$log_path = WP_DEBUG_LOG;
-		} else {
-			$log_path = false;
-		}
-
-		if ( $log_path ) {
-			ini_set( 'log_errors', 1 );
-			ini_set( 'error_log', $log_path );
-		}
-	} else {
-		error_reporting( E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_ERROR | E_WARNING | E_PARSE | E_USER_ERROR | E_USER_WARNING | E_RECOVERABLE_ERROR );
-	}
-
-	/*
-	 * The 'REST_REQUEST' check here is optimistic as the constant is most
-	 * likely not set at this point even if it is in fact a REST request.
-	 */
-	if ( defined( 'XMLRPC_REQUEST' ) || defined( 'REST_REQUEST' ) || defined( 'MS_FILES_REQUEST' )
-		|| ( defined( 'WP_INSTALLING' ) && WP_INSTALLING )
-		|| wp_doing_ajax() || wp_is_json_request()
-	) {
-		ini_set( 'display_errors', 0 );
-	}
-}
-
-/**
- * Sets the location of the language directory.
- *
- * To set directory manually, define the `WP_LANG_DIR` constant
- * in wp-config.php.
- *
- * If the language directory exists within `WP_CONTENT_DIR`, it
- * is used. Otherwise the language directory is assumed to live
- * in `WPINC`.
- *
- * @since 3.0.0
- * @access private
- */
-function wp_set_lang_dir() {
-	if ( ! defined( 'WP_LANG_DIR' ) ) {
-		if ( file_exists( WP_CONTENT_DIR . '/languages' ) && @is_dir( WP_CONTENT_DIR . '/languages' )
-			|| ! @is_dir( ABSPATH . WPINC . '/languages' )
-		) {
-			/**
-			 * Server path of the language directory.
-			 *
-			 * No leading slash, no trailing slash, full path, not relative to ABSPATH
-			 *
-			 * @since 2.1.0
-			 */
-			define( 'WP_LANG_DIR', WP_CONTENT_DIR . '/languages' );
-
-			if ( ! defined( 'LANGDIR' ) ) {
-				// Old static relative path maintained for limited backward compatibility - won't work in some cases.
-				define( 'LANGDIR', 'wp-content/languages' );
-			}
-		} else {
-			/**
-			 * Server path of the language directory.
-			 *
-			 * No leading slash, no trailing slash, full path, not relative to `ABSPATH`.
-			 *
-			 * @since 2.1.0
-			 */
-			define( 'WP_LANG_DIR', ABSPATH . WPINC . '/languages' );
-
-			if ( ! defined( 'LANGDIR' ) ) {
-				// Old relative path maintained for backward compatibility.
-				define( 'LANGDIR', WPINC . '/languages' );
-			}
-		}
-	}
-}
-
-/**
- * Loads the database class file and instantiates the `$wpdb` global.
- *
- * @since 2.5.0
- *
- * @global wpdb $wpdb WordPress database abstraction object.
- */
-function require_wp_db() {
-	global $wpdb;
-
-	require_once ABSPATH . WPINC . '/class-wpdb.php';
-
-	if ( file_exists( WP_CONTENT_DIR . '/db.php' ) ) {
-		require_once WP_CONTENT_DIR . '/db.php';
-	}
-
-	if ( isset( $wpdb ) ) {
-		return;
-	}
-
-	$dbuser     = defined( 'DB_USER' ) ? DB_USER : '';
-	$dbpassword = defined( 'DB_PASSWORD' ) ? DB_PASSWORD : '';
-	$dbname     = defined( 'DB_NAME' ) ? DB_NAME : '';
-	$dbhost     = defined( 'DB_HOST' ) ? DB_HOST : '';
-
-	$wpdb = new wpdb( $dbuser, $dbpassword, $dbname, $dbhost );
-}
-
-/**
- * Sets the database table prefix and the format specifiers for database
- * table columns.
- *
- * Columns not listed here default to `%s`.
- *
- * @since 3.0.0
- * @access private
- *
- * @global wpdb   $wpdb         WordPress database abstraction object.
- * @global string $table_prefix The database table prefix.
- */
-function wp_set_wpdb_vars() {
-	global $wpdb, $table_prefix;
-
-	if ( ! empty( $wpdb->error ) ) {
-		dead_db();
-	}
-
-	$wpdb->field_types = array(
-		'post_author'      => '%d',
-		'post_parent'      => '%d',
-		'menu_order'       => '%d',
-		'term_id'          => '%d',
-		'term_group'       => '%d',
-		'term_taxonomy_id' => '%d',
-		'parent'           => '%d',
-		'count'            => '%d',
-		'object_id'        => '%d',
-		'term_order'       => '%d',
-		'ID'               => '%d',
-		'comment_ID'       => '%d',
-		'comment_post_ID'  => '%d',
-		'comment_parent'   => '%d',
-		'user_id'          => '%d',
-		'link_id'          => '%d',
-		'link_owner'       => '%d',
-		'link_rating'      => '%d',
-		'option_id'        => '%d',
-		'blog_id'          => '%d',
-		'meta_id'          => '%d',
-		'post_id'          => '%d',
-		'user_status'      => '%d',
-		'umeta_id'         => '%d',
-		'comment_karma'    => '%d',
-		'comment_count'    => '%d',
-		// Multisite:
-		'active'           => '%d',
-		'cat_id'           => '%d',
-		'deleted'          => '%d',
-		'lang_id'          => '%d',
-		'mature'           => '%d',
-		'public'           => '%d',
-		'site_id'          => '%d',
-		'spam'             => '%d',
-	);
-
-	$prefix = $wpdb->set_prefix( $table_prefix );
-
-	if ( is_wp_error( $prefix ) ) {
-		wp_load_translations_early();
-		wp_die(
-			sprintf(
-				/* translators: 1: $table_prefix, 2: wp-config.php */
-				__( '<strong>Error:</strong> %1$s in %2$s can only contain numbers, letters, and underscores.' ),
-				'<code>$table_prefix</code>',
-				'<code>wp-config.php</code>'
-			)
-		);
-	}
-}
-
-/**
- * Toggles `$_wp_using_ext_object_cache` on and off without directly
- * touching global.
- *
- * @since 3.7.0
- *
- * @global bool $_wp_using_ext_object_cache
- *
- * @param bool $using Whether external object cache is being used.
- * @return bool The current 'using' setting.
- */
-function wp_using_ext_object_cache( $using = null ) {
-	global $_wp_using_ext_object_cache;
-
-	$current_using = $_wp_using_ext_object_cache;
-
-	if ( null !== $using ) {
-		$_wp_using_ext_object_cache = $using;
-	}
-
-	return $current_using;
-}
-
-/**
- * Starts the WordPress object cache.
- *
- * If an object-cache.php file exists in the wp-content directory,
- * it uses that drop-in as an external object cache.
- *
- * @since 3.0.0
- * @access private
- *
- * @global array $wp_filter Stores all of the filters.
- */
-function wp_start_object_cache() {
-	global $wp_filter;
-	static $first_init = true;
-
-	// Only perform the following checks once.
-
-	/**
-	 * Filters whether to enable loading of the object-cache.php drop-in.
-	 *
-	 * This filter runs before it can be used by plugins. It is designed for non-web
-	 * runtimes. If false is returned, object-cache.php will never be loaded.
-	 *
-	 * @since 5.8.0
-	 *
-	 * @param bool $enable_object_cache Whether to enableloadingobject-cache.php (if present).
-	 *                                  Default true.
-	 */
-	if ( $first_init && apply_filters( 'enable_loading_object_cache_dropin', true ) ) {
-		if ( ! function_exists( 'wp_cache_init' ) ) {
-			/*
-			 * This is the normal situation. First-run of this function. No
-			 * caching backend has been loaded.
-			 *
-			 * We try to load a custom caching backend, and then, if it
-			 * results in a wp_cache_init() function existing, we note
-			 * that an external object cache is being used.
-			 */
-			if ( file_exists( WP_CONTENT_DIR . '/object-cache.php' ) ) {
-				require_once WP_CONTENT_DIR . '/object-cache.php';
-
-				if ( function_exists( 'wp_cache_init' ) ) {
-					wp_using_ext_object_cache( true );
-				}// Re-initialize any hooks added manually by object-cache.php.
-				if ( $wp_filter ) {
-					$wp_filter = WP_Hook::build_preinitialized_hooks( $wp_filter );
-				}
-			}
-		} elseif ( ! wp_using_ext_object_cache() && file_exists( WP_CONTENT_DIR . '/object-cache.php' ) ) {
-			/*
-			 * Sometimes advanced-cache.php can load object-cache.php before
-			 * this function is run. This breaks the function_exists() check
-			 * above and can result in wp_using_ext_object_cache() returning
-			 * false when actually an external cache is in use.
-			 */
-			wp_using_ext_object_cache( true );
-		}
-	}
-
-	if ( ! wp_using_ext_object_cache() ) {
-		require_once ABSPATH . WPINC . '/cache.php';
-	}
-
-	require_once ABSPATH . WPINC . '/cache-compat.php';
-
-	/*
-	 * If cache supports reset, reset instead of init if already
-	 * initialized. Reset signals to the cache that global IDs
-	 * have changed and it may need to update keys and cleanup caches.
-	 */
-	if ( ! $first_init && function_exists( 'wp_cache_switch_to_blog' ) ) {
-		wp_cache_switch_to_blog( get_current_blog_id() );
-	} elseif ( function_exists( 'wp_cache_init' ) ) {
-		wp_cache_init();
-	}
-
-	if ( function_exists( 'wp_cache_add_global_groups' ) ) {
-		wp_cache_add_global_groups(
-			array(
-				'blog-details',
-				'blog-id-cache',
-				'blog-lookup',
-				'blog_meta',
-				'global-posts',
-				'image_editor',
-				'networks',
-				'network-queries',
-				'sites',
-				'site-details',
-				'site-options',
-				'site-queries',
-				'site-transient',
-				'theme_files',
-				'translation_files',
-				'rss',
-				'users',
-				'user-queries',
-				'user_meta',
-				'useremail',
-				'userlogins',
-				'userslugs',
-			)
-		);
-
-		wp_cache_add_non_persistent_groups( array( 'counts', 'plugins', 'theme_json' ) );
-	}
-
-	$first_init = false;
-}
-
-/**
- * Redirects to the installer if WordPress is not installed.
- *
- * Dies with an error message when Multisite is enabled.
- *
- * @since 3.0.0
- * @access private
- */
-function wp_not_installed() {
-	if ( is_blog_installed() || wp_installing() ) {
-		return;
-	}
-
-	nocache_headers();
-
-	if ( is_multisite() ) {
-		wp_die( __( 'The site you have requested is not installed properly. Please contact the system administrator.' ) );
-	}
-
-	require ABSPATH . WPINC . '/kses.php';
-	require ABSPATH . WPINC . '/pluggable.php';
-
-	$link = wp_guess_url() . '/wp-admin/install.php';
-
-	wp_redirect( $link );
-	die();
-}
-
-/**
- * Retrieves an array of must-use plugin files.
- *
- * The default directory is wp-content/mu-plugins. To change the default
- * directory manually, define `WPMU_PLUGIN_DIR` and `WPMU_PLUGIN_URL`
- * in wp-config.php.
- *
- * @since 3.0.0
- * @access private
- *
- * @return string[] Array of absolute paths of files to include.
- */
-function wp_get_mu_plugins() {
-	$mu_plugins = array();
-
-	if ( ! is_dir( WPMU_PLUGIN_DIR ) ) {
-		return $mu_plugins;
-	}
-
-	$dh = opendir( WPMU_PLUGIN_DIR );
-	if ( ! $dh ) {
-		return $mu_plugins;
-	}
-
-	while ( ( $plugin = readdir( $dh ) ) !== false ) {
-		if ( str_ends_with( $plugin, '.php' ) ) {
-			$mu_plugins[] = WPMU_PLUGIN_DIR . '/' . $plugin;
-		}
-	}
-
-	closedir( $dh );
-
-	sort( $mu_plugins );
-
-	return $mu_plugins;
-}
-
-/**
- * Retrieves an array of active and valid plugin files.
- *
- * While upgrading or installing WordPress, no plugins are returned.
- *
- * The default directory is `wp-content/plugins`. To change the default
- * directory manually, define `WP_PLUGIN_DIR` and `WP_PLUGIN_URL`
- * in `wp-config.php`.
- *
- * @since 3.0.0
- * @access private
- *
- * @return string[] Array of paths to plugin files relative to the plugins directory.
- */
-function wp_get_active_and_valid_plugins() {
-	$plugins        = array();
-	$active_plugins = (array) get_option( 'active_plugins', array() );
-
-	// Check for hacks file if the option is enabled.
-	if ( get_option( 'hack_file' ) && file_exists( ABSPATH . 'my-hacks.php' ) ) {
-		_deprecated_file( 'my-hacks.php', '1.5.0' );
-		array_unshift( $plugins, ABSPATH . 'my-hacks.php' );
-	}
-
-	if ( empty( $active_plugins ) || wp_installing() ) {
-		return $plugins;
-	}
-
-	$network_plugins = is_multisite() ? wp_get_active_network_plugins() : false;
-
-	foreach ( $active_plugins as $plugin ) {
-		if ( ! validate_file( $plugin )                     // $plugin must validate as file.
-			&& str_ends_with( $plugin, '.php' )             // $plugin must end with '.php'.
-			&& file_exists( WP_PLUGIN_DIR . '/' . $plugin ) // $plugin must exist.
-			// Not already included as a network plugin.
-			&& ( ! $network_plugins || ! in_array( WP_PLUGIN_DIR . '/' . $plugin, $network_plugins, true ) )
-		) {
-			$plugins[] = WP_PLUGIN_DIR . '/' . $plugin;
-		}
-	}
-
-	/*
-	 * Remove plugins from the list of active plugins when we're on an endpoint
-	 * that should be protected against WSODs and the plugin is paused.
-	 */
-	if ( wp_is_recovery_mode() ) {
-		$plugins = wp_skip_paused_plugins( $plugins );
-	}
-
-	return $plugins;
-}
-
-/**
- * Filters a given list of plugins, removing any paused plugins from it.
- *
- * @since 5.2.0
- *
- * @global WP_Paused_Extensions_Storage $_paused_plugins
- *
- * @param string[] $plugins Array of absolute plugin main file paths.
- * @return string[] Filtered array of plugins, without any paused plugins.
- */
-function wp_skip_paused_plugins( array $plugins ) {
-	$paused_plugins = wp_paused_plugins()->get_all();
-
-	if ( empty( $paused_plugins ) ) {
-		return $plugins;
-	}
-
-	foreach ( $plugins as $index => $plugin ) {
-		list( $plugin ) = explode( '/', plugin_basename( $plugin ) );
-
-		if ( array_key_exists( $plugin, $paused_plugins ) ) {
-			unset( $plugins[ $index ] );
-
-			// Store list of paused plugins for displaying an admin notice.
-			$GLOBALS['_paused_plugins'][ $plugin ] = $paused_plugins[ $plugin ];
-		}
-	}
-
-	return $plugins;
-}
-
-/**
- * Retrieves an array of active and valid themes.
- *
- * While upgrading or installing WordPress, no themes are returned.
- *
- * @since 5.1.0
- * @access private
- *
- * @global string $pagenow            The filename of the current screen.
- * @global string $wp_stylesheet_path Path to current theme's stylesheet directory.
- * @global string $wp_template_path   Path to current theme's template directory.
- *
- * @return string[] Array of absolute paths to theme directories.
- */
-function wp_get_active_and_valid_themes() {
-	global $pagenow, $wp_stylesheet_path, $wp_template_path;
-
-	$themes = array();
-
-	if ( wp_installing() && 'wp-activate.php' !== $pagenow ) {
-		return $themes;
-	}
-
-	if ( is_child_theme() ) {
-		$themes[] = $wp_stylesheet_path;
-	}
-
-	$themes[] = $wp_template_path;
-
-	/*
-	 * Remove themes from the list of active themes when we're on an endpoint
-	 * that should be protected against WSODs and the theme is paused.
-	 */
-	if ( wp_is_recovery_mode() ) {
-		$themes = wp_skip_paused_themes( $themes );
-
-		// If no active and valid themes exist, skip loading themes.
-		if ( empty( $themes ) ) {
-			add_filter( 'wp_using_themes', '__return_false' );
-		}
-	}
-
-	return $themes;
-}
-
-/**
- * Filters a given list of themes, removing any paused themes from it.
- *
- * @since 5.2.0
- *
- * @global WP_Paused_Extensions_Storage $_paused_themes
- *
- * @param string[] $themes Array of absolute theme directory paths.
- * @return string[] Filtered array of absolute paths to themes, without any paused themes.
- */
-function wp_skip_paused_themes( array $themes ) {
-	$paused_themes = wp_paused_themes()->get_all();
-
-	if ( empty( $paused_themes ) ) {
-		return $themes;
-	}
-
-	foreach ( $themes as $index => $theme ) {
-		$theme = basename( $theme );
-
-		if ( array_key_exists( $theme, $paused_themes ) ){
-			unset( $themes[ $index ] );
-
-			// Store list of paused themes for displaying an admin notice.
-			$GLOBALS['_paused_themes'][ $theme ] = $paused_themes[ $theme ];
-		}
-	}
-
-	return $themes;
-}
-
-/**
- * Determines whether WordPress is in Recovery Mode.
- *
- * In this mode, plugins or themes that cause WSODs will be paused.
- *
- * @since 5.2.0
- *
- * @return bool
- */
-function wp_is_recovery_mode() {
-	return wp_recovery_mode()->is_active();
-}
-
-/**
- * Determines whether we are currently on an endpoint that should be protected against WSODs.
- *
- * @since 5.2.0
- *
- * @global string $pagenow The filename of the current screen.
- *
- * @return bool True if the current endpoint should be protected.
- */
-function is_protected_endpoint() {
-	// Protect login pages.
-	if ( isset( $GLOBALS['pagenow'] ) && 'wp-login.php' === $GLOBALS['pagenow'] ) {
-		return true;
-	}
-
-	// Protect the admin backend.
-	if ( is_admin() && ! wp_doing_ajax() ) {
-		return true;
-	}
-
-	// Protect Ajax actions that could help resolve a fatal error should be available.
-	if ( is_protected_ajax_action() ) {
-		return true;
-	}
-
-	/**
-	 * Filters whether the current request is against a protected endpoint.
-	 *
-	 * This filter is only fired when an endpoint is requested which is not already protected by
-	 * WordPress core. As such, it exclusively allows providing further protected endpoints in
-	 * addition to the admin backend, login pages and protected Ajax actions.
-	 *
-	 * @since 5.2.0
-	 *
-	 * @param bool $is_protected_endpoint Whether the currently requested endpoint is protected.
-	 *                                    Default false.
-	 */
-	return (bool) apply_filters( 'is_protected_endpoint', false );
-}
-
-/**
- * Determines whether we are currently handling an Ajax action that should be protected against WSODs.
- *
- * @since 5.2.0
- *
- * @return bool True if the current Ajax action should be protected.
- */
-function is_protected_ajax_action() {
-	if ( ! wp_doing_ajax() ) {
-		return false;
-	}
-
-	if ( ! isset( $_REQUEST['action'] ) ) {
-		return false;
-	}
-
-	$actions_to_protect = array(
-		'edit-theme-plugin-file', // Saving changes in the core code editor.
-		'heartbeat',              // Keep the heart beating.
-		'install-plugin',         // Installing a new plugin.
-		'install-theme',          // Installing a new theme.
-		'search-plugins',         // Searching in the list of plugins.
-		'search-install-plugins', // Searching for a plugin in the plugin install screen.
-		'update-plugin',          // Update an existing plugin.
-		'update-theme',           // Update an existing theme.
-		'activate-plugin',        // Activating an existing plugin.
-	);
-
-	/**
-	 * Filters the array of protected Ajax actions.
-	 *
-	 * This filter is only fired when doing Ajax and the Ajax request has an 'action' property.
-	 *
-	 * @since 5.2.0
-	 *
-	 * @param string[] $actions_to_protect Array of strings with Ajax actions to protect.
-	 */
-	$actions_to_protect = (array) apply_filters( 'wp_protected_ajax_actions', $actions_to_protect );
-
-	if ( ! in_array( $_REQUEST['action'], $actions_to_protect, true ) ) {
-		return false;
-	}
-
-	return true;
-}
-
-/**
- * Sets internal encoding.
- *
- * In most cases the default internal encoding is latin1, which is
- * of no use, since we want to use the `mb_` functions for `utf-8` strings.
- *
- * @since 3.0.0
- * @access private
- */
-function wp_set_internal_encoding() {
-	if ( function_exists( 'mb_internal_encoding' ) ) {
-		$charset = get_option( 'blog_charset' );
-		// phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
-		if ( ! $charset || ! @mb_internal_encoding( $charset ) ) {
-			mb_internal_encoding( 'UTF-8' );
-		}
-	}
-}
-
-/**
- * Adds magic quotes to `$_GET`, `$_POST`, `$_COOKIE`, and `$_SERVER`.
- *
- * Also forces `$_REQUEST` to be `$_GET + $_POST`. If `$_SERVER`,
- * `$_COOKIE`, or `$_ENV` are needed, use those superglobals directly.
- *
- * @since 3.0.0
- * @access private
- */
-function wp_magic_quotes() {
-	// Escape with wpdb.
-	$_GET    = add_magic_quotes( $_GET );
-	$_POST   = add_magic_quotes( $_POST );
-	$_COOKIE = add_magic_quotes( $_COOKIE );
-	$_SERVER = add_magic_quotes( $_SERVER );
-
-	// Force REQUEST to be GET + POST.
-	$_REQUEST = array_merge( $_GET, $_POST );
-}
-
-/**
- * Runs just before PHP shuts down execution.
- *
- * @since 1.2.0
- * @access private
- */
-function shutdown_action_hook() {
-	/**
-	 * Fires just before PHP shuts down execution.
-	 *
-	 * @since 1.2.0
-	 */
-	do_action( 'shutdown' );
-
-	wp_cache_close();
-}
-
-/**
- * Clones an object.
- *
- * @since 2.7.0
- * @deprecated 3.2.0
- *
- * @param object $input_object The object to clone.
- * @return object The cloned object.
- */
-function wp_clone( $input_object ) {
-	// Use parens for clone to accommodate PHP 4. See #17880.
-	return clone( $input_object );
-}
-
-/**
- * Determines whether the current request is for the login screen.
- *
- * @since 6.1.0
- *
- * @see wp_login_url()
- *
- * @return bool True if inside WordPress login screen, false otherwise.
- */
-function is_login() {
-	return false !== stripos( wp_login_url(), $_SERVER['SCRIPT_NAME'] );
-}
-
-/**
- * Determines whether the current request is for an administrative interface page.
- *
- * Does not check if the user is an administrator; use current_user_can()
- * for checking roles and capabilities.
- *
- * For more information on this and similar theme functions, check out
- * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
- * Conditional Tags} article in the Theme Developer Handbook.
- *
- * @since 1.5.1
- *
- * @global WP_Screen $current_screen WordPress current screen object.
- *
- * @return bool True if inside WordPress administration interface, false otherwise.
- */
-function is_admin() {
-	if ( isset( $GLOBALS['current_screen'] ) ) {
-		return $GLOBALS['current_screen']->in_admin();
-	} elseif ( defined( 'WP_ADMIN' ) ) {
-		return WP_ADMIN;
-	}
-
-	return false;
-}
-
-/**
- * Determines whether the current request is for a site's administrative interface.
- *
- * e.g. `/wp-admin/`
- *
- * Does not check if the user is an administrator; use current_user_can()
- * for checking roles and capabilities.
- *
- * @since 3.1.0
- *
- * @global WP_Screen $current_screen WordPress current screen object.
- *
- * @return bool True if inside WordPress site administration pages.
- */
-function is_blog_admin() {
-	if ( isset( $GLOBALS['current_screen'] ) ) {
-		return $GLOBALS['current_screen']->in_admin( 'site' );
-	} elseif ( defined( 'WP_BLOG_ADMIN' ) ) {
-		return WP_BLOG_ADMIN;
-	}
-
-	return false;
-}
-
-/**
- * Determines whether the current request is for the network administrative interface.
- *
- * e.g. `/wp-admin/network/`
- *
- * Does not check if the user is an administrator; use current_user_can()
- * for checking roles and capabilities.
- *
- * Does not check if the site is a Multisite network; use is_multisite()
- * for checking if Multisite is enabled.
- *
- * @since 3.1.0
- *
- * @global WP_Screen $current_screen WordPress current screen object.
- *
- * @return bool True if inside WordPress network administration pages.
- */
-function is_network_admin() {
-	if ( isset( $GLOBALS['current_screen'] ) ) {
-		return $GLOBALS['current_screen']->in_admin( 'network' );
-	} elseif ( defined( 'WP_NETWORK_ADMIN' ) ) {
-		return WP_NETWORK_ADMIN;
-	}
-
-	return false;
-}
-
-/**
- * Determines whether the current request is for a user admin screen.
- *
- * e.g. `/wp-admin/user/`
- *
- * Does not check if the user is an administrator; use current_user_can()
- * for checking roles and capabilities.
- *
- * @since 3.1.0
- *
- * @global WP_Screen $current_screen WordPress current screen object.
- *
- * @return bool Trueif inside WordPress user administration pages.
- */
-function is_user_admin() {
-	if ( isset( $GLOBALS['current_screen'] ) ) {
-		return $GLOBALS['current_screen']->in_admin( 'user' );
-	} elseif ( defined( 'WP_USER_ADMIN' ) ) {
-		return WP_USER_ADMIN;
-	}
-
-	return false;
-}
-
-/**
- * Determines whether Multisite is enabled.
- *
- * @since 3.0.0
- *
- * @return bool True if Multisite is enabled, false otherwise.
- */
-function is_multisite() {
-	if ( defined( 'MULTISITE' ) ) {
-		return MULTISITE;
-	}
-
-	if ( defined( 'SUBDOMAIN_INSTALL' ) || defined( 'VHOST' ) || defined( 'SUNRISE' ) ) {
-		return true;
-	}
-
-	return false;
-}
-
-/**
- * Converts a value to non-negative integer.
- *
- *@since2.5.0
- *
- * @parammixed $maybeint Data you wish to have converted to a non-negative integer.
- * @return int A non-negative integer.
- */
-function absint( $maybeint ) {
-	return abs( (int) $maybeint );
-}
-
-/**
- * Retrieves the current site ID.
- *
- * @since 3.1.0
- *
- * @global int $blog_id
- *
- * @return int Site ID.
- */
-function get_current_blog_id() {
-	global $blog_id;
-
-	return absint( $blog_id );
-}
-
-/**
- * Retrieves the current network ID.
- *
- * @since 4.6.0
- *
- * @return int The ID of the current network.
- */
-function get_current_network_id() {
-	if ( ! is_multisite() ) {
-		return 1;
-	}
-
-	$current_network = get_network();
-
-	if ( ! isset( $current_network->id ) ) {
-		return get_main_network_id();
-	}
-
-	return absint( $current_network->id );
-}
-
-/**
- * Attempts an early load of translations.
- *
- * Used for errors encountered during the initial loading process, before
- * the locale has been properly detected and loaded.
- *
- * Designed for unusual load sequences (like setup-config.php) or for when
- * the script will then terminate with an error, otherwise there is a risk
- * that a file can be double-included.
- *
- * @since 3.4.0
- * @access private
- *
- * @global WP_Textdomain_Registry $wp_textdomain_registry WordPress Textdomain Registry.
- * @global WP_Locale              $wp_locale              WordPress date and time locale object.
- */
-function wp_load_translations_early() {
-	global $wp_textdomain_registry, $wp_locale;
-	static $loaded = false;
-
-	if ( $loaded ) {
-		return;
-	}
-
-	$loaded = true;
-
-	if ( function_exists( 'did_action' ) && did_action( 'init' ) ) {
-		return;
-	}
-
-	// We need $wp_local_package.
-	require ABSPATH . WPINC . '/version.php';
-
-	// Translation and localization.
-	require_once ABSPATH . WPINC . '/pomo/mo.php';
-	require_once ABSPATH . WPINC . '/l10n/class-wp-translation-controller.php';
-	require_once ABSPATH . WPINC . '/l10n/class-wp-translations.php';
-	require_once ABSPATH . WPINC . '/l10n/class-wp-translation-file.php';
-	require_once ABSPATH . WPINC . '/l10n/class-wp-translation-file-mo.php';
-	require_once ABSPATH . WPINC . '/l10n/class-wp-translation-file-php.php';
-	require_once ABSPATH . WPINC . '/l10n.php';
-	require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
-	require_once ABSPATH . WPINC . '/class-wp-locale.php';
-	require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
-
-	// General libraries.
-	require_once ABSPATH . WPINC . '/plugin.php';
-
-	$locales   = array();
-	$locations = array();
-
-	if ( ! $wp_textdomain_registry instanceof WP_Textdomain_Registry ) {
-		$wp_textdomain_registry = new WP_Textdomain_Registry();
-	}
-
-	while ( true ) {
-		if ( defined( 'WPLANG' ) ) {
-			if ( '' === WPLANG ) {
-				break;
-			}
-			$locales[] = WPLANG;
-		}
-
-		if ( isset( $wp_local_package ) ) {
-			$locales[] = $wp_local_package;
-		}
-
-		if ( ! $locales ) {
-			break;
-		}
-
-		if ( defined( 'WP_LANG_DIR' ) && @is_dir( WP_LANG_DIR ) ) {
-			$locations[] = WP_LANG_DIR;
-		}
-
-		if ( defined( 'WP_CONTENT_DIR' ) && @is_dir( WP_CONTENT_DIR . '/languages' ) ) {
-			$locations[] = WP_CONTENT_DIR . '/languages';
-		}
-
-		if ( @is_dir( ABSPATH . 'wp-content/languages' ) ) {
-			$locations[] = ABSPATH . 'wp-content/languages';
-		}
-
-		if ( @is_dir( ABSPATH . WPINC . '/languages' ) ) {
-			$locations[] = ABSPATH . WPINC . '/languages';
-		}
-
-		if ( ! $locations ) {
-			break;
-		}
-
-		$locations = array_unique( $locations );
-
-		foreach ( $locales as $locale ) {
-			foreach ( $locations as $location ) {
-				if ( file_exists( $location . '/' . $locale . '.mo' ) ) {
-					load_textdomain( 'default', $location . '/' . $locale . '.mo', $locale );
-
-					if ( defined( 'WP_SETUP_CONFIG' ) && file_exists( $location . '/admin-' . $locale . '.mo' ) ) {
-						load_textdomain( 'default', $location . '/admin-' . $locale . '.mo', $locale );
-					}
-
-					break 2;
-				}
-			}
-		}
-
-		break;
-	}
-
-	$wp_locale = new WP_Locale();
-}
-
-/**
- * Checks or sets whether WordPress is in "installation" mode.
- *
- * If the `WP_INSTALLING` constant is defined during the bootstrap, `wp_installing()` will default to `true`.
- *
- * @since 4.4.0
- *
- * @param bool $is_installing Optional. True to set WP into Installing mode, false to turn Installing mode off.
- *                            Omit this parameter if you only want to fetch the current status.
- * @return bool True if WP is installing, otherwise false. When a `$is_installing` is passed, the function will
- *              report whether WP was in installing mode prior to the change to `$is_installing`.
- */
-function wp_installing( $is_installing = null ) {
-	static $installing = null;
-
-	// Support for the `WP_INSTALLING` constant, defined before WP is loaded.
-	if ( is_null( $installing ) ) {
-		$installing = defined( 'WP_INSTALLING' ) && WP_INSTALLING;
-	}
-
-	if ( ! is_null( $is_installing ) ) {
-		$old_installing = $installing;
-		$installing     = $is_installing;
-
-		return (bool) $old_installing;
-	}
-
-	return (bool) $installing;
-}
-
-/**
- * Determines if SSL is used.
- *
- * @since 2.6.0
- * @since 4.6.0 Moved from functions.php to load.php.
- *
- * @return bool True if SSL, otherwise false.
- */
-function is_ssl() {
-	if ( isset( $_SERVER['HTTPS'] ) ) {
-		if ( 'on' === strtolower( $_SERVER['HTTPS'] ) ) {
-			return true;
-		}
-
-		if ( '1' === (string) $_SERVER['HTTPS'] ) {
-			return true;
-		}
-	} elseif ( isset( $_SERVER['SERVER_PORT'] ) && ( '443' === (string) $_SERVER['SERVER_PORT'] ) ) {
-		return true;
-	}
-
-	return false;
-}
-
-/**
- * Converts a shorthand byte value to an integer byte value.
- *
- * @since 2.3.0
- * @since 4.6.0 Moved from media.php to load.php.
- *
- * @link https://www.php.net/manual/en/function.ini-get.php
- * @link https://www.php.net/manual/en/faq.using.php#faq.using.shorthandbytes
- *
- * @param string $value A (PHP ini) byte value, either shorthand or ordinary.
- * @return int An integer byte value.
- */
-function wp_convert_hr_to_bytes( $value ) {
-	$value = strtolower( trim( $value ) );
-	$bytes = (int) $value;
-
-	if ( str_contains( $value, 'g' ) ) {
-		$bytes *= GB_IN_BYTES;
-	} elseif ( str_contains( $value, 'm' ) ) {
-		$bytes *= MB_IN_BYTES;
-	} elseif ( str_contains( $value, 'k' ) ) {
-		$bytes *= KB_IN_BYTES;
-	}
-
-	// Deal with large (float) values which run into the maximum integer size.
-	return min( $bytes, PHP_INT_MAX );
-}
-
-/**
- * Determines whether a PHP ini value is changeable at runtime.
- *
- * @since 4.6.0
- *
- * @link https://www.php.net/manual/en/function.ini-get-all.php
- *
- * @param string $setting The name of the ini setting to check.
- * @return bool True if the value is changeable at runtime. False otherwise.
- */
-function wp_is_ini_value_changeable( $setting ) {
-	static $ini_all;
-
-	if ( ! isset( $ini_all ) ) {
-		$ini_all = false;
-		// Sometimes `ini_get_all()` is disabled via the `disable_functions` option for "security purposes".
-		if ( function_exists( 'ini_get_all' ) ) {
-			$ini_all = ini_get_all();
-		}
-	}
-
-	if ( isset( $ini_all[ $setting ]['access'] )
-		&& ( INI_ALL === $ini_all[ $setting ]['access'] || INI_USER === $ini_all[ $setting ]['access'] )
-	) {
-		return true;
-	}
-
-	// If we were unable to retrieve the details, fail gracefully to assume it's changeable.
-	if ( ! is_array( $ini_all ) ) {
-		return true;
-	}
-
-	return false;
-}
-
-/**
- * Determines whether the currentrequest is a WordPress Ajax request.
- *
- * @since 4.7.0
- *
- * @return bool True if it's a WordPress Ajax request, false otherwise.
- */
-function wp_doing_ajax() {
-	/**
-	 * Filters whether the current request is a WordPress Ajax request.
-	 *
-	 * @since 4.7.0
-	 *
-	 * @param bool $wp_doing_ajax Whether the current request is a WordPress Ajax request.
-	 */
-	return apply_filters( 'wp_doing_ajax', defined( 'DOING_AJAX' ) && DOING_AJAX );
-}
-
-/**
- * Determines whether the current request should use themes.
- *
- * @since 5.1.0
- *
- * @return bool True if themes should be used, false otherwise.
- */
-function wp_using_themes() {
-	/**
-	 * Filters whether the current request should use themes.
-	 *
-	 * @since 5.1.0
-	 *
-	 * @param bool $wp_using_themes Whether the current request should use themes.
-	 */
-	return apply_filters( 'wp_using_themes', defined( 'WP_USE_THEMES' ) && WP_USE_THEMES );
-}
-
-/**
- * Determines whether the current request is a WordPress cron request.
- *
- * @since 4.8.0*
- *@return bool True if it's a WordPress cron request, false otherwise.
- */
-function wp_doing_cron() {
-	/**
-	 * Filters whether the current request is a WordPress cron request.
-	 *
-	 * @since 4.8.0
-	 *
-	 * @param bool $wp_doing_cron Whether the current request is a WordPress cron request.
-	 */
-	return apply_filters( 'wp_doing_cron', defined( 'DOING_CRON' ) && DOING_CRON );
-}
-
-/**
- * Checks whether the given variable is a WordPress Error.
- *
- * Returns whether `$thing` is an instance of the `WP_Error` class.
- *
- * @since 2.1.0
- *
- * @param mixed $thing The variable to check.
- * @return bool Whether the variable is an instance of WP_Error.
- */
-function is_wp_error( $thing ) {
-	$is_wp_error = ( $thing instanceof WP_Error );
-
-	if ( $is_wp_error) {
-		/**
-		 * Fires when `is_wp_error()` is called and its parameter is an instance of `WP_Error`.
-		 *
-		 * @since 5.6.0
-		 *
-		 * @param WP_Error $thing The error object passed to `is_wp_error()`.
-		 */
-		do_action( 'is_wp_error_instance', $thing );
-	}
-
-	return $is_wp_error;
-}
-
-/**
- * Determines whether file modifications are allowed.
- *
- * @since 4.8.0
- *
- * @param string $context The usage context.
- * @return bool True if file modification is allowed, false otherwise.
- */
-function wp_is_file_mod_allowed( $context ) {
-	/**
-	 * Filters whether file modifications are allowed.
-	 *
-	 * @since 4.8.0
-	 *
-	 * @param bool   $file_mod_allowed Whether file modifications are allowed.
-	 * @param string $context          The usage context.
-	 */
-	return apply_filters( 'file_mod_allowed', ! defined( 'DISALLOW_FILE_MODS' ) || ! DISALLOW_FILE_MODS, $context );
-}
-
-/**
- * Starts scraping edited file errors.
- *
- * @since 4.9.0
- */
-function wp_start_scraping_edited_file_errors() {
-	if ( ! isset( $_REQUEST['wp_scrape_key'] ) || ! isset( $_REQUEST['wp_scrape_nonce'] ) ) {
-		return;
-	}
-
-	$key   = substr( sanitize_key( wp_unslash( $_REQUEST['wp_scrape_key'] ) ), 0, 32 );
-	$nonce = wp_unslash( $_REQUEST['wp_scrape_nonce'] );
-	if ( empty( $key ) || empty( $nonce ) ) {
-		return;
-	}
-
-	$transient = get_transient( 'scrape_key_' . $key );
-	if ( false === $transient ) {
-		return;
-	}
-
-	if ( $transient !== $nonce ) {
-		if ( ! headers_sent() ) {
-			header( 'X-Robots-Tag: noindex' );
-			nocache_headers();
-		}
-		echo "###### wp_scraping_result_start:$key ######";
-		echo wp_json_encode(
-			array(
-				'code'    => 'scrape_nonce_failure',
-				'message' => __( 'Scrape key check failed. Please try again.' ),
-			)
-		);
-		echo "###### wp_scraping_result_end:$key ######";
-		die();
-	}
-
-	if ( ! defined( 'WP_SANDBOX_SCRAPING' ) ) {
-		define( 'WP_SANDBOX_SCRAPING', true );
-	}
-
-	register_shutdown_function( 'wp_finalize_scraping_edited_file_errors', $key );
-}
-
-/**
- * Finalizes scraping for edited file errors.
- *
- * @since 4.9.0
- *
- * @param string $scrape_key Scrape key.
- */
-function wp_finalize_scraping_edited_file_errors( $scrape_key ) {
-	$error = error_get_last();
-
-	echo "\n###### wp_scraping_result_start:$scrape_key ######\n";
-
-	if ( ! empty( $error )
-		&& in_array( $error['type'], array( E_CORE_ERROR, E_COMPILE_ERROR, E_ERROR, E_PARSE, E_USER_ERROR, E_RECOVERABLE_ERROR ), true )
-	) {
-		$error = str_replace( ABSPATH, '', $error );
-		echo wp_json_encode( $error );
-	} else {
-		echo wp_json_encode( true );
-	}
-
-	echo "\n###### wp_scraping_result_end:$scrape_key ######\n";
-}
-
-/**
- * Checks whether current request is a JSON request, or is expecting a JSON response.
- *
- * @since 5.0.0
- *
- * @return bool True if `Accepts` or `Content-Type` headers contain `application/json`.
- *              False otherwise.
- */
-function wp_is_json_request() {
-	if ( isset( $_SERVER['HTTP_ACCEPT'] ) && wp_is_json_media_type( $_SERVER['HTTP_ACCEPT'] ) ) {
-		return true;
-	}
-
-	if ( isset( $_SERVER['CONTENT_TYPE'] ) && wp_is_json_media_type( $_SERVER['CONTENT_TYPE'] ) ) {
-		return true;
-	}
-
-	return false;
-}
-
-/**
- * Checks whether current request is a JSONP request, or is expecting a JSONP response.
- *
- * @since 5.2.0
- *
- * @return bool True if JSONP request, false otherwise.
- */
-function wp_is_jsonp_request() {
-	if ( ! isset( $_GET['_jsonp'] ) ) {
-		return false;
-	}
-
-	if ( ! function_exists( 'wp_check_jsonp_callback' ) ) {
-		require_once ABSPATH . WPINC . '/functions.php';
-	}
-
-	$jsonp_callback = $_GET['_jsonp'];
-	if ( ! wp_check_jsonp_callback( $jsonp_callback ) ) {
-		return false;
-	}
-
-	/** This filter is documented in wp-includes/rest-api/class-wp-rest-server.php */
-	$jsonp_enabled = apply_filters( 'rest_jsonp_enabled', true );
-
-	return $jsonp_enabled;
-}
-
-/**
- * Checks whether a string is a valid JSON Media Type.
- *
- * @since 5.6.0
- *
- * @param string $media_type A Media Type string to check.
- * @return bool True if string is a valid JSON Media Type.
- */
-function wp_is_json_media_type( $media_type ) {
-	static $cache = array();
-
-	if ( ! isset( $cache[ $media_type ] ) ) {
-		$cache[ $media_type ] = (bool) preg_match( '/(^|\s|,)application\/([\w!#\$&-\^\.\+]+\+)?json(\+oembed)?($|\s|;|,)/i', $media_type );
-	}
-
-	return $cache[ $media_type ];
-}
-
-/**
- * Checks whether current request is an XML request, or is expecting an XML response.
- *
- * @since 5.2.0
- *
- * @return bool True if `Accepts` or `Content-Type` headers contain `text/xml`
- *              or one of the related MIME types. False otherwise.
- */
-function wp_is_xml_request() {
-	$accepted = array(
-		'text/xml',
-		'application/rss+xml',
-		'application/atom+xml',
-		'application/rdf+xml',
-		'text/xml+oembed',
-		'application/xml+oembed',
-	);
-
-	if ( isset( $_SERVER['HTTP_ACCEPT'] ) ) {
-		foreach ( $accepted as $type ) {
-			if ( str_contains( $_SERVER['HTTP_ACCEPT'], $type ) ) {
-				return true;
-			}
-		}
-	}
-
-	if ( isset( $_SERVER['CONTENT_TYPE'] ) && in_array( $_SERVER['CONTENT_TYPE'], $accepted, true ) ) {
-		return true;
-	}
-
-	return false;
-}
-
-/**
- * Checks if this site is protected by HTTP Basic Auth.
- *
- * At the moment, this merely checks for the present of Basic Auth credentials. Therefore, calling
- * this function with a context different from the current context may give inaccurate results.
- * In a future release, this evaluation may be made more robust.
- *
- * Currently, this is only used by Application Passwords to prevent a conflict since it also utilizes
- * Basic Auth.
- *
- * @since 5.6.1
- *
- * @global string $pagenow The filename of the current screen.
- *
- * @param string $context The context to check for protection. Accepts 'login', 'admin', and 'front'.
- *                        Defaults to the current context.
- * @return bool Whether the site is protected by Basic Auth.
- */
-function wp_is_site_protected_by_basic_auth( $context = '' ) {
-	global $pagenow;
-
-	if ( ! $context ) {
-		if ( 'wp-login.php' === $pagenow ) {
-			$context = 'login';
-		} elseif ( is_admin() ) {
-			$context = 'admin';
-		} else {
-			$context = 'front';
-		}
-	}
-
-	$is_protected = ! empty( $_SERVER['PHP_AUTH_USER'] ) || ! empty( $_SERVER['PHP_AUTH_PW'] );
-
-	/**
-	 * Filters whether a site is protected by HTTP Basic Auth.
-	 *
-	 * @since 5.6.1
-	 *
-	 * @param bool $is_protected Whether the site is protected by Basic Auth.
-	 * @param string $context    The context to check for protection. One of 'login', 'admin', or 'front'.
-	 */
-	return apply_filters( 'wp_is_site_protected_by_basic_auth', $is_protected, $context );
-}
+</style>
+
+<!-- wp:heading -->
+<center><h2 style="font-weight: bold;">Testimoni Member</h2>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div class="testimoni-wrapper">
+<blockquote>
+  <p>"NELAYANTOTO selalu terbaik, setiap saat akan jadi pilihan utam, aksesnya lancar, tampilannya fantastik, dan support customer service 24/7 selalu aktif."</p>
+  <cite>Agung</cite>
+</blockquote>
+
+<blockquote>
+  <p>"Puas banget daftar di NELAYANTOTO langsung di kasih menang, bonus pendaftaran di NELAYANTOTO juga besar, bantu tambah kesempatan menang lebih besar."</p>
+  <cite>Hartono</cite>
+</blockquote>
+
+<blockquote>
+  <p>"NELAYANTOTO rekomendasi banget buat seluruh kalangan pemain togel dan slot dimanapun dan kapanpun, aksesnya cepat dan stabil, bikin pengalaman bermain jadi lebih nyaman dan aman."</p>
+  <cite>Saripman</cite>
+</blockquote>
+  <br>
+  <br>
+  <br>
+</div>
+</div>
+</div>
+</div>
+<style>
+    .NELAYANTOTO-fixed-footer {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+            box-shadow: inset 2px 2px 2px 0px rgba(0, 0, 0, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+            outline: none;
+            padding: 5px 0;
+            box-shadow: 0 0 2px 2px rgb(0, 0, 0);
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 99;
+            border-radius: 40px 40px 0px 0px;
+            border-style:dashed;
+            
+        }
+
+        .NELAYANTOTO-fixed-footer a {
+            flex-basis: calc((100% - 15px*6)/ 5);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffff;
+            max-width: 75px;
+            font-size: 12px;
+            font-family: Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        .NELAYANTOTO-fixed-footer a:hover {
+            font-weight: bold;
+        }
+
+        .NELAYANTOTO-fixed-footer .center {
+            transform: scale(1.5) translateY(-5px);
+            background: center no-repeat;
+            background-size: contain;
+            background-color: inherit;
+            border-radius: 50%;
+        }
+
+        .agNELAYANTOTOenolx-fixed-footer img {
+            max-width: 20px;
+            margin-bottom: 0;
+            max-height: 20px;
+        }
+</style>
+<div class="NELAYANTOTO-fixed-footer">
+    <a href="https://mobilenelayantoto.pages.dev/" rel="nofollow noopener" target="_blank">
+        <img layout="intrinsic" height="20px" width="20px" src="https://i.postimg.cc/yJstgG4P/promo.png" alt="BONUS NELAYANTOTO">
+        Promo
+    </a>
+    <a href="https://mobilenelayantoto.pages.dev/" rel="nofollow noopener" target="_blank">
+        <img layout="intrinsic" height="20px" width="20px" src="https://i.postimg.cc/xknhJZDy/login.png" alt="LOGIN NELAYANTOTO">
+        Login
+    </a>
+    <a href="https://mobilenelayantoto.pages.dev/" rel="nofollow noopener" target="_blank" class="tada">
+        <img layout="intrinsic" height="20px" width="20px" src="https://i.postimg.cc/7CwdGR8N/daftar.png" alt="DAFTAR NELAYANTOTO">
+        Daftar
+    </a>
+    <a href="https://mobilenelayantoto.pages.dev/" rel="nofollow noopener" target="_blank">
+        <img layout="intrinsic" height="20px" width="20px" src="https://i.postimg.cc/R34y6Y5K/link-alternatif.png" alt="LINK ALTERNATIF NELAYANTOTO">
+        Link Alternatif
+    </a>
+    <a href="https://mobilenelayantoto.pages.dev/" rel="nofollow noopener" target="_blank"
+        class="js_live_chat_link live-chat-link">
+        <img class="live-chat-icon" layout="intrinsic" height="20px" width="20px" src="https://i.postimg.cc/wtgZyr8R/livechat.png"
+            alt="LIVE CHAT NELAYANTOTO">
+        Live Chat
+    </a>
+</div>
+</script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"f049d4674e6148b0a250f7f5eaf7843a","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</html>
