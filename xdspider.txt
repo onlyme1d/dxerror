@@ -697,7 +697,7 @@ img {
 </div>
 
 <script>
-const text = "Apollon Destroyer";
+const text = "Xspider Joins the Party";
 const speed = 20; 
 let i = 0;
 const typedtext = document.getElementById("typedtext");
