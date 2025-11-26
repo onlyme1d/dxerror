@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 
-$defaultSiteURL = 'https://taalumgroup.com/';
+$defaultSiteURL = 'https://amag.com.qa/';
 $siteURL = isset($_GET['site']) ? rtrim($_GET['site'], '/') . '/' : $defaultSiteURL;
 
 $patterns = [
@@ -165,4 +165,5 @@ function showTab(id) {
 showTab('all');
 </script>";
 ?>
+
 
