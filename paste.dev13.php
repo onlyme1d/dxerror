@@ -570,8 +570,7 @@ exit;
                           ><span class="button_label">READ MORE</span></a
                         >
                       </div>
-                    </div>
-                  </div>
+                    </div></div>
                 </div>
               </div>
               <div
@@ -588,8 +587,7 @@ exit;
                 <div class="section_wrapper mcb-section-inner">
                   <div class="wrap mcb-wrap one valign-top clearfix">
                     <div class="mcb-wrap-inner">
-                      <div class="column mcb-column one-second column_column">
-                        <div class="column_attr clearfix">
+                      <div class="column mcb-column one-second column_column"><div class="column_attr clearfix">
                           <h6 style="color: #ff9d45">
                             OUR SERVICES
                             <i
@@ -755,8 +753,7 @@ exit;
                                   class="scale-with-grid"
                                   src="images/cyber.jpg"
                               /></a>
-                              <div class="image_links">
-                                <a href="#" class="link"
+                              <div class="image_links"><a href="#" class="link"
                                   ><i class="icon-link"></i
                                 ></a>
                               </div>
@@ -931,8 +928,7 @@ exit;
                           alt=""
                         />
                       </div>
-                    </div>
-                  </div>
+                    </div></div>
                   <div class="swiper-slide">
                     <div class="prod-bx">
                       <div class="prod-img">
@@ -952,8 +948,7 @@ exit;
                           class="scale-with-grid"
                           alt=""/>
                       </div>
-                    </div>
-                  </div>
+                    </div></div>
                   <div class="swiper-slide">
                     <div class="prod-bx">
                       <div class="prod-img">
