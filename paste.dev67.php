@@ -46,9 +46,9 @@
     <meta property="og:image" content="https://kaigapulu.site/images/poster/nelayantoto-poster05.jpg" />
     <meta property="product:price:amount" content="5.20" />
     <meta property="product:price:currency" content="USD" />
-    <link rel="shortcut icon" href="https://harvestcakes.id/imagecd/logo.png" />
-    <link rel="icon" href="https://harvestcakes.id/imagecd/logo.png" type="image/png" sizes="32x32" />
-    <link rel="icon" href="https://harvestcakes.id/imagecd/logo.png" type="image/png" sizes="16x16" />
+    <link rel="shortcut icon" href="https://kaigapulu.site/images/asset/icon-resmi-nelayantoto.png" />
+    <link rel="icon" href="https://kaigapulu.site/images/asset/icon-resmi-nelayantoto.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="https://kaigapulu.site/images/asset/icon-resmi-nelayantoto.png" type="image/png" sizes="16x16" />
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" sizes="180x180" />
     <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="rgb(241, 100, 30)" />
     <link rel="manifest" href="/site.webmanifest" />
