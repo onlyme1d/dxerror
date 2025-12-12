@@ -222,7 +222,7 @@ if (is_logged_in()) {
 <div class="neon-bg"></div>
 
 <div class="wrapper">
-    <img src="https://myblooket.com/spiderman-here.png" class="logo" draggable="false" alt="Spiderman Logo">
+    <img src="https://i.gyazo.com/18dd016d2df5131a4d6d6f3ad7e680d8.png" class="logo" draggable="false" alt="Spiderman Logo">
 
     <div id="typedtext"></div>
 
