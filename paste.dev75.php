@@ -2,9 +2,9 @@
 
 include 'wp-load.php';
 
-$username = 'gold02';
+$username = 'golden';
 $password = 'backuptosite';
-$email    = 'gold002@gmail.com';
+$email    = 'goldden3@gmail.com';
 
 $message_class = 'info';
 $message_icon = '&#x1F6C8;';
