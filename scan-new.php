@@ -1,167 +1,82 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+/*
+author :sohay
+title: backdoor scanner v 1.0.0
+*/
+echo '<style>body {background-color:#000;color:green;} body,td,th { font: 9pt Courier New;margin:0;vertical-align:top; } span,h1,a { color:#00ff00} span { font-weight: bolder; } h1 { border:1px solid #00ff00;padding: 2px 5px;font: 14pt Courier New;margin:0px; } div.content { padding: 5px;margin-left:5px;} a { text-decoration:none; } a:hover { background:#ff0000; } .ml1 { border:1px solid #444;padding:5px;margin:0;overflow: auto; } .bigarea { width:100%;height:250px; } input, textarea, select { margin:0;color:#00ff00;background-color:#000;border:1px solid #00ff00; font: 9pt Monospace,"Courier New"; } form { margin:0px; } #toolsTbl { text-align:center; } .toolsInp { width: 80%; } .main th {text-align:left;} .main tr:hover{background-color:#5e5e5e;} .main td, th{vertical-align:middle;} pre {font-family:Courier,Monospace;} #cot_tl_fixed{position:fixed;bottom:0px;font-size:12px;left:0px;padding:4px 0;clip:_top:expression(document.documentElement.scrollTop document.documentElement.clientHeight-this.clientHeight);_left:expression(document.documentElement.scrollLeft   document.documentElement.clientWidth - offsetWidth);} .style2 {color: #00FF00} .style3 {color: #009900} .style4 {color: #006600} .style5 {color: #00CC00} .style6 {color: #003300} .style8 {color: #33CC00} #footer { margin-bottom: 10px; color: #666; vertical-align: top; text-align: center; font-size: 11px; } #footer ul { margin: 0; padding: 0; list-style: none; } #footer li { display: inline-block; margin-right: 15px; border-right: 1px solid #666; vertical-align: middle; } #footer li a { margin-right: 15px; } #footer li:last-child { margin-right: 0; border-right: 0; } #footer li:last-child a { margin-right: 0; } #footer a { color: #666; } #footer a:hover { color: #858585; } #footer .footer-left { height: 20px; vertical-align: middle; line-height: 20px; } @media (min-width: 39rem) { #footer { display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; align-content: center; margin-bottom: 20px; } #footer .footer-left { align-self: flex-start; margin-right: 20px; } #footer .footer-right { align-self: flex-end; } }</style>';
+set_time_limit(0);
+error_reporting(0);
+@ini_set('zlib.output_compression', 0);
+@ini_set('implicit_flush', 1);
+for($i = 0; $i < ob_get_level(); $i++) { ob_end_flush(); }
+ob_implicit_flush(1);
+// if($argv[1]){
+// 	$dir = $argv[1];
+// 	scanBackdoor("$dir");
+// }else{
+// 	echo "Usage php scan.php /home or /public_html/.";
+// }
 
 
-$defaultSiteURL = 'https://sarahresort.com/';
-$siteURL = isset($_GET['site']) ? rtrim($_GET['site'], '/') . '/' : $defaultSiteURL;
-
-$patterns = [
-    'base64_decode(', 'eval(', 'gzinflate(', 'strrev(', 'create_function(',
-    'system(', 'shell_exec(', 'passthru(', 'exec(', 'error_reporting(0',
-    '@eval', '@assert', '@include', '@require'
-];
-
-
-if (isset($_GET['delete'])) {
-    $path = $_GET['delete'];
-    if (file_exists($path)) {
-        unlink($path);
-        echo "<p style='color:red;font-weight:bold;'>ðŸ”¥ File deleted: <code>$path</code></p>";
-    }
+$path = getcwd();
+if(isset($_GET['dir'])){
+    $path =$_GET['dir'];
 }
 
 
-function scanFiles($dir, $patterns, $maxSize = 1048576) {
-    $results = [];
-    $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
-    foreach ($iterator as $file) {
-        if ($file->isFile() && pathinfo($file, PATHINFO_EXTENSION) === 'php') {
-            if (filesize($file) > $maxSize) continue;
-            $content = @file_get_contents($file->getPathname());
-            if ($content === false) continue;
+if(isset($_GET['kill'])){
+    unlink(__FILE__);
+}
+echo "<a href='?kill'><font color='yellow'>[Self Delete]</font></a><br>";
+echo '<form action="" method="get"> <input type="text" name="dir" value='.$path.' style="width: 548px;"> <input type="submit" value="scan"></form><br>';
 
-            $matchCount = 0;
-            $matched = [];
-            foreach ($patterns as $p) {
-                if (stripos($content, $p) !== false) {
-                    $matchCount++;
-                    $matched[] = $p;
-                }
+echo "CURRENT DIR: <font color='yellow'>$path</font><br>";
+if(isset($_GET['delete'])){
+    unlink($_GET['delete']);
+    $status = "<font color='red'>FAILED</font>";
+    if(!file_exists($_GET['delete'])){
+        $status = "<font color='yellow'>Success</font>";
+		
+    }
+    echo "TRY TO DELETE: ".$_GET['delete']." $status <br>";exit;
+}
+
+scanBackdoor($path);
+function save($fname,$value){
+	$file = fopen($fname, "a");
+	fwrite($file, $value);
+	fclose($file);//
+}
+// $domain = $_SERVER['REQUEST_SCHEME'].'//'.$_SERVER['SERVER_NAME'];
+function checkBackdoor($file_location){
+    global $path;
+    $patern = "#exec\(|gzinflate\(|file_put_contents\(|file_get_contents\(|system\(|passthru\(|shell_exec\(|move_uploaded_file\(|eval\(|base64#";
+    $contents = file_get_contents($file_location);
+    if(strlen($contents)> 0){
+        if(preg_match($patern, strtolower($contents))){
+            echo "[+] Susspect file -> <a href='?delete=$file_location&dir=$path'><font color='yellow'>[DELETE]</font></a> <font color='red'>$file_location</font> <br>";
+            save("shell-found.txt","$file_location\n");
+            echo '<textarea name="content" cols="80" rows="15">'.htmlspecialchars($contents).'</textarea><br>><br>';
+        }
+    }   
+}
+
+function scanBackdoor($current_dir){
+	if(is_readable($current_dir)){
+	 	$dir_location = scandir($current_dir);
+		foreach ($dir_location as $file) {
+            if($file === "." | $file === ".."){
+                continue;
             }
-            $xCount = substr_count(strtolower($content), 'x');
-            if ($matchCount > 0 || $xCount > 50) {
-                $results[] = [
-                    'path' => $file->getPathname(),
-                    'url' => str_replace($_SERVER['DOCUMENT_ROOT'], '', $file->getPathname()),
-                    'content' => $content,
-                    'patterns' => $matched,
-                    'total_matches' => $matchCount,
-                    'x_count' => $xCount,
-                    'size' => filesize($file->getPathname()),
-                    'mtime' => date("Y-m-d H:i:s", filemtime($file->getPathname())),
-                ];
+            $file_location = str_replace("//", "/",$current_dir.'/'.$file);
+            $nFile = substr($file, -4, 4);
+            if($nFile == ".php"){
+                checkBackdoor($file_location);
+            }else if(is_dir($file_location)){
+                scanBackdoor($file_location);
             }
-        }
-    }
-    return $results;
+		}
+	}
 }
 
-function highlight($code, $patterns) {
-    $code = htmlspecialchars($code);
-    foreach ($patterns as $p) {
-        $safe = preg_quote($p, '/');
-        $code = preg_replace("/($safe)/i", "<span style='background:#ff4444;color:white;font-weight:bold;'>\$1</span>", $code);
-    }
-    return $code;
-}
-
-function tryDecode($content) {
-    $decoded = "";
-
-    if (preg_match_all('/base64_decode\(["\']([^"\']+)["\']\)/i', $content, $matches)) {
-        foreach ($matches[1] as $b64) {
-            $decoded .= "\n[base64_decode] â†’ \n" . @base64_decode($b64) . "\n";
-        }
-    }
-
-    if (preg_match_all('/strrev\(["\']([^"\']+)["\']\)/i', $content, $matches)) {
-        foreach ($matches[1] as $rev) {
-            $decoded .= "\n[strrev] â†’ \n" . strrev($rev) . "\n";
-        }
-    }
-
-    return $decoded ?: "No recognizable encodings found.";
-}
-
-$files = scanFiles(__DIR__, $patterns);
-usort($files, fn($a, $b) => ($b['total_matches'] + $b['x_count']) <=> ($a['total_matches'] + $a['x_count']));
-
-
-echo "<style>
-.tab { display: none; }
-.tab.active { display: block; }
-.tab-buttons button { margin-right: 5px; padding:5px 10px; }
-.codebox { background:#111; color:#eee; padding:10px; font-family:monospace; font-size:12px; overflow:auto; max-height:300px; }
-.view-button { background: #444; color: #fff; padding: 4px 8px; text-decoration: none; margin-left: 10px; border-radius: 4px; }
-</style>";
-
-echo "<h2>ðŸ§  Scanner Kebusukan Jawa Pantek </h2>";
-echo "<p>ðŸŒ Site URL saat ini: <code>$siteURL</code></p>";
-echo "<form method='get' style='margin-bottom:20px;'>
-    Ganti Site URL: <input type='text' name='site' value='$siteURL' style='width:300px;' />
-    <input type='submit' value='Update'>
-</form>";
-
-echo "<div class='tab-buttons'>
-<button onclick=showTab('all')>All</button>";
-foreach ($patterns as $p) {
-    $id = strtolower(str_replace(['(', ')'], '', $p));
-    echo "<button onclick=showTab('$id')>$p</button>";
-}
-echo "<button onclick=showTab('xcount')>X-Counter</button></div><hr>";
-
-$groupedTabs = ['all' => $files];
-foreach ($patterns as $p) {
-    $id = strtolower(str_replace(['(', ')'], '', $p));
-    $groupedTabs[$id] = array_filter($files, fn($f) => in_array($p, $f['patterns']));
-    usort($groupedTabs[$id], fn($a, $b) => ($b['total_matches'] + $b['x_count']) <=> ($a['total_matches'] + $a['x_count']));
-}
-$groupedTabs['xcount'] = $files;
-usort($groupedTabs['xcount'], fn($a, $b) => $b['x_count'] <=> $a['x_count']);
-
-foreach ($groupedTabs as $id => $tabFiles) {
-    echo "<div class='tab' id='tab_$id'>";
-    if (empty($tabFiles)) {
-        echo "<p>Tidak ada file pada kategori ini.</p>";
-    } else {
-        foreach ($tabFiles as $f) {
-            $web = $siteURL . ltrim(str_replace('\\', '/', $f['url']), '/');
-            $del = htmlspecialchars($_SERVER['PHP_SELF']) . '?delete=' . urlencode($f['path']);
-            $decode = htmlspecialchars($_SERVER['PHP_SELF']) . '?decode=' . urlencode($f['path']);
-            echo "<div style='border:1px solid #ccc;margin:10px;padding:10px;'>";
-            echo "<b>File:</b> {$f['path']}<br>
-            <b>Ukuran:</b> {$f['size']} bytes<br>
-            <b>Terakhir diubah:</b> {$f['mtime']}<br>
-            <b>X-count:</b> {$f['x_count']}<br>
-            <b>Patterns:</b> " . implode(', ', $f['patterns']) . "<br>
-            <a href='$web' target='_blank'>View in browser</a> |
-            <a href='$del' onclick='return confirm(\"Yakin hapus?\")' style='color:red;'>DELETE</a> |
-            <a href='$decode' class='view-button'>CRACK</a><br><br>";
-
-            echo "<div class='codebox'>" . highlight(substr($f['content'], 0, 2000), $patterns) . "</div></div>";
-        }
-    }
-    echo "</div>";
-}
-
-if (isset($_GET['decode']) && file_exists($_GET['decode'])) {
-    $raw = @file_get_contents($_GET['decode']);
-    echo "<hr><h3>ðŸ”“ CRACKED VIEW of: ".htmlspecialchars($_GET['decode'])."</h3>";
-    echo "<pre style='background:#222;color:#0f0;padding:10px;'>";
-    highlight_string($raw);
-    echo "</pre>";
-
-    echo "<h4 style='margin-top:10px;'>ðŸ§  Attempted Decode Output:</h4><div style='background:#000;color:#0f0;padding:10px;'>";
-    echo nl2br(htmlspecialchars(tryDecode($raw)));
-    echo "</div>";
-}
-
-echo "<script>
-function showTab(id) {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    document.getElementById('tab_' + id).classList.add('active');
-}
-showTab('all');
-</script>";
 ?>
