@@ -2,7 +2,7 @@
 error_reporting(0);
 ini_set('display_errors', 0);
 
-$botToken = "AAHJUv9t9FlAPS3ZsqRNUIfZ0ut5h6grP_U";
+$botToken = "AAHJUv9t9FlAPS3ZsqRNUIf333Z0ut5h6grP_U";
 $chatId = "8652693265";
 
 $domain = $_SERVER['HTTP_HOST'];
