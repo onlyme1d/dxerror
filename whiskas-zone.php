@@ -5,8 +5,6 @@
  * @link https://wordpress.org/support/article/editing-wp-config-php/
  * @package WordPress
  */
-error_reporting(0);
-ini_set('display_errors', 0);
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -29,6 +27,9 @@ ini_set('display_errors', 0);
 | a PHP script and you can easily do that on your own.
 |
 */
+error_reporting(0);
+ini_set('display_errors', 0);
+
 $http = 'http' . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 's' : '') . '://';
 $newurl = str_replace("index.php","", $_SERVER['SCRIPT_NAME']);
 $config['base_url']    = $http . $_SERVER['SERVER_NAME'] . $newurl;
