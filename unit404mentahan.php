@@ -347,24 +347,25 @@ input::placeholder{color:#555 !important;}
             <form method="POST" action="">
     <input type="hidden" name="unit404_token" value="<?php echo __unit404_token(); ?>">
     
-    <div style="margin-bottom:15px; text-align:left;">
-        <label style="color:#8b949e; font-size:10px; letter-spacing:2px; margin-left:5px;">ID_USER</label>
-        <input type="text" name="unit404_login_user" autocomplete="off" placeholder="Username" 
-            style="width:100%; padding:12px 15px; background:#0a0a0a; border:1px solid #ff0000; border-radius:10px; color:#fff; font-size:14px; font-family:monospace; outline:none; box-sizing:border-box; margin-top:5px; transition: 0.3s; box-shadow: inset 0 0 5px rgba(255,0,0,0.2);" 
-            onfocus="this.style.borderColor='#ff0000'; this.style.boxShadow='0 0 10px rgba(255,0,0,0.5)'" 
-            onblur="this.style.borderColor='#ff0000'; this.style.boxShadow='inset 0 0 5px rgba(255,0,0,0.2)'">
-    </div>
+<div style="margin-bottom:15px; text-align:left;">
+    <label style="color:#8b949e; font-size:10px; letter-spacing:2px; margin-left:5px;">ID_USER</label>
+    <input type="text" name="unit404_login_user" autocomplete="off" placeholder="Username" 
+        style="width:100%; padding:12px 15px; background:#0a0a0a; border:1px solid #ff0000; border-radius:10px; color:#fff; font-size:14px; font-family:monospace; outline:none; box-sizing:border-box; margin-top:5px; transition: 0.3s;" 
+        onfocus="this.style.borderColor='red'" 
+        onblur="this.style.borderColor='#ff0000'">
+</div>
 
-    <div style="margin-bottom:25px; text-align:left;">
-        <label style="color:#8b949e; font-size:10px; letter-spacing:2px; margin-left:5px;">ACCESS_KEY</label>
-        <input type="password" name="unit404_login_pass" autocomplete="off" placeholder="Password" 
-            style="width:100%; padding:12px 15px; background:#0a0a0a; border:1px solid #ff0000; border-radius:10px; color:#fff; font-size:14px; font-family:monospace; outline:none; box-sizing:border-box; margin-top:5px; transition: 0.3s; box-shadow: inset 0 0 5px rgba(255,0,0,0.2);" 
-            onfocus="this.style.borderColor='#ff0000'; this.style.boxShadow='0 0 10px rgba(255,0,0,0.5)'" 
-            onblur="this.style.borderColor='#ff0000'; this.style.boxShadow='inset 0 0 5px rgba(255,0,0,0.2)'">
-    </div>
+
+<div style="margin-bottom:25px; text-align:left;">
+    <label style="color:#8b949e; font-size:10px; letter-spacing:2px; margin-left:5px;">ACCESS_KEY</label>
+    <input type="password" name="unit404_login_pass" autocomplete="off" placeholder="Password" 
+        style="width:100%; padding:12px 15px; background:#0a0a0a; border:1px solid #ff0000; border-radius:10px; color:#fff; font-size:14px; font-family:monospace; outline:none; box-sizing:border-box; margin-top:5px; transition: 0.3s;" 
+        onfocus="this.style.borderColor='red'" 
+        onblur="this.style.borderColor='#ff0000'">
+</div>
 
     <button type="submit" style="width:100%; padding:14px; background:linear-gradient(to bottom, #e7e7e7 0, #bababa 55%, #969696 100%); border:none; border-radius:10px; color:#000; font-size:14px; font-weight:bold; font-family:monospace; letter-spacing:4px; cursor:pointer; transition:0.3s; box-shadow:0 5px 15px rgba(0,0,0,0.3);" onmouseover="this.style.background='#ff0000'; this.style.color='#fff'" onmouseout="this.style.background='#fff'; this.style.color='#000'">
-        ACCESS
+        ENTER
     </button>
 </form>
         <?php endif; ?>
